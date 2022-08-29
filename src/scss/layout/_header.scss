@@ -1,0 +1,24 @@
+header {
+    border-bottom: 3px solid var(--secondary-clr);
+    padding: 2em 0;
+    background-color: var(--primary-clr);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    list-style: none;
+
+    & > * {
+        margin: 0 1em;
+    }
+}
+
+.header-list-link {
+
+}

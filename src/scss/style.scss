@@ -1,0 +1,13 @@
+// utilities
+@use "utilities/variables";
+@use "utilities/classes";
+
+// base
+@use "base/normalize";
+@use "base/typography";
+
+// layout
+@use "layout/sections";
+@use "layout/header";
+@use "layout/footer";
+

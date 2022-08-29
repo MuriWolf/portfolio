@@ -1,0 +1,19 @@
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--dark-gray);
+}
+
+.intro {
+    & > .container {
+        align-items: center;
+    }
+    & > .container > * {
+        
+        flex: 1;
+    }
+}
