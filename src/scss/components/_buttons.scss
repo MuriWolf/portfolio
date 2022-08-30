@@ -1,0 +1,52 @@
+.btn {
+    background: none;
+    border: none;
+    padding: 0.4em 1em;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+.btn--md {
+    font-size: 2.25rem;
+} 
+
+.btn--lg {
+    font-size: 2.75rem;
+} 
+
+.btn-border {
+    position: relative;
+    border-radius: 8px;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: -3px;
+        background-size: 200%;
+        border-radius: 8px;
+    }
+} 
+
+.btn--github {
+    background-color: var(--gray);
+    transition: all 0.3s;
+    
+    &:hover {
+        background: linear-gradient(to left, var(--github-clr), var(--github-clr--dark))
+    }
+    &::before {
+        background: linear-gradient(to left, var(--github-clr), var(--github-clr--dark));
+    }
+}
+
+.btn--linkedin {
+    background-color: var(--gray);
+    transition: all 0.3s;
+    &:hover {
+        background: linear-gradient(to left, var(--linkedin-clr), var(--linkedin-clr--clear));
+    }
+    &::before {
+        background: linear-gradient(to left, var(--linkedin-clr), var(--linkedin-clr--clear));
+    }
+}

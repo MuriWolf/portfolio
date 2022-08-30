@@ -1,6 +1,7 @@
 // utilities
 @use "utilities/variables";
 @use "utilities/classes";
+@use "utilities/mixins";
 
 // base
 @use "base/normalize";
@@ -11,3 +12,6 @@
 @use "layout/header";
 @use "layout/footer";
 
+// components
+
+@use "components/buttons";

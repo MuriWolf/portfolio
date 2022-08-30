@@ -1,0 +1,13 @@
+@mixin for-size($range) {
+    $large: 800px;
+    $medium: 600px;
+    $small: 400px;
+    
+    @if $range == large {
+        @media (min-width: #{$large}) { @content; }
+    } @else if $range == medium {
+        @media (min-width: #{$medium}) { @content; }
+    } @else if $range == small {
+        @media (min-width: #{$small}) { @content; }
+    }
+}

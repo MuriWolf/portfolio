@@ -1,8 +1,14 @@
+@use "../utilities/mixins" as mx;
+
 .container {
     width: 90%;
-    max-width: 1150px;
+    max-width: 1250px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+section {
+    width: 100%;
 }
 
 body {
@@ -12,6 +18,7 @@ body {
 .intro {
     margin-top: 60px;
     height: 70vh;
+    max-height: 700px;
     & > .container {
         align-items: center;
     }
@@ -23,22 +30,30 @@ body {
 
 .intro-img {
     animation: vibrate1 5s alternate infinite;
+    max-width: 70%;
+    min-width: 300px;
+    margin: 0 auto;
     // animation: flipDiagonal2br 2.5s alternate infinite, flipDiagonal2Tl 5s alternate infinite;   
 }
+
+.intro-buttons {
+    justify-content: start;
+    gap: 2rem;
+} 
 
 .sobre {
     & > .container {
         background-color: var(--dark-gray);
-        padding: 40px;
+        padding: 20px;
         gap: 30px;
 
         & > article {
-            flex: 5 0 400px;
+            flex: 5 1 400px;
         }
 
         & > .profile-img {
             max-width: 300px;
-            flex: 1 0 150px;
+            flex: 1 1 150px;
             margin: 0 auto;
             & > img {
                 border: 2px dashed var(--secondary-clr);

@@ -1,6 +1,8 @@
+@use "../utilities/mixins" as mx;
+
 header {
     border-bottom: 3px solid var(--secondary-clr);
-    padding: 2em 0;
+    padding: 1em 0;
     background-color: var(--primary-clr);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.383);
 }
@@ -12,8 +14,11 @@ header {
 }
 
 .header-list {
-    display: flex;
+    display: none;
     list-style: none;
+    @include mx.for-size(large) {
+        display: flex;
+    }
 
     & > * {
         margin: 0 1em;

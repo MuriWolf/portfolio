@@ -8,7 +8,7 @@ body {
 }
 
 p, a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 a {
@@ -18,6 +18,19 @@ a {
 
 h1 {
     font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.border-bottom--primary-clr {
+    // display: inline;
+    border-bottom: 2px solid var(--primary-clr);
 }
 
 .main-title {
@@ -37,19 +50,6 @@ h1 {
     font-size: 3.25rem;
     color: var(--secondary-clr);
     animation: trackingInExpand 2s, light_on_off 2.25s infinite alternate ease-in-out;
-}
-
-h2 {
-    font-size: 3rem;
-}
-
-
-.italic {
-    font-style: italic;
-}
-
-.main-title__job {
-    border-bottom: 2px solid var(--primary-clr);
 }
 
 @keyframes light_on_off {
