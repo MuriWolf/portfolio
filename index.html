@@ -7,7 +7,7 @@
     <meta name="author" content="Murillo Pinheiro de Oliveira">
     <meta name="description" content="Portfólio do desenvolvedor Frontend Murillo P. de Oliveira">
     <meta name="keywords" content="portfólio, html, css, sass, scss, javascript, desenvolvedor, desenvolvimento, frontend">
-    <link rel="stylesheet" href="dist/css/style.min.css"> 
+    <link rel="stylesheet" href="./src/scss/style.css"> 
     <title>Portfólio | Murillo P. Oliveira</title>
 </head>
 <body>
@@ -16,19 +16,32 @@
             <h2>MuriWolf</h2>
             <nav>
                 <ul class="header-list">
-                    <li><a class="header-list-link" href="">Home</a></li>
-                    <li><a class="header-list-link" href="">Sobre</a></li>
-                    <li><a class="header-list-link" href="">Projetos</a></li>
-                    <li><a class="header-list-link" href="">Conhecimento</a></li>
+                    <li class="header-list-item"><a class="header-list-link" href="#intro">Home</a></li>
+                    <li class="header-list-item"><a class="header-list-link" href="">Sobre</a></li>
+                    <li class="header-list-item"><a class="header-list-link" href="">Projetos</a></li>
+                    <li class="header-list-item"><a class="header-list-link" href="">Conhecimento</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="intro">
+        <section class="intro" id="intro">
             <div class="container d-flex">
-                <h1 class="main-title">Olá! Eu sou <span class="main-title__name">Murillo Pinheiro de Oliveira</span><span class="italic main-title__job">desenvolvedor Frontend</span></h1>
-                <div><img style="display: block;" src="images/Software-Developer-freesvgillustration.com/Software-Developer.svg" alt=""></div>
+                <h1 class="main-title">Olá! Eu sou <span class="main-title__name"> &ltMurillo Pinheiro<br> de Oliveira&gt </Murillo></span><span class="italic main-title__job">desenvolvedor Frontend</span></h1>
+                <div class="intro-img"><img style="display: block;" src="images/Software-Developer-freesvgillustration.com/Software-Developer.svg" alt=""></div>
+            </div>
+        </section>
+        <section class="sobre" id="sobre">
+            <div class="container d-flex">
+                <div class="profile-img">
+                    <img src="https://picsum.photos/id/1/300/300" alt="">
+                </div>
+                <article class="section-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident ducimus laborum facilis excepturi voluptatum a explicabo libero architecto quis quas alias ratione nemo assumenda omnis, repellendus, tempora accusantium voluptates odio.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident ducimus laborum facilis excepturi voluptatum a explicabo libero architecto quis quas alias ratione nemo assumenda omnis, repellendus, tempora accusantium voluptates odio.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident ducimus laborum facilis excepturi voluptatum a explicabo libero architecto quis quas alias ratione nemo assumenda omnis, repellendus, tempora accusantium voluptates odio.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident ducimus laborum facilis excepturi voluptatum a explicabo libero architecto quis quas alias ratione nemo assumenda omnis, repellendus, tempora accusantium voluptates odio.</p>
+                </article>
             </div>
         </section>
     </main>

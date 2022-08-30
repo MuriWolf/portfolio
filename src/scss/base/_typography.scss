@@ -7,9 +7,12 @@ body {
     color: var(--white);
 }
 
+p, a {
+    font-size: 1.8rem;
+}
+
 a {
     text-decoration: none;
-    font-size: 1.8rem;
     color: var(--white);
 }
 
@@ -33,23 +36,40 @@ h1 {
     font-family: var(--secondary-font);
     font-size: 3.25rem;
     color: var(--secondary-clr);
-    text-shadow: 0px 0px 10px var(--secondary-clr);
+    animation: trackingInExpand 2s, light_on_off 2.25s infinite alternate ease-in-out;
 }
 
 h2 {
     font-size: 3rem;
-
 }
+
 
 .italic {
     font-style: italic;
 }
 
-.bold {
-    
-}
-
 .main-title__job {
-
     border-bottom: 2px solid var(--primary-clr);
 }
+
+@keyframes light_on_off {
+    from {
+        text-shadow: 0px 0px 0px var(--secondary-clr);
+    }
+    to {
+        text-shadow: 0px 0px 10px var(--secondary-clr);
+    }
+}
+
+@keyframes trackingInExpand {
+    0% {
+      letter-spacing: -0.75em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
