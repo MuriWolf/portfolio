@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--primary-font);
     color: var(--white);
 }
 
@@ -24,8 +24,28 @@ h2 {
     font-size: 3rem;
 }
 
+h3 {
+    font-size: 2.15rem;
+}
+
 .italic {
     font-style: italic;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-indent {
+    text-indent: 1em;
+}
+
+text-primary-clr {
+    color: var(--primary-clr);
+
+}
+text-secondary-clr {
+    color: var(--secondary-clr);
 }
 
 .border-bottom--primary-clr {

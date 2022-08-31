@@ -40,6 +40,18 @@
     }
 }
 
+.btn--live-view {
+    background-color: var(--gray);
+    transition: all 0.3s;
+    
+    &:hover {
+        background: linear-gradient(to left, #006b00, #2edf2e)
+    }
+    &::before {
+        background: linear-gradient(to left, #006b00, #2edf2e);
+    }
+}
+
 .btn--linkedin {
     background-color: var(--gray);
     transition: all 0.3s;

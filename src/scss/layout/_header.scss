@@ -47,6 +47,7 @@ header {
         transform: translateX(150%);
     }
     &:hover {
+        color: #ffffff;
 
         &::after {
             box-shadow: 0 0 20px var(--secondary-clr);

@@ -7,7 +7,7 @@
     <meta name="author" content="Murillo Pinheiro de Oliveira">
     <meta name="description" content="Portfólio do desenvolvedor Frontend Murillo P. de Oliveira">
     <meta name="keywords" content="portfólio, html, css, sass, scss, javascript, desenvolvedor, desenvolvimento, frontend">
-    <link rel="stylesheet" href="./dist/css/style.min.css"> 
+    <link rel="stylesheet" href="./src/scss/style.css"> 
     <title>Portfólio | Murillo P. Oliveira</title>
 </head>
 <body>
@@ -30,8 +30,8 @@
                 <div>
                     <h1 class="main-title">Olá! Eu sou <span class="main-title__name"> &ltMurillo Pinheiro<br> de Oliveira&gt </Murillo></span><span class="italic border-bottom--primary-clr">desenvolvedor Frontend</span></h1>
                     <div class="d-flex intro-buttons">
-                        <button class="btn btn--md btn-border btn--linkedin ">Linkedin</button>
-                        <button class="btn btn--md btn-border btn--github ">GitHub</button>
+                        <button class="btn btn--md btn-border btn--linkedin">Linkedin</button>
+                        <button class="btn btn--md btn-border btn--github">GitHub</button>
                     </div>
                 </div>
                 <div class="intro-img"><img style="display: block;" src="images/Software-Developer-freesvgillustration.com/Software-Developer.svg" alt=""></div>
@@ -43,10 +43,32 @@
                     <img src="https://picsum.photos/id/1/300/300" alt="">
                 </div>
                 <article class="section-text">
-                    <h2 class="border-bottom--primary-clr">Sobre mim</h2>
+                    <h2 class="border-bottom--primary-clr uppercase">Sobre mim</h2>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Provident ducimus laborum facilis excepturi voluptatum a explicabo libero architecto quis quas alias ratione nemo assumenda omnis, repellendus, tempora accusantium voluptates odio.</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident ducimus laborum facilis excepturi voluptatum a explicabo libero architecto quis quas alias ratione nemo assumenda omnis, repellendus, tempora accusantium voluptates odio.</p>
                 </article>
+            </div>
+        </section>
+        <section class="projetos" id="projetos">
+            <div class="container">
+                <h2 class="uppercase">Projetos</h2>
+                <div class="projetos-wrapper d-flex">
+                    <section class="projeto">
+                        <div class="projeto-img-container">
+                            <img src="https://picsum.photos/200/200" alt="">
+                        </div>
+                        <h3 class=" uppercase">Projeto name</h3>
+                        <p class="text-indent">Descricao, ipsum dolor sit amet consectetur adipisicing elit. Vel neque molestiae soluta exercitationem cupiditate veniam, quo rem alias molestias fugit doloremque, hic nisi unde quae? Magni corporis voluptas tempora. Assumenda.</p>
+                        <p class="text-secondary-clr">Tecnologias usadas: HTML, CSS, SASS/SCSS, javascript</p>
+                        <div class="projeto__buttons d-flex">
+                            <a class="btn btn-border btn--live-view" href="">Live View</a>
+                            <a class="btn btn-border btn--github" href="">Código Fonte</a>
+                        </div>
+                    </section>
+
+
+                </div>
             </div>
         </section>
     </main>

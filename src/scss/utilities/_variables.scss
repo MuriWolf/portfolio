@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
 
 :root {
+    // --primary-font: 'Inter', sans-serif;
+    --primary-font: 'Rubik', sans-serif;
     --secondary-font: 'Press Start 2P', cursive; 
 
     --primary-clr: #8f00ff;
@@ -14,7 +18,7 @@
     --linkedin-clr: #0078b9;
     --linkedin-clr--clear: #50b8f0;
 
-    --white: #f4f4f4;
+    --white: #dddddd;
 
     --dark-gray: #202020;
     --gray: #2d2d2d;
