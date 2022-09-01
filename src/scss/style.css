@@ -13,8 +13,9 @@
   --linkedin-clr: #0078b9;
   --linkedin-clr--clear: #50b8f0;
   --white: #dddddd;
-  --dark-gray: #202020;
-  --gray: #2d2d2d;
+  --light-gray: #c0c0c0;
+  --dark-gray: #1d1d1d;
+  --gray: #272727;
 }
 
 .d-flex {
@@ -378,11 +379,11 @@ h3 {
   text-indent: 1em;
 }
 
-text-primary-clr {
+.text-primary-clr {
   color: var(--primary-clr);
 }
 
-text-secondary-clr {
+.text-secondary-clr {
   color: var(--secondary-clr);
 }
 
@@ -511,16 +512,18 @@ body {
   border: 2px dashed var(--secondary-clr);
 }
 
-.projetos > .container {
-  border: 1px solid red;
-}
 .projetos > .container > .projetos-wrapper {
   justify-content: space-between;
+  gap: 40px;
 }
 
 .projeto {
   padding: 1em;
   max-width: 325px;
+  flex: 1 1 250px;
+}
+.projeto > p {
+  color: var(--light-gray);
 }
 
 .projeto-img-container {
@@ -529,10 +532,43 @@ body {
   border-bottom: 3px solid var(--secondary-clr);
   overflow: hidden;
 }
+.projeto-img-container:hover {
+  border-right: 3px solid var(--primary-clr);
+  border-bottom: 3px solid var(--primary-clr);
+}
+.projeto-img-container > img {
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.projeto-img-container > img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.tecnologias {
+  margin-bottom: 2em;
+}
+.tecnologias > .tecnologia + .tecnologia {
+  margin-left: 1em;
+}
+
+.tecnologia {
+  padding: 0.5em 1em;
+  background-color: var(--primary-clr);
+  color: var(--white);
+  border-radius: 8px;
+  font-size: 1.4rem;
+}
+.tecnologia:hover {
+  background-color: var(--primary-clr--clear);
+}
 
 .projeto__buttons {
   gap: 2em;
 }
+
 @-webkit-keyframes vibrate1 {
   0% {
     transform: translate(0);
@@ -553,6 +589,7 @@ body {
     transform: translate(0);
   }
 }
+
 @keyframes vibrate1 {
   0% {
     transform: translate(0);
@@ -671,6 +708,13 @@ header {
     transform: translateY(0%);
   }
 }
+.footer {
+  background-color: var(--primary-clr);
+}
+.footer > .container {
+  justify-content: space-around;
+}
+
 .btn {
   background: none;
   border: none;

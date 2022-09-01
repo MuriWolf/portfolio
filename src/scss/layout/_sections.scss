@@ -67,10 +67,11 @@ body {
 
 .projetos {
     & > .container {
-        border: 1px solid red;
+        // border: 1px solid red;
 
         & > .projetos-wrapper {
             justify-content: space-between;
+            gap: 40px;
         }
     }
 }
@@ -78,7 +79,11 @@ body {
 .projeto {
     padding: 1em;
     max-width: 325px;
-    // border: 1px solid var(--primary-clr);
+    flex: 1 1 250px;
+
+    & > p {
+        color: var(--light-gray);
+    }
 }
 
 .projeto-img-container {
@@ -86,13 +91,45 @@ body {
     border-right: 3px solid var(--secondary-clr);
     border-bottom: 3px solid var(--secondary-clr);
     overflow: hidden;
+
+    &:hover {
+        border-right: 3px solid var(--primary-clr);
+        border-bottom: 3px solid var(--primary-clr);
+    }
+    
+    & > img {
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    & > img:hover {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+.tecnologias {
+    margin-bottom: 2em;
+    & > .tecnologia + .tecnologia {
+        margin-left: 1em;
+    }
+}
+
+.tecnologia {
+    padding: 0.5em 1em;
+    background-color: var(--primary-clr);
+    color: var(--white);
+    border-radius: 8px;
+    font-size: 1.4rem;
+    
+    &:hover {
+        background-color: var(--primary-clr--clear);
+    }
 }
 
 .projeto__buttons {
     gap: 2em;
-    & > button {
-
-    }
 }
 
 @keyframes vibrate1 {
