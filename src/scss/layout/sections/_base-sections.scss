@@ -1,0 +1,19 @@
+@use "../../utilities/mixins" as mx;
+
+body {
+    background-color: var(--dark-gray);
+}
+
+section {
+    width: 100%;
+    padding: 50px 0;
+    scroll-margin-top: 85px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+

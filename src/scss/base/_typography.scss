@@ -7,7 +7,7 @@ body {
     color: var(--white);
 }
 
-p, a {
+p, a, li {
     font-size: 1.6rem;
 }
 
@@ -49,9 +49,14 @@ h3 {
 }
 
 .border-bottom--primary-clr {
-    // display: inline;
     border-bottom: 2px solid var(--primary-clr);
 }
+
+.border-bottom--secondary-clr {
+    border-bottom: 4px solid var(--secondary-clr);
+}
+
+
 
 .main-title {
     display: block;

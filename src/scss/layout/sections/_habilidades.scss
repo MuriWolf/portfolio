@@ -1,0 +1,32 @@
+@use "../../utilities/mixins" as mx;
+
+.habilidades {
+    background-color: var(--gray);
+}
+
+.habilidades__tecnologias {
+    gap: 5%;
+    & > * {
+        flex: 1;
+    }
+}
+
+.Tecnologias-icons {
+    gap: 2em;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.tecnologia-icon {
+    padding: 10px;
+    border: 4px solid var(--white);
+    background-color: var(--white);
+    border-radius: 8px;
+    flex: 1 1 100px;
+    max-width: 100px;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

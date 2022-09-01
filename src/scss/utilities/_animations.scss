@@ -1,0 +1,54 @@
+@mixin keyframes-animation($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@include keyframes-animation(vibrate1) {
+    0% {
+        -webkit-transform: translate(0);
+                transform: translate(0);
+      }
+      20% {
+        -webkit-transform: translate(-6px, 6px);
+                transform: translate(-6px, 6px);
+      }
+      40% {
+        -webkit-transform: translate(-6px, -6px);
+                transform: translate(-6px, -6px);
+      }
+      60% {
+        -webkit-transform: translate(6px, 6px);
+                transform: translate(6px, 6px);
+      }
+      80% {
+        -webkit-transform: translate(6px, -6px);
+                transform: translate(6px, -6px);
+      }
+      100% {
+        -webkit-transform: translate(0);
+                transform: translate(0);
+      }
+}
+
+@include keyframes-animation(flipDiagonal2Tl) {
+    0% {
+        -webkit-transform: rotate3d(-1, 1, 0, 0deg);
+                transform: rotate3d(-1, 1, 0, 0deg);
+      }
+      100% {
+        -webkit-transform: rotate3d(-1, 1, 0, -180deg);
+                transform: rotate3d(-1, 1, 0, -180deg);
+      }
+}
+
+@include keyframes-animation(flipDiagonal2br) {
+    0% {
+        -webkit-transform: rotate3d(-1, 1, 0, 0deg);
+                transform: rotate3d(-1, 1, 0, 0deg);
+    }
+    100% {
+        -webkit-transform: rotate3d(-1, 1, 0, 180deg);
+                transform: rotate3d(-1, 1, 0, 180deg);
+    }
+}

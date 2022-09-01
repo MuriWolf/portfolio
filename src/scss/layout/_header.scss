@@ -2,12 +2,18 @@
 
 header {
     border-bottom: 3px solid var(--secondary-clr);
-    padding: 1em 0;
+    width: 100%;
+    // padding: 1em 0;
+    opacity: 0.95;
     background-color: var(--primary-clr);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.383);
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 .header-content {
+    max-height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;

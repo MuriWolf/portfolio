@@ -1,0 +1,26 @@
+@use "../../utilities/mixins" as mx;
+
+.intro {
+    margin-top: 87px;
+    height: 70vh;
+    max-height: 700px;
+    & > .container {
+        align-items: center;
+    }
+    & > .container > * {
+        flex: 1;
+    }
+}
+
+.intro-img {
+    animation: vibrate1 5s alternate infinite;
+    max-width: 70%;
+    min-width: 300px;
+    margin: 0 auto;
+    // animation: flipDiagonal2br 2.5s alternate infinite, flipDiagonal2Tl 5s alternate infinite;   
+}
+
+.intro-buttons {
+    justify-content: start;
+    gap: 2rem;
+} 

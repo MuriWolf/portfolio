@@ -7,7 +7,7 @@
     <meta name="author" content="Murillo Pinheiro de Oliveira">
     <meta name="description" content="Portfólio do desenvolvedor Frontend Murillo P. de Oliveira">
     <meta name="keywords" content="portfólio, html, css, sass, scss, javascript, desenvolvedor, desenvolvimento, frontend">
-    <link rel="stylesheet" href="./src/scss/style.css"> 
+    <link rel="stylesheet" href="./dist/css/style.min.css"> 
     <title>Portfólio | Murillo P. Oliveira</title>
 </head>
 <body>
@@ -17,9 +17,9 @@
             <nav>
                 <ul class="header-list">
                     <li class="header-list-item"><a class="header-list-link" href="#intro">Home</a></li>
-                    <li class="header-list-item"><a class="header-list-link" href="">Sobre</a></li>
-                    <li class="header-list-item"><a class="header-list-link" href="">Projetos</a></li>
-                    <li class="header-list-item"><a class="header-list-link" href="">Conhecimento</a></li>
+                    <li class="header-list-item"><a class="header-list-link" href="#sobre">Sobre</a></li>
+                    <li class="header-list-item"><a class="header-list-link" href="#projetos">Projetos</a></li>
+                    <li class="header-list-item"><a class="header-list-link" href="#habilidades">habilidades</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,7 +40,7 @@
         <section class="sobre" id="sobre">
             <div class="container d-flex">
                 <div class="profile-img">
-                    <img src="https://picsum.photos/id/1/300/300" alt="">
+                    <img class="img-border--dashed" src="https://picsum.photos/id/1/300/300" alt="">
                 </div>
                 <article class="section-text">
                     <h2 class="border-bottom--primary-clr uppercase">Sobre mim</h2>
@@ -52,34 +52,18 @@
         </section>
         <section class="projetos" id="projetos">
             <div class="container">
-                <h2 class="uppercase ">Projetos</h2>
+                <h2 class="uppercase border-bottom--secondary-clr">Projetos</h2>
                 <div class="projetos-wrapper d-flex">
                     <section class="projeto">
-                        <div class="projeto-img-container">
-                            <img src="https://picsum.photos/id/7/200/200" alt="">
-                        </div>
-                        <h3 class=" uppercase">Projeto name</h3>
-                        <p>Descricao, ipsum dolor sit amet consectetur adipisicing elit. Vel neque molestiae soluta exercitationem cupiditate veniam, quo rem alias molestias fugit doloremque, hic nisi unde quae? Magni corporis voluptas tempora. Assumenda.</p>
-                        <div class="tecnologias d-flex">
-                            <span class="tecnologia">HTML</span>
-                            <span class="tecnologia">CSS</span>
-                            <span class="tecnologia">Javacript</span>
-                        </div>
-                        <div class="projeto__buttons d-flex">
-                            <a class="btn btn-border btn--live-view" href="">Live View</a>
-                            <a class="btn btn-border btn--github" href="">Código Fonte</a>
-                        </div>
-                    </section>
-                    <section class="projeto">
-                        <div class="projeto-img-container">
+                        <div class="img-container img-container-border--drop-of-water img-border-clr--secondary img--hover-border-clr--primary">
                             <img src="https://picsum.photos/id/4/200/200" alt="">
                         </div>
                         <h3 class=" uppercase">Projeto name</h3>
                         <p>Descricao, ipsum dolor sit amet consectetur adipisicing elit. Vel neque molestiae soluta exercitationem cupiditate veniam, quo rem alias molestias fugit doloremque, hic nisi unde quae? Magni corporis voluptas tempora. Assumenda.</p>
-                        <div class="tecnologias d-flex">
-                            <span class="tecnologia">HTML</span>
-                            <span class="tecnologia">CSS</span>
-                            <span class="tecnologia">Javacript</span>
+                        <div class="projeto__tecnologias d-flex">
+                            <span class="tecnologia tecnologia--html">HTML</span>
+                            <span class="tecnologia tecnologia--css">CSS</span>
+                            <span class="tecnologia tecnologia--js">Javacript</span>
                         </div>
                         <div class="projeto__buttons d-flex">
                             <a class="btn btn-border btn--live-view" href="">Live View</a>
@@ -87,24 +71,103 @@
                         </div>
                     </section>
                     <section class="projeto">
-                        <div class="projeto-img-container">
-                            <img src="https://picsum.photos/id/22/200/200" alt="">
+                        <div class="img-container img-container-border--drop-of-water img-border-clr--secondary img--hover-border-clr--primary">
+                            <img src="https://picsum.photos/id/4/200/200" alt="">
                         </div>
                         <h3 class=" uppercase">Projeto name</h3>
                         <p>Descricao, ipsum dolor sit amet consectetur adipisicing elit. Vel neque molestiae soluta exercitationem cupiditate veniam, quo rem alias molestias fugit doloremque, hic nisi unde quae? Magni corporis voluptas tempora. Assumenda.</p>
-                        <div class="tecnologias d-flex">
-                            <span class="tecnologia">HTML</span>
-                            <span class="tecnologia">CSS</span>
-                            <span class="tecnologia">Javacript</span>
+                        <div class="projeto__tecnologias d-flex">
+                            <span class="tecnologia tecnologia--html">HTML</span>
+                            <span class="tecnologia tecnologia--css">CSS</span>
+                            <span class="tecnologia tecnologia--js">Javacript</span>
                         </div>
                         <div class="projeto__buttons d-flex">
                             <a class="btn btn-border btn--live-view" href="">Live View</a>
                             <a class="btn btn-border btn--github" href="">Código Fonte</a>
                         </div>
                     </section>
-
-
+                    <section class="projeto">
+                        <div class="img-container img-container-border--drop-of-water img-border-clr--secondary img--hover-border-clr--primary">
+                            <img src="https://picsum.photos/id/4/200/200" alt="">
+                        </div>
+                        <h3 class=" uppercase">Projeto name</h3>
+                        <p>Descricao, ipsum dolor sit amet consectetur adipisicing elit. Vel neque molestiae soluta exercitationem cupiditate veniam, quo rem alias molestias fugit doloremque, hic nisi unde quae? Magni corporis voluptas tempora. Assumenda.</p>
+                        <div class="projeto__tecnologias d-flex">
+                            <span class="tecnologia tecnologia--html">HTML</span>
+                            <span class="tecnologia tecnologia--css">CSS</span>
+                            <span class="tecnologia tecnologia--js">Javacript</span>
+                        </div>
+                        <div class="projeto__buttons d-flex">
+                            <a class="btn btn-border btn--live-view" href="">Live View</a>
+                            <a class="btn btn-border btn--github" href="">Código Fonte</a>
+                        </div>
+                    </section>
+                    <section class="projeto">
+                        <div class="img-container img-container-border--drop-of-water img-border-clr--secondary img--hover-border-clr--primary">
+                            <img src="https://picsum.photos/id/4/200/200" alt="">
+                        </div>
+                        <h3 class=" uppercase">Projeto name</h3>
+                        <p>Descricao, ipsum dolor sit amet consectetur adipisicing elit. Vel neque molestiae soluta exercitationem cupiditate veniam, quo rem alias molestias fugit doloremque, hic nisi unde quae? Magni corporis voluptas tempora. Assumenda.</p>
+                        <div class="projeto__tecnologias d-flex">
+                            <span class="tecnologia tecnologia--html">HTML</span>
+                            <span class="tecnologia tecnologia--css">CSS</span>
+                            <span class="tecnologia tecnologia--js">Javacript</span>
+                        </div>
+                        <div class="projeto__buttons d-flex">
+                            <a class="btn btn-border btn--live-view" href="">Live View</a>
+                            <a class="btn btn-border btn--github" href="">Código Fonte</a>
+                        </div>
+                    </section>
                 </div>
+            </div>
+        </section>
+        <section class="habilidades" id="habilidades">
+            <div class="container">
+                <h2 class="uppercase border-bottom--primary-clr">Habilidades</h2>
+                <article>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, consequuntur in error, sapiente rerum incidunt possimus, eveniet vero deserunt ipsam eius ab. Soluta modi placeat quos aspernatur pariatur ab molestias?</p>
+                    <section class="habilidades__tecnologias d-flex">
+                        <div class="Tecnologias-icons d-flex">
+                            <div class="tecnologia-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                            </div>
+                            <div class="tecnologia-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                            </div>
+                            <div class="tecnologia-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                            </div>
+                            <div class="tecnologia-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                            </div>
+                            <div class="tecnologia-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg" />
+                            </div>
+                            <div class="tecnologia-icon">               
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                            </div>
+                            <div class="tecnologia-icon">                            
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
+                            </div>
+                            <div class="tecnologia-icon">                         
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" />
+                            </div>
+                            <div class="tecnologia-icon">                                  
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+                            </div>
+                            <div class="tecnologia-icon">               
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                            </div>
+                            <div class="tecnologia-icon">               
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                            </div>
+                        </div>
+                        <div class="Tecnologias-desc">
+                            <h2>Nome tecnologia</h2>
+                            <p>Descricao e minha experiencia Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia consequatur porro nobis facere et quaerat repellendus minima. Hic, possimus expedita.</p>
+                        </div>
+                    </section>
+                </article>
             </div>
         </section>
     </main>
