@@ -4,17 +4,16 @@
 }
 
 .img-container-border--drop-of-water {
-    border-radius: 0 36px 36px 36px;
+    border-radius: 0 46px 46px 46px;
     border-right: 4px inset;
     border-bottom: 4px inset;
-
+    transition: all 0.2s ease-in;
     &:hover {
-        border-right: 3px solid;
-        border-bottom: 3px solid;
+        border: 3px solid;
     }
     
     & > img {
-        border-radius: 0 36px 36px 36px;
+        border-radius: 0 46px 46px 46px;
         transition: all 0.5s ease-in-out;
         cursor: pointer;
         opacity: 0.8;

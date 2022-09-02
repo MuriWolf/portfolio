@@ -105,4 +105,4 @@ gulp.task("js", js);
 gulp.task("css", css);
 gulp.task("html", html);
 gulp.task("default", gulp.parallel(css));
-gulp.task("watch", gulp.parallel(browser_sync, watch_files));
+gulp.task("watch", gulp.parallel(browser_sync, "default", watch_files));

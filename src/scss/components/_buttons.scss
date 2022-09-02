@@ -23,7 +23,7 @@
         position: absolute;
         z-index: -1;
         inset: -3px;
-        background-size: 200%;
+        background-size: 50% 300%;
         border-radius: 8px;
     }
 } 
@@ -36,7 +36,18 @@
         background: linear-gradient(to left, var(--github-clr), var(--github-clr--dark))
     }
     &::before {
-        background: linear-gradient(to left, var(--github-clr), var(--github-clr--dark));
+        background: linear-gradient(to left, var(--github-clr), var(--github-clr--dark)) no-repeat;
+        animation: background 2s ease alternate infinite;
+    }
+}
+
+@keyframes background {
+    from {
+        background-position: 0 50%;
+    }
+    
+    to {
+        background-position: 100% 50%;
     }
 }
 
