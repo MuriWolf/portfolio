@@ -23,7 +23,6 @@
         position: absolute;
         z-index: -1;
         inset: -3px;
-        background-size: 50% 300%;
         border-radius: 8px;
     }
 } 
@@ -32,12 +31,26 @@
     background-color: var(--gray);
     transition: all 0.3s;
     
+    &::before {
+        background: linear-gradient(to left, var(--github-clr),  var(--primary-clr--dark), var(--github-clr--dark)) no-repeat;
+        background-size: 200%;
+        animation: background 3s ease alternate infinite;
+    }
     &:hover {
         background: linear-gradient(to left, var(--github-clr), var(--github-clr--dark))
     }
+}
+
+.btn--linkedin {
+    background-color: var(--gray);
+    transition: all 0.3s;
+    &:hover {
+        background: linear-gradient(to left, var(--linkedin-clr), var(--linkedin-clr--dark), var(--linkedin-clr--clear));
+    }
     &::before {
-        background: linear-gradient(to left, var(--github-clr), var(--github-clr--dark)) no-repeat;
-        animation: background 2s ease alternate infinite;
+        background: linear-gradient(to left, var(--linkedin-clr), var(--linkedin-clr--dark), var(--linkedin-clr--clear)) no-repeat;
+        background-size: 200%;
+        animation: background 3s ease alternate infinite;
     }
 }
 
@@ -59,17 +72,8 @@
         background: linear-gradient(to left, #006b00, #2edf2e)
     }
     &::before {
-        background: linear-gradient(to left, #006b00, #2edf2e);
-    }
-}
-
-.btn--linkedin {
-    background-color: var(--gray);
-    transition: all 0.3s;
-    &:hover {
-        background: linear-gradient(to left, var(--linkedin-clr), var(--linkedin-clr--clear));
-    }
-    &::before {
-        background: linear-gradient(to left, var(--linkedin-clr), var(--linkedin-clr--clear));
+        background: linear-gradient(to left, #006b00, #2edf2e) no-repeat;
+        background-size: 200%;
+        animation: background 3s ease alternate infinite;
     }
 }
