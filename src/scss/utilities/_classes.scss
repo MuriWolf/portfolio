@@ -2,3 +2,28 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: block;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.d-none {
+    display: none;
+} 
+
+.translateX-100 {
+    transform: translateX(100%);
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}

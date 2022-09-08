@@ -25,14 +25,14 @@ const paths = {
         watch: "src/scss/**/*.scss",
     },
     scripts: {
-        src: "script.js",
+        src: "main.js",
         dest: "./dist/js/",
         watch: "src/js/**/*.js",
         folder: "src/js/",
     },
     html: {
-        watch: "./src/*.html",
-        src: "./src/*.html",
+        watch: "./*.html",
+        src: "./*.html",
         dest: "./",
     },
     php: {
@@ -96,7 +96,7 @@ function html() {
 }
 
 function watch_files() {
-    // gulp.watch(paths.scripts.watch, gulp.series(js, reload))
+    gulp.watch(paths.scripts.watch, gulp.series(js, reload))
     gulp.watch(paths.styles.watch, gulp.series(css, reload))
     // gulp.watch(paths.html.watch, gulp.series(html, reload))
 }
@@ -104,5 +104,5 @@ function watch_files() {
 gulp.task("js", js);
 gulp.task("css", css);
 gulp.task("html", html);
-gulp.task("default", gulp.parallel(css));
-gulp.task("watch", gulp.parallel(browser_sync, "default", watch_files));
+gulp.task("default", gulp.parallel(css, js));
+gulp.task("watch", gulp.parallel(browser_sync, watch_files));

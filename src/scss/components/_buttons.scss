@@ -1,3 +1,5 @@
+@use "../utilities/mixins" as mx;
+
 .btn {
     background: none;
     border: none;
@@ -15,6 +17,23 @@
     font-size: 2.75rem;
 } 
 
+.btn-clr--primary {
+    background-color: var(--primary-clr) !important;
+}
+
+.btn-clr--secondary {
+    background-color: var(--secondary-clr) !important;
+}
+
+.btn-clr--gray {
+    background-color: var(--gray) !important;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    &:hover {
+        color: var(--gray);
+        background-color: var(--white) !important;
+    }
+}
+
 .btn-border {
     position: relative;
     border-radius: 8px;
@@ -22,7 +41,7 @@
         content: "";
         position: absolute;
         z-index: -1;
-        inset: -3px;
+        inset: -2px;
         border-radius: 8px;
     }
 } 
@@ -32,12 +51,12 @@
     transition: all 0.3s;
     
     &::before {
-        background: linear-gradient(to left, var(--github-clr),  var(--primary-clr--dark), var(--github-clr--dark)) no-repeat;
-        background-size: 200%;
-        animation: background 3s ease alternate infinite;
+        @include mx.move-color-btn(--github-clr, --primary-clr--dark, --github-clr--dark);
+        animation: moveBackground 3s ease alternate infinite;
     }
     &:hover {
-        background: linear-gradient(to left, var(--github-clr), var(--github-clr--dark))
+        @include mx.move-color-btn(--github-clr, --primary-clr--dark, --github-clr--dark);
+         animation: moveBackground 3s ease alternate infinite;
     }
 }
 
@@ -45,22 +64,12 @@
     background-color: var(--gray);
     transition: all 0.3s;
     &:hover {
-        background: linear-gradient(to left, var(--linkedin-clr), var(--linkedin-clr--dark), var(--linkedin-clr--clear));
+        @include mx.move-color-btn(--linkedin-clr, --linkedin-clr--dark, --linkedin-clr--clear);
+        animation: moveBackground 3s ease alternate infinite;
     }
     &::before {
-        background: linear-gradient(to left, var(--linkedin-clr), var(--linkedin-clr--dark), var(--linkedin-clr--clear)) no-repeat;
-        background-size: 200%;
-        animation: background 3s ease alternate infinite;
-    }
-}
-
-@keyframes background {
-    from {
-        background-position: 0 50%;
-    }
-    
-    to {
-        background-position: 100% 50%;
+        @include mx.move-color-btn(--linkedin-clr, --linkedin-clr--dark, --linkedin-clr--clear);
+        animation: moveBackground 3s ease alternate infinite;
     }
 }
 
@@ -68,12 +77,12 @@
     background-color: var(--gray);
     transition: all 0.3s;
     
-    &:hover {
-        background: linear-gradient(to left, #006b00, #2edf2e)
-    }
     &::before {
-        background: linear-gradient(to left, #006b00, #2edf2e) no-repeat;
-        background-size: 200%;
-        animation: background 3s ease alternate infinite;
+        @include mx.move-color-btn(--live-server-clr, --live-server-clr--dark, --live-server-clr--clear);
+        animation: moveBackground 3s ease alternate infinite;
+    }
+    &:hover {
+        @include mx.move-color-btn(--live-server-clr, --live-server-clr--dark, --live-server-clr--clear);
+        animation: moveBackground 3s ease alternate infinite;
     }
 }

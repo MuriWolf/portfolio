@@ -1,5 +1,10 @@
+@use "../../utilities/mixins" as mx;
+
 .sobre {
-    padding: 100px 0;
+    padding: 50px 0;
+    @include mx.for-size(md) {
+        padding: 100px 0;
+    }
     background-color: var(--gray);
     & > .container {
         padding: 20px;

@@ -9,11 +9,16 @@ body {
 
 p, a, li {
     font-size: 1.6rem;
+    line-height: 1.4;
 }
 
 a {
     text-decoration: none;
     color: var(--white);
+
+    // &:hover {
+    //     text-decoration: underline;
+    // }
 }
 
 h1 {
@@ -25,7 +30,23 @@ h2 {
 }
 
 h3 {
-    font-size: 2.15rem;
+    font-size: 2.1rem;
+}
+
+.font-sz--sm {
+    font-size: 1.3rem;
+}
+
+.font-sz--md {
+    font-size: 1.6rem;
+}
+
+.font-sz--lg {
+    font-size: 2.1rem;
+}
+
+.font-sz--xl {
+    font-size: 2.5rem;
 }
 
 .italic {
@@ -34,6 +55,17 @@ h3 {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.text-highlight {
+    color: var(--secondary-clr);
+    font-weight: 600;
+}
+
+.hover--underline {
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .text-indent {
@@ -46,6 +78,10 @@ h3 {
 }
 .text-secondary-clr {
     color: var(--secondary-clr);
+}
+
+.text-clr--dark-gray {
+    color: var(--dark-gray) !important;
 }
 
 .border-bottom--primary-clr {
@@ -61,6 +97,7 @@ h3 {
     font-size: 2.25rem;
     line-height: 1.5;
     text-transform: uppercase;
+    animation: trackingInExpand 3.5s ease;
 }
 
 .main-title::after {
@@ -69,30 +106,20 @@ h3 {
 
 .main-title__name {
     display: block;
+    position: relative;
+    max-width: 615px;
     font-family: var(--secondary-font);
     font-size: 3.25rem;
     color: var(--secondary-clr);
-    animation: trackingInExpand 2s, light_on_off 2.25s infinite alternate ease-in-out;
+    animation: light_on_off 2.25s infinite alternate ease-in-out;
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 1em;
+        margin-left: 6px;
+        background-color: var(--secondary-clr);
+        animation: flicker 0.6s infinite alternate, light_on_off 2.25s infinite alternate ease-in-out;
+        box-shadow: 0px 0px 10px var(--secondary-clr);
+    }
 }
-
-@keyframes light_on_off {
-    from {
-        text-shadow: 0px 0px 0px var(--secondary-clr);
-    }
-    to {
-        text-shadow: 0px 0px 10px var(--secondary-clr);
-    }
-}
-
-@keyframes trackingInExpand {
-    0% {
-      letter-spacing: -0.75em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }

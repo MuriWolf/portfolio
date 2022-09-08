@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
 
 :root {
@@ -10,8 +10,14 @@
     --primary-clr--clear: #B75CFF;
     --primary-clr: #8f00ff;
     --primary-clr--dark: #5C00A3;
+    --primary-clr--darker: #4b0084;
+
     --secondary-clr: #30f10e;
-    --secondary-clr--dark: #2ca816;
+    --secondary-clr--dark: #1f7510;
+
+    --live-server-clr: #1aba1a;
+    --live-server-clr--clear: #5df45d;
+    --live-server-clr--dark: #096909;
 
     --github-clr: #9534b1;
     --github-clr--dark: #5b2b8b;

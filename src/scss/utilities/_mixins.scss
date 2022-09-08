@@ -1,13 +1,19 @@
-@mixin for-size($range) {
-    $large: 800px;
-    $medium: 600px;
-    $small: 400px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+@mixin for-size($range, $type:"min") {
     
-    @if $range == large {
-        @media (min-width: #{$large}) { @content; }
-    } @else if $range == medium {
-        @media (min-width: #{$medium}) { @content; }
-    } @else if $range == small {
-        @media (min-width: #{$small}) { @content; }
+    @if $range == lg {
+        @media (#{$type}-width: #{$lg}) { @content; }
+    } @else if $range == md {
+        @media (#{$type}-width: #{$md}) { @content; }
+    } @else if $range == sm {
+        @media (#{$type}-width: #{$sm}) { @content; }
     }
+}
+
+@mixin move-color-btn($clr01, $clr02, $clr03 ) {
+    background: linear-gradient(to left, var($clr01),  var($clr02), var($clr03)) no-repeat;
+    background-size: 200%;
+    animation: background 3s ease alternate infinite;
 }

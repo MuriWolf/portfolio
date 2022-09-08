@@ -6,8 +6,12 @@ body {
 
 section {
     width: 100%;
-    padding: 50px 0;
-    scroll-margin-top: 85px;
+    padding: 25px 0;
+    @include mx.for-size(md) {
+        padding: 50px 0;
+
+    }
+    scroll-margin-top: 55px;
 }
 
 

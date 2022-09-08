@@ -1,10 +1,13 @@
+@use "../../utilities/mixins" as mx;
+
 .projetos {
-    // background-color: ;
-    background: linear-gradient(to bottom, var(--primary-clr), var(--primary-clr--dark));
+    background: linear-gradient(155deg, var(--primary-clr) 30%, var(--primary-clr--dark), var(--primary-clr--darker));
     & > .container {
         & > .projetos-wrapper {
-            justify-content: space-between;
-            gap: 40px;
+            display: grid; 
+            gap: 50px;
+            justify-items: center;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         }
     }
 }
@@ -12,18 +15,24 @@
 .projeto {
     background-color: var(--dark-gray);
     border-radius: 8px;
-    padding: 1.5em;
-    max-width: 325px;
-    flex: 1 1 300px;
+    
+    margin: 0 auto;
+    padding: 0;
+
     transition: all 0.3s;
-    box-shadow: 2px 8px 20px #00000043;
+    box-shadow: 2px 8px 26px #00000051;
+    transform: translateY(-1px);
     &:hover {
-        box-shadow: 0px 8px 0px var(--secondary-clr);
-        transform: translateY(-8px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.498);
+        transform: translateY(-12px);
     }
     & > p {
         color: var(--light-gray);
     }
+}
+
+.projeto__content {
+    padding: 1.5em;
 }
 
 .projeto__tecnologias {
@@ -35,5 +44,11 @@
 
 .projeto__buttons {
     justify-content: space-between;
+    gap: 2em;
+}
+
+.ver-mais__btns {
+    margin-top: 2em;
+    flex-direction: column;
     gap: 2em;
 }

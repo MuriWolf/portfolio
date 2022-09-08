@@ -1,50 +1,55 @@
 .img-container {
     overflow: hidden;
-
 }
 
-.img-container-border--drop-of-water {
-    border-radius: 0 46px 46px 46px;
-    border-right: 4px inset;
-    border-bottom: 4px inset;
-    transition: all 0.2s ease-in;
-    &:hover {
-        border: 3px solid;
-    }
+// .img-container-border--drop-of-water {
+//     border-radius: 0 46px 46px 46px;
+//     border-right: 4px inset;
+//     border-bottom: 4px inset;
+//     transition: all 0.2s ease-in;
+//     &:hover {
+//         border: 3px solid;
+//     }
     
-    & > img {
-        border-radius: 0 46px 46px 46px;
-        transition: all 0.5s ease-in-out;
-        cursor: pointer;
-        opacity: 0.8;
-        transform: scale(1.025);
-    }
-    & > img:hover {
-        transform: scale(1.1);
-        opacity: 1;
-    }
+//     & > img {
+//         border-radius: 0 46px 46px 46px;
+//         transition: all 0.5s ease-in-out;
+//         cursor: pointer;
+//         opacity: 0.8;
+//         transform: scale(1.025);
+//     }
+//     & > img:hover {
+//         transform: scale(1.1);
+//         opacity: 1;
+//     }
+// }
+
+.img-border--bottom {
+    border-bottom: 2px solid;
+}
+
+.img-container-bordered--top {
+    border-radius: 8px 8px 0 0;
 }
 
 .img-border-clr--primary {
-    border-color: var(--primary-clr);
+    border-color: var(--primary-clr) !important;
 }
 
 .img-border-clr--secondary {
-    border-color: var(--secondary-clr);
-}
-
-.img--hover-border-clr--primary {
-    &:hover {
-        border-color: var(--primary-clr);
-    } 
-}
-
-.img--hover-border-clr--secondary {
-    &:hover {
-        border-color: var(--secondary-clr);
-    } 
+    border-color: var(--secondary-clr) !important;
 }
 
 .img-border--dashed {
-    border: 2px dashed var(--secondary-clr);
+    border: 2px dashed;
+}
+
+.img-zoom {
+    & > img {
+        transition: transform 0.9s ease-out;
+    }
+    & > img:hover {
+        transform: scale(1.15);
+        opacity: 1;
+    }
 }
