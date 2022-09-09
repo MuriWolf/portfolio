@@ -1,10 +1,13 @@
 # portfolio
-Meu portifólio, nele contém informações sobre mim, projetos que desenvolvi e habilidades que possuo.
 
 ![image](https://user-images.githubusercontent.com/83728277/189268347-5f27ea8f-d969-4158-bb83-5b637283f603.png)
 
+## Descrição/description
+🇧🇷 Meu portifólio, nele contém informações sobre mim, projetos que desenvolvi e habilidades que possuo.
 
-Foi usado na construção desse projeto:
+🇺🇸 My portfolio, Contain informations about me, projects i have developed and abilities have.
+
+#### Foi usado na construção desse projeto/Was used in this project:
 
 - HTML
 - CSS
