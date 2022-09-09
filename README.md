@@ -5,7 +5,7 @@
 ## Descrição/description
 🇧🇷 Meu portifólio, nele contém informações sobre mim, projetos que desenvolvi e habilidades que possuo.
 
-🇺🇸 My portfolio, Contain informations about me, projects i have developed and abilities have.
+🇺🇸 My portfolio, contain informations about me, projects i have developed and abilities i have.
 
 #### Foi usado na construção desse projeto/Was used in this project:
 
