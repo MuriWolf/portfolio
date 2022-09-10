@@ -8,13 +8,9 @@
     <meta name="description" content="Portfólio do desenvolvedor Frontend Murillo P. de Oliveira">
     <meta name="keywords" content="portfólio, html, css, sass, scss, javascript, desenvolvedor, desenvolvimento, frontend"> 
     <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./dist/css/style.min.css"> 
+    <!-- <link rel="stylesheet" href="./dist/css/style.min.css">  -->
+    <link rel="stylesheet" href="./src/scss/style.css"> 
     <title>Portfólio | Murillo P. Oliveira</title>
-    <style>
-        .email {
-            
-        }
-    </style>
 </head>
 <body>
     <header class="header-lg" id="header">
@@ -26,6 +22,12 @@
                     <li class="header-list-item"><a class="header-list-link" href="#sobre">Sobre</a></li>
                     <li class="header-list-item"><a class="header-list-link" href="#projetos">Projetos</a></li>
                     <li class="header-list-item"><a class="header-list-link" href="#habilidades">habilidades</a></li>
+                    <li class="header-list-item">
+                        <div class="languages-icons">
+                            <a href="index.html"><img src="images/svgs/brazil.png" alt=""></a>
+                            <a href="languages/en/index.html"><img src="images/svgs/united-states.png" alt=""></a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <button class="open-nav-btn">
@@ -37,7 +39,7 @@
         <section class="intro d-flex" id="intro">
             <div class="container d-flex">
                 <div>
-                    <h1 class="main-title">Hello, world! Eu sou <span class="main-title__name"> </span><span class="italic border-bottom--primary-clr">desenvolvedor Front-end</span></h1>
+                    <h1 class="main-title">Hello, world! Eu sou <span class="main-title__name"><noscript>Murillo Pinheiro de Oliveira</noscript></span><span class="italic border-bottom--primary-clr">desenvolvedor Front-end</span></h1>
                     <div class="d-flex intro-buttons">
                         <a href="https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/" target="_blank"><button class="btn btn--md btn-border btn--linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a>
                         <a href="https://github.com/MuriWolf" target="_blank"><button class="btn btn--md btn-border btn--github"><i class="fa-brands fa-github"></i> GitHub</button></a>
@@ -138,7 +140,7 @@
                             <img src="images/projetos/intro-section-with-dropdown-navigation.png" alt="Pré vizualização do projeto: Seção de introdução com navegação dropdown">
                         </div>
                         <div class="projeto__content">
-                            <h3 class=" uppercase">Seção de introdução com navagação dropdown</h3>
+                            <h3 class=" uppercase">Seção de introdução com navegação dropdown</h3>
                             <p>Landing page simples e responsiva. Design do desafio feito pelo <a href="https://www.frontendmentor.io/" target="_blank"><span class="text-highlight hover--underline">Frontend Mentor</span></a>.</p>
                             <div class="projeto__tecnologias d-flex">
                                 <span class="tecnologia tecnologia--html">HTML</span>
@@ -463,12 +465,9 @@
                         </div>
                     </section>
                 </article>
-            </div>
+            </div> 
         </section>
     </main>
-
-    <!-- <a href="./languages/en/index.html">ver versao ingles</a> -->
-
     <footer class="footer">
         <div class="container d-flex">
             <h3>Desenvolvido por <a class="font-sz--lg text-secondary-clr hover--underline " href="https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/" target="_blank">MuriWolf</a></h3>

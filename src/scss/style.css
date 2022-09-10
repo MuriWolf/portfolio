@@ -754,10 +754,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2em;
 }
 
 .open-nav-btn {
   display: block;
+  cursor: pointer;
   background-color: transparent;
   border: none;
   color: var(--white);
@@ -768,10 +770,55 @@ header {
   }
 }
 
+.header-list {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  padding: 0;
+  background-color: var(--dark-gray);
+  border-radius: 0 0 0 8px;
+  border-bottom: 2px solid var(--secondary-clr);
+  list-style: none;
+  opacity: 1;
+  transition: transform 0.75s;
+  transform: translateX(100%);
+}
+.header-list > li {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header-list {
+    position: static;
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    border-bottom: none;
+    transform: translateX(0%);
+  }
+}
+@media (min-width: 992px) {
+  .header-list {
+    gap: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-list--smartphone {
+    transform: translateX(0%);
+  }
+}
+
 .header-list-item {
-  padding: 1em;
+  padding: 0.5em;
+  margin: 1em 2em;
   font-weight: 700;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .header-list-item {
+    margin: 0;
+  }
 }
 
 .header-list-link {
@@ -798,43 +845,6 @@ header {
   box-shadow: 0 0 20px var(--secondary-clr);
   opacity: 1;
   transform: translateX(0%);
-}
-
-.header-list {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  padding: 0;
-  background-color: var(--dark-gray);
-  border-radius: 0 0 0 8px;
-  border-bottom: 2px solid var(--secondary-clr);
-  list-style: none;
-  opacity: 1;
-  transition: transform 0.75s;
-  transform: translateX(100%);
-}
-.header-list > li {
-  margin: 1em 2em;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .header-list {
-    position: static;
-    display: flex;
-    background-color: inherit;
-    border-bottom: none;
-    transform: translateX(0%);
-  }
-  .header-list > li {
-    margin: 0 1em;
-  }
-}
-
-@media (max-width: 768px) {
-  .header-list--smartphone {
-    transform: translateX(0%);
-  }
 }
 
 .footer {
@@ -1274,4 +1284,20 @@ section {
 .img-zoom > img:hover {
   transform: scale(1.15);
   opacity: 1;
+}
+
+.languages-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.languages-icons > a {
+  min-width: 32px;
+  min-height: 32px;
+  max-width: 40px;
+  max-height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
