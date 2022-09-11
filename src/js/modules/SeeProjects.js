@@ -1,16 +1,33 @@
+let languageDocument = document.documentElement.lang;
+if (languageDocument == "pt-BR") {
+    languageDocument="pt";
+}
+
+let languageContent = {
+    en: {
+        seeMoreProjects: "See more",
+        seeLessProjects: "See less"
+    },
+    pt: {
+        seeMoreProjects: "Ver mais",
+        seeLessProjects: "Ver menos"
+    }
+
+}
+
 function seeMoreProjects(projetos, btn) {
-    if(btn.innerText == "Ver menos") {
-        seeLessProjects(projetos, btn);
+    if(btn.innerText == languageContent[languageDocument].seeLessProjects) {
+        seeLessProjects(projetos, btn );
     } else {
         projetos.forEach((projeto) => {
             projeto.classList.remove("d-none");
             projeto.classList.add("d-block");
         })
-        btn.innerText = "Ver menos";
+        btn.innerText = languageContent[languageDocument].seeLessProjects;
     }
 }
 function seeLessProjects(projetos, btn) {
-    if(btn.innerText == "Ver mais") {
+    if(btn.innerText == languageContent[languageDocument].seeMoreProjects) {
         seeMoreProjects(projetos, btn);
     } else {
         projetos.forEach((projeto, i) => {
@@ -19,7 +36,7 @@ function seeLessProjects(projetos, btn) {
             } else {
                 projeto.classList.add("d-none");
             }
-            btn.innerText = "Ver mais";
+            btn.innerText = languageContent[languageDocument].seeMoreProjects;
         })
     }
 }
