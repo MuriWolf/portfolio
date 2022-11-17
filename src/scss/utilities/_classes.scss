@@ -27,3 +27,11 @@
     display: block;
     margin: 0 auto;
 }
+
+.space-between {
+    justify-content: space-between !important;
+}
+
+.direction-column {
+    flex-direction: column !important;
+}

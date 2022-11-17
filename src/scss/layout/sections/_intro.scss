@@ -2,19 +2,22 @@
 
 .intro {
     margin-top: 60px;
-    // height: 50vh;
+    gap: 4em;
     @include mx.for-size(md) {
-        height: 70vh;
         margin-top: 90px;
     }
     max-height: 700px;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     & > .container {
         align-items: center;
         gap: 25px;
     }
     & > .container > * {
+        flex: 1;
+    }
+    & > * {
         flex: 1;
     }
 }
