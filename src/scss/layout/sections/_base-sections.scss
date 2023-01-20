@@ -22,3 +22,9 @@ section {
     box-sizing: border-box;
 }
 
+.title-section {
+    background: linear-gradient(32deg, var(--secondary-clr--dark), var(--secondary-clr));
+    // background-color: var(--secondary-clr--dark);
+    padding: 2px 10px; border-radius: 6px;
+    box-shadow: -2px 6px 12px rgba(0, 0, 0, 0.4);
+}
