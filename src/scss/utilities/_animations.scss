@@ -4,31 +4,51 @@
     }
 }
 
-@include keyframes-animation(vibrate1) {
+@include keyframes-animation(floating) {
     0% {
         -webkit-transform: translate(0);
                 transform: translate(0);
-      }
-      20% {
-        -webkit-transform: translate(-20px, 20px);
-                transform: translate(-20px, 20px);
-      }
-      40% {
-        -webkit-transform: translate(-10px, -10px);
-                transform: translate(-10px, -10px);
-      }
-      80% {
-        -webkit-transform: translate(20px, 20px);
-                transform: translate(20px, 20px);
-      }
-      100% {
-        -webkit-transform: translate(10px, -10px);
-                transform: translate(10px, -10px);
-      }
-      100% {
+    }
+    10% {
+        -webkit-transform: translate(-6px, -16px);
+                transform: translate(-6px, -16px);
+    }
+    20% {
+        -webkit-transform: translate(16px, -6px);
+                transform: translate(16px, -6px);
+    }
+    30% {
+        -webkit-transform: translate(-6px, 14px);
+                transform: translate(-6px, 24px);
+    }
+    40% {
+        -webkit-transform: translate(16px, 16px);
+                transform: translate(16px, 16px);
+    }
+    50% {
+        -webkit-transform: translate(-6px, -12px);
+                transform: translate(-6px, -12px);
+    }
+    60% {
+        -webkit-transform: translate(16px, -6px);
+                transform: translate(16px, -6px);
+    }
+    70% {
+        -webkit-transform: translate(-6px, 40px);
+                transform: translate(-6px, 40px);
+    }
+    80% {
+        -webkit-transform: translate(-12px, -10px);
+                transform: translate(-12px, -10px);
+    }
+    90% {
+        -webkit-transform: translate(16px, -6px);
+                transform: translate(16px, -6px);
+    }
+    100% {
         -webkit-transform: translate(0);
                 transform: translate(0);
-      }
+    }
 }
 
 @include keyframes-animation(flipDiagonal2Tl) {

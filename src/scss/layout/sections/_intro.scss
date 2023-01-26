@@ -27,7 +27,7 @@
     @include mx.for-size(md) {
         display: block;
     }
-    animation: vibrate1 7s alternate infinite;
+    animation: floating 26s ease-in-out both alternate infinite;
     max-width: 70%;
     min-width: 300px;
     margin: 0 auto;
