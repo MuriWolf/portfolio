@@ -1,0 +1,606 @@
+{
+    "techIcones": [
+        {
+            "id": 1,
+            "dataTechIcon": "tailwind",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+        },
+        {
+            "id": 2,
+            "dataTechIcon": "sass",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+        },
+        {
+            "id": 3,
+            "dataTechIcon": "bootstrap",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+        },
+        {
+            "id": 4,
+            "dataTechIcon": "typescript",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        },
+        {
+            "id": 5,
+            "dataTechIcon": "javascript",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        },
+        {
+            "id": 6,
+            "dataTechIcon": "jquery",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg"
+        },
+        {
+            "id": 7,
+            "dataTechIcon": "git",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+        },
+        {
+            "id": 8,
+            "dataTechIcon": "github",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+        },
+        {
+            "id": 9,
+            "dataTechIcon": "html",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        },
+        {
+            "id": 10,
+            "dataTechIcon": "css",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        },
+        {
+            "id": 11,
+            "dataTechIcon": "gulp",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg"
+        },
+        {
+            "id": 12,
+            "dataTechIcon": "npm",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+        },
+        {
+            "id": 13,
+            "dataTechIcon": "nodejs",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+        },
+        {
+            "id": 14,
+            "dataTechIcon": "php",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"
+        },
+        {
+            "id": 15,
+            "dataTechIcon": "python",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+        },
+        {
+            "id": 16,
+            "dataTechIcon": "mysql",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+        },
+        {
+            "id": 17,
+            "dataTechIcon": "vue",
+            "href": "#tech-desc",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+        }
+    ],
+    "techDesc": [
+        {
+            "id": 1,
+            "dataTechDesc": "html",
+            "titulo": {
+                "pt": "HTML",
+                "en": "HTML"
+            },
+            "sobre": {
+                "pt": "(Hypertext Markup Language) Linguagem de marcação usada como base de sites.",
+                "en": "(Hypertext Markup Language) Markup language used as the basis for websites."
+            },
+            "conhecimento": {
+                "pt": "Conheço as principais tags, funcionamento de formulários, tags semânticas e acessibilidade.",
+                "en": "I'm familiar with the main tags, form functionality, semantic tags, and accessibility."
+            }
+        },
+        {
+            "id": 2,
+            "dataTechDesc": "bootstrap",
+            "titulo": {
+                "pt": "Bootstrap",
+                "en": "Bootstrap"
+            },
+            "sobre": {
+                "pt": "Framework CSS amplamente usado.",
+                "en": "Widely used CSS framework."
+            },
+            "conhecimento": {
+                "pt": "Conheço suas principais utilidades e como usá-las (layout, componentes, utilidades, conteúdo, etc.).",
+                "en": "I'm familiar with its main utilities and how to use them (layout, components, utilities, content, etc.)."
+            }
+        },
+        {
+            "id": 3,
+            "dataTechDesc": "css",
+            "titulo": {
+                "pt": "CSS",
+                "en": "CSS"
+            },
+            "sobre": {
+                "pt": "(Cascading Style Sheet) Linguagem de marcação usada na estilização de sites.",
+                "en": "(Cascading Style Sheet) Markup language used for website styling."
+            },
+            "conhecimento": {
+                "pt": "Conheço as principais propriedades, sistema grid, flexbox, animações, design responsivo e estrutura CSS.",
+                "en": "I'm familiar with the main properties, grid system, flexbox, animations, responsive design, and CSS structure."
+            }
+        },
+        {
+            "id": 4,
+            "dataTechDesc": "github",
+            "titulo": {
+                "pt": "Github",
+                "en": "Github"
+            },
+            "sobre": {
+                "pt": "Serviço que hospeda sistemas que utilizam o Git.",
+                "en": "Service that hosts systems using Git."
+            },
+            "conhecimento": {
+                "pt": "Entendo sua utilidade e uso.",
+                "en": "I understand its usefulness and usage."
+            }
+        },
+        {
+            "id": 5,
+            "dataTechDesc": "javascript",
+            "titulo": {
+                "pt": "Javascript",
+                "en": "Javascript"
+            },
+            "sobre": {
+                "pt": "Linguagem de programação usada em sites para adicionar mais interação e dinamicidade.",
+                "en": "Programming language used on websites to add more interaction and dynamism."
+            },
+            "conhecimento": {
+                "pt": "Conheço os principais usos, funções e utilidades. Sei as atualizações do Ecmascript 6 (como promessas, async, modules, arrow functions, etc.).",
+                "en": "I'm familiar with its main uses, functions, and utilities. I know the updates from ECMAScript 6 (such as promises, async, modules, arrow functions, etc.)."
+            }
+        },
+        {
+            "id": 6,
+            "dataTechDesc": "gulp",
+            "titulo": {
+                "pt": "Gulp",
+                "en": "Gulp"
+            },
+            "sobre": {
+                "pt": "Pacote Javascript que serve de automação de alguns processos do Front-end.",
+                "en": "JavaScript package that automates some Front-end processes."
+            },
+            "conhecimento": {
+                "pt": "Utilizando ele consigo: transformar SASS/SCSS em CSS, minificá-lo e mapeá-lo, minificá-lo Javacript e mapeá-lo, entre outras pequenas coisas.",
+                "en": "Using it, I can: transform SASS/SCSS into CSS, minify and map it, minify JavaScript and map it, among other small tasks."
+            }
+        },
+        {
+            "id": 7,
+            "dataTechDesc": "npm",
+            "titulo": {
+                "pt": "NPM",
+                "en": "NPM"
+            },
+            "sobre": {
+                "pt": "(Node package manager) Pacote de gerenciamento de módulos Javascript.",
+                "en": "(Node package manager) Package manager for JavaScript modules."
+            },
+            "conhecimento": {
+                "pt": "Conheço sua utilidade e funcionamento.",
+                "en": "I'm familiar with its usefulness and operation."
+            }
+        },
+        {
+            "id": 8,
+            "dataTechDesc": "php",
+            "titulo": {
+                "pt": "PHP",
+                "en": "PHP"
+            },
+            "sobre": {
+                "pt": "(Hypertext Preprocessor) Linguagem de programação que roda no lado do servidor, serve para deixar o site mais dinâmico.",
+                "en": "(Hypertext Preprocessor) Server-side programming language used to make websites more dynamic."
+            },
+            "conhecimento": {
+                "pt": "Conheço sua sintaxe, principais métodos e propriedades, sei fazer interação com formulários e outras coisas básicas.",
+                "en": "I'm familiar with its syntax, main methods and properties, and I can do interaction with forms and other basic tasks."
+            }
+        },
+        {
+            "id": 9,
+            "dataTechDesc": "sass",
+            "titulo": {
+                "pt": "SASS",
+                "en": "SASS"
+            },
+            "sobre": {
+                "pt": "Pré-processador CSS que adiciona algumas funcionalidades.",
+                "en": "CSS preprocessor that adds some functionalities."
+            },
+            "conhecimento": {
+                "pt": "Uso o pré-processador SASS com a sintaxe SCSS, conheço as principais utilidades e estruturação.",
+                "en": "I use the SASS preprocessor with the SCSS syntax, and I'm familiar with its main functionalities and structuring."
+            }
+        },
+        {
+            "id": 10,
+            "dataTechDesc": "git",
+            "titulo": {
+                "pt": "Git",
+                "en": "Git"
+            },
+            "sobre": {
+                "pt": "Sistema de controle de versão distribuído.",
+                "en": "Distributed version control system."
+            },
+            "conhecimento": {
+                "pt": "Conheço sua utilidade e funcionamento básico (clone, pull, push, merge, branch, etc.).",
+                "en": "I'm familiar with its usefulness and basic operation (clone, pull, push, merge, branch, etc.)."
+            }
+        },
+        {
+            "id": 11,
+            "dataTechDesc": "vue",
+            "titulo": {
+              "pt": "Vue.js",
+              "en": "Vue.js"
+            },
+            "sobre": {
+              "pt": "Um dos maiores frameworks de JavaScript, ao lado de React e Angular.",
+              "en": "One of the major JavaScript frameworks, alongside React and Angular."
+            },
+            "conhecimento": {
+              "pt": "Framework muito agradável de se trabalhar. Estou aprendendo ainda, mas já conheço o básico.",
+              "en": "A very pleasant framework to work with. I'm still learning, but I already know the basics."
+            }
+          },
+          {
+            "id": 12,
+            "dataTechDesc": "mysql",
+            "titulo": {
+              "pt": "MySQL",
+              "en": "MySQL"
+            },
+            "sobre": {
+              "pt": "Um dos bancos de dados mais utilizados no mundo.",
+              "en": "One of the most widely used databases in the world."
+            },
+            "conhecimento": {
+              "pt": "Conheço os comandos básicos e sei como integrá-lo com o PHP e Vue.js.",
+              "en": "I'm familiar with the basic commands and know how to integrate it with PHP and Vue.js."
+            }
+          },
+          {
+            "id": 13,
+            "dataTechDesc": "python",
+            "titulo": {
+              "pt": "Python",
+              "en": "Python"
+            },
+            "sobre": {
+              "pt": "Linguagem de programação utilizada em Big Data, Inteligência Artificial, Automação, Web, etc.",
+              "en": "A programming language used in Big Data, Artificial Intelligence, Automation, Web, etc."
+            },
+            "conhecimento": {
+              "pt": "Já estudei Python e conheço sua sintaxe e principais usos, como análise de dados, automação e Django.",
+              "en": "I have studied Python and I'm familiar with its syntax and main uses, such as data analysis, automation, and Django."
+            }
+          },
+          {
+            "id": 14,
+            "dataTechDesc": "mysql",
+            "titulo": {
+              "pt": "MySQL",
+              "en": "MySQL"
+            },
+            "sobre": {
+              "pt": "Um dos bancos de dados mais utilizados no mundo.",
+              "en": "One of the most widely used databases in the world."
+            },
+            "conhecimento": {
+              "pt": "Conheço os comandos básicos e sei como integrá-lo com o PHP e Vue.js.",
+              "en": "I'm familiar with the basic commands and know how to integrate it with PHP and Vue.js."
+            }
+          },          
+          {
+            "id": 15,
+            "dataTechDesc": "jquery",
+            "titulo": {
+              "pt": "jQuery",
+              "en": "jQuery"
+            },
+            "sobre": {
+              "pt": "Biblioteca JavaScript que já foi muito utilizada, principalmente em códigos mais antigos e específicos. Ainda é um bom facilitador de código.",
+              "en": "A JavaScript library that was widely used, especially in older and specific codebases. It is still a good code facilitator."
+            },
+            "conhecimento": {
+              "pt": "É bastante simples de aprender. Com uma semana de estudo, é possível dominar o básico.",
+              "en": "It's quite simple to learn. With just a week of study, one can grasp the basics."
+            }
+          },
+          {
+            "id": 16,
+            "dataTechDesc": "typescript",
+            "titulo": {
+              "pt": "TypeScript",
+              "en": "TypeScript"
+            },
+            "sobre": {
+              "pt": "Superset da linguagem JavaScript que adiciona tipagem estática opcional e outros recursos.",
+              "en": "A superset of the JavaScript language that adds optional static typing and other features."
+            },
+            "conhecimento": {
+              "pt": "Estou aprendendo TypeScript atualmente e já tenho conhecimento básico sobre sua sintaxe e uso em projetos Angular.",
+              "en": "I'm currently learning TypeScript and already have basic knowledge of its syntax and usage in Angular projects."
+            }
+          },
+          {
+            "id": 17,
+            "dataTechDesc": "tailwind",
+            "titulo": {
+              "pt": "Tailwind",
+              "en": "Tailwind"
+            },
+            "sobre": {
+              "pt": "Framework CSS feito de utilities, basicamente transforma toda a estilização em classes.",
+              "en": "A CSS framework built with utility classes, which essentially transforms all styling into classes."
+            },
+            "conhecimento": {
+              "pt": "Estou aprendendo Tailwind atualmente e explorando suas funcionalidades para estilizar rapidamente componentes em projetos web.",
+              "en": "I'm currently learning Tailwind and exploring its features to quickly style components in web projects."
+            }
+          }
+    ],
+    "projetos": [
+        {
+            "id": 1,
+            "nomePt": "Billy Design",
+            "nomeEn": "Billy Design",
+            "urlImagem": "images/projetos/billydesign.png",
+            "altImagem": "Pré vizualização do projeto: Weather Brazil",
+            "descricaoPt": "Trabalho que fiz para um amigo designer. Um site básico com propósito de divulgação de seu trabalho.",
+            "descricaoEn": "Work I did for a designer friend. A basic website for promoting his work.",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "SASS/SCSS"
+            ],
+            "livePreview": "https://billy-design.netlify.app",
+            "sourceCode": "https://github.com/MuriWolf/abilho-site"
+        },
+        {
+            "id": 2,
+            "nomePt": "Weather Brazil",
+            "nomeEn": "Weather Brazil",
+            "urlImagem": "images/projetos/weather-brazil.png",
+            "altImagem": "Pré vizualização do projeto: Weather Brazil",
+            "descricaoPt": "Ele basicamente pega a temperatura e informações relacionadas da cidade brasileira escolhida.",
+            "descricaoEn": "It basically retrieves the temperature and related information of the chosen Brazilian city.",
+            "livePreview": "https://muriwolf.github.io/weather-Brazil/",
+            "sourceCode": "https://github.com/MuriWolf/weather-Brazil",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "API",
+                "Bootstrap"
+            ]
+        },
+        {
+            "id": 3,
+            "nomePt": "Formulário de sign-up",
+            "nomeEn": "Sign-up Form",
+            "urlImagem": "images/projetos/intro-component-with-signup-form.png",
+            "altImagem": "Pré vizualização do projeto: Formulário de sign-up",
+            "descricaoPt": "Formulário simples de sign-up, design do desafio feito pelo Frontend Mentor.",
+            "descricaoEn": "Simple sign-up form, design from the challenge by Frontend Mentor.",
+            "livePreview": "https://muriwolf.github.io/Intro-component-with-sign-up-form/",
+            "sourceCode": "https://github.com/MuriWolf/Intro-component-with-sign-up-form",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "id:": 4,
+            "nomePt": "Calculadora de Gorjeta",
+            "nomeEn": "Tip Calculator",
+            "urlImagem": "images/projetos/tip-calculator.png",
+            "altImagem": "Pré vizualização do projeto: Calculadora de Gorjeta",
+            "descricaoPt": "Calculadora simples de gorjeta para auxiliar no cálculo de valores a serem pagos em restaurantes.",
+            "descricaoEn": "Simple tip calculator to assist in calculating amounts to be paid at restaurants.",
+            "livePreview": "https://muriwolf.github.io/tip-calculator/",
+            "sourceCode": "https://github.com/MuriWolf/tip-calculator",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "id:": 5,
+            "nomePt": "Seção de Introdução com Navegação Dropdown",
+            "nomeEn": "Introduction Section with Dropdown Navigation",
+            "urlImagem": "images/projetos/intro-section-with-dropdown-navigation.png",
+            "altImagem": "Pré vizualização do projeto: Seção de Introdução com Navegação Dropdown",
+            "descricaoPt": "Seção de introdução responsiva com navegação dropdown. Design do desafio feito pelo Frontend Mentor.",
+            "descricaoEn": "Responsive introduction section with dropdown navigation. Design challenge made by Frontend Mentor.",
+            "livePreview": "https://muriwolf.github.io/intro-section-with-dropdown-navigation/",
+            "sourceCode": "https://github.com/MuriWolf/intro-section-with-dropdown-navigation",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "id": 6,
+            "nomePt": "Freddy Fazbear's Pizza",
+            "nomeEn": "Freddy Fazbear's Pizza",
+            "urlImagem": "images/projetos/freddy-fazbear-pizza.png",
+            "altImagem": "Pré vizualização do projeto: Freddy Fazbear's Pizza",
+            "descricaoPt": "Projeto estático de uma pizzaria. Ainda não está responsivo. Projeto feito como lição na ETEC.",
+            "descricaoEn": "Static project of a pizzeria. Not yet responsive. Project done as a lesson at ETEC.",
+            "livePreview": "https://muriwolf.github.io/Freddy-Fazbears-Pizza/",
+            "sourceCode": "https://github.com/MuriWolf/Freddy-Fazbears-Pizza",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "id": 7,
+            "nomePt": "Projeto Android",
+            "nomeEn": "Android Project",
+            "urlImagem": "images/projetos/projeto-android.png",
+            "altImagem": "Pré vizualização do projeto: Projeto Android",
+            "descricaoPt": "Desafio proposto no curso de CSS e HTML do Curso em Vídeo, está responsivo.",
+            "descricaoEn": "Challenge proposed in the CSS and HTML course by Curso em Vídeo, it's responsive.",
+            "livePreview": "https://muriwolf.github.io/projeto-android/",
+            "sourceCode": "https://github.com/MuriWolf/projeto-android",
+            "tecnologias": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "id": 8,
+            "nomePt": "Cópia História de Tudo",
+            "nomeEn": "Copy of História de Tudo",
+            "urlImagem": "images/projetos/copia-historia-de-tudo.png",
+            "altImagem": "Pré vizualização do projeto: Cópia História de Tudo",
+            "descricaoPt": "Esse projeto é uma cópia do site História de Tudo, apenas alguns links funcionam já que ele foi feito apenas com o intuito de estudo, aprendi muitas coisas novas com ele. Está totalmente responsivo.",
+            "descricaoEn": "This project is a copy of the website História de Tudo, only a few links work as it was made for study purposes only. I learned a lot of new things with it. It's fully responsive.",
+            "livePreview": "",
+            "sourceCode": "",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "id": 9,
+            "nomePt": "Pré visualização de três cards",
+            "nomeEn": "Three Card Preview",
+            "urlImagem": "images/projetos/three_column-preview.png",
+            "altImagem": "Pré vizualização do projeto: Pré visualização de três cards",
+            "descricaoPt": "Projeto muito simples, porém ainda responsivo. Design do desafio feito pelo Frontend Mentor.",
+            "descricaoEn": "Very simple project, but still responsive. Design from the challenge by Frontend Mentor.",
+            "livePreview": "https://muriwolf.github.io/3-column-preview-card-component-main/",
+            "sourceCode": "https://github.com/MuriWolf/3-column-preview-card-component-main",
+            "tecnologias": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "id": 10,
+            "nomePt": "Blogr",
+            "nomeEn": "Blogr",
+            "urlImagem": "images/projetos/blogr.png",
+            "altImagem": "Pré vizualização do projeto: Blogr",
+            "descricaoPt": "Projeto de Landing page responsiva. Design do desafio feito pelo Frontend Mentor.",
+            "descricaoEn": "Responsive Landing page project. Design challenge by Frontend Mentor.",
+            "livePreview": "https://muriwolf.github.io/Blogr/",
+            "sourceCode": "https://github.com/MuriWolf/Blogr",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "SASS/SCSS"
+            ]
+        },
+        {
+            "id:": 11,
+            "nomePt": "Painel de Controle de Tempo",
+            "nomeEn": "Time Tracking Dashboard",
+            "urlImagem": "images/projetos/time-tracking-dashboard-main.png",
+            "altImagem": "Pré visualização do projeto: Painel de Controle de Tempo",
+            "descricaoPt": "Projeto que é um painel onde estão registradas a quantidade de horas de cada tarefa que a pessoa executa. É responsivo. Design do desafio feito pelo Frontend Mentor.",
+            "descricaoEn": "A project that is a dashboard where the amount of hours for each task that a person performs is recorded. It is responsive. Design challenge made by Frontend Mentor.",
+            "livePreview": "https://muriwolf.github.io/time-tracking-dashboard-main/",
+            "sourceCode": "https://github.com/MuriWolf/time-tracking-dashboard-main",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "id:": 12,
+            "nomePt": "Seção Grid",
+            "nomeEn": "Grid Section",
+            "urlImagem": "images/projetos/grid-section-main.png",
+            "altImagem": "Pré visualização do projeto: Seção Grid",
+            "descricaoPt": "Uma seção em grade composta por comentários. É responsiva. Design do desafio feito pelo Frontend Mentor.",
+            "descricaoEn": "A grid section composed of comments. It is responsive. Design challenge made by Frontend Mentor.",
+            "livePreview": "https://muriwolf.github.io/grid-section-main/",
+            "sourceCode": "https://github.com/MuriWolf/grid-section-main",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "id:": 13,
+            "nomePt": "FlexBlog",
+            "nomeEn": "FlexBlog",
+            "urlImagem": "images/projetos/flexblog.png",
+            "altImagem": "Pré visualização do projeto: FlexBlog",
+            "descricaoPt": "Projeto final do curso de Flexbox da Origamid. Foi muito bom para treinar minhas habilidades com Flexbox após ter aprendido a teoria.",
+            "descricaoEn": "Final project of the Flexbox course from Origamid. It was very good to practice my skills with Flexbox after learning the theory.",
+            "livePreview": "https://muriwolf.github.io/origamid_flexbox_project/",
+            "sourceCode": "https://github.com/MuriWolf/origamid_flexbox_project",
+            "tecnologias": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "id:": 14,
+            "nomePt": "WildBeast",
+            "nomeEn": "WildBeast",
+            "urlImagem": "images/projetos/widlbeast.png",
+            "altImagem": "Pré visualização do projeto: WildBeast",
+            "descricaoPt": "Projeto final do curso de Grid da Origamid. Com ele, pude colocar em prática o sistema de grid do CSS e entender melhor seu funcionamento.",
+            "descricaoEn": "Final project of the Grid course from Origamid. With it, I was able to put into practice the CSS grid system and better understand its functioning.",
+            "livePreview": "https://muriwolf.github.io/origamid_grid_project/",
+            "sourceCode": "https://github.com/MuriWolf/origamid_grid_project",
+            "tecnologias": [
+                "HTML",
+                "CSS"
+            ]
+        }
+    ]
+}

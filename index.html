@@ -1,543 +1,288 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio do desenvolvedor Frontend Web Murillo P. de Oliveira">
-    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./dist/css/style.min.css"> 
-    <title>Portfólio Frontend | Murillo Pinheiro Oliveira</title>
-</head>
-<body>
-    <header class="header-lg" id="header">
-        <div class="container header-content">
-            <h2>MuriWolf</h2>
-            <nav>
-                <ul class="header-list">
-                    <li class="header-list-item"><a class="header-list-link" href="#intro">Home</a></li>
-                    <li class="header-list-item"><a class="header-list-link" href="#sobre">Sobre</a></li>
-                    <li class="header-list-item"><a class="header-list-link" href="#projetos">Projetos</a></li>
-                    <li class="header-list-item"><a class="header-list-link" href="#habilidades">habilidades</a></li>
-                    <li class="header-list-item">
-                        <div class="languages-icons">
-                            <a href="https://murillooliveira.netlify.app"><img src="images/svgs/brazil.png" alt=""></a>
-                            <a rel="alternate" hreflang="en" href="https://murillooliveira.netlify.app/languages/en/index.html"><img src="images/svgs/united-states.png" alt=""></a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Portfólio do desenvolvedor Frontend Web Murillo P. de Oliveira">
+        <link rel="shortcut icon" href="images/favicons/favicon.ico"
+            type="image/x-icon">
+        <link rel="stylesheet" href="./dist/css/style.min.css">
+        <title>Portfólio Frontend | Murillo Pinheiro Oliveira</title>
+    </head>
+    <body>
+
+        <header class="header-lg" id="header">
+            <div class="container header-content">
+                <h2>MuriWolf</h2>
+                <nav>
+                    <ul class="header-list">
+                        <li class="header-list-item"><a class="header-list-link"
+                                href="#intro">Home</a></li>
+                        <li class="header-list-item"><a class="header-list-link"
+                                href="#sobre">Sobre</a></li>
+                        <li class="header-list-item"><a class="header-list-link"
+                                href="#projetos">Projetos</a></li>
+                        <li class="header-list-item"><a class="header-list-link"
+                                href="#habilidades">habilidades</a></li>
+                        <li class="header-list-item">
+                            <div class="languages-icons">
+                                <a href="https://murillooliveira.netlify.app"><img
+                                        src="images/svgs/brazil.png" alt></a>
+                                <a rel="alternate" hreflang="en"
+                                    href="https://murillooliveira.netlify.app/languages/en/index.html"><img
+                                        src="images/svgs/united-states.png" alt></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="open-nav-btn">
+                    <i class="fa-solid fa-bars fa-4x"></i>
+                </button>
+            </div>
+        </header>
+        <main id="app">
+            <section class="intro d-flex space-between" id="intro">
+                <div class="container d-flex">
+                    <div>
+                        <h1 class="main-title">Hello, world! Eu sou <span
+                                class="main-title__name"><noscript>Murillo
+                                    Pinheiro de Oliveira</noscript></span><span
+                                class="italic border-bottom--primary-clr">desenvolvedor
+                                Front-end</span></h1>
+                        <div class="d-flex intro-buttons">
+                            <a
+                                href="https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/"
+                                target="_blank"><button
+                                    class="btn btn--md btn-border btn--linkedin"><i
+                                        class="fa-brands fa-linkedin"></i>
+                                    Linkedin</button></a>
+                            <a href="https://github.com/MuriWolf"
+                                target="_blank"><button
+                                    class="btn btn--md btn-border btn--github"><i
+                                        class="fa-brands fa-github"></i> GitHub</button></a>
                         </div>
-                    </li>
-                </ul>
-            </nav>
-            <button class="open-nav-btn">
-                <i class="fa-solid fa-bars fa-4x"></i>
-            </button>
-        </div>
-    </header>
-    <main>
-        <section class="intro d-flex space-between"id="intro">
-            <div class="container d-flex">
-                <div>
-                    <h1 class="main-title">Hello, world! Eu sou <span class="main-title__name"><noscript>Murillo Pinheiro de Oliveira</noscript></span><span class="italic border-bottom--primary-clr">desenvolvedor Front-end</span></h1>
-                    <div class="d-flex intro-buttons">
-                        <a href="https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/" target="_blank"><button class="btn btn--md btn-border btn--linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a>
-                        <a href="https://github.com/MuriWolf" target="_blank"><button class="btn btn--md btn-border btn--github"><i class="fa-brands fa-github"></i> GitHub</button></a>
+                    </div>
+                    <div class="intro-img">
+                        <img style="display: block;"
+                            src="images/svgs/Software-Developer.svg"
+                            alt="Ilustração de um desenvolvedor de software.">
                     </div>
                 </div>
-                <div class="intro-img">
-                    <img style="display: block;" src="images/svgs/Software-Developer.svg" alt="Ilustração de um desenvolvedor de software.">
+                <div class="d-flex intro__ver-mais-container">
+                    <a class="uppercase" href="#sobre">Ver mais <i
+                            class="fa-solid fa-angles-down ver-mais-icon"></i></a>
                 </div>
-            </div>
-            <div class="d-flex intro__ver-mais-container">
-                <a class="uppercase" href="#sobre">Ver mais <i class="fa-solid fa-angles-down ver-mais-icon"></i></a>
-            </div>
-        </section>
-        <section class="sobre" id="sobre">
+            </section>
+            <section class="sobre" id="sobre">
+                <div class="container d-flex">
+                    <div class="profile-img">
+                        <img
+                            class="img-border--dashed img-border-clr--secondary "
+                            src="images/profile-img.jpg"
+                            alt="Foto de Murillo Pinheiro de Oliveira.">
+                    </div>
+                    <article class="section-text">
+                        <h2 class="uppercase title-section">Sobre mim</h2>
+                        <h3>Echaporã, São Paulo, Brasil</h3>
+                        <p>Olá, mundo! Meu nome é Murillo Pinheiro de Oliveira,
+                            sou programador Front-end, estudo programação a dois
+                            anos e gosto muito do que faço!</p>
+                        <p>
+                            Já realizei diversos projetos, que alguns podem ser
+                            vistos abaixo. Falando sem enrolação me considero
+                            <em class="text-highlight">criativo</em>, <em
+                                class="text-highlight">aberto a críticas</em>,
+                            <em class="text-highlight">atento aos detalhes</em>
+                            e sempre tentando ser melhor que ontem em qualquer
+                            da área da vida, inclusive programação. Falo <em
+                                class="text-highlight">português nativo</em>,
+                            <em class="text-highlight">inglês nível
+                                intermediário</em>, o básico do básico de
+                            japonês e pretendo estudar italiano em breve.
+                        </p>
+                        <p>Atualmente estou terminando o ensino médio, fazendo
+                            um curso de Desenvolvimento de Sistemas na <em
+                                class="text-highlight">ETEC Devisate</em>
+                            (Marilía, SP) e sempre estou fazendo cursos online.</p>
+                        <p>Caso queira entrar em contato comigo por email:
+                            <addres><em class="text-highlight"
+                                    style="user-select: all;">murillopo.dev@gmail.com</em></addres>
+                            ou pelo <addres><a
+                                    class="text-highlight hover--underline"
+                                    target="_blank" href="https://t.me/MuriWolf">Telegram</a></addres></p>
+                    </article>
+                </div>
+            </section>
+            <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+            <section class="projetos" id="projetos">
+                <div class="container">
+                    <h2 class="uppercase title-section">Projetos</h2>
+                    <div id="projetos-wrapper" class="projetos-wrapper">
+                        <section v-for="projeto in projetos" :key="projeto.id" class="projeto"> <!-- 001 -->
+                            <div
+                                class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
+                                <img :src="projeto.urlImagem" :alt="projeto.altImagem">
+                            </div>
+                            <div class="projeto__content">
+                                <h3 class=" uppercase">{{ projeto.nomePt }}</h3>
+                                <p>{{ projeto.descricaoPt }}</p>
+                                <div class="projeto__tecnologias d-flex">
+                                    <span class="tecnologia tecnologia--html">HTML</span>
+                                    <span class="tecnologia tecnologia--css">CSS</span>
+                                    <span class="tecnologia tecnologia--js">Javacript</span>
+                                    <span class="tecnologia tecnologia--sass">SASS/SCSS</span>
+                                </div>
+                                <div class="projeto__buttons d-flex">
+                                    <a class="btn btn-border btn--live-view" :href="projeto.livePreview" target="_blank"><i
+                                            class="fa-solid fa-eye"></i> Live
+                                        View</a>
+                                    <a class="btn btn-border btn--github" :href="projeto.sourceCode" target="_blank"><i
+                                            class="fa-solid fa-code-branch"></i>
+                                        Código Fonte</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <div class="ver-mais__btns d-flex">
+                        <a href="#projetos"><button
+                                class="btn btn--md btn-border btn-clr--secondary center js-ver-mais-btn text-clr--dark-gray "></button></a>
+                        <a href="https://github.com/MuriWolf?tab=repositories"
+                            target="_blank"><button
+                                class="btn btn--md btn-border btn-clr--gray center"><i
+                                    class="fa-brands fa-github"> </i> Ver
+                                repositórios no GitHub</button></a>
+                    </div>
+                </div>
+            </section>
+            <section class="habilidades " id="habilidades">
+                <div class="container">
+                    <h2 class="uppercase title-section">Habilidades</h2>
+                    <article>
+                        <p>Abaixo estão as tecnologias que tenho experiência e
+                            conhecimento, algumas mais que outras, porém, já fiz
+                            pelo menos um projeto usando cada uma delas.</p>
+                        <section class="habilidades__tecnologias d-flex">
+                            <div id="tecnologias-icons" class="tecnologias-icons d-flex">
+                                <div v-for="techIcone in techIcones" :key="techIcone.id" class="tecnologia-icon"
+                                    :data-tech-icon="techIcone.dataTechIcon">
+                                    <a href="#tech-desc">
+                                        <img
+                                            :src="techIcone.src"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tecnologias-desc" id="tech-desc">
+                                
+                                <h2 class="text-secondary-clr"
+                                    data-tech-desc="dafault">Passe o mouse sobre
+                                    o ícone para ver a descrição da tecnologia.</h2>
+                                <div v-for="techDesc in techDescs" :key="techDesc.id">
+                                    <h2 class="text-secondary-clr"
+                                        :data-tech-desc="techDesc.dataTechDesc">{{ techDesc.titulo.pt }}</h2>
+                                    <p class="font-sz--lg" :data-tech-desc="techDesc.dataTechDesc">{{ techDesc.sobre.pt }}</p>
+                                    <p class="font-sz--lg" :data-tech-desc="techDesc.dataTechDesc">{{ techDesc.conhecimento.pt }}</p>
+                                </div>
+
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
             <div class="container d-flex">
-                <div class="profile-img">
-                    <img class="img-border--dashed img-border-clr--secondary " src="images/profile-img.jpg" alt="Foto de Murillo Pinheiro de Oliveira.">
-                </div>
-                <article class="section-text">
-                    <h2 class="uppercase title-section">Sobre mim</h2>
-                    <h3>Echaporã, São Paulo, Brasil</h3>
-                    <p>Olá, mundo! Meu nome é Murillo Pinheiro de Oliveira, sou programador Front-end, estudo programação a dois anos e gosto muito do que faço!</p>
-                    <p>
-                        Já realizei diversos projetos, que alguns podem ser vistos abaixo. Falando sem enrolação me considero <em class="text-highlight">criativo</em>, <em class="text-highlight">aberto a críticas</em>, <em class="text-highlight">atento aos detalhes</em> e sempre tentando ser melhor que ontem em qualquer da área da vida, inclusive programação. Falo <em class="text-highlight">português nativo</em>, <em class="text-highlight">inglês nível intermediário</em>, o básico do básico de japonês e pretendo estudar italiano em breve.
-                    </p>
-                    <p>Atualmente estou terminando o ensino médio, fazendo um curso de Desenvolvimento de Sistemas na <em class="text-highlight">ETEC Devisate</em> (Marilía, SP) e sempre estou fazendo cursos online.</p>
-                    <p>Caso queira entrar em contato comigo por email: <addres><em class="text-highlight" style="user-select: all;">murillopo.dev@gmail.com</em></addres> ou pelo <addres><a class="text-highlight hover--underline" target="_blank" href="https://t.me/MuriWolf">Telegram</a></addres></p>
-                </article>
+                <h3 style="text-align: center;">2023 • Desenvolvido por <a
+                        class="font-sz--lg text-secondary-clr hover--underline "
+                        href="https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/"
+                        target="_blank">MuriWolf</a></h3>
+                <address class="foooter__icons d-flex">
+                    <a href="https://t.me/MuriWolf" target="_blank"><i
+                            class="fa-brands fa-telegram fa-3x"></i></a>
+                    <a
+                        href="https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/"
+                        target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                    <a href="https://github.com/MuriWolf" target="_blank"><i
+                            class="fa-brands fa-github fa-3x"></i></a>
+                    <a href="https://www.instagram.com/muriwolf/"
+                        target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+                    <a href="https://www.reddit.com/user/MuriWolf"
+                        target="_blank"><i class="fa-brands fa-reddit fa-3x"></i></a>
+                </address>
             </div>
-        </section>
-        <section class="projetos" id="projetos">
-            <div class="container">
-                <h2 class="uppercase title-section">Projetos</h2>
-                <div class="projetos-wrapper">
-                    <section class="projeto"> <!-- 001 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/billydesign.png" alt="Pré vizualização do projeto: Weather Brazil">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Billy Design</h3>
-                            <p>Trabalho que fiz para um amigo designer. Um site básico com propósito de divulgação de seu trabalho.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                                <span class="tecnologia tecnologia--js">Javacript</span>
-                                <span class="tecnologia tecnologia--sass">SASS/SCSS</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://billy-design.netlify.app" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/abilho-site" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="projeto"> <!-- 001 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/weather-brazil.png" alt="Pré vizualização do projeto: Weather Brazil">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Weather Brazil</h3>
-                            <p>Ele basicamente pega a temperatura e informações relacionadas da cidade brasileira escolhida.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                                <span class="tecnologia tecnologia--js">Javacript</span>
-                                <span class="tecnologia tecnologia--sass">SASS/SCSS</span>
-                                <span class="tecnologia tecnologia--api">API</span>
-                                <span class="tecnologia tecnologia--bootstrap">bootstrap</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/weather-Brazil/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/weather-Brazil" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
+        </footer>
+        <script>
+            const { createApp, ref, onMounted } = Vue;
+            
+            const projetosEL = createApp({
+                setup() {
+                    const projetos = ref([]);
+                    
+                    const fetchProjetos = async () => {
+                        try {
+                            const response = await fetch('/dados.json'); 
+                            const data = await response.json(); 
+                            projetos.value = data.projetos;
+                        } catch (error) {
+                            console.error('Erro ao carregar os projetos:', error);
+                        }
+                    };
+                    onMounted(fetchProjetos);
+                    return {
+                    projetos
+                    };
+                }
+            });
 
-                    <section class="projeto"> <!-- 002 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/intro-component-with-signup-form.png" alt="Pré vizualização do projeto: Formulário de sign-up">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Formulário de sign-up</h3>
-                            <p>Formulário simples de sign-up, design do desafio feito pelo <a href="https://www.frontendmentor.io/" target="_blank"><em class="text-highlight hover--underline">Frontend Mentor</em></a>.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                                <span class="tecnologia tecnologia--js">Javacript</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/Intro-component-with-sign-up-form/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/Intro-component-with-sign-up-form" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
+            const techIconsEL = createApp({
+                setup() {
+                    const techIcones = ref([]);
+                    
+                    const fetchProjetos = async () => {
+                        try {
+                            const response = await fetch('/dados.json'); 
+                            const data = await response.json(); 
+                            techIcones.value = data.techIcones;
+                        } catch (error) {
+                            console.error('Erro ao carregar os projetos:', error);
+                        }
+                    };
+                    onMounted(fetchProjetos);
+                    return {
+                        techIcones
+                    };
+                }
+            });
 
-                    <section class="projeto"> <!-- 003 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/advice-generator.png" alt="Pré vizualização do projeto: Gerador de dicas">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Gerador de dicas</h3>
-                            <p>Site que gera uma dica toda vez que o dado é clicado. Design do desafio feito pelo <a href="https://www.frontendmentor.io/" target="_blank"><em class="text-highlight hover--underline">Frontend Mentor</em></a>.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                                <span class="tecnologia tecnologia--js">Javacript</span>
-                                <span class="tecnologia tecnologia--api">API</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/Advice-generator-app/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/Advice-generator-app" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="projeto"> <!-- 004 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/intro-section-with-dropdown-navigation.png" alt="Pré vizualização do projeto: Seção de introdução com navegação dropdown">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Seção de introdução com navegação dropdown</h3>
-                            <p>Landing page simples e responsiva. Design do desafio feito pelo <a href="https://www.frontendmentor.io/" target="_blank"><em class="text-highlight hover--underline">Frontend Mentor</em></a>.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                                <span class="tecnologia tecnologia--js">Javacript</span>
-
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/Intro-section-with-dropdown-navigation/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/Intro-section-with-dropdown-navigation" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="projeto"> <!-- 005 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/three_column-preview.png" alt="Pré vizualização do projeto: Pré visualização de três cards">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Pré visualização de três cards</h3>
-                            <p>Projeto Muito simples, porém ainda responsivo. Design do desafio feito pelo <a href="https://www.frontendmentor.io/" target="_blank"><em class="text-highlight hover--underline">Frontend Mentor</em></a>.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/3-column-preview-card-component-main/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/3-column-preview-card-component-main" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="projeto"> <!-- 006 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/freddy-fazbear-pizza.png" alt="Pré vizualização do projeto: Freddy Fazbear's Pizza">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Freddy Fazbear's Pizza</h3>
-                            <p>Projeto estático de uma pizzaria. Ainda não está responsivo. Projeto feito como lição na ETEC.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                                <span class="tecnologia tecnologia--js">Javacript</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/Freddy-Fazbears-Pizza/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/Freddy-Fazbears-Pizza" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="projeto"> <!-- 007 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/projeto-android.png" alt="Pré vizualização do projeto: Projeto Android">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Projeto Android</h3>
-                            <p>Desafio proposto no curso de CSS e HTML do <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank"><em class="text-highlight hover--underline">Curso em Vídeo</em></a>, está responsivo. </p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/projeto-android/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/projeto-android" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="projeto"> <!-- 008 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/copia-historia-de-tudo.png" alt="Pré vizualização do projeto: Cópia História de Tudo">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Cópia História de Tudo</h3>
-                            <p>Esse projeto é uma cópia do site <a href="https://www.historiadetudo.com/" target="_blank"><span class="text-highlight hover--underline">História de Tudo</span></a>, apenas alguns links funcionam já que ele foi feito apenas com o intuito de estudo, aprendi muitas coisas novas com ele. Está totalmente responsivo.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                                <span class="tecnologia tecnologia--js">Javacript</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href=""><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href=""><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="projeto"> <!-- 009 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/blogr.png" alt="Pré vizualização do projeto: Blogr">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Blogr</h3>
-                            <p>Projeto de Landing page responsiva. Design do desafio feito pelo <a href="https://www.frontendmentor.io/" target="_blank"><em class="text-highlight hover--underline">Frontend Mentor</em></a>.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                                <span class="tecnologia tecnologia--js">Javacript</span>
-                                <span class="tecnologia tecnologia--sass">SASS/SCSS</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/Blogr/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/Blogr" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="projeto"> <!-- 010 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/tip-calculator.png" alt="Pré vizualização do projeto: Calculador de gorjeta">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Calculador de gorjeta</h3>
-                            <p>Projeto que calcula a gorjeta baseada em quantidade de pessoas, preço da comida e porcentagem da gorjeta. Design do desafio feito pelo <a href="https://www.frontendmentor.io/" target="_blank"><em class="text-highlight hover--underline">Frontend Mentor</em></a>.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                                <span class="tecnologia tecnologia--js">Javacript</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/calculator-app-main/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/calculator-app-main" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="projeto"> <!-- 011 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/time-tracking-dashboard-main.png" alt="Pré vizualização do projeto: Painel de controle de tempo">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Painel de controle de tempo</h3>
-                            <p>Projeto que é uma painel onde estão a quantidade de horas de cada tarefa que a pessoa executa. É responsivo. Design do desafio feito pelo <a href="https://www.frontendmentor.io/" target="_blank"><em class="text-highlight hover--underline">Frontend Mentor</em></a>.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                                <span class="tecnologia tecnologia--js">Javacript</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/time-tracking-dashboard-main/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/time-tracking-dashboard-main" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-  
-                    <section class="projeto"> <!-- 012 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/grid-section-main.png" alt="Pré vizualização do projeto: Seção grid">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Seção grid</h3>
-                            <p>Uma seção grid composta por comentários. É responsivo. Design do desafio feito pelo <a href="https://www.frontendmentor.io/" target="_blank"><em class="text-highlight hover--underline">Frontend Mentor</em></a>.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                                <span class="tecnologia tecnologia--js">Javacript</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/grid-section-main/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/grid-section-main" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- <section class="projeto"> 
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/profile-card-component.png" alt="Pré vizualização do projeto: ">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">Cartão de Perfil</h3>
-                            <p>Cartão simples de perfil, meu primeiro projeto feito utilizando usando Bootstrap. É responsivo. Design do desafio feito pelo <a href="https://www.frontendmentor.io/" target="_blank"><em class="text-highlight hover--underline">Frontend Mentor</em></a>.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                                <span class="tecnologia tecnologia--bootstrap">bootstrap</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/profile-card-component/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/profile-card-component" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section> -->
-
-                    <section class="projeto"> <!-- 014 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/flexblog.png" alt="Pré vizualização do projeto: FlexBlog">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">FlexBlog</h3>
-                            <p>Projeto final do curso de Flebox do <a href="https://www.origamid.com/" target="_blank"><em class="text-highlight hover--underline">Origamid</em></a>, foi muito bom para treinar minhas habilidades com Flexbox após eu ter aprendido a teoria.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/origamid_flexbox_project/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/origamid_flexbox_project" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="projeto"> <!-- 015 -->
-                        <div class="img-container img-container-bordered--top img-border--bottom border-clr--primary img-border-clr--secondary img-projeto img-zoom">
-                            <img src="images/projetos/widlbeast.png" alt="Pré vizualização do projeto: WildBeast">
-                        </div>
-                        <div class="projeto__content">
-                            <h3 class=" uppercase">WildBeast</h3>
-                            <p>Projeto final do curso de Grid do <a href="https://www.origamid.com/" target="_blank"><em class="text-highlight hover--underline">Origamid</em></a>, com ele pude colocar na prática o sistema grid do CSS e entender melhor seu funcionamento.</p>
-                            <div class="projeto__tecnologias d-flex">
-                                <span class="tecnologia tecnologia--html">HTML</span>
-                                <span class="tecnologia tecnologia--css">CSS</span>
-                            </div>
-                            <div class="projeto__buttons d-flex">
-                                <a class="btn btn-border btn--live-view" href="https://muriwolf.github.io/origamid_grid_project/" target="_blank"><i class="fa-solid fa-eye"></i> Live View</a>
-                                <a class="btn btn-border btn--github" href="https://github.com/MuriWolf/origamid_grid_project" target="_blank"><i class="fa-solid fa-code-branch"></i> Código Fonte</a>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
-                <div class="ver-mais__btns d-flex">                 
-                    <a href="#projetos"><button class="btn btn--md btn-border btn-clr--secondary center js-ver-mais-btn text-clr--dark-gray "></button></a>
-                    <a href="https://github.com/MuriWolf?tab=repositories" target="_blank"><button class="btn btn--md btn-border btn-clr--gray center"><i class="fa-brands fa-github"> </i> Ver repositórios no GitHub</button></a>
-                </div>
-            </div>
-        </section>
-        <section class="habilidades " id="habilidades">
-            <div class="container">
-                <h2 class="uppercase title-section">Habilidades</h2>
-                <article>
-                    <p>Abaixo estão as tecnologias que tenho experiência e conhecimento, algumas mais que outras, porém, já fiz pelo menos um projeto usando cada uma delas.</p>
-                    <section class="habilidades__tecnologias d-flex">
-                        <div class="tecnologias-icons d-flex">
-                            <div class="tecnologia-icon" data-tech-icon="vue">                         
-                                <a href="#tech-desc"><img  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"/></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="tailwind">                         
-                                <a href="#tech-desc">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
-                                  </a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="sass">                                  
-                                <a href="#tech-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" /></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="bootstrap">
-                                <a href="#tech-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" /></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="typescript">               
-                                <a href="#tech-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="javascript">               
-                                <a href="#tech-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="jquery">                         
-                                <a href="#tech-desc">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
-                                  </a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="git">               
-                                <a href="#tech-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" /></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="github">
-                                <a href="#tech-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="html">
-                                <a href="#tech-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="css">
-                                <a href="#tech-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="gulp">
-                                <a href="#tech-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg" /></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="npm">                            
-                                <a href="#tech-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" /></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="nodejs">               
-                                <a href="#tech-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" ></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="php">                         
-                                <a href="#tech-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" /></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="python">                         
-                                <a href="#tech-desc"><img  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" /></a>
-                            </div>
-                            <div class="tecnologia-icon" data-tech-icon="mysql">                         
-                                <a href="#tech-desc">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-                                  </a>
-                            </div>
-                        </div>
-                        <div class="tecnologias-desc" id="tech-desc">
-                            <h2 class="text-secondary-clr" data-tech-desc="dafault">Passe o mouse sobre o ícone para ver a descrição da tecnologia.</h2>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="html">HTML</h2>
-                            <p class="font-sz--lg" data-tech-desc="html">(Hypertext Markup Language) Linguagem de marcação usada como base de sites.</p>
-                            <p class="font-sz--lg" data-tech-desc="html">Conheço as principais tags, funcionamento de formulários, tags semânticas e acessibilidade.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="bootstrap">Bootstrap</h2>
-                            <p class="font-sz--lg" data-tech-desc="bootstrap">Framework CSS amplamente usado.</p>
-                            <p class="font-sz--lg" data-tech-desc="bootstrap">Conheço suas principais utilidades e como usá-las (layout, componentes, utilidades, conteúdo e etc..).</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="css">CSS</h2>
-                            <p class="font-sz--lg" data-tech-desc="css">(Cascading Style Sheet) Linguagem de marcação usada na estilização de sites.</p>
-                            <p class="font-sz--lg" data-tech-desc="css">Conheço as principais propriedades, sistema grid, flexbox, animações, design responsivo e estrutura CSS.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="github">Github</h2>
-                            <p class="font-sz--lg" data-tech-desc="github">Serviço que hospeda sistemas que utilizam o Git.</p>
-                            <p class="font-sz--lg" data-tech-desc="github">Entendo sua utilidade e uso.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="javascript">Javascript</h2>
-                            <p class="font-sz--lg" data-tech-desc="javascript">Linguagem de programação usada em sites para adicionar mais interação e dinamicidade.</p>
-                            <p class="font-sz--lg" data-tech-desc="javascript">Conheço os principais usos, funções e utilidades. Sei as atualizações do Ecmascript 6 (como promessas, async, modules, arrow functions e etc...).</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="gulp">Gulp</h2>
-                            <p class="font-sz--lg" data-tech-desc="gulp">Pacote Javascript que serve de automação de alguns processos do Front-end.</p>
-                            <p class="font-sz--lg" data-tech-desc="gulp">Utilizando ele consigo: transformar SASS/SCSS em CSS, minificá-lo e mapeá-lo, minificá-o Javacript e mapeá-lo, entre outras pequenas coisas.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="npm">NPM</h2>
-                            <p class="font-sz--lg" data-tech-desc="npm">(Node package manager) Pacote de gerencimento de módulos Javascript.</p>
-                            <p class="font-sz--lg" data-tech-desc="npm">Conheço sua utilidade e funcionamento.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="php">PHP</h2>
-                            <p class="font-sz--lg" data-tech-desc="php">(Hypertext Preprocessor) Linguagem de programação que roda no lado do servidor, serve para deixar o site mais dinâmico.</p>
-                            <p class="font-sz--lg" data-tech-desc="php">Conheço sua sintaxe, principais métodos e propriedades, sei fazer interação com formulários e outras coisas básicas.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="sass">SASS</h2>
-                            <p class="font-sz--lg" data-tech-desc="sass">Pré-processador CSS que adiciona algumas funcionalidades.</p>
-                            <p class="font-sz--lg" data-tech-desc="sass">Uso o pré-processador SASS com a sintaxe SCSS, conheço as principais utilidades e estruturação.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="git">Git</h2>
-                            <p class="font-sz--lg" data-tech-desc="git">Sistema de controle de versões, usado principalmente no desenvolvimento de software.</p>
-                            <p class="font-sz--lg" data-tech-desc="git">Sei seus principais comandos e funcionalidades como: enviar as atualizações para o github, clonar repositórios e etc.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="nodejs">NodeJS</h2>
-                            <p class="font-sz--lg" data-tech-desc="nodejs">Basicamente o Javacript rodando no lado do servidor ao invés do lado do cliente.</p>
-                            <p class="font-sz--lg" data-tech-desc="nodejs">Conheço o básico.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="python">Python</h2>
-                            <p class="font-sz--lg" data-tech-desc="python">Linguagem de programação utilizada em Big Data, Inteligencia Artificial, Automação, Web e etc.</p>
-                            <p class="font-sz--lg" data-tech-desc="python">Já Estudei ela, porém, não mexo mais. Sei sua sintaxes e principais usos, já estudei um pouco de análise de dados, automação e Django, porém, não me aprofundei.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="vue">Vue.js</h2>
-                            <p class="font-sz--lg" data-tech-desc="vue">Um dos maiores Frameworks de Javascript, ao lado de React e Angular.</p>
-                            <p class="font-sz--lg" data-tech-desc="vue">Framework muito gostoso de trabalhar, estou aprendendo ainda, mas o básico já sei.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="mysql">MySQL</h2>
-                            <p class="font-sz--lg" data-tech-desc="mysql">Um dos banco de dados mais usados no mundo.</p>
-                            <p class="font-sz--lg" data-tech-desc="mysql">Conheço os comandos básicos, nada avançando, sei integrar ele com o PHP e Vue.js.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="jquery">JQuery</h2>
-                            <p class="font-sz--lg" data-tech-desc="jquery">Biblioteca Javascript que já foi muito utilizada, hoje apenas em códigos mais antigos e específicos. Ainda sim é um bom facilitador de código.</p>
-                            <p class="font-sz--lg" data-tech-desc="jquery">Bem simples de se aprender, apenas uma semana bastou para eu consiguir aprender o principal.</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="tailwind">Tailwind</h2>
-                            <p class="font-sz--lg" data-tech-desc="tailwind">Framework CSS feito de utilities, basicamente transforma toda a estilização em classes.</p>
-                            <p class="font-sz--lg" data-tech-desc="tailwind">Ainda aprendendo...</p>
-
-                            <h2 class="text-secondary-clr" data-tech-desc="typescript">Typescript</h2>
-                            <p class="font-sz--lg" data-tech-desc="typescript">Superconjunto de Javascript, permite escrever JS com forte tipagem e com várias outras funcionalidades.</p>
-                            <p class="font-sz--lg" data-tech-desc=" typescript">Sei o principal e necessário, como tipos de tipagem, tipagens personalizadas, genéricos, tipos de tipos e entre outros.</p>
-                        </div>
-                    </section>
-                </article>
-            </div> 
-        </section>
-    </main> 
-    <footer class="footer">
-        <div class="container d-flex">
-            <h3 style="text-align: center;">2023 • Desenvolvido por <a class="font-sz--lg text-secondary-clr hover--underline " href="https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/" target="_blank">MuriWolf</a></h3>
-            <address class="foooter__icons d-flex">
-                <a href="https://t.me/MuriWolf" target="_blank"><i class="fa-brands fa-telegram fa-3x"></i></a>
-                <a href="https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/" target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
-                <a href="https://github.com/MuriWolf" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
-                <a href="https://www.instagram.com/muriwolf/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
-                <a href="https://www.reddit.com/user/MuriWolf" target="_blank"><i class="fa-brands fa-reddit fa-3x"></i></a>
-            </address>
-        </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/cbd566114a.js" crossorigin="anonymous"></script>
-    <script type="module" src="dist/js/main.min.js"></script>
-</body>
+            const techDescEL = createApp({
+                setup() {
+                    const techDescs = ref([]);
+                    
+                    const fetchProjetos = async () => {
+                        try {
+                            const response = await fetch('/dados.json'); 
+                            const data = await response.json(); 
+                            techDescs.value = data.techDesc;
+                        } catch (error) {
+                            console.error('Erro ao carregar os projetos:', error);
+                        }
+                    };
+                    onMounted(fetchProjetos);
+                    return {    
+                        techDescs
+                    };
+                }
+            });
+            
+            techIconsEL.mount('#tecnologias-icons');
+            projetosEL.mount('#projetos-wrapper');
+            techDescEL.mount('#tech-desc')
+            
+          </script>
+        <script src="https://kit.fontawesome.com/cbd566114a.js"
+            crossorigin="anonymous"></script>
+        <script type="module" src="dist/js/main.min.js"></script>
+    </body>
 </html>

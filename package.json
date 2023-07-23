@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/MuriWolf/portfolio#readme",
   "dependencies": {
+    "express": "^4.18.2",
     "package.json": "^2.0.1"
   },
   "devDependencies": {
