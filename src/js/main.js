@@ -15,6 +15,7 @@ dataTechDesc.forEach((desc => {
     } else {
         desc.classList.add("opacity-0");
         desc.classList.add("d-none");
+        
     }
 }))
 
