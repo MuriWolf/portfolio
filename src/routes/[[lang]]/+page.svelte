@@ -1,4 +1,5 @@
 <script>
+	export let data;
 	let darkTheme = false;
 	let techIcons = [
 		{
@@ -69,10 +70,10 @@
 		<div class="flex justify-between gap-4 items-center">
 			<nav>
 				<ol class="list-decimal flex gap-10 text-gray-50 text-lg">
-					<li>Intro</li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li>{data.content.nav[0]}</li>
+					<li><a href="#about">{data.content.nav[1]}</a></li>
+					<li><a href="#projects">{data.content.nav[2]}</a></li>
+					<li><a href="#contact">{data.content.nav[3]}</a></li>
 				</ol>
 			</nav>
 			<a href=".">
@@ -94,7 +95,7 @@
 	</div>
 </header>
 <main
-	class="bg-gradient-to-l from-dark-main-blue to-main-blue text-sm md:text-base relative"
+	class="bg-gradient-to-l from-dark-main-blue to-main-blue text-sm md:text-base lg:text-lg relative"
 >
 	<img src="waves.png" class="absolute top-0 rotate-180 w-full opacity-20" alt="" />
 	<section class="pt-32 w-[90%] h-screen mx-auto max-w-8xl relative">
@@ -103,12 +104,12 @@
 				<h1 class="text-3xl sm:text-5xl lg:text-[5rem] font-semibold mt-16">
 					<span
 						class="font-bold bg-gradient-to-r from-main-yellow to-main-green bg-clip-text fill-transparent bg-[size:100%] text-transparent bg-main-yellow"
-						>Hello,</span
+						>{data.content.heroTitle},</span
 					><br />
 					<span class="text-gray-100">content content,</span><br />
 					<span class="text-gray-300">content content content.</span>
 				</h1>
-				<h2 class="max-w-2xl mt-4 text-gray-200">
+				<h2 class="max-w-3xl mt-4 text-gray-200">
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit rerum voluptatem, molestiae
 					quibusdam accusamus corrupti rem perspiciatis itaque recusandae cumque odit iure maiores
 					ad dignissimos impedit iste! Consectetur, quas tempore.
@@ -128,7 +129,7 @@
 			<div class="profile-mold relative bg-red-400 h-[14.25rem]">
 				<img src="me.jpg" class="border-2 border-main-yellow h-full z-[1] relative" alt="" />
 			</div>
-			<article class="flex-[2] flex flex-col gap-8 text-gray-200">
+			<article class="flex-[2] flex flex-col gap-8 text-gray-300">
 				<p>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, optio ea. Expedita itaque,
 					aliquam nulla molestias natus quis similique, provident unde mollitia id porro a? Quis
@@ -147,28 +148,55 @@
 			</article>
 			<hr class="bg-main-yellow w-[2px] h-auto" />
 			<div class="flex-1">
-                <!-- <h4 class="text-center text-gray-50 text-xl font-semibold mb-4">Technologies I use :)</h4> -->
-                <div class=" grid grid-cols-4 gap-4">
-                    {#each techIcons as techIcon}
-                        <div
-                            class="rounded-xl from-light-main-blue to-main-blue bg-gradient-to-r flex justify-center items-center hover:scale-105 transition-all"
-                        >
-                            <img src={techIcon.src} class="h-[80%]" alt="" title={techIcon.name} />
-                        </div>
-                    {/each}
-                </div>
-            </div>
+				<!-- <h4 class="text-center text-gray-50 text-xl font-semibold mb-4">Technologies I use :)</h4> -->
+				<div class=" grid grid-cols-4 gap-4">
+					{#each techIcons as techIcon}
+						<div
+							class="rounded-xl from-light-main-blue to-main-blue bg-gradient-to-r flex justify-center items-center hover:scale-105 transition-all"
+						>
+							<img src={techIcon.src} class="h-[80%]" alt="" title={techIcon.name} />
+						</div>
+					{/each}
+				</div>
+			</div>
 		</div>
 	</section>
-    <section class="pt-64 w-[90%] h-screen mx-auto max-w-8xl relative">
-        <h3 id="projects" class="text-gray-50 text-2xl">3. Projects</h3>
-        
-    </section>
-    <section class="pt-64 w-[90%] h-screen mx-auto max-w-8xl relative">
-        <h3 id="contact" class="text-gray-50 text-2xl">4. Contact</h3>
-    </section>
+	<section class="pt-64 w-[90%] h-screen mx-auto max-w-8xl relative">
+		<h3 id="projects" class="text-gray-50 text-2xl">3. Projects</h3>
+	</section>
+	<section class="pt-64 w-[90%] mx-auto max-w-8xl relative pb-32">
+		<h3 id="contact" class="text-gray-50 text-2xl">4. Contact</h3>
+		<div class="relative mt-16">
+			<img src="blob.svg" class="absolute right-1/4 -top-[110%] z-[0]" alt="" />
+			<h2 class="text-7xl text-gray-50 font-semibold text-center z-[1] relative">Send me a message</h2>
+		</div>
+		<h3 class="text-xl text-gray-200 text-center max-w-3xl mx-auto mt-8 z-[1] relative">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam vel, odio
+			necessitatibus sint quos nemo quaerat autem 
+		</h3>
+		<section class="flex justify-center bg-main-blue shadow-2xl max-w-5xl mx-auto mt-16 rounded-xl overflow-hidden ">
+			<form action="" class="flex-1 p-7 rounded-xl flex flex-col gap-7">
+				<p>
+					<label for="" class="block text-gray-100 text-2xl font-bold mb-4">Name</label>
+					<input type="text" placeholder="Enter your name" class="bg-gray-50 text-gray-300 py-3 px-5 rounded-xl bg-opacity-20 w-full">
+				</p>
+				<p>
+					<label for="" class="block text-gray-100 text-2xl font-bold mb-4">Email</label>
+					<input type="text" placeholder="Enter your email" class="bg-gray-50  py-3 px-5 rounded-xl bg-opacity-20 w-full">
+				</p>
+				<p class="w-full">
+					<label for="" class="block text-gray-100 text-2xl font-bold mb-4">Text</label>
+					<textarea id="" rows="5" class="w-full bg-gray-50 bg-opacity-20 resize-none rounded-xl py-3 px-5" placeholder="Hey, i would to ask you something..." ></textarea>
+				</p>
+				<button class=" rounded-xl py-3 w-full bg-main-yellow font-bold text-2xl text-dark-main-blue">Send message!</button>
+			</form>
+			<div  class="flex-1 block bg-main-yellow fundo" >
+				<img src="contact.png" alt="">
+			</div>
+		</section>
+	</section>
 </main>
-<footer>d</footer>
+<footer><p /></footer>
 
 <style>
 	.profile-mold::before {
@@ -180,5 +208,9 @@
 		z-index: 0;
 		position: absolute;
 		border: 5px solid #ecd444;
+	}
+
+	.fundo {
+		background-color: #c9b43a;
 	}
 </style>
