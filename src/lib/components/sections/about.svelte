@@ -64,12 +64,12 @@
 
 
 <section class="pt-32 w-[90%] mx-auto max-w-8xl">
-    <h3 id="about" class="text-gray-50 text-2xl">II. About</h3>
+    <h3 id="about" class="dark:text-gray-50 text-gray-900 text-2xl">II. About</h3>
     <div class="flex gap-12 mt-16">
         <div class="profile-mold relative bg-red-400 h-[14.25rem]">
             <img src="me.jpg" class="border-2 border-main-yellow h-full z-[1] relative" alt="" />
         </div>
-        <article class="flex-[2] flex flex-col gap-8 text-gray-300">
+        <article class="flex-[2] flex flex-col gap-8 dark:text-gray-300 text-gray-600">
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, optio ea. Expedita itaque,
                 aliquam nulla molestias natus quis similique, provident unde mollitia id porro a? Quis
@@ -92,7 +92,7 @@
             <div class=" grid grid-cols-4 gap-4 select-none">
                 {#each techIcons as techIcon}
                     <div
-                        class="rounded-xl from-light-main-blue to-main-blue bg-gradient-to-r flex justify-center items-center hover:scale-105 transition-all"
+                        class="rounded-xl dark:from-light-main-blue dark:to-main-blue from-l-main-blue to-l-light-main-blue bg-gradient-to-r flex justify-center items-center hover:scale-105 transition-all"
                     >
                         <img src={techIcon.src} class="h-[80%]" alt="" title={techIcon.name} />
                     </div>

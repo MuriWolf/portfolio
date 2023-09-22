@@ -31,7 +31,7 @@
 		showModal = true;
 		stopScroll(true);
 	}}
-	class="bg-dark-main-blue rounded-xl overflow-hidden border-[5px] shadow-lg border-light-main-blue relative cursor-pointer"
+	class="dark:bg-dark-main-blue bg-l-main-blue rounded-xl overflow-hidden border-[5px] shadow-lg dark:border-light-main-blue border-x-l-main-blue border-y-l-main-blue relative cursor-pointer"
 >
 	<img
 		src="copia-historia-de-tudo.png"
@@ -44,7 +44,7 @@
 		
 			class="absolute -translate-x-2/4 left-1/2 top-1/2 -translate-y-1/2 z-[1] text-center w-full"
 		>
-			<h3 class="text-2xl text-gray-50 font-bold mb-4 font-merriweather">name of the project</h3>
+			<h3 class="text-2xl dark:text-gray-50 text-gray-800 font-bold mb-4 font-merriweather">name of the project</h3>
 			<button
 				class="bg-gradient-to-b from-main-yellow to-yellow-500 border-r-4 border-b-4 shadow-lg  border-main-blue text-dark-main-blue px-4 py-1 text-xl rounded-xl font-bold "
 				>See More</button

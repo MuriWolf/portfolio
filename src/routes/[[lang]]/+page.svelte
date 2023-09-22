@@ -1,5 +1,6 @@
 <script>
 	// @ts-nocheck
+	import { Body } from 'svelte-body';
 	import About from '$lib/components/sections/about.svelte';
 	import CustomSelect from '$lib/components/customSelect.svelte';
 	import Hero from '$lib/components/sections/hero.svelte';
@@ -7,6 +8,7 @@
 	import Projects from '$lib/components/sections/projects.svelte';
 	import Contact from '$lib/components/sections/contact.svelte';
 	import { browser } from '$app/environment';
+	import Footer from '$lib/components/sections/footer.svelte';
 	export let data;
 	const toggleDark = () => ($darkTheme = !$darkTheme);
 	$: dark = $darkTheme;
@@ -42,17 +44,18 @@
 </script>
 
 <svelte:window on:scroll={handleScroll} />
+<Body class="{dark ? 'bg-gradient-to-l  from-dark-main-blue to-main-blue' : 'bg-l-lighter-main-blue'} " />
 
-<header class="w-full hidden xl:block z-10 transition-all sticky {!showHeader && stickyHeader ? '-translate-y-full' : ''} {stickyHeader ? ' backdrop-blur-lg bg-opacity-30 top-0' : 'top-0 bg-opacity-50'}" class:dark bind:clientHeight={headerH}>
+<header class="w-full hidden xl:block z-10 transition-all sticky {!showHeader && stickyHeader ? '-translate-y-full' : ''} {stickyHeader ? ' backdrop-blur-lg bg-opacity-30 top-0' : 'top-0 bg-opacity-50'}" bind:clientHeight={headerH} class:dark>
 	<div class="max-w-8xl w-[90%] flex justify-between items-center py-4 mx-auto">
 		<div class="rounded-full h-16 w-16 bg-white" />
 		<div class="flex justify-between gap-4 items-center">
 			<nav>
-				<ol class="list-[upper-roman] flex gap-10 text-main-yellow text-lg">
-					<li><span class="text-gray-50">{data.content.nav[0]}</span></li>
-					<li><a href="#about" class="text-gray-50">{data.content.nav[1]}</a></li>
-					<li><a href="#projects" class="text-gray-50">{data.content.nav[2]}</a></li>
-					<li><a href="#contact" class="text-gray-50">{data.content.nav[3]}</a></li>
+				<ol class="list-[upper-roman] flex gap-10 dark:text-main-yellow text-dark-main-yellow text-lg">
+					<li><a href="#intro" class="dark:text-gray-50 text-gray-800">{data.content.nav[0]}</a></li>
+					<li><a href="#about" class="dark:text-gray-50 text-gray-800">{data.content.nav[1]}</a></li>
+					<li><a href="#projects" class="dark:text-gray-50 text-gray-800">{data.content.nav[2]}</a></li>
+					<li><a href="#contact" class="dark:text-gray-50 text-gray-800">{data.content.nav[3]}</a></li>
 				</ol>
 			</nav>
 			<a href="." class="items-center flex">
@@ -62,7 +65,7 @@
 						{ imgSrc: 'br.svg', title: 'Portuguese', href: '/pt' }
 					]}
 				>
-					<span class="material-symbols-outlined text-gray-50" slot="header"> translate </span>
+					<span class="material-symbols-outlined dark:text-gray-50 text-gray-800" slot="header"> translate </span>
 				</CustomSelect>
 			</a>
 			<button
@@ -79,6 +82,7 @@
 	</div>
 </header>
 <main
+	id="intro"
 	class:dark
 	class="text-sm md:text-base lg:text-lg relative"
 >
@@ -87,5 +91,9 @@
 	<Projects />
 	<Contact />
 </main>
+<footer class="flex justify-center items-center h-52 relative" class:dark>
+    <img src="waves.png" class="absolute bottom-0 w-full max-h-[500px] dark:opacity-10 opacity-30 z-0" alt="">
+    <h3 class="text-xl dark:text-gray-50 text-gray-800 text-center ">Developed and Designed by Myself<br/>2023</h3>
+</footer>
 
-<footer><p /></footer>
+<Footer />

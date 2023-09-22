@@ -16,13 +16,13 @@
 	class="bg-black bg-opacity-50 w-screen h-screen fixed z-10 flex justify-center items-center top-0 left-0"
 >
 	<div
-		class="rounded-xl flex items-start bg-gradient-to-bl from-light-main-blue to-main-blue p-6 w-[90%] max-w-5xl gap-6 relative"
+		class="rounded-xl flex items-start bg-gradient-to-bl dark:from-light-main-blue dark:to-main-blue from-l-light-main-blue to-l-main-blue p-6 w-[90%] max-w-5xl gap-6 relative"
 		use:clickOutside
 		on:click_outside={closeModal}
 		transition:scale={{ duration: 100 }}
 	>
 		<button
-			class="absolute top-0 right-0 rounded-sm rounded-tr-xl p-1 bg-ligher-main-blue"
+			class="absolute top-0 right-0 rounded-sm rounded-tr-xl p-1 dark:bg-ligher-main-blue bg-l-dark-main-blue"
 			on:click={closeModal}
 		>
 			<img src="close.svg" class="invert-[0.96]" alt="" />
@@ -30,12 +30,12 @@
 		<div class="flex-1 overflow-hidden rounded-xl rounded-tr-sm h-auto">
 			<img src="copia-historia-de-tudo.png" alt="" />
 		</div>
-		<div class="flex-1">
-			<h4 class="text-gray-50 text-2xl mb-3 font-merriweather mr-2">
+		<div class="flex-1	">
+			<h4 class="dark:text-gray-50 text-gray-600 text-2xl mb-3 font-merriweather mr-4">
 				name of the projectname of the project
 			</h4>
-			<div class="bg-gradient-to-br from-dark-main-blue to-main-blue shadow-inner  text-gray-50 p-4 rounded-xl">
-				<p class="text-gray-200">
+			<div class="bg-gradient-to-br dark:from-dark-main-blue dark:to-main-blue from-l-dark-main-blue to-l-main-blue shadow-inner dark:text-gray-50 text-gray-600 p-4 rounded-xl">
+				<p class="dark:text-gray-200 text-gray-500">
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ex sequi alias,
 					blanditiis recusandae aperiam aliquam labore error consectetur, officiis asperiores.Lorem
 					ipsum dolor sit, amet consectetur adipisicing elit.
