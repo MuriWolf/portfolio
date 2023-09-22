@@ -1,216 +1,91 @@
 <script>
+	// @ts-nocheck
+	import About from '$lib/components/sections/about.svelte';
+	import CustomSelect from '$lib/components/customSelect.svelte';
+	import Hero from '$lib/components/sections/hero.svelte';
+	import { darkTheme } from '../../store.js';
+	import Projects from '$lib/components/sections/projects.svelte';
+	import Contact from '$lib/components/sections/contact.svelte';
+	import { browser } from '$app/environment';
 	export let data;
-	let darkTheme = false;
-	let techIcons = [
-		{
-			name: 'Vue',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg'
-		},
-		{
-			name: 'Tailwind',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg'
-		},
-		{
-			name: 'Sass',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg'
-		},
-		{
-			name: 'Bootstrap',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'
-		},
-		{
-			name: 'TypeScript',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
-		},
-		{
-			name: 'JavaScript',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
-		},
-		{
-			name: 'jQuery',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg'
-		},
-		{ name: 'Git', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-		{
-			name: 'GitHub',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
-		},
-		{
-			name: 'HTML',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
-		},
-		{
-			name: 'CSS',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
-		},
-		{ name: 'Gulp', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg' },
-		{
-			name: 'npm',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg'
-		},
-		{
-			name: 'Node.js',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
-		},
-		{ name: 'PHP', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg' },
-		{
-			name: 'Python',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'
-		},
-		{
-			name: 'MySQL',
-			src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg'
+	const toggleDark = () => ($darkTheme = !$darkTheme);
+	$: dark = $darkTheme;
+	let isScrolling = false;
+	let headerH;
+	let showHeader = false;
+	let stickyHeader = false;
+	let lastScrollPosition
+	let currentScrollPosition
+	if (browser) {
+		lastScrollPosition = window.scrollY;
+	}
+	function handleScroll() {
+		if (!isScrolling) {
+			isScrolling = true;
+
+			currentScrollPosition = window.scrollY;
+
+			if ((currentScrollPosition > headerH)) {
+				stickyHeader = true;
+				showHeader = currentScrollPosition > lastScrollPosition ? false : true;
+			} else {
+				stickyHeader = false;
+			}
+
+			lastScrollPosition = currentScrollPosition;
+
+			setTimeout(() => {
+				isScrolling = false;
+			}, 50);
 		}
-	];
+	}
 </script>
 
-<header class="absolute top-4 w-full hidden xl:block z-10">
-	<div class="max-w-8xl w-[90%] flex justify-between items-center mx-auto">
+<svelte:window on:scroll={handleScroll} />
+
+<header class="w-full hidden xl:block z-10 transition-all sticky {!showHeader && stickyHeader ? '-translate-y-full' : ''} {stickyHeader ? ' backdrop-blur-lg bg-opacity-30 top-0' : 'top-0 bg-opacity-50'}" class:dark bind:clientHeight={headerH}>
+	<div class="max-w-8xl w-[90%] flex justify-between items-center py-4 mx-auto">
 		<div class="rounded-full h-16 w-16 bg-white" />
 		<div class="flex justify-between gap-4 items-center">
 			<nav>
-				<ol class="list-decimal flex gap-10 text-gray-50 text-lg">
-					<li>{data.content.nav[0]}</li>
-					<li><a href="#about">{data.content.nav[1]}</a></li>
-					<li><a href="#projects">{data.content.nav[2]}</a></li>
-					<li><a href="#contact">{data.content.nav[3]}</a></li>
+				<ol class="list-[upper-roman] flex gap-10 text-main-yellow text-lg">
+					<li><span class="text-gray-50">{data.content.nav[0]}</span></li>
+					<li><a href="#about" class="text-gray-50">{data.content.nav[1]}</a></li>
+					<li><a href="#projects" class="text-gray-50">{data.content.nav[2]}</a></li>
+					<li><a href="#contact" class="text-gray-50">{data.content.nav[3]}</a></li>
 				</ol>
 			</nav>
-			<a href=".">
-				<i class="fa-solid fa-language text-gray-50 fa-2xl" />
+			<a href="." class="items-center flex">
+				<CustomSelect
+					items={[
+						{ imgSrc: 'us.svg', title: 'English', href: '/' },
+						{ imgSrc: 'br.svg', title: 'Portuguese', href: '/pt' }
+					]}
+				>
+					<span class="material-symbols-outlined text-gray-50" slot="header"> translate </span>
+				</CustomSelect>
 			</a>
 			<button
 				class="h-7 w-12 px-1 rounded-full bg-gray-50 border-[1px] border-gray-50 flex justify-between items-center relative"
-				on:click={() => (darkTheme = !darkTheme)}
+				on:click={toggleDark}
 			>
 				<i class="fas fa-moon text-gray-600" />
 				<i class="fas fa-sun text-yellow-600" />
 				<span
-					class="absolute bg-gray-900 rounded-full w-6 h-6 left-0 {darkTheme == true
-						? 'left-0'
-						: 'right-0'}"
+					class="absolute bg-gray-900 rounded-full w-6 h-6 dark:right-0 right-[1.35rem] transition-all"
 				/>
 			</button>
 		</div>
 	</div>
 </header>
 <main
-	class="bg-gradient-to-l from-dark-main-blue to-main-blue text-sm md:text-base lg:text-lg relative"
+	class:dark
+	class="text-sm md:text-base lg:text-lg relative"
 >
-	<img src="waves.png" class="absolute top-0 rotate-180 w-full opacity-20" alt="" />
-	<section class="pt-32 w-[90%] h-screen mx-auto max-w-8xl relative">
-		<div class="flex justify-between">
-			<div class="flex-[5]">
-				<h1 class="text-3xl sm:text-5xl lg:text-[5rem] font-semibold mt-16">
-					<span
-						class="font-bold bg-gradient-to-r from-main-yellow to-main-green bg-clip-text fill-transparent bg-[size:100%] text-transparent bg-main-yellow"
-						>{data.content.heroTitle},</span
-					><br />
-					<span class="text-gray-100">content content,</span><br />
-					<span class="text-gray-300">content content content.</span>
-				</h1>
-				<h2 class="max-w-3xl mt-4 text-gray-200">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit rerum voluptatem, molestiae
-					quibusdam accusamus corrupti rem perspiciatis itaque recusandae cumque odit iure maiores
-					ad dignissimos impedit iste! Consectetur, quas tempore.
-				</h2>
-			</div>
-			<!-- <div class="flex-2 hidden min-[1280px]:block">
-				<img src="Rock_On_R-Angle_A5.png" class=" -rotate-[80deg] scale-110" alt="" />
-			</div> -->
-		</div>
-		<a href="#about" class="block text-center mx-auto p-3 mt-64"
-			><i class="fa-solid fa-chevron-down fa-2xl text-gray-100" /></a
-		>
-	</section>
-	<section class="pt-32 w-[90%] mx-auto max-w-8xl">
-		<h3 id="about" class="text-gray-50 text-2xl">2. About</h3>
-		<div class="flex gap-12 mt-16">
-			<div class="profile-mold relative bg-red-400 h-[14.25rem]">
-				<img src="me.jpg" class="border-2 border-main-yellow h-full z-[1] relative" alt="" />
-			</div>
-			<article class="flex-[2] flex flex-col gap-8 text-gray-300">
-				<p>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, optio ea. Expedita itaque,
-					aliquam nulla molestias natus quis similique, provident unde mollitia id porro a? Quis
-					temporibus sit non facere?
-				</p>
-				<p>
-					Impedit sed non architecto adipisci. Praesentium, hic facilis laboriosam veritatis ratione
-					fuga cum illum consequatur adipisci eius tenetur, velit minima culpa alias rerum deleniti
-					dolorum. Omnis unde minus maxime reiciendis!
-				</p>
-				<p>
-					Reiciendis inventore, ad aliquid adipisci deserunt provident sequi iure, sed quas ab optio
-					atque vel qui exercitationem nobis obcaecati voluptates eligendi quo possimus maxime
-					delectus? Nobis perferendis eius vero ullam?
-				</p>
-			</article>
-			<hr class="bg-main-yellow w-[2px] h-auto" />
-			<div class="flex-1">
-				<!-- <h4 class="text-center text-gray-50 text-xl font-semibold mb-4">Technologies I use :)</h4> -->
-				<div class=" grid grid-cols-4 gap-4">
-					{#each techIcons as techIcon}
-						<div
-							class="rounded-xl from-light-main-blue to-main-blue bg-gradient-to-r flex justify-center items-center hover:scale-105 transition-all"
-						>
-							<img src={techIcon.src} class="h-[80%]" alt="" title={techIcon.name} />
-						</div>
-					{/each}
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="pt-64 w-[90%] h-screen mx-auto max-w-8xl relative">
-		<h3 id="projects" class="text-gray-50 text-2xl">3. Projects</h3>
-	</section>
-	<section class="pt-64 w-[90%] mx-auto max-w-8xl relative pb-32">
-		<h3 id="contact" class="text-gray-50 text-2xl">4. Contact</h3>
-		<div class="relative mt-16">
-			<img src="blob.svg" class="absolute right-1/4 -top-[110%] z-[0]" alt="" />
-			<h2 class="text-7xl text-gray-50 font-semibold text-center z-[1] relative">Send me a message</h2>
-		</div>
-		<h3 class="text-xl text-gray-200 text-center max-w-3xl mx-auto mt-8 z-[1] relative">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam vel, odio
-			necessitatibus sint quos nemo quaerat autem 
-		</h3>
-		<section class="flex justify-center bg-main-blue shadow-2xl max-w-5xl mx-auto mt-16 rounded-xl overflow-hidden ">
-			<form action="" class="flex-1 p-7 rounded-xl flex flex-col gap-7">
-				<p>
-					<label for="" class="block text-gray-100 text-2xl font-bold mb-4">Name</label>
-					<input type="text" placeholder="Enter your name" class="bg-gray-50 text-gray-300 py-3 px-5 rounded-xl bg-opacity-20 w-full">
-				</p>
-				<p>
-					<label for="" class="block text-gray-100 text-2xl font-bold mb-4">Email</label>
-					<input type="text" placeholder="Enter your email" class="bg-gray-50  py-3 px-5 rounded-xl bg-opacity-20 w-full">
-				</p>
-				<p class="w-full">
-					<label for="" class="block text-gray-100 text-2xl font-bold mb-4">Text</label>
-					<textarea id="" rows="5" class="w-full bg-gray-50 bg-opacity-20 resize-none rounded-xl py-3 px-5" placeholder="Hey, i would to ask you something..." ></textarea>
-				</p>
-				<button class=" rounded-xl py-3 w-full bg-main-yellow font-bold text-2xl text-dark-main-blue">Send message!</button>
-			</form>
-			<div  class="flex-1 block bg-main-yellow fundo" >
-				<img src="contact.png" alt="">
-			</div>
-		</section>
-	</section>
+	<Hero {data} />
+	<About />
+	<Projects />
+	<Contact />
 </main>
+
 <footer><p /></footer>
-
-<style>
-	.profile-mold::before {
-		content: '';
-		width: 100%;
-		height: 100%;
-		top: -20px;
-		left: -20px;
-		z-index: 0;
-		position: absolute;
-		border: 5px solid #ecd444;
-	}
-
-	.fundo {
-		background-color: #c9b43a;
-	}
-</style>

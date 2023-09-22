@@ -1,45 +1,57 @@
 <script>
+	// @ts-nocheck
+
 	import arrowComments from '$lib/assets/arrow-comments.svg';
-	// import { clickOutside } from '$lib/utilities/clickOutside.js';
-	import arrowDropDown from '$lib/assets/arrow_drop_down.svg';
+	import { clickOutside } from '$lib/utilities/clickOutside.js';
+	import { fade, slide } from 'svelte/transition';
 
 	// title, id
 	export let items;
-	export let placeholder = 'Place holder...';
-	// one two or three
-	export let styleType = 1;
 
 	let open = false;
-	let language = '';
-
 	function toggle() {
 		open = !open;
 	}
-
-	/**
-	 * @param {string} val
-	 */
-	function setItem(val) {
-		language = val;
-		open = false;
-	}
 </script>
-<!-- use:clickOutside on:click_outside={() => (open = false)} -->
-<div class="relative w-full focus:outline-0 focus:outline-none" >
-    <button
-        on:click|preventDefault={toggle}
-        class="flex w-full items-center justify-between rounded bg-white p-4 px-3 border-light-typo focus:outline-0 focus:outline-none focus:border-main-dark-blue {language
-            ? 'text-really-light-typo'
-            : 'text-light-typo'} border-[1px] {open && 'ring-blue-600'}"
-    >
-        <span class="break-keep line-clamp-1 text-left"
-            >{language === '' ? placeholder : language}</span
-        >
-        <img src={arrowComments} width="20" height="20" class="w-5 h-5 focus:outline-none" alt="dropdown arrow" />
-    </button>
 
+<!--  -->
+<div
+	class="relative w-full focus:outline-0 focus:outline-none"
+	use:clickOutside
+	on:click_outside={() => (open = false)}
+>
+	<button on:click|preventDefault={toggle}>
+		<slot name="header" />
+	</button>
+	{#if open}
+		<ul
+			in:slide={{ duration: 100 }}
+			out:fade={{ duration: 50 }}
+			class="z-10 absolute mt-3 w-full rounded bg-gray-50 ring-1 ring-gray-300 text-headline-color shadow-light min-w-[200px]"
+		>
+			{#if items}
+				{#each items as item}
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+					{#if item.href}
+						<li class="cursor-pointer select-none hover:bg-gray-200 text-main-blue font-semibold">
+							<a href={item.href} class="w-full h-fullp-4 p-3 flex">
+								<img src={item.imgSrc} class="w-8 mr-2 rounded-sm" alt="" />
+								<p>{item.title}</p>
+							</a>
+						</li>
+					{:else}
+						<li
+							class="cursor-pointer select-none p-4 py-3 hover:bg-gray-200 flex text-main-blue font-semibold"
+						>
+							{item.title}
+						</li>
+					{/if}
+				{/each}
+			{/if}
+		</ul>
+	{/if}
 </div>
-
 
 <style>
 	button:focus {
