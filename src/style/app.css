@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('montserrat'), url('/fonts/montserrat/Montserrat-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('montserrat'), url('/fonts/montserrat/Montserrat-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('montserrat'), url('/fonts/montserrat/Montserrat-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local('montserrat'), url('/fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'sora';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('sora'), url('/fonts/sora/Sora-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'sora';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('sora'), url('/fonts/sora/Sora-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'sora';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local('sora'), url('/fonts/sora/Sora-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'sora';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('sora'), url('/fonts/sora/Sora-Bold.woff2') format('woff2');
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
