@@ -4,7 +4,7 @@
 
 <section
 	id="hero"
-	class="col-span-2 px-16 pt-8 pb-24 bg-c-primary border-4 border-c-secondary rounded-3xl"
+	class="col-span-2 px-16 pt-8 pb-24 bg-c-primary border-4 border-c-secondary rounded-3xl shadow-claymorphism"
 >
 	<Header />
 	<hgroup>

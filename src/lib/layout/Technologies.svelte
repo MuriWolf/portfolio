@@ -22,7 +22,7 @@
     ]
 </script>
 
-<section id="technologies" class="gradient-dark-two py-10 px-6 rounded-3xl">
+<section id="technologies" class="gradient-dark-two py-10 px-8 rounded-3xl ">
     <h2 class="font-title font-bold text-3xl text-c-body-text mb-6">3. TECHNOLOGIES</h2>
     <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
     <div class="grid grid-cols-5 gap-8 mt-6">
@@ -35,7 +35,6 @@
                     <p>{item.title}</p>
                 </Tooltip.Content>
             </Tooltip.Root>
-        {/each}
-                  
+        {/each} 
     </div>
 </section>

@@ -1,10 +1,11 @@
 import { fontFamily } from "tailwindcss/defaultTheme";
+const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss').Config} */
 const config = {
 	darkMode: ["class"],
 	content: ["./src/**/*.{html,js,svelte,ts}"],
-  safelist: ["dark"],
+  	safelist: ["dark"],
 	theme: {
 		container: {
 			center: true,
@@ -14,6 +15,15 @@ const config = {
 			}
 		},
 		extend: {
+			textShadow: {
+				sm: '0 1px 2px var(--tw-shadow-color)',
+				DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+				lg: '0 8px 16px var(--tw-shadow-color)',
+			},
+			boxShadow: {
+				'claymorphism': 'inset -12px -8px 16px rgba(0, 0, 0, 0.225), inset 12px 8px 16px rgba(255, 255, 255, 0.1), 24px 24px 48px rgba(0, 0, 0, 0.25)',
+				'claymorphism-2': 'inset -10px -10px 14px rgba(0, 0, 0, 0.3), inset 10px 10px 12px rgba(255, 255, 255, 0.35), 0px 10px 48px rgba(173, 173, 173, 0.15)'
+			},
 			colors: {
 				'c-primary': '#5B5F97',
 				'c-secondary': '#E8AEB7',
@@ -67,6 +77,18 @@ const config = {
 			}
 		}
 	},
+	plugins: [
+		plugin(function ({ matchUtilities, theme }) {
+			matchUtilities(
+				{
+					'text-shadow': (value) => ({
+					textShadow: value,
+					}),
+				},
+				{ values: theme('textShadow') }
+				)
+		}),
+	],
 };
 
 export default config;
