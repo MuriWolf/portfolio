@@ -7,7 +7,7 @@
         {title: "Typescript", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"},
         {title: "Svelte", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"},
         {title: "Git", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"},
-        {title: "Tailwind", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"},
+        {title: "Tailwind", url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"},
         {title: "Figma", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"},
         {title: "Flutter", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"},
         {title: "JQuery", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"},
@@ -32,7 +32,7 @@
                     <img src={item.url} alt="" class="rounded-xl p-1" />
                 </Tooltip.Trigger>
                 <Tooltip.Content >
-                    <p>{item.title}</p>
+                    <p class="font-semibold">{item.title}</p>
                 </Tooltip.Content>
             </Tooltip.Root>
         {/each} 

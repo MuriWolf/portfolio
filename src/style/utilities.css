@@ -5,3 +5,8 @@
 .gradient-dark-two {
     background:  linear-gradient(158deg, #221627 25.77%, #110A14 52.8%, #221627 74.3%);
 }
+
+.gradient-form {
+    background:  linear-gradient(22deg, #a5a5a53d, #e8aeb71e, #A5A5A51e);
+}
+

@@ -1,8 +1,10 @@
 <script lang="ts">
 	import type { CarouselAPI } from './../components/ui/carousel/context';
+    import Autoplay from "embla-carousel-autoplay";
     import { AspectRatio } from "$lib/components/ui/aspect-ratio";
 	import Button from "$lib/components/ui/button/button.svelte";
     import * as Carousel from "$lib/components/ui/carousel/index";
+    import { Progress } from "$lib/components/ui/progress";
 
     let api: CarouselAPI;
     let count = 0;
@@ -15,6 +17,7 @@
             current = api.selectedScrollSnap() + 1;
         });
     }
+
 </script>
 
 <section id="projects" class="col-span-2 bg-c-primary border-4 border-c-secondary py-10 px-8 lg:px-16 rounded-3xl shadow-claymorphism" >
@@ -25,10 +28,17 @@
             skipSnaps: true,
             loop: true,
         }}
+        plugins={[
+            Autoplay({
+                delay: 2750,
+                stopOnMouseEnter: true,
+                stopOnInteraction: false
+            }),
+        ]}
         class="w-full"
     >
         <Carousel.Content>
-          {#each Array(5) as _, i (i)}
+          {#each Array(8) as _, i (i)}
             <Carousel.Item class="flex flex-col gap-5 lg:basis-1/2">
                 <AspectRatio ratio={16 / 9} class="bg-muted p-5 border-4 border-gray-700 rounded-3xl">
                     <img
@@ -37,7 +47,7 @@
                         class="rounded-md object-cover h-full w-full"
                     />
                 </AspectRatio>
-                <div class="flex flex-wrap justify-between gap-y-6 px-6 py-4 rounded-xl bg-c-background border-[1px] border-gray-400 shadow-claymorphism">
+                <div class="flex flex-wrap justify-between gap-y-6 px-6 py-4 rounded-xl bg-c-background border-[1px] border-gray-400 shadow-claymorphism-noshadow ">
                     <hgroup class="">
                         <h3 class="uppercase font-title text-c-body-text font-bold text-2xl">FORMULÁRIO DE SIGN UP</h3>
                         <p class="text-c-secondary text-xs">website</p>
@@ -50,14 +60,24 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="18" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" fill="#f7f7f7" /></svg>
                         </a>
                     </div>
-                    <Button class="bg-c-tertiary flex-1 w-full min-w-full block text-c-darker-background font-title font-semibold text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-c-tertiary hover:bg-c-tertiary active:scale-95 transition-all shadow-claymorphism-2">Discover More</Button>
+                    <Button class="bg-c-tertiary flex-1 w-full min-w-full block text-c-darker-background font-title font-semibold text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-c-tertiary hover:bg-c-tertiary hover:brightness-90 active:scale-95 transition-all shadow-claymorphism-2">Discover More</Button>
                 </div>
             </Carousel.Item>
           {/each}
         </Carousel.Content>
+        <footer class=" p-2 mt-6 flex items-center justify-center gap-4">
+            <Carousel.Previous style="all: unset;">
+                <button class="text-c-background active:scale-90 transition-all ease-in-out duration-150 flex" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" viewBox="0 0 256 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"/></svg>
+                </button>
+            </Carousel.Previous>
+            <Progress value={current} max={count} class="transition-all duration-500 max-w-96 shadow-md" />
+            <Carousel.Next style="all: unset;">
+                <button class="text-c-background active:scale-90 transition-all ease-in-out duration-150">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" viewBox="0 0 256 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg>
+                </button>
+            </Carousel.Next>
+        </footer>
       </Carousel.Root>
-      <footer class="bg-c-background p-2 mt-6 rounded-xl shadow-claymorphism">
-          <p class="text-center font-title font-semibold text-c-body-text text-lg">Project {current} / {count}</p>
-      </footer>
     
 </section>

@@ -31,6 +31,8 @@
 	on:keydown={handleKeyDown}
 	{...$$restProps}
 >
-	<ArrowLeft class="h-4 w-4" />
-	<span class="sr-only">Previous slide</span>
+	<slot>
+		<ArrowLeft class="h-4 w-4" />
+		<span class="sr-only">Previous slide</span>
+	</slot>
 </Button>

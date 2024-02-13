@@ -6,6 +6,7 @@
 	import Projects from '$lib/layout/Projects.svelte';
 	import Testimonials from '$lib/layout/Testimonials.svelte';
 	import Contact from '$lib/layout/Contact.svelte';
+	import Footer from '$lib/layout/Footer.svelte';
 </script>
 
 <main class="max-w-[1340px] mx-auto my-8">
@@ -16,12 +17,10 @@
 		<Projects />
 		<Testimonials />
 		<Contact />
-		
-		
 	</div>
 </main>
 
-<footer></footer>
+<Footer />
 
 <!-- <style>
 	:global(section) {

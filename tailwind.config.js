@@ -22,7 +22,10 @@ const config = {
 			},
 			boxShadow: {
 				'claymorphism': 'inset -12px -8px 16px rgba(0, 0, 0, 0.225), inset 12px 8px 16px rgba(255, 255, 255, 0.1), 24px 24px 48px rgba(0, 0, 0, 0.25)',
-				'claymorphism-2': 'inset -10px -10px 14px rgba(0, 0, 0, 0.3), inset 10px 10px 12px rgba(255, 255, 255, 0.35), 0px 10px 48px rgba(173, 173, 173, 0.15)'
+				'claymorphism-noshadow': 'inset -12px -8px 16px rgba(0, 0, 0, 0.225), inset 12px 8px 16px rgba(255, 255, 255, 0.1)',
+				'claymorphism-2': 'inset -10px -10px 14px rgba(0, 0, 0, 0.3), inset 10px 10px 12px rgba(255, 255, 255, 0.35), 0px 10px 48px rgba(173, 173, 173, 0.15)',
+				'neon': '0px 0px 15px var(--tw-shadow)',
+				'inner-md' : 'inset 0px 4px 12px var(--tw-shadow)'
 			},
 			colors: {
 				'c-primary': '#5B5F97',
