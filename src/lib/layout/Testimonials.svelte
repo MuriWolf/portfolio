@@ -40,7 +40,7 @@
         >
         <Carousel.Content>
             {#each Array(4) as _, i (i)}
-                <Carousel.Item class="basis-1/3 px-5 relative z-10">
+                <Carousel.Item class="basis-1/2 min-[960px]:basis-1/3 px-5 relative z-10">
                     <div class="py-6 px-7 rounded-md backdrop-blur-md bg-gradient-to-br from-[#f7f7f75d] hover:from-[#f7f7f744] to-[#f7f7f717] hover:to-[#E8AEB72c] transition-colors duration-500 text-c-body-text">
                         <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 7.5C0 3.35625 3.35625 0 7.5 0H8C9.10625 0 10 0.89375 10 2C10 3.10625 9.10625 4 8 4H7.5C5.56875 4 4 5.56875 4 7.5V8H8C10.2063 8 12 9.79375 12 12V16C12 18.2062 10.2063 20 8 20H4C1.79375 20 0 18.2062 0 16V14V12V7.5ZM16 7.5C16 3.35625 19.3563 0 23.5 0H24C25.1063 0 26 0.89375 26 2C26 3.10625 25.1063 4 24 4H23.5C21.5688 4 20 5.56875 20 7.5V8H24C26.2062 8 28 9.79375 28 12V16C28 18.2062 26.2062 20 24 20H20C17.7938 20 16 18.2062 16 16V14V12V7.5Z" fill="#E8AEB7"/>
@@ -72,5 +72,5 @@
             </footer>
         </Carousel.Root>
     </div>
-    <img src="Torus.png" alt="" class="absolute top-1/2 -translate-y-1/2 right-20 z-0"  draggable="false">
+    <img src="Torus.png" alt="" class="absolute top-1/2 -translate-y-1/2 right-20 z-0 hidden md:block"  draggable="false">
 </section>

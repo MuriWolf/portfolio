@@ -6,7 +6,7 @@
 <section id="contact" class="col-span-2 bg-c-background rounded-3xl py-10 px-8 lg:px-16">
     <h2 class="font-title font-bold text-3xl text-c-body-text mb-6">5. CONTACT</h2>
     <div class="relative max-w-4xl mx-auto mt-24 flex gap-8">
-        <form action="" class="relative flex flex-col gap-y-6 z-10 p-7 bg-gray-300 bg-opacity-20 rounded-3xl flex-[7] gradient-form backdrop-blur-md border-2 border-gray-600">
+        <form action="" class="relative flex flex-col gap-y-6 z-10 p-7 bg-gray-300 bg-opacity-10 rounded-3xl flex-[7] gradient-form backdrop-blur-md glass-border">
             <label class="text-c-body-text font-semibold">
                 <h3 class="text-lg">Your Name</h3>
                 <input required type="text" placeholder="Enter your name" class="input-form">
@@ -17,7 +17,7 @@
             </label>
             <label class="text-c-body-text font-semibold h-full">
                 <h3 class="text-lg">Your message</h3> 
-                <textarea required placeholder="Enter your email addres" rows="6" class="input-form"></textarea>
+                <textarea required placeholder="Enter your email addres" rows="6" class="input-form resize-none"></textarea>
             </label>
             <Button type="submit" class="bg-c-tertiary flex-1 w-full min-w-full block text-c-darker-background font-title font-bold text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-c-tertiary hover:bg-c-tertiary hover:brightness-90 active:scale-90 transition-all shadow-claymorphism-2">Shoot a Message </Button>
         </form>

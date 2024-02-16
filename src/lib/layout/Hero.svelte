@@ -4,11 +4,11 @@
 
 <section
 	id="hero"
-	class="col-span-2 px-16 pt-8 pb-24 bg-c-primary border-4 border-c-secondary rounded-3xl shadow-claymorphism"
+	class="col-span-2 px-8 md:px-16 pt-8 pb-24 bg-c-primary border-4 border-c-secondary rounded-3xl shadow-claymorphism"
 >
 	<Header />
 	<hgroup>
-		<h1 class="text-7xl mt-16 text-c-body-text font-title font-bold">
+		<h1 class="text-5xl lg:text-7xl mt-16 text-c-body-text font-title font-bold">
 			<span class="text-c-background">Olá, </span>sou<br />
 			Murillo Pinheiro de Oliveira,<br />
 			<span class="text-c-secondary">Web Dev.</span>

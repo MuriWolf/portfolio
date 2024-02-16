@@ -1,3 +1,4 @@
+
 .gradient-dark-one {
     background:  linear-gradient(135deg, #110A14 15%, #221627 48.5%, #110A14 86%);
 }
@@ -10,3 +11,23 @@
     background:  linear-gradient(22deg, #a5a5a53d, #e8aeb71e, #A5A5A51e);
 }
 
+/* .gradient-project-details {
+    background:  linear-gradient(to, #a5a5a53d, #e8aeb71e, #A5A5A51e);
+}  */
+
+.glass-border {
+    position: relative;
+    z-index: 1;
+}
+
+.glass-border::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+    z-index: -1;
+    background: linear-gradient(135deg, #f7f7f77a 0%, #f7f7f734 10%, #f7f7f71e 20%, #f7f7f70c 90%, #f7f7f77c);
+    border-radius: inherit;
+}

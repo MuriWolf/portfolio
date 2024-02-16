@@ -11,7 +11,6 @@
     .input-form {
         @apply block w-full mt-3 bg-[#ffffff1c] rounded-md p-3 hover:ring-2 focus:ring-2 duration-500 ease-in-out ring-c-body-text focus:outline-none transition-all shadow-inner-md shadow-[#0000004d] backdrop-blur-3xl placeholder:text-gray-300 placeholder:font-normal;
     }
-
 }
 
 /* Shadcn  */
@@ -82,12 +81,12 @@
   }
    
 @layer base {
-* {
-    @apply border-border;
-}
-body {
-    @apply bg-background text-foreground;
-}
+  * {
+      @apply border-border;
+  }
+  body {
+      @apply bg-background text-foreground;
+  }
 }
 /* Shadcn  */
 
@@ -127,6 +126,11 @@ body {
     font-family: 'montserrat', sans-serif;
     font-weight: 400;
     scroll-behavior: smooth;
+}
+
+
+* {
+  scroll-behavior: smooth;
 }
 
 ::-moz-selection { /* Code for Firefox */

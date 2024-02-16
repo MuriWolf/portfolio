@@ -7,13 +7,7 @@ const config = {
 	content: ["./src/**/*.{html,js,svelte,ts}"],
   	safelist: ["dark"],
 	theme: {
-		container: {
-			center: true,
-			padding: "2rem",
-			screens: {
-				"2xl": "1400px"
-			}
-		},
+	
 		extend: {
 			textShadow: {
 				sm: '0 1px 2px var(--tw-shadow-color)',
@@ -73,6 +67,9 @@ const config = {
 				lg: "var(--radius)",
 				md: "calc(var(--radius) - 2px)",
 				sm: "calc(var(--radius) - 4px)"
+			},
+			screens: {
+				"2xl": "1400px"
 			},
 			fontFamily: {
 				sans: [...fontFamily.sans],

@@ -22,16 +22,16 @@
     ]
 </script>
 
-<section id="technologies" class="gradient-dark-two py-10 px-8 rounded-3xl ">
+<section id="technologies" class="col-span-1 max-[956px]:col-span-2 gradient-dark-two py-10 px-8 rounded-3xl ">
     <h2 class="font-title font-bold text-3xl text-c-body-text mb-6">3. TECHNOLOGIES</h2>
     <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
-    <div class="grid grid-cols-5 gap-8 mt-6">
+    <div class="grid grid-cols-4 max-[700px]:grid-cols-5 max-[956px]:grid-cols-6 xl:grid-cols-5 gap-4 max-[700px]:gap-4 max-[956px]:gap-6 lg:gap-8 mt-6">
         {#each content as item}
-            <Tooltip.Root openDelay={400} >
+            <Tooltip.Root openDelay={400}>
                 <Tooltip.Trigger class="technologies__icon">
                     <img src={item.url} alt="" class="rounded-xl p-1" />
                 </Tooltip.Trigger>
-                <Tooltip.Content >
+                <Tooltip.Content sideOffset={12} >
                     <p class="font-semibold">{item.title}</p>
                 </Tooltip.Content>
             </Tooltip.Root>
