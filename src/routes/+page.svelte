@@ -8,8 +8,8 @@
 	import Footer from '$lib/layout/Footer.svelte';
 </script>
 
-<main class="max-w-[1340px] w-full mx-auto my-8">
-	<div class="grid grid-cols-2 gap-8 mx-8">
+<main class="max-w-[1340px] w-full mx-auto my-4 xs:my-8">
+	<div class="grid grid-cols-2 gap-4 xs:gap-8 mx-4 xs:mx-8">
 		<Hero />
 		<About />
 		<Technologies />

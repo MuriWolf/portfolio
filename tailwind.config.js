@@ -69,6 +69,7 @@ const config = {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			screens: {
+				"xs": "414px",
 				"2xl": "1400px"
 			},
 			fontFamily: {

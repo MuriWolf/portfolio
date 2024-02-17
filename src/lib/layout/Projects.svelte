@@ -21,7 +21,7 @@
 </script>
 
 <section id="projects" class="col-span-2 bg-c-primary border-4 border-c-secondary py-10 px-8 lg:px-16 rounded-3xl shadow-claymorphism" >
-    <h2 class="font-title font-bold text-3xl text-c-body-text mb-6">4. PROJECTS</h2>
+    <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6">4. PROJECTS</h2>
     <Carousel.Root 
         bind:api
         opts={{
@@ -49,7 +49,7 @@
                     </AspectRatio>
                     <div class="flex flex-wrap justify-between gap-y-6 px-6 py-4 rounded-xl bg-c-background border-[1px] border-gray-400 shadow-claymorphism-noshadow ">
                         <hgroup class="">
-                            <h3 class="uppercase font-title text-c-body-text font-bold text-2xl">FORMULÁRIO DE SIGN UP</h3>
+                            <h3 class="uppercase font-title text-c-body-text font-bold text-xl xs:text-2xl">FORMULÁRIO DE SIGN UP</h3>
                             <p class="text-c-secondary text-xs">website</p>
                         </hgroup>
                         <div class="flex gap-4">

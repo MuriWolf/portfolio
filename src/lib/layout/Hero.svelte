@@ -8,12 +8,12 @@
 >
 	<Header />
 	<hgroup>
-		<h1 class="text-5xl lg:text-7xl mt-16 text-c-body-text font-title font-bold">
+		<h1 class="text-4xl xs:text-5xl lg:text-7xl mt-16 text-c-body-text font-title font-bold">
 			<span class="text-c-background">Olá, </span>sou<br />
 			Murillo Pinheiro de Oliveira,<br />
 			<span class="text-c-secondary">Web Dev.</span>
 		</h1>
-		<p class="max-w-lg mt-6 text-lg text-gray-200 leading-6">
+		<p class="max-w-lg mt-6 text-sm xs:text-base sm:text-lg text-gray-200 leading-6">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 			labore et dolore magna aliqua. Ut enim ad
 		</p>

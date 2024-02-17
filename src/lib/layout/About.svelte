@@ -1,6 +1,6 @@
 <section id="about" class="max-[956px]:col-span-2 relative flex justify-between gradient-dark-one py-10 px-8 rounded-3xl gap-4">
     <div class="w-1/2 flex flex-col gap-y-4">
-        <h2 class="font-title font-bold text-3xl text-c-body-text mb-2">2. ABOUT</h2>
+        <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-2">2. ABOUT</h2>
         <p class=" text-c-body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
         <p class=" text-c-body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
         <p class=" text-c-body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>

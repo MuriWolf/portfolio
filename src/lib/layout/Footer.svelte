@@ -6,8 +6,8 @@
     const currentYear = date.getFullYear()
 </script>
 
-<footer class="max-w-[1340px] mx-auto ">
-    <div class="flex-col relative text-center bg-c-primary border-4 border-c-secondary mx-8 py-10 px-8 lg:px-16 rounded-3xl shadow-claymorphism flex justify-center mb-8">
+<footer class="max-w-[1340px] mx-auto">
+    <div class="flex-col relative text-center bg-c-primary border-4 border-c-secondary mx-4 xs:mx-8 py-10 px-8 lg:px-16 rounded-3xl shadow-claymorphism flex justify-center mb-4 xs:mb-8">
         <p class="text-c-body-text font-semibold">Designed & Developed by</p>
         <img src={logo} alt="logo" class=" max-sm:mb-4 sm:absolute sm:left-1/2 sm:-translate-x-[275%] mx-auto max-w-[82px] max-h-[82px]" />
         <Tooltip.Root openDelay={300} >

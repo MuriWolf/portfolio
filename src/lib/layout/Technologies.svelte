@@ -22,13 +22,14 @@
     ]
 </script>
 
-<section id="technologies" class="col-span-1 max-[956px]:col-span-2 gradient-dark-two py-10 px-8 rounded-3xl ">
-    <h2 class="font-title font-bold text-3xl text-c-body-text mb-6">3. TECHNOLOGIES</h2>
-    <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
-    <div class="grid grid-cols-4 max-[700px]:grid-cols-5 max-[956px]:grid-cols-6 xl:grid-cols-5 gap-4 max-[700px]:gap-4 max-[956px]:gap-6 lg:gap-8 mt-6">
+<section id="technologies" class="col-span-1 max-[956px]:col-span-2 gradient-dark-two py-10 px-6 xs:px-8 rounded-3xl ">
+    <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6">3. TECHNOLOGIES</h2>
+    <p class="text-gray-200 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
+    <div class="w-full grid techs-grid gap-4 mt-6">
+        <!-- min-[560px]:grid-cols-5 min-[956px]:grid-cols-6 xl:grid-cols-5  min-[956px]:gap-6 lg:gap-8 -->
         {#each content as item}
             <Tooltip.Root openDelay={400}>
-                <Tooltip.Trigger class="technologies__icon">
+                <Tooltip.Trigger class="bg-white bg-opacity-20 shadow-md rounded-xl overflow-hidden p-1 hover:ring-4 transition-all duration-500 ease-in-out ring-c-tertiary hover:shadow-none">
                     <img src={item.url} alt="" class="rounded-xl p-1" />
                 </Tooltip.Trigger>
                 <Tooltip.Content sideOffset={12} >
@@ -38,3 +39,15 @@
         {/each} 
     </div>
 </section>
+
+<style>
+    .techs-grid {
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr))
+    }
+
+    @media (min-width: 496px) {
+        .techs-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr))
+    }   
+    }
+</style>

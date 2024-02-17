@@ -3,10 +3,88 @@
 	import Button from "$lib/components/ui/button/button.svelte";
 
 </script>
-<section id="contact" class="col-span-2 bg-c-background rounded-3xl py-10 px-8 lg:px-16">
-    <h2 class="font-title font-bold text-3xl text-c-body-text mb-6">5. CONTACT</h2>
-    <div class="relative max-w-4xl mx-auto mt-24 flex gap-8">
-        <form action="" class="relative flex flex-col gap-y-6 z-10 p-7 bg-gray-300 bg-opacity-10 rounded-3xl flex-[7] gradient-form backdrop-blur-md glass-border">
+<section id="contact" class="col-span-2 bg-c-background rounded-3xl py-10 px-6 xs:px-8 lg:px-16 overflow-x-hidden" >
+    <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6">5. CONTACT</h2>
+    <div class="relative max-w-4xl mx-auto mt-8 md:mt-24 flex max-md:flex-col-reverse gap-8">
+        <div class="md:hidden relative z-10 bg-c-primary rounded-3xl shadow-claymorphism p-6 border-b-8 border-b-c-secondary">
+            <h2 class="text-c-body-text text-lg xs:text-xl font-title font-bold text-center">Social Media</h2>
+            <nav class="max-w-lg mx-auto text-gray-200">
+                <ul class="flex gap-x-4 justify-center mt-5 mb-2">
+                    <li class="hover:text-c-tertiary hover:scale-110 transition-all">
+                        <a href="." 
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="31"
+                                height="32"
+                                viewBox="0 0 31 32"
+                                fill="none"
+                            >
+                                <path
+                                    d="M10.3687 24.8375C10.3687 24.9625 10.225 25.0625 10.0437 25.0625C9.8375 25.0812 9.69375 24.9812 9.69375 24.8375C9.69375 24.7125 9.8375 24.6125 10.0188 24.6125C10.2063 24.5938 10.3687 24.6938 10.3687 24.8375ZM8.425 24.5562C8.38125 24.6812 8.50625 24.825 8.69375 24.8625C8.85625 24.925 9.04375 24.8625 9.08125 24.7375C9.11875 24.6125 9 24.4688 8.8125 24.4125C8.65 24.3687 8.46875 24.4312 8.425 24.5562ZM11.1875 24.45C11.0063 24.4938 10.8812 24.6125 10.9 24.7563C10.9187 24.8813 11.0813 24.9625 11.2688 24.9188C11.45 24.875 11.575 24.7563 11.5562 24.6313C11.5375 24.5125 11.3687 24.4313 11.1875 24.45ZM15.3 0.5C6.63125 0.5 0 7.08125 0 15.75C0 22.6812 4.3625 28.6125 10.5938 30.7C11.3938 30.8438 11.675 30.35 11.675 29.9438C11.675 29.5562 11.6562 27.4188 11.6562 26.1063C11.6562 26.1063 7.28125 27.0437 6.3625 24.2437C6.3625 24.2437 5.65 22.425 4.625 21.9562C4.625 21.9562 3.19375 20.975 4.725 20.9937C4.725 20.9937 6.28125 21.1188 7.1375 22.6063C8.50625 25.0188 10.8 24.325 11.6938 23.9125C11.8375 22.9125 12.2438 22.2188 12.6938 21.8062C9.2 21.4187 5.675 20.9125 5.675 14.9C5.675 13.1812 6.15 12.3188 7.15 11.2188C6.9875 10.8125 6.45625 9.1375 7.3125 6.975C8.61875 6.56875 11.625 8.6625 11.625 8.6625C12.875 8.3125 14.2188 8.13125 15.55 8.13125C16.8813 8.13125 18.225 8.3125 19.475 8.6625C19.475 8.6625 22.4813 6.5625 23.7875 6.975C24.6438 9.14375 24.1125 10.8125 23.95 11.2188C24.95 12.325 25.5625 13.1875 25.5625 14.9C25.5625 20.9312 21.8813 21.4125 18.3875 21.8062C18.9625 22.3 19.45 23.2375 19.45 24.7062C19.45 26.8125 19.4312 29.4187 19.4312 29.9312C19.4312 30.3375 19.7188 30.8312 20.5125 30.6875C26.7625 28.6125 31 22.6812 31 15.75C31 7.08125 23.9688 0.5 15.3 0.5ZM6.075 22.0562C5.99375 22.1187 6.0125 22.2625 6.11875 22.3813C6.21875 22.4813 6.3625 22.525 6.44375 22.4438C6.525 22.3813 6.50625 22.2375 6.4 22.1187C6.3 22.0187 6.15625 21.975 6.075 22.0562ZM5.4 21.55C5.35625 21.6312 5.41875 21.7313 5.54375 21.7938C5.64375 21.8563 5.76875 21.8375 5.8125 21.75C5.85625 21.6688 5.79375 21.5688 5.66875 21.5063C5.54375 21.4688 5.44375 21.4875 5.4 21.55ZM7.425 23.775C7.325 23.8562 7.3625 24.0438 7.50625 24.1625C7.65 24.3062 7.83125 24.325 7.9125 24.225C7.99375 24.1438 7.95625 23.9562 7.83125 23.8375C7.69375 23.6938 7.50625 23.675 7.425 23.775ZM6.7125 22.8563C6.6125 22.9188 6.6125 23.0813 6.7125 23.225C6.8125 23.3687 6.98125 23.4312 7.0625 23.3687C7.1625 23.2875 7.1625 23.125 7.0625 22.9813C6.975 22.8375 6.8125 22.775 6.7125 22.8563Z"
+                                    fill="currentColor"
+                                />
+                            </svg></a
+                        >
+                    </li>
+                    <li class="hover:text-c-tertiary hover:scale-110 transition-all">
+                        <a href="."
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="28"
+                                height="32"
+                                viewBox="0 0 28 32"
+                                fill="none"
+                            >
+                                <path
+                                    d="M26 2H1.99375C0.89375 2 0 2.90625 0 4.01875V27.9813C0 29.0938 0.89375 30 1.99375 30H26C27.1 30 28 29.0938 28 27.9813V4.01875C28 2.90625 27.1 2 26 2ZM8.4625 26H4.3125V12.6375H8.46875V26H8.4625ZM6.3875 10.8125C5.05625 10.8125 3.98125 9.73125 3.98125 8.40625C3.98125 7.08125 5.05625 6 6.3875 6C7.7125 6 8.79375 7.08125 8.79375 8.40625C8.79375 9.7375 7.71875 10.8125 6.3875 10.8125ZM24.0187 26H19.8687V19.5C19.8687 17.95 19.8375 15.9563 17.7125 15.9563C15.55 15.9563 15.2188 17.6438 15.2188 19.3875V26H11.0688V12.6375H15.05V14.4625H15.1062C15.6625 13.4125 17.0188 12.3062 19.0375 12.3062C23.2375 12.3062 24.0187 15.075 24.0187 18.675V26Z"
+                                    fill="currentColor"
+                                />
+                            </svg></a
+                        >
+                    </li>
+                    <li class="hover:text-c-tertiary hover:scale-110 transition-all">
+                        <a href="."
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="31"
+                                height="32"
+                                viewBox="0 0 31 32"
+                                fill="none"
+                            >
+                                <g clip-path="url(#clip0_95_115)">
+                                    <path
+                                        d="M15.5 0.5C6.9375 0.5 0 7.4375 0 16C0 24.5625 6.9375 31.5 15.5 31.5C24.0625 31.5 31 24.5625 31 16C31 7.4375 24.0625 0.5 15.5 0.5ZM22.6875 11.0437C22.4562 13.4937 21.4438 19.4438 20.9312 22.1875C20.7125 23.35 20.2875 23.7375 19.875 23.775C18.975 23.8562 18.2938 23.1813 17.4188 22.6063C16.0563 21.7125 15.2812 21.1562 13.9625 20.2812C12.4312 19.275 13.425 18.7188 14.2937 17.8125C14.525 17.575 18.4875 13.9688 18.5625 13.6438C18.575 13.6 18.5812 13.45 18.4875 13.3687C18.3937 13.2875 18.2625 13.3187 18.1688 13.3375C18.0312 13.3667 15.8521 14.8062 11.6313 17.6562C11.0146 18.0812 10.4542 18.2875 9.95 18.275C9.39375 18.2625 8.33125 17.9625 7.5375 17.7062C6.56875 17.3937 5.79375 17.225 5.8625 16.6875C5.89583 16.4083 6.28125 16.1229 7.01875 15.8313C11.5354 13.8646 14.5479 12.5667 16.0562 11.9375C20.3625 10.15 21.2563 9.8375 21.8375 9.825C21.9688 9.825 22.25 9.85625 22.4375 10.0063C22.5599 10.1138 22.6378 10.2631 22.6562 10.425C22.69 10.6294 22.7005 10.837 22.6875 11.0437Z"
+                                        fill="currentColor"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_95_115">
+                                        <rect width="31" height="32" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg></a
+                        >
+                    </li>
+                    <li class="hover:text-c-tertiary hover:scale-110 transition-all">
+                        <a href="."
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="28"
+                                height="32"
+                                viewBox="0 0 28 32"
+                                fill="none"
+                            >
+                                <path
+                                    d="M4 2H24C26.2062 2 28 3.79375 28 6V26C28 28.2062 26.2062 30 24 30H4C1.79375 30 0 28.2062 0 26V6C0 3.79375 1.79375 2 4 2ZM19.1187 10.4C20.4062 10.4 21.45 9.35625 21.45 8.06875C21.45 6.78125 20.4062 5.7375 19.1187 5.7375C17.9937 5.7375 17.05 6.5375 16.8312 7.6C14.9437 7.8 13.4688 9.4 13.4688 11.3438V11.3562C11.4187 11.4437 9.54375 12.025 8.05625 12.95C7.50625 12.525 6.8125 12.2688 6.05625 12.2688C4.25 12.2688 2.7875 13.7313 2.7875 15.5375C2.7875 16.85 3.55625 17.975 4.66875 18.5C4.775 22.2938 8.9125 25.35 14 25.35C19.0875 25.35 23.225 22.2937 23.3312 18.4937C24.4375 17.9688 25.2 16.8438 25.2 15.5375C25.2 13.7313 23.7375 12.2688 21.9312 12.2688C21.1812 12.2688 20.4937 12.5188 19.9375 12.9438C18.4375 12.0125 16.5438 11.4312 14.4688 11.3562V11.35C14.4688 9.9625 15.5 8.80625 16.8375 8.61875C17.0812 9.65 18.0063 10.4125 19.1063 10.4125L19.1187 10.4ZM9.6875 15.5063C10.6 15.5063 11.3 16.4688 11.25 17.6562C11.2 18.8438 10.5125 19.275 9.59375 19.275C8.675 19.275 7.875 18.7938 7.93125 17.6063C7.9875 16.4188 8.775 15.5125 9.6875 15.5125V15.5063ZM20.0875 17.6C20.1437 18.7875 19.3375 19.2687 18.425 19.2687C17.5125 19.2687 16.825 18.8375 16.7687 17.65C16.7125 16.4625 17.4125 15.5 18.3312 15.5C19.25 15.5 20.0375 16.4125 20.0875 17.5938V17.6ZM17.4562 20.7C16.8937 22.0438 15.5625 22.9937 14.0125 22.9937C12.4625 22.9937 11.1313 22.05 10.5688 20.7C10.5 20.5375 10.6125 20.3625 10.7812 20.3438C11.7875 20.2437 12.875 20.1875 14.0125 20.1875C15.15 20.1875 16.2375 20.2437 17.2437 20.3438C17.4125 20.3625 17.525 20.5375 17.4562 20.7Z"
+                                    fill="currentColor"
+                                />
+                            </svg></a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <form action="" class="relative z-10 flex flex-col gap-y-6 py-6 px-4 xs:px-6 bg-gray-300 bg-opacity-0 rounded-3xl flex-[7] gradient-form backdrop-blur-3xl glass-border">
             <label class="text-c-body-text font-semibold">
                 <h3 class="text-lg">Your Name</h3>
                 <input required type="text" placeholder="Enter your name" class="input-form">
@@ -19,23 +97,23 @@
                 <h3 class="text-lg">Your message</h3> 
                 <textarea required placeholder="Enter your email addres" rows="6" class="input-form resize-none"></textarea>
             </label>
-            <Button type="submit" class="bg-c-tertiary flex-1 w-full min-w-full block text-c-darker-background font-title font-bold text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-c-tertiary hover:bg-c-tertiary hover:brightness-90 active:scale-90 transition-all shadow-claymorphism-2">Shoot a Message </Button>
+            <Button type="submit" class="bg-c-tertiary flex-1 w-full min-w-full block text-c-darker-background font-title font-bold text-lg xs:text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-c-tertiary hover:bg-c-tertiary hover:brightness-90 active:scale-90 transition-all shadow-claymorphism-2">Shoot a Message </Button>
         </form>
-        <img src="ellipse-blue.png" alt="" class="absolute z-0 -top-20 -left-20">
-        <img src="ellipse-green.png" alt="" class="absolute z-0 -bottom-10 right-1/2 translate-x-2/3">
+        <img src="ellipse-blue.png" alt="" class="absolute z-0 top-[264px] md:-top-20 -left-[86px] md:-left-24">
+        <img src="ellipse-green.png" alt="" class="absolute z-0 bottom-24 md:-bottom-10 right-16 md:right-1/2 translate-x-2/3">
         <div class="relative z-10 flex flex-col gap-y-7 flex-[5]">
-            <div class="p-2 bg-c-darker-background border-4 border-c-body-text rounded-xl">
+            <div class="hidden md:block p-2 bg-c-darker-background border-4 border-c-body-text rounded-xl">
                 <h1 class="text-c-body-text font-title text-[28px] font-bold text-center">Let’s Get in Touch</h1>
             </div>
-            <div class="bg-c-primary rounded-3xl shadow-claymorphism p-5 border-b-8 border-b-c-secondary">
-                <h2 class="text-c-body-text text-xl font-title font-bold text-center mb-5">Got a question or proposal, or just want to say hello? Go ahead.</h2>
+            <div class="bg-c-primary rounded-3xl shadow-claymorphism p-6 border-b-8 border-b-c-secondary">
+                <h2 class="text-c-body-text text-lg xs:text-xl font-title font-bold text-center mb-5">Got a question or proposal, or just want to say hello? Go ahead.</h2>
                 <svg class="mx-auto mb-2" width="100" height="93" viewBox="0 0 100 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M50.5312 53.3695L35.4062 61.8955C32.8906 63.3092 32.4062 65.854 34.3125 67.6701C36.3281 69.6058 40.25 69.9865 42.9531 68.5183L58.4688 60.1228C59.5625 59.5356 61.125 59.6661 61.9844 60.4273C62.8438 61.1886 62.6406 62.2761 61.5469 62.8742L58.2812 64.636L85.9688 82.384H92.5C96.6406 82.384 100 80.0458 100 77.164V63.244C100 60.3621 96.6406 58.024 92.5 58.024H80.625H80H79.8906L79.2812 57.7521L67.9375 52.6952C65.5469 51.6295 62.75 51.064 59.9062 51.064C56.5 51.064 53.1875 51.8796 50.5312 53.3695ZM54.0938 66.898L46.0156 71.2697C41.0938 73.945 33.9531 73.249 30.2656 69.7255C26.7969 66.4086 27.6719 61.7758 32.25 59.1985L45.25 51.8796C43.4375 51.3467 41.4844 51.0748 39.5 51.0748C36.5625 51.064 33.7031 51.673 31.25 52.804L20 58.024H7.5C3.35938 58.024 0 60.3621 0 63.244V77.164C0 80.0458 3.35938 82.384 7.5 82.384H24.4062L38.6875 91.4537C41.75 93.4003 46.4844 93.2481 49.2812 91.1166C50.1406 90.4532 50.7188 89.6811 51.0156 88.8763L53.6719 90.5728C56.7188 92.5195 61.4688 92.3781 64.2656 90.2575C64.9688 89.7246 65.4844 89.1047 65.8125 88.4631C68.8438 89.8768 72.9688 89.5832 75.5156 87.6475C78.3125 85.5268 78.1094 82.2208 75.0625 80.2742L54.0938 66.898Z" fill="#E8AEB7"/>
                     <path d="M28.6875 6.25C26.0996 6.25 24 8.34961 24 10.9375C24 12.4121 24.6934 13.7988 25.875 14.6875L47.125 30.625C48.2383 31.4551 49.7617 31.4551 50.875 30.625L72.125 14.6875C73.3066 13.7988 74 12.4121 74 10.9375C74 8.34961 71.9004 6.25 69.3125 6.25H28.6875ZM24 17.1875V37.5C24 40.9473 26.8027 43.75 30.25 43.75H67.75C71.1973 43.75 74 40.9473 74 37.5V17.1875L52.75 33.125C50.5234 34.7949 47.4766 34.7949 45.25 33.125L24 17.1875Z" fill="#E8AEB7"/>
                 </svg>
             </div>
-            <div class="bg-c-primary rounded-3xl shadow-claymorphism p-5 border-b-8 border-b-c-secondary">
-                <h2 class="text-c-body-text text-xl font-title font-bold text-center">Social Media</h2>
+            <div class="max-md:hidden bg-c-primary rounded-3xl shadow-claymorphism p-6 border-b-8 border-b-c-secondary">
+                <h2 class="text-c-body-text text-lg xs:text-xl font-title font-bold text-center">Social Media</h2>
                 <nav class="max-w-lg mx-auto text-gray-200">
                     <ul class="flex gap-x-4 justify-center mt-5 mb-2">
                         <li class="hover:text-c-tertiary hover:scale-110 transition-all">
