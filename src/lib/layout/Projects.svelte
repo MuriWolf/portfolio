@@ -20,7 +20,7 @@
 
 </script>
 
-<section id="projects" class="col-span-2 bg-c-primary border-4 border-c-secondary py-10 px-8 lg:px-16 rounded-3xl shadow-claymorphism" >
+<section id="projects" class="col-span-2 bg-c-primary border-4 border-c-secondary py-12 pb-10 px-6 xs:px-8 rounded-3xl shadow-claymorphism" >
     <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6">4. PROJECTS</h2>
     <Carousel.Root 
         bind:api
@@ -40,7 +40,7 @@
         <Carousel.Content>
           {#each Array(8) as _, i (i)}
             <Carousel.Item class="lg:basis-1/2 flex flex-col gap-5">
-                    <AspectRatio ratio={16 / 9} class="bg-muted p-5 border-4 border-gray-700 rounded-3xl">
+                    <AspectRatio ratio={16 / 9} class="bg-muted sm:p-5 border-4 border-gray-700 rounded-3xl overflow-hidden">
                         <img
                             src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
                             alt="Gray by Drew Beamer"

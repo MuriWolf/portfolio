@@ -3,7 +3,7 @@
 	import Button from "$lib/components/ui/button/button.svelte";
 
 </script>
-<section id="contact" class="col-span-2 bg-c-background rounded-3xl py-10 px-6 xs:px-8 lg:px-16 overflow-x-hidden" >
+<section id="contact" class="col-span-2 bg-c-background rounded-3xl py-12 px-6 xs:px-8 lg:px-16 overflow-x-hidden" >
     <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6">5. CONTACT</h2>
     <div class="relative max-w-4xl mx-auto mt-8 md:mt-24 flex max-md:flex-col-reverse gap-8">
         <div class="md:hidden relative z-10 bg-c-primary rounded-3xl shadow-claymorphism p-6 border-b-8 border-b-c-secondary">

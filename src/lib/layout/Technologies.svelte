@@ -22,7 +22,7 @@
     ]
 </script>
 
-<section id="technologies" class="col-span-1 max-[956px]:col-span-2 gradient-dark-two py-10 px-6 xs:px-8 rounded-3xl ">
+<section id="technologies" class="col-span-1 max-[956px]:col-span-2 gradient-dark-two py-12 px-6 xs:px-8 rounded-3xl ">
     <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6">3. TECHNOLOGIES</h2>
     <p class="text-gray-200 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
     <div class="w-full grid techs-grid gap-4 mt-6">
@@ -42,7 +42,7 @@
 
 <style>
     .techs-grid {
-        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr))
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr))
     }
 
     @media (min-width: 496px) {

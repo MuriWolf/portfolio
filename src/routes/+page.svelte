@@ -1,4 +1,5 @@
 <script lang="ts">
+	import AsideMobile from './../lib/layout/AsideMobile.svelte';
 	import About from '$lib/layout/About.svelte';
 	import Hero from '$lib/layout/Hero.svelte';
 	import Technologies from '$lib/layout/Technologies.svelte';
@@ -6,7 +7,13 @@
 	import Testimonials from '$lib/layout/Testimonials.svelte';
 	import Contact from '$lib/layout/Contact.svelte';
 	import Footer from '$lib/layout/Footer.svelte';
+	import { openAsideMobile } from '../store';
+
 </script>
+
+{#if $openAsideMobile}
+	<AsideMobile />
+{/if}
 
 <main class="max-w-[1340px] w-full mx-auto my-4 xs:my-8">
 	<div class="grid grid-cols-2 gap-4 xs:gap-8 mx-4 xs:mx-8">
@@ -18,6 +25,7 @@
 		<Contact />
 	</div>
 </main>
+
 
 
 <Footer />

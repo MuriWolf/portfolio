@@ -5,8 +5,8 @@
 
 </script>
 
-<main class="max-w-[1340px] mx-auto flex flex-col gap-8 my-8">
-    <section class="mx-8 rounded-3xl py-10 px-8 lg:px-16 bg-opacity-20 bg-[linear-gradient(to_right_bottom,rgba(74,78,120,0.85),rgba(46,34,36,0.8)),url(/images/paintings/the-creation-of-adam.png)] shadow-claymorphism
+<main class="max-w-[1340px] mx-auto flex flex-col gap-4 xs:gap-8 my-4 xs:my-8">
+    <section class="mx-4 xs:mx-8 rounded-3xl py-10 px-8 lg:px-16 bg-opacity-20 bg-[linear-gradient(to_right_bottom,rgba(74,78,120,0.85),rgba(46,34,36,0.8)),url(/images/paintings/the-creation-of-adam.png)] shadow-claymorphism
     ">
     <div class="max-w-[800px] bg-gradient-to-bl from-[#c2c1c115] to-[#b1b2b413] bg-clip-padding border-4 border-transparent p-7 backdrop-blur-sm rounded-2xl flex flex-col mx-auto glass-border after:content-['Website_Screenshots'] after:bg-c-background after:absolute after:-bottom-[18px] after:rounded-lg after:p-1 after:px-4 after:text-[13px] after:text-gray-50 after:font-bold after:font-title after:translate-x-1/2 after:right-1/2">
             <div class="flex items-center gap-6 mb-6">
@@ -22,24 +22,24 @@
             </div>
         </div>
     </section>
-    <section class="relative gradient-dark-two py-10 px-8 lg:px-16 rounded-3xl mx-8 text-center">
-        <h2 class="text-gray-50 font-title font-semibold text-4xl mb-4">Description</h2>
+    <section class="relative gradient-dark-two py-12 px-8 lg:px-16 rounded-3xl mx-4 xs:mx-8 text-center">
+        <h2 class="text-gray-50 font-title font-semibold text-3xl xs:text-4xl mb-4">Description</h2>
         <div class="flex flex-col gap-4 max-w-lg mx-auto mb-12">
             <p class="text-gray-200">Lorem ipsum dolor adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
             <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
             <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
         </div>
-        <h2 class="text-gray-50 font-title font-semibold text-4xl mb-16">Technologies used</h2>
+        <h2 class="text-gray-50 font-title font-semibold text-3xl xs:text-4xl mb-16">Technologies used</h2>
 
-        <h2 class="text-gray-50 font-title font-semibold text-4xl mb-4">In Depth</h2>
+        <h2 class="text-gray-50 font-title font-semibold text-3xl xs:text-4xl mb-4">In Depth</h2>
         <div class="flex max-sm:flex-col justify-center gap-6 items-center max-w-lg mx-auto mb-12">
-            <Button class="bg-c-tertiary w-full block text-c-darker-background font-title font-bold text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-c-tertiary hover:bg-c-tertiary hover:brightness-90 active:scale-95 transition-all shadow-claymorphism-2">Live View</Button>
-            <Button class="bg-c-primary w-full block !text-c-body-text font-title font-bold text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-c-primary hover:bg-c-primary hover:brightness-90 active:scale-95 transition-all shadow-claymorphism-2">Discover More</Button>
+            <Button class="bg-c-tertiary w-full block text-c-darker-background font-title font-bold text-lg xs:text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-c-tertiary hover:bg-c-tertiary hover:brightness-90 active:scale-95 transition-all shadow-claymorphism-2">Live View</Button>
+            <Button class="bg-c-primary w-full block !text-c-body-text font-title font-bold text-lg xs:text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-c-primary hover:bg-c-primary hover:brightness-90 active:scale-95 transition-all shadow-claymorphism-2">Discover More</Button>
         </div>
 
-        <h2 class="text-gray-50 font-title font-semibold text-4xl mb-4">More</h2>
-        <div class="flex justify-center gap-6 items-center max-w-lg mx-auto mb-12">
-            <Button class="bg-white w-full block text-c-darker-background font-title font-bold text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-white hover:bg-white hover:brightness-90 active:scale-95 transition-all shadow-claymorphism-2">See Other Projects </Button>
+        <h2 class="text-gray-50 font-title font-semibold text-3xl xs:text-4xl mb-4">More</h2>
+        <div class="flex justify-center gap-6 items-center max-w-lg mx-auto ">
+            <Button class="bg-white w-full block text-c-darker-background font-title font-bold text-lg xs:text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-white hover:bg-white hover:brightness-90 active:scale-95 transition-all shadow-claymorphism-2">See Other Projects </Button>
 </div>
     </section>
 </main>

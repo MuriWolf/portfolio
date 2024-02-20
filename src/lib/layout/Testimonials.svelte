@@ -17,8 +17,8 @@
     }
 </script>
 
-<section id="testimonials" class="col-span-2 relative gradient-dark-two py-6 xs:py-10 px-4 xs:px-8 lg:px-16 rounded-3xl z-0">
-    <hgroup class="mb-16">
+<section id="testimonials" class="col-span-2 relative gradient-dark-two py-12 px-6 xs:px-8 rounded-3xl z-0">
+    <hgroup class="mb-8 sm:mb-16">
         <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6">5. TESTIMONIALS</h2>
         <p class="xs:text-lg text-c-body-text max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
     </hgroup>

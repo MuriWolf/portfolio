@@ -131,6 +131,13 @@ body {
 
 * {
   scroll-behavior: smooth;
+  scroll-padding-top: 16px;
+}
+
+@media (min-width: 414px) {
+  * {
+    scroll-padding-top: 32px;
+  }
 }
 
 ::-moz-selection { /* Code for Firefox */
