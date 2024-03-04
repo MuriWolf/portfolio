@@ -41,7 +41,7 @@
         <Carousel.Content>
             {#each Array(4) as _, i (i)}
                 <Carousel.Item class="basis-[92%] xs:mx-4 sm:basis-[60%] min-[960px]:basis-1/3 relative z-10">
-                    <div class="py-6 px-7 rounded-md backdrop-blur-md bg-gradient-to-br from-[#f7f7f75d] hover:from-[#f7f7f744] to-[#f7f7f717] hover:to-[#E8AEB72c] transition-colors duration-500 text-c-body-text">
+                    <div class="py-6 px-7 rounded-md backdrop-blur-md text-c-body-text caroucel-testimonial-item">
                         <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 7.5C0 3.35625 3.35625 0 7.5 0H8C9.10625 0 10 0.89375 10 2C10 3.10625 9.10625 4 8 4H7.5C5.56875 4 4 5.56875 4 7.5V8H8C10.2063 8 12 9.79375 12 12V16C12 18.2062 10.2063 20 8 20H4C1.79375 20 0 18.2062 0 16V14V12V7.5ZM16 7.5C16 3.35625 19.3563 0 23.5 0H24C25.1063 0 26 0.89375 26 2C26 3.10625 25.1063 4 24 4H23.5C21.5688 4 20 5.56875 20 7.5V8H24C26.2062 8 28 9.79375 28 12V16C28 18.2062 26.2062 20 24 20H20C17.7938 20 16 18.2062 16 16V14V12V7.5Z" fill="#E8AEB7"/>
                             </svg>                
@@ -63,7 +63,10 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" viewBox="0 0 256 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"/></svg>
                     </button>
                 </Carousel.Previous>
-                <Progress value={current} max={count} progressColor="bg-c-secondary" class=" transition-all duration-500 max-w-96 shadow-md" />
+                {#each Array(4) as _, i (i)}
+                    <button on:click={() => api.scrollTo(i)} class="w-4 h-4 rounded-full border-2 border-green-50 transition-all duration-300 {current == i +1 ? 'bg-gray-50' : ''}"></button>
+                {/each}
+                <!-- <Progress value={current} max={count} progressColor="bg-c-secondary" class=" transition-all duration-500 max-w-96 shadow-md" /> -->
                 <Carousel.Next style="all: unset;">
                     <button class="text-c-body-text active:scale-90 transition-all ease-in-out duration-150">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" viewBox="0 0 256 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg>
@@ -74,3 +77,27 @@
     </div>
     <img src="Torus.png" alt="" class="absolute top-1/2 -translate-y-1/2 right-20 z-0 hidden md:block"  draggable="false">
 </section>
+
+<style>
+    @property --testimonial-bg-c1 {
+        syntax: '<color>';
+        initial-value: #f7f7f75d;
+        inherits: false;
+    }
+
+    @property --testimonial-bg-c2 {
+        syntax: '<color>';
+        initial-value: #f7f7f717;
+        inherits: false;
+    }
+
+    .caroucel-testimonial-item {
+        background: linear-gradient(135deg, var(--testimonial-bg-c1), var(--testimonial-bg-c2));
+        transition: --testimonial-bg-c1 500ms, --testimonial-bg-c2 500ms;
+    }
+
+    .caroucel-testimonial-item:hover {
+        --testimonial-bg-c1: #f7f7f744;
+        --testimonial-bg-c2:#E8AEB72c;
+    }
+</style>

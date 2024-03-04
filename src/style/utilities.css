@@ -1,3 +1,31 @@
+@property --form-bg-c1 {
+  syntax: '<color>';
+  initial-value: #a5a5a53d;
+  inherits: false;
+}
+
+@property --form-bg-c2 {
+  syntax: '<color>';
+  initial-value: #e8aeb71e;
+  inherits: false;
+}
+
+@property --form-bg-c3 {
+  syntax: '<color>';
+  initial-value: #A5A5A51e;
+  inherits: false;
+}
+
+.gradient-form {
+  background:  linear-gradient(22deg, var(--form-bg-c1), var(--form-bg-c2), var(--form-bg-c3));
+  transition: --form-bg-c1 500ms, --form-bg-c2 500ms, --form-bg-c3 500ms;
+}
+
+.gradient-form:hover {
+  --form-bg-c1: #e8aeb70e ;
+  --form-bg-c2:#e8aeb71e;
+  --form-bg-c3:#e8aeb70c ;
+}
 
 .gradient-dark-one {
     background:  linear-gradient(135deg, #110a14e8 15%, rgb(34, 22, 39) 48.5%, #110a14 86%), url("https://www.transparenttextures.com/patterns/grid-me.png");
@@ -5,10 +33,6 @@
 
 .gradient-dark-two {
     background:  linear-gradient(158deg, #221627 25.77%, #110A14 52.8%, #221627f5 74.3%), url("https://www.transparenttextures.com/patterns/grid-me.png");
-}
-
-.gradient-form {
-    background:  linear-gradient(22deg, #a5a5a53d, #e8aeb71e, #A5A5A51e);
 }
 
 .glass-border {
@@ -30,7 +54,7 @@
 
 .bg-test2 {
   background-color: #5b5f97;
-    background: linear-gradient(180deg, #5b5f97 50%, #5b5f97de), url("https://www.transparenttextures.com/patterns/groovepaper.png");
+  background: linear-gradient(180deg, #5b5f97 50%, #5b5f97de), url("https://www.transparenttextures.com/patterns/groovepaper.png");
 }
 
 @-webkit-keyframes AnimateBG {

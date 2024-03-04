@@ -1,8 +1,9 @@
 <script>
 	import Button from '$lib/components/ui/button/button.svelte';
-
 	import Footer from "$lib/layout/Footer.svelte";
-
+  import { techIcons } from "$lib/utils";
+  let projectTechs = ["typescript", "python", "css", "figma"]
+  import * as Tooltip from "$lib/components/ui/tooltip";
 </script>
 
 <main class="max-w-[1340px] mx-auto flex flex-col gap-4 xs:gap-8 my-4 xs:my-8">
@@ -19,7 +20,7 @@
                 <h1 class="flex-1 text-white text-center font-title font-bold text-shadow-sm text-lg max-xs:uppercase xs:text-xl sm:text-2xl md:text-3xl bg-c-background bg-opacity-75 p-2 rounded-lg shadow-inner">Formulário de Sign In</h1>
             </div>
             <div class="mx-auto rounded-2xl overflow-hidden inline-block">
-                <img src="/images/projects/project.png" alt="" class="block mx-auto" >
+                <img src="/images/projects/project.png" alt="" height="736" width="736" class="block mx-auto" >
             </div>
         </div>
         <div class="top-plane"></div>
@@ -32,7 +33,19 @@
             <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
             <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>
         </div>
-        <h2 class="text-gray-50 font-title font-semibold text-3xl xs:text-4xl mb-16">Technologies used</h2>
+        <h2 class="text-gray-50 font-title font-semibold text-3xl xs:text-4xl mb-4">Technologies used</h2>
+        <div class="max-w-lg flex flex-wrap flex-row justify-center gap-4 mx-auto mb-12">
+        {#each techIcons.filter((techIcon) =>  projectTechs.includes(techIcon.title.toLowerCase())) as item}
+          <Tooltip.Root openDelay={0}>
+            <Tooltip.Trigger class="min-w-16 sm:min-w-24 hover:backdrop-brightness-200 shadow-md rounded-xl overflow-hidden transition-all duration-300 ease-in-outhover:shadow-none">
+                <img src={item.url} alt="" class="rounded-xl p-1" />
+            </Tooltip.Trigger>
+            <Tooltip.Content sideOffset={12} >
+                <p class="font-semibold">{item.title}</p>
+            </Tooltip.Content>
+        </Tooltip.Root>
+        {/each}
+        </div>
 
         <h2 class="text-gray-50 font-title font-semibold text-3xl xs:text-4xl mb-4">In Depth</h2>
         <div class="flex max-sm:flex-col justify-center gap-6 items-center max-w-lg mx-auto mb-12">

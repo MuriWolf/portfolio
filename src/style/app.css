@@ -172,3 +172,13 @@ body {
   ::-webkit-scrollbar-track {
     background-color: #080A0C;
   }
+
+  .techs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr))
+}
+
+@media (min-width: 496px) {
+    .techs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr))
+}   
+}

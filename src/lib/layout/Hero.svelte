@@ -20,7 +20,7 @@
 	</hgroup>
 	<nav class="max-w-lg mr-auto text-gray-200 relative z-10">
 		<ul class="flex gap-x-4 justify-end mt-4">
-			<li class="hover:text-c-tertiary hover:scale-110 transition-all">
+			<li class="hover:text-c-tertiary hover:scale-110 transition-all duration-200">
 				<a href="." 
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@
 					</svg></a
 				>
 			</li>
-			<li class="hover:text-c-tertiary hover:scale-110 transition-all">
+			<li class="hover:text-c-tertiary hover:scale-110 transition-all duration-200">
 				<a href="."
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@
 					</svg></a
 				>
 			</li>
-			<li class="hover:text-c-tertiary hover:scale-110 transition-all">
+			<li class="hover:text-c-tertiary hover:scale-110 transition-all duration-200">
 				<a href="."
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@
 					</svg></a
 				>
 			</li>
-			<li class="hover:text-c-tertiary hover:scale-110 transition-all">
+			<li class="hover:text-c-tertiary hover:scale-110 transition-all duration-200">
 				<a href="."
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -93,6 +93,6 @@
 			</li>
 		</ul>
 	</nav>
-	<img src="strokes-hero.png" alt="" class="absolute right-0 bottom-0 z-0 hidden lg:block">
-	<img src="strokes-hero2.png" alt="" class="absolute left-0 bottom-0 z-0 hidden lg:block">
+	<img src="strokes-hero.png" alt="" draggable="false" class="absolute right-0 bottom-0 z-0 hidden lg:block select-none">
+	<img src="strokes-hero2.png" alt="" draggable="false" class="absolute left-0 bottom-0 z-0 hidden lg:block select-none">
 </section>
