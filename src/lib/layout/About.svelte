@@ -1,4 +1,4 @@
-<section id="about" class="max-[956px]:col-span-2 relative flex justify-between gradient-dark-one py-12 px-6 xs:px-8 rounded-3xl gap-4">
+<section id="about" class="max-[956px]:col-span-2 relative flex justify-between gradient-dark-one py-12 px-4 xs:px-6 sm:px-8 rounded-3xl gap-4 bg-test">
     <div class="sm:w-1/2 w-full flex flex-col gap-y-4 md:gap-y-6">
         <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-2">2. ABOUT</h2>
         <p class=" text-c-body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </p>

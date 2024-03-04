@@ -4,21 +4,21 @@
 
 <section
 	id="hero"
-	class="col-span-2 px-8 md:px-16 pt-8 pb-12 xs:pb-24 bg-c-primary border-4 border-c-secondary rounded-3xl shadow-claymorphism"
+	class="relative col-span-2 px-4 xs:px-6 sm:px-8 md:px-16 pt-8 pb-12 xs:pb-24 bg-c-primary border-4 border-c-secondary rounded-3xl shadow-claymorphism bg-test2"
 >
 	<Header />
-	<hgroup>
-		<h1 class="text-4xl xs:text-5xl lg:text-7xl mt-8 xs:mt-16 text-c-body-text font-title font-bold">
+	<hgroup class="relative z-10">
+		<h1 class="text-4xl xs:text-5xl lg:text-7xl mt-6 xs:mt-16 text-c-body-text font-title font-bold">
 			<span class="text-c-background">Olá, </span>sou<br />
 			Murillo Pinheiro de Oliveira,<br />
 			<span class="text-c-secondary">Web Dev.</span>
 		</h1>
-		<p class="max-w-lg mt-6 text-sm xs:text-base sm:text-lg text-gray-200 leading-6">
+		<p class="max-w-lg mt-3 xs:mt-6 text-sm xs:text-base sm:text-lg text-gray-200 leading-6 font-semibold">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 			labore et dolore magna aliqua. Ut enim ad
 		</p>
 	</hgroup>
-	<nav class="max-w-lg mr-auto text-gray-200">
+	<nav class="max-w-lg mr-auto text-gray-200 relative z-10">
 		<ul class="flex gap-x-4 justify-end mt-4">
 			<li class="hover:text-c-tertiary hover:scale-110 transition-all">
 				<a href="." 
@@ -93,4 +93,6 @@
 			</li>
 		</ul>
 	</nav>
+	<img src="strokes-hero.png" alt="" class="absolute right-0 bottom-0 z-0 hidden lg:block">
+	<img src="strokes-hero2.png" alt="" class="absolute left-0 bottom-0 z-0 hidden lg:block">
 </section>

@@ -2,6 +2,7 @@
 	import { scale, slide } from "svelte/transition";
 	import { openAsideMobile } from "../../store";
     import { Separator } from "$lib/components/ui/separator";
+	import { bounceIn } from "svelte/easing";
 
     function closeAsideMobile() {
         openAsideMobile.update((value) => value = false);
@@ -10,7 +11,7 @@
 </script>
 
 <div class="fixed z-50 top-0 w-screen h-screen bg-black bg-opacity-10 backdrop-blur-sm">
-    <section class="h-[90%] border-b-8 border-b-c-secondary rounded-b-xl flex bg-c-primary shadow-claymorphism p-6" in:slide={{duration: 150}} out:slide={{duration: 100}}>
+    <section class="h-[90%] border-b-8 border-b-c-secondary rounded-b-xl flex bg-c-primary shadow-claymorphism p-6" in:slide={{duration: 200}} out:slide={{duration: 100}}>
         <div class="flex-1">
             <nav class="text-c-body-text text-2xl font-medium">
                 <ol class="list-decimal ml-7 flex flex-col gap-4">

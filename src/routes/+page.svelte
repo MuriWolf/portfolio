@@ -1,5 +1,5 @@
 <script lang="ts">
-	import AsideMobile from './../lib/layout/AsideMobile.svelte';
+	import HeaderMobile from '../lib/layout/HeaderMobile.svelte';
 	import About from '$lib/layout/About.svelte';
 	import Hero from '$lib/layout/Hero.svelte';
 	import Technologies from '$lib/layout/Technologies.svelte';
@@ -12,7 +12,7 @@
 </script>
 
 {#if $openAsideMobile}
-	<AsideMobile />
+	<HeaderMobile />
 {/if}
 
 <main class="max-w-[1340px] w-full mx-auto my-4 xs:my-8">
