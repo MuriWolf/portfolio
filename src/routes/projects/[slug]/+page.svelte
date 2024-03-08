@@ -1,9 +1,20 @@
-<script>
+<script lang="ts">
 	import Button from '$lib/components/ui/button/button.svelte';
 	import Footer from "$lib/layout/Footer.svelte";
   import { techIcons } from "$lib/utils";
   let projectTechs = ["typescript", "python", "css", "figma"]
   import * as Tooltip from "$lib/components/ui/tooltip";
+
+  export let data;
+
+  if (data) {
+    // console.log(data.project)
+    let projects = Array(data.project);
+    console.log(projects[0][0])
+    let item = projects.find((el: any) => el.slug != "billy-mentoria");
+    // console.log(item);
+    
+  }
 </script>
 
 <main class="max-w-[1340px] mx-auto flex flex-col gap-4 xs:gap-8 my-4 xs:my-8">

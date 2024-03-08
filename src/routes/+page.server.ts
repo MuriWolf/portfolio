@@ -1,13 +1,14 @@
-export async function load() {
-    // http://localhost:5173/
-    const response = await fetch("murillopoliveira.vercel.app/api", {
+import { SECRET_API_KEY } from '$env/static/private'
+
+export async function load({ fetch }) {
+    const response = await fetch("/api/projects", {
         method: "GET",
         headers: {
-            "content-type": "application/json"
+            "content-type": "application/json",
+            "Authorization": SECRET_API_KEY
         }
     })
 
     const projects = await response.json()
-
     return projects
 }
