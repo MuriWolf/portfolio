@@ -9,6 +9,8 @@
 	import Footer from '$lib/layout/Footer.svelte';
 	import { openAsideMobile } from '../store';
 
+	export let data;
+
 </script>
 
 {#if $openAsideMobile}
@@ -20,7 +22,7 @@
 		<Hero />
 		<About />
 		<Technologies />
-		<Projects />
+		<Projects projects={ data.projects ?? {} } />
 		<Testimonials />
 		<Contact />
 	</div>

@@ -10,7 +10,7 @@
     <section class="mx-4 xs:mx-8 rounded-3xl py-12 px-4 xs:px-6 sm:px-8 lg:px-16 shadow-claymorphism wrap
     ">
     <!-- bg-[linear-gradient(to_right_bottom,rgba(74,78,120,0.85),rgba(46,34,36,0.8)),url(/images/paintings/the-creation-of-adam.png)] -->
-    <div class="max-w-[800px] bg-gradient-to-bl from-[#c2c1c115] to-[#b1b2b413] bg-clip-padding border-4 border-transparent p-2 sm:p-7 backdrop-blur-sm rounded-2xl flex flex-col mx-auto glass-border after:content-['Website_Screenshots'] after:bg-c-background after:absolute after:-bottom-[18px] after:rounded-lg after:p-1 after:px-4 after:text-[12px] after:xs:text-[13px] after:text-center  after:text-gray-50 after:font-bold after:font-title after:translate-x-1/2 after:right-1/2">
+    <div class="max-w-[800px] bg-gradient-to-bl from-[#c2c1c115] to-[#b1b2b413] bg-clip-padding border-0 xs:border-4 border-transparent p-0 sm:p-7 backdrop-blur-sm rounded-2xl flex flex-col mx-auto glass-border after:content-['Website_Screenshots'] after:bg-c-background after:absolute after:-bottom-[18px] after:rounded-lg after:p-1 after:px-4 after:text-[12px] after:xs:text-[13px] after:text-center after:text-gray-50 after:font-bold after:font-title after:translate-x-1/2 after:right-1/2 after:max-md:hidden">
             <div class="flex items-center gap-6 mb-6">
                 <a href="/#projects" class="bg-c-tertiary w-[52px] h-[52px] justify-center items-center shadow-claymorphism rounded-lg hidden md:flex">
                     <svg width="30" height="35" viewBox="0 0 30 35" fill="none" xmlns="http://www.w3.org/2000/svg">
