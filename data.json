@@ -3,10 +3,14 @@
         {
             "id": 0,
             "title": {"pt": "Billy Mentoria", "en": "Billy Mentory"},
+            "description": [
+                "descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1 descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1", 
+                "descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2"
+            ],
             "slug": "billy-mentoria",
-            "technologies": [""],
-            "codeUrl": "",
-            "liveUrl": "",
+            "technologies": ["tailwind", "sass", "javascript"],
+            "codeUrl": "private",
+            "liveUrl": "https://billy-mentoria.netlify.app",
             "images": [
                 "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/billy-mentoria.png?updatedAt=1709863198646"
             ]
@@ -15,31 +19,49 @@
             "id": 1,
             "title": {"pt": "Porocode Sistema de Admin", "en": "Porocode Admin System"},
             "slug": "porocode-admin-system",
-            "technologies": [""],
-            "codeUrl": "",
-            "liveUrl": "",
+            "description": [
+                "descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1 descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1", 
+                "descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2"
+            ],
+            "technologies": ["svelte", "tailwind", "css", "figma"],
+            "codeUrl": "private",
+            "liveUrl": "https://porocode.vercel.app",
             "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-2.png?updatedAt=1709863200237"
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-1.png?updatedAt=1709863200237",
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-2.png",
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-3.png",
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-4.png",
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-5.png"
             ]
         },
         {
             "id": 2,
             "title": {"pt": "South Tech", "en": "South Tech"},
+            "description": [
+                "descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1 descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1", 
+                "descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2"
+            ],
             "slug": "south-tech",
-            "technologies": [""],
-            "codeUrl": "",
-            "liveUrl": "",
+            "technologies": ["php", "mysql", "tailwind", "sass"],
+            "codeUrl": "https://github.com/MuriWolf/tcc-adm",
+            "liveUrl": "https://south-tech-education.netlify.app",
             "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/south-tech-1.png?updatedAt=1709863199151"
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/south-tech-1.png?updatedAt=1709863199151",
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/south-tech-2.png",
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/south-tech-3.png"
             ]
         },
         {
             "id": 3,
             "title": {"pt": "Isaque Designer", "en": "Isaque Designer"},
+            "description": [
+                "descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1 descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1", 
+                "descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2"
+            ],
             "slug": "isaque-designer",
-            "technologies": [""],
-            "codeUrl": "",
-            "liveUrl": "",
+            "technologies": ["sass", "javascript", "css"],
+            "codeUrl": "private",
+            "liveUrl": "https://isaque-designer.netlify.app",
             "images": [
                 "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/isaque-designer.png?updatedAt=1709863198242"
             ]
@@ -47,12 +69,108 @@
         {
             "id": 4,
             "title": {"pt": "interactive card details form", "en": "interactive card details form"},
+            "description": [
+                "descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1 descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1", 
+                "descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2"
+            ],
             "slug": "interactive-card-details-form",
-            "technologies": [""],
-            "codeUrl": "",
-            "liveUrl": "",
+            "technologies": ["javascript", "sass"],
+            "codeUrl": "https://github.com/MuriWolf/interactive-card-details-form/tree/master",
+            "liveUrl": "https://interactive-card-details-form-muri.netlify.app",
             "images": [
                 "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/interactive-card-details-form.png?updatedAt=1709863198296"
+            ]
+        },
+        {
+            "id": 5,
+            "title": {"pt": "Billy Design", "en": "Billy Design"},
+            "description": [
+                "descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1 descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1", 
+                "descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2"
+            ],
+            "slug": "billy-design",
+            "technologies": ["javascript", "sass"],
+            "codeUrl": "https://github.com/MuriWolf/abilho-site2.0",
+            "liveUrl": "https://billy-design.netlify.app",
+            "images": [
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/billy-design.png?updatedAt=1709863198332"
+            ]
+        },
+        {
+            "id": 6,
+            "title": {"pt": "história de tudo (clone da interface)", "en": "Historía de tudo (Simple UI clone)"},
+            "description": [
+                "descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1 descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1", 
+                "descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2"
+            ],
+            "slug": "historia-de-tudo",
+            "technologies": ["javascript", "css"],
+            "codeUrl": "https://github.com/MuriWolf/historia_de_tudo",
+            "liveUrl": "https://muriwolf.github.io/historia_de_tudo/",
+            "images": [
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/historia-de-tudo-copy.png?updatedAt=1709863198438"
+            ]
+        },
+        {
+            "id": 7,
+            "title": {"pt": "Calculador de Gorjeta", "en": "Tip Calculator"},
+            "description": [
+                "descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1 descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1", 
+                "descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2"
+            ],
+            "slug": "tip-calculator",
+            "technologies": ["javascript", "css", "sass"],
+            "codeUrl": "http://github.com/MuriWolf/calculator-app-main",
+            "liveUrl": "https://muriwolf.github.io/calculator-app-main/",
+            "images": [
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/tip-calculator.png?updatedAt=1709863199633"
+            ]
+        },
+        {
+            "id": 8,
+            "title": {"pt": "Blogr (Landing Page)", "en": "Blogr (Landing Page)"},
+            "description": [
+                "descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1 descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1", 
+                "descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2"
+            ],
+            "slug": "blogr-landing-page",
+            "technologies": ["javascript", "css", "sass"],
+            "codeUrl": "https://github.com/MuriWolf/Blogr",
+            "liveUrl": "https://muriwolf.github.io/Blogr/",
+            "images": [
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/blogr-landing-page-3-1.png"
+            ]
+        },
+        {
+            "id": 9,
+            "title": {"pt": "Snap (Landing Page)", "en": "Snap (Landing Page)"},
+            "description": [
+                "descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1 descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1", 
+                "descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2"
+            ],
+            "slug": "snap-landing-page",
+            "technologies": ["javascript", "css"],
+            "codeUrl": "https://github.com/MuriWolf/Intro-section-with-dropdown-navigation",
+            "liveUrl": "https://muriwolf.github.io/Intro-section-with-dropdown-navigation/",
+            "images": [
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page-2.png?updatedAt=1709863200212"
+            ]
+        },
+        {
+            "id": 10,
+            "title": {"pt": "Clipboard (Landing Page)", "en": "Clipboard (Landing Page)"},
+            "description": [
+                "descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1 descricao 1 descricao 1 descricao 1 descricao 1 ads das asd descricao 1descricao 1", 
+                "descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 descricao 2 wsdasda descricao 2 descricao 2"
+            ],
+            "slug": "clipboard-landing-page",
+            "technologies": ["javascript", "css"],
+            "codeUrl": "https://github.com/MuriWolf/clipboard-landing-page-master",
+            "liveUrl": "https://clipboard-landing-page-muri.netlify.app",
+            "images": [
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-1.png?updatedAt=1709863198229",
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-2.png",
+                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-3.png"
             ]
         }
     ]

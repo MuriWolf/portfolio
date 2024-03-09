@@ -10,7 +10,6 @@
 	import { openAsideMobile } from '../store';
 
 	export let data;
-
 </script>
 
 {#if $openAsideMobile}
