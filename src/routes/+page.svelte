@@ -7,7 +7,7 @@
 	import Testimonials from '$lib/layout/Testimonials.svelte';
 	import Contact from '$lib/layout/Contact.svelte';
 	import Footer from '$lib/layout/Footer.svelte';
-	import { openAsideMobile } from '../store';
+	import { openAsideMobile } from '$lib/store';
 
 	export let data;
 </script>
@@ -26,8 +26,6 @@
 		<Contact />
 	</div>
 </main>
-
-
 
 <Footer />
 

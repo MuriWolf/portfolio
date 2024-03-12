@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { scale, slide } from "svelte/transition";
-	import { openAsideMobile } from "../../store";
+	import { openAsideMobile } from "$lib/store";
     import { Separator } from "$lib/components/ui/separator";
 	import { bounceIn } from "svelte/easing";
 

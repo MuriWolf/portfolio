@@ -173,5 +173,31 @@
                 "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-3.png"
             ]
         }
-    ]
+    ],
+    "content": 
+        {   
+            "nav": [
+                {"id": 0, "en": "Intro", "pt": "Intro"},
+                {"id": 1, "en": "About", "pt": "Sobre"},
+                {"id": 2, "en": "Techs", "pt": "Techs"},
+                {"id": 3, "en": "Projects", "pt": "Projetos"},
+                {"id": 4, "en": "Testimonials", "pt": "Depoimentos"},
+                {"id": 5, "en": "Contact", "pt": "Contato"}
+            ],
+            "hero": {
+                "title": {
+                    "greeting": {"pt": "Olá", "en": "Hello, I'am"},
+                    "name": "Murillo Pinheiro de Oliveira",
+                    "area": "Web Dev"
+                },
+                "subtitle": {
+                    "en": "Web programming involves developing websites and applications for the internet using languages such as HTML, CSS, and JavaScript.",
+                    "pt": "A programação web envolve o desenvolvimento de sites e aplicações para a internet, utilizando linguagens como HTML, CSS e JavaScript."
+                }
+            },
+            "footer": {
+                "authorship": {"en": "Designed & Developed by", "pt": "Projetado & Desenvolvido por"},
+                "love": {"en": "Made with the help of my love, Ana Laura ❤️", "pt": "Feito com a ajuda do meu amor, Ana Laura ❤️"}
+            }
+        }
 }
