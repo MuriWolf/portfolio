@@ -3,6 +3,7 @@
 	import type { CarouselAPI } from '$lib/components/ui/carousel/context';
     import * as Carousel from "$lib/components/ui/carousel/index";
     // import Autoplay from "embla-carousel-autoplay";
+    import { languageSelected } from '$lib/store';
     import { AspectRatio } from "$lib/components/ui/aspect-ratio";
 	import Button from "$lib/components/ui/button/button.svelte";
 
@@ -23,7 +24,7 @@
 </script>
 
 <section id="projects" class="col-span-2 bg-c-primary border-4 border-c-secondary py-12 pb-10 xs:px-6 sm:px-8 rounded-3xl shadow-claymorphism bg-test2" >
-    <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6 max-xs:px-4">4. PROJECTS</h2>
+    <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6 max-xs:px-4 uppercase">4. {$languageSelected == "en" ? 'PROJECTS' : 'Projetos'}</h2>
     <Carousel.Root 
         bind:api
         opts={{

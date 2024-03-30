@@ -2,6 +2,7 @@
 	import { Progress } from '$lib/components/ui/progress';
 	import type { CarouselAPI } from './../components/ui/carousel/context';
 	import Autoplay from 'embla-carousel-autoplay';
+    import { textContent, languageSelected } from '$lib/store';
     import * as Carousel from "$lib/components/ui/carousel/index";
 
     let api: CarouselAPI;
@@ -19,8 +20,10 @@
 
 <section id="testimonials" class="col-span-2 relative gradient-dark-two py-12 xs:px-6 sm:px-8 rounded-3xl z-0 bg-test">
     <hgroup class="mb-8 sm:mb-16 max-xs:px-4">
-        <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6">5. TESTIMONIALS</h2>
-        <p class="xs:text-lg text-c-body-text max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+        <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6">5. {$textContent.testimonials.title[$languageSelected] ?? "TESTIMONIALS"}</h2>
+        {#if $textContent}
+            <p class="xs:text-lg text-c-body-text max-w-2xl">{$textContent.testimonials.subtitle[$languageSelected]}</p>
+        {/if}
     </hgroup>
     <div class="flex gap-16 relative z-10 w-full">
         <Carousel.Root 

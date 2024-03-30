@@ -1,13 +1,12 @@
-// import { SECRET_API_KEY } from '$env/static/private'
-import { env } from '$env/dynamic/private'
-import { redirect } from '@sveltejs/kit';
+import { SECRET_API_KEY, AIRTABLE_API_KEY, AIRTABLE_BASE_ID } from '$env/static/private'
+import { json, redirect } from '@sveltejs/kit';
 
 export async function load({ fetch }) {
     const response = await fetch("/api/projects", {
         method: "GET",
         headers: {
             "content-type": "application/json",
-            "Authorization": env.SECRET_API_KEY
+            "Authorization": SECRET_API_KEY
         }
     })
 
@@ -30,4 +29,40 @@ export const actions = {
 		// throw redirect(303, redirectTo ?? "/");
         throw redirect(303, "/");
 	},
+	submitForm: async ({ request }) => {
+		const { name, email, message } = await request.json();
+		console.log(request);
+		
+		const AIRTABLE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/submissions`
+
+		let data = {
+			records: [{
+				fields: {
+					name,
+					email,
+					message,
+				},},
+			],
+		}
+
+		const res = await fetch(AIRTABLE_URL, {
+			method: 'POST',
+			headers: {
+			  Authorization: `Bearer ${AIRTABLE_API_KEY}`,
+			  'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(data),
+		  })
+
+		if (res.ok) {
+			return json({
+				message: "sucess"
+			}) 
+		} else {
+			return json({
+				message: "failed",
+				status: 404
+			})
+		}
+	}
 };

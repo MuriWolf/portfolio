@@ -1,5 +1,5 @@
 // import { SECRET_API_KEY } from '$env/static/private';
-import { env } from '$env/dynamic/private'
+import { SECRET_API_KEY } from '$env/static/private'
 
 export async function load({ params, fetch }) {
     async function fetchProject(slug: string) {
@@ -7,7 +7,7 @@ export async function load({ params, fetch }) {
             method: "GET",
             headers: {
                 "content-type": "application/json",
-                "Authorization": env.SECRET_API_KEY
+                "Authorization": SECRET_API_KEY
             }
         });
         const data = await res.json();
@@ -17,7 +17,7 @@ export async function load({ params, fetch }) {
         method: "GET",
         headers: {
             "content-type": "application/json",
-            "Authorization": env.SECRET_API_KEY
+            "Authorization": SECRET_API_KEY
         }
     });
     const data = await res.json();

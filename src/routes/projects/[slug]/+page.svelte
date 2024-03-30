@@ -1,5 +1,4 @@
 <script lang="ts">
-	import AspectRatio from './../../../lib/components/ui/aspect-ratio/aspect-ratio.svelte';
 	import { type projectType } from '$lib/types/projectType';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import Footer from "$lib/layout/Footer.svelte";
@@ -7,6 +6,7 @@
   import * as Tooltip from "$lib/components/ui/tooltip";
   import type { CarouselAPI } from '$lib/components/ui/carousel/context';
   import * as Carousel from "$lib/components/ui/carousel/index";
+  import { textContent, languageSelected } from '$lib/store';
 
   export let data;
   const project: projectType = data.project;
@@ -95,15 +95,15 @@
         <div class="bottom-plane"></div>
     </section>
     <section class="relative gradient-dark-two py-12 px-8 lg:px-16 rounded-3xl mx-4 xs:mx-8 text-center">
-      {#if project.description}
-        <h2 class="text-gray-50 font-title font-semibold text-3xl xs:text-4xl mb-4">Description</h2>
+      {#if project.description[$languageSelected]}
+        <h2 class="text-gray-50 font-title font-semibold text-3xl mb-4">{$textContent.projectPage.description[$languageSelected]}</h2>
         <div class="flex flex-col gap-4 max-w-lg mx-auto mb-12">
-          {#each project.description as paragraph}
-            <p class="text-gray-200">{paragraph}</p>  
+          {#each project.description[$languageSelected] as paragraph}
+            <p class="text-gray-100 leading-7 tracking-wide text-start">{paragraph}</p>  
           {/each}
        </div>
       {/if}
-        <h2 class="text-gray-50 font-title font-semibold text-3xl xs:text-4xl mb-4">Technologies used</h2>
+        <h2 class="text-gray-50 font-title font-semibold text-3xl  mb-4">{$textContent.projectPage.techs[$languageSelected]}</h2>
         <div class="max-w-lg flex flex-wrap flex-row justify-center gap-4 mx-auto mb-12">
         {#each techIcons.filter((techIcon) =>  project.technologies.includes(techIcon.title.toLowerCase())) as item}
           <Tooltip.Root openDelay={0}>
@@ -117,22 +117,22 @@
         {/each}
         </div>
 
-        <h2 class="text-gray-50 font-title font-semibold text-3xl xs:text-4xl mb-4">In Depth</h2>
+        <h2 class="text-gray-50 font-title font-semibold text-3xl  mb-4">{$textContent.projectPage.depth[$languageSelected]}</h2>
         <div class="flex max-sm:flex-col justify-center gap-6 items-center max-w-lg mx-auto mb-12">
-          <a href={project.liveUrl} class="flex-1 w-full" target="_blank">
-            <Button class="bg-gradient-to-b from-c-tertiary to-[#B5F186] w-full block text-c-darker-background font-title font-bold text-lg xs:text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-c-tertiary hover:bg-c-tertiary hover:brightness-90 active:scale-95 transition-all shadow-claymorphism-2">Live View</Button>
+          <a href={project.liveUrl} class="flex-[2] hover:flex-[3] focus-within:flex-[3] transition-all duration-300 w-full" target="_blank">
+            <Button class="bg-gradient-to-b from-c-tertiary to-[#B5F186] w-full block text-c-darker-background font-title font-bold text-lg xs:text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-c-tertiary hover:bg-c-tertiary hover:brightness-90 active:scale-95 transition-all shadow-claymorphism-2 ">Live View</Button>
           </a>
           {#if !(project.codeUrl === "private")}
-            <a href={project.codeUrl} class="flex-1 w-full" target="_blank">
+            <a href={project.codeUrl} class="flex-[2] hover:flex-[3] focus-within:flex-[3] transition-all duration-300 w-full" target="_blank">
               <Button class="bg-gradient-to-b from-c-primary to-[#55598D] w-full block !text-c-body-text font-title font-bold text-lg xs:text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-c-primary hover:bg-c-primary hover:brightness-90 active:scale-95 transition-all shadow-claymorphism-2">Discover More</Button>
             </a>
           {/if}
         </div>
 
-        <h2 class="text-gray-50 font-title font-semibold text-3xl xs:text-4xl mb-4">More</h2>
+        <!-- <h2 class="text-gray-50 font-title font-semibold text-3xl  mb-4">More</h2> -->
         <div class="flex justify-center gap-6 items-center max-w-lg mx-auto ">
-          <a href="/#projects" class="flex-1 w-full">
-            <Button class="bg-gradient-to-b from-white to-gray-300 w-full block text-c-darker-background font-title font-bold text-lg xs:text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-white hover:bg-white hover:brightness-90 active:scale-95 transition-all shadow-claymorphism-2">See Other Projects </Button>
+          <a href="/#projects" class="flex-1 w-full -mt-5">
+            <Button class="bg-gradient-to-b from-white to-gray-300 mx-auto hover:w-full block text-c-darker-background font-title font-bold text-lg xs:text-xl rounded-xl text-shadow shadow-[#00000066] active:bg-white hover:bg-white hover:brightness-90 active:scale-95 transition-all duration-300 shadow-claymorphism-2 w-3/5">See Other Projects </Button>
           </a>
 </div>
     </section>
