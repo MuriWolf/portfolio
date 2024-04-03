@@ -118,7 +118,7 @@
                 <nav class="max-w-lg mx-auto text-gray-200">
                     <ul class="flex gap-x-4 justify-center mt-5 mb-2">
                         <li class="hover:text-c-tertiary hover:scale-110 transition-all">
-                            <a href="." 
+                            <a href="https://github.com/muriWolf" target="_blank" rel="author"
                                 ><svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="31"
@@ -134,7 +134,7 @@
                             >
                         </li>
                         <li class="hover:text-c-tertiary hover:scale-110 transition-all">
-                            <a href="."
+                            <a href="https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/" target="_blank" rel="author"
                                 ><svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="28"
@@ -150,7 +150,7 @@
                             >
                         </li>
                         <li class="hover:text-c-tertiary hover:scale-110 transition-all">
-                            <a href="."
+                            <a href="https://web.telegram.org/k/#@MuriWolf" target="_blank" rel="author"
                                 ><svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="31"
@@ -173,7 +173,7 @@
                             >
                         </li>
                         <li class="hover:text-c-tertiary hover:scale-110 transition-all">
-                            <a href="."
+                            <a href="https://www.reddit.com/user/MuriWolf/" target="_blank" rel="author"
                                 ><svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="28"

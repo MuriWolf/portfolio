@@ -3,7 +3,7 @@
 </script>
 
 <section id="about" class="max-[956px]:col-span-2 relative flex justify-between gradient-dark-one py-12 px-4 xs:px-6 sm:px-8 rounded-3xl gap-4 bg-test">
-    <div class="sm:w-1/2 w-full flex flex-col gap-y-4 md:gap-y-6">
+    <div class="sm:w-1/2 w-full flex flex-col gap-y-4 md:gap-y-6" >
         <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-2">2. {$textContent.about.title[$languageSelected] ?? "ABOUT"}</h2>
         {#each $textContent.about.paragraphs as paragraph}
             <p class=" text-c-body-text">{paragraph[$languageSelected]}</p>

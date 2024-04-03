@@ -1,4 +1,3 @@
-// import { SECRET_API_KEY } from '$env/static/private';
 import { SECRET_API_KEY } from '$env/static/private'
 
 export async function load({ params, fetch }) {

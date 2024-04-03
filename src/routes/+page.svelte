@@ -7,9 +7,14 @@
 	import Testimonials from '$lib/layout/Testimonials.svelte';
 	import Contact from '$lib/layout/Contact.svelte';
 	import Footer from '$lib/layout/Footer.svelte';
-	import { openAsideMobile } from '$lib/store';
+	import { openAsideMobile, projectName } from '$lib/store';
+	import { onMount } from 'svelte';
 
 	export let data;
+
+	onMount(() => {
+		$projectName = "";
+	})
 </script>
 
 {#if $openAsideMobile}

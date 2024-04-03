@@ -90,7 +90,7 @@
         },
         {
             "id": 4,
-            "title": {"pt": "interactive card details form", "en": "interactive card details form"},
+            "title": {"pt": "Interactive Card Details Form", "en": "Interactive Card Details Form"},
             "description": {
                 "pt": [
                     "Website que simula o cadastro de um cartão de crédito. Feito com o intuito de treinar minha habilidades de front-end.", "Desafio proposto pelo Frontend Mentor ([Frontend Mentor](https://www.frontendmentor.io)). Desenvolvido por volta do final de 2022."

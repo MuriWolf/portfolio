@@ -49,7 +49,7 @@
                         <AspectRatio ratio={16 / 9} class="z-10 sm:p-4 glass-border bg-gray-300 bg-opacity-0 relative rounded-3xl overflow-hidden gradient-form glass-border">
                             <img
                                 src={`${project.images[0]}`}
-                                alt={`${project.title} project`}
+                                alt={`${project.title[$languageSelected]} project screenshot`}
                                 class="rounded-3xl object-cover h-full w-full"
                             />
                         </AspectRatio>
