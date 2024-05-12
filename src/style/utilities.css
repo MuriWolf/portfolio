@@ -27,8 +27,12 @@
   --form-bg-c3:#e8aeb70c ;
 }
 
-.gradient-dark-one {
-    background:  linear-gradient(135deg, #110a14e8 15%, rgb(34, 22, 39) 48.5%, #110a14 86%), url("https://www.transparenttextures.com/patterns/grid-me.png");
+.gradient-blue-ish {
+  background: linear-gradient(-45deg, #090C9B 0%, #737CFF 53%, #07BEB8 100%); /*  url("https://www.transparenttextures.com/patterns/grid-me.png") */
+}
+ 
+.gradient-white {
+    background:  linear-gradient(135deg, #fff, #ffffffec 86%), url("https://www.transparenttextures.com/patterns/grid-me.png");
 }
 
 .gradient-dark-two {
@@ -41,15 +45,15 @@
 }
 
 .glass-border::before {
-    content: '';
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    bottom: -6px;
-    left: -6px;
-    z-index: -1;
-    background: linear-gradient(135deg, #f7f7f759 0%, #f7f7f734 10%, #f7f7f71e 20%, #f7f7f70c 90%, #f7f7f759);
-    border-radius: inherit;
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  bottom: -6px;
+  left: -6px;
+  z-index: -1;
+  background: linear-gradient(135deg, #f7f7f759 0%, #f7f7f734 10%, #f7f7f71e 20%, #f7f7f70c 90%, #f7f7f759);
+  border-radius: inherit;
 }
 
 .bg-test2 {

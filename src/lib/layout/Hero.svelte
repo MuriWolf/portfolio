@@ -9,15 +9,15 @@
 <!-- <Saos animation={"slide-bottom 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000) both"} > -->
 	<section
 		id="intro"
-		class="relative col-span-2 px-4 xs:px-6 sm:px-8 md:px-16 pt-8 pb-12 xs:pb-24 bg-c-primary border-4 border-c-secondary rounded-3xl shadow-claymorphism "
+		class="relative col-span-2 px-4 xs:px-6 sm:px-8 md:px-16 pt-8 pb-12 xs:pb-24 gradient-blue-ish border-2 border-white/70 rounded-2xl shadow-xl shadow-stone-900"
 	>
 		<Header />
 		<hgroup class="relative z-10 ">
 			{#if $textContent}
 				<h1 class="text-4xl xs:text-5xl lg:text-7xl mt-6 xs:mt-16 text-c-body-text font-title font-bold">
-					<span class="text-c-background">{$textContent.hero.title.greeting[$languageSelected]}</span><br />
+					<span class="text-black">{$textContent.hero.title.greeting[$languageSelected]}</span><br />
 					Murillo Pinheiro de Oliveira,<br />
-					<span class="text-c-secondary">Web Dev.</span>
+					<span class="text-black/40">Web Dev.</span>
 				</h1>
 				<p class="max-w-lg mt-3 xs:mt-6 text-sm xs:text-base sm:text-lg text-gray-200 leading-6 font-semibold">
 					{$textContent.hero.subtitle[$languageSelected]}
@@ -26,7 +26,7 @@
 		</hgroup>
 		<nav class="max-w-lg mr-auto text-gray-200 relative z-10">
 			<ul class="flex gap-x-4 justify-end mt-4">
-				<li class="hover:text-c-tertiary hover:scale-110 transition-all duration-200">
+				<li class="hover:text-black  transition-all duration-200 ease-in">
 					<a href="https://github.com/muriWolf" target="_blank" rel="author"
 						><svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@
 						</svg></a
 					>
 				</li>
-				<li class="hover:text-c-tertiary hover:scale-110 transition-all duration-200">
+				<li class="hover:text-black transition-all duration-200 ease-in">
 					<a href="https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/" target="_blank" rel="author"
 						><svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@
 						</svg></a
 					>
 				</li>
-				<li class="hover:text-c-tertiary hover:scale-110 transition-all duration-200">
+				<li class="hover:text-black  transition-all duration-200 ease-in">
 					<a href="https://web.telegram.org/k/#@MuriWolf" target="_blank" rel="author"
 						><svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@
 						</svg></a
 					>
 				</li>
-				<li class="hover:text-c-tertiary hover:scale-110 transition-all duration-200">
+				<li class="hover:text-black  transition-all duration-200 ease-in">
 					<a href="https://www.reddit.com/user/MuriWolf/" target="_blank" rel="author"
 						><svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -99,8 +99,8 @@
 				</li>
 			</ul>
 		</nav>
-		<img src="strokes-hero.png" alt="" draggable="false" class="absolute right-0 bottom-0 z-0 hidden lg:block select-none">
-		<img src="strokes-hero2.png" alt="" draggable="false" class="absolute left-0 bottom-0 z-0 hidden lg:block select-none">
+		<!-- <img src="strokes-hero.png" alt="" draggable="false" class="absolute right-0 bottom-0 z-0 hidden lg:block select-none">
+		<img src="strokes-hero2.png" alt="" draggable="false" class="absolute left-0 bottom-0 z-0 hidden lg:block select-none"> -->
 	</section>
 <!-- </Saos> -->
 

@@ -26,7 +26,7 @@ const config = {
 				'c-secondary': '#E8AEB7',
 				'c-tertiary': '#CCF5AC',
 				'c-background': '#221627',
-				'c-darker-background': '#080A0C',
+				'c-darker-background': '#222222',
 				'c-body-text': '#FAFDF5',
 
 				border: "hsl(var(--border) / <alpha-value>)",

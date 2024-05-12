@@ -140,13 +140,13 @@ body {
 }
 
 ::-moz-selection { /* Code for Firefox */
-    color: black;
-    background: #CCF5AC;
+    color: white;
+    background: #07BEB8;
   }
   
   ::selection {
-    color: black;
-    background: #CCF5AC;
+    color: white;
+    background: #07BEB8;
   }
 
   ::-webkit-scrollbar {

@@ -21,9 +21,9 @@
 
 <Saos animation={"from-right 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000) both"} once={true}>
 </Saos>
-    <section id="testimonials" class="relative gradient-dark-two py-12 xs:px-6 sm:px-8 rounded-3xl z-0 bg-test">
+    <section id="testimonials" class="relative bg-black py-12 xs:px-6 sm:px-8 rounded-2xl z-0 shadow-xl shadow-stone-900"> <!-- bg-test -->
         <hgroup class="mb-8 sm:mb-16 max-xs:px-4">
-            <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6">5. {$textContent.testimonials.title[$languageSelected] ?? "TESTIMONIALS"}</h2>
+            <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6 lowercase">5. {$textContent.testimonials.title[$languageSelected] ?? "TESTIMONIALS"}</h2>
             {#if $textContent}
                 <p class="xs:text-lg text-c-body-text max-w-2xl">{$textContent.testimonials.subtitle[$languageSelected]}</p>
             {/if}
@@ -47,17 +47,17 @@
             <Carousel.Content>
                 {#each Array(4) as _, i (i)}
                     <Carousel.Item class="basis-[92%] xs:mx-4 sm:basis-[60%] min-[960px]:basis-1/3 relative z-10">
-                        <div class="py-6 px-7 rounded-xl backdrop-blur-md text-c-body-text caroucel-testimonial-item">
+                        <div class="py-6 px-7 rounded-[10px] backdrop-blur-md text-c-body-text caroucel-testimonial-item">
                             <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 7.5C0 3.35625 3.35625 0 7.5 0H8C9.10625 0 10 0.89375 10 2C10 3.10625 9.10625 4 8 4H7.5C5.56875 4 4 5.56875 4 7.5V8H8C10.2063 8 12 9.79375 12 12V16C12 18.2062 10.2063 20 8 20H4C1.79375 20 0 18.2062 0 16V14V12V7.5ZM16 7.5C16 3.35625 19.3563 0 23.5 0H24C25.1063 0 26 0.89375 26 2C26 3.10625 25.1063 4 24 4H23.5C21.5688 4 20 5.56875 20 7.5V8H24C26.2062 8 28 9.79375 28 12V16C28 18.2062 26.2062 20 24 20H20C17.7938 20 16 18.2062 16 16V14V12V7.5Z" fill="#E8AEB7"/>
+                                <path d="M0 7.5C0 3.35625 3.35625 0 7.5 0H8C9.10625 0 10 0.89375 10 2C10 3.10625 9.10625 4 8 4H7.5C5.56875 4 4 5.56875 4 7.5V8H8C10.2063 8 12 9.79375 12 12V16C12 18.2062 10.2063 20 8 20H4C1.79375 20 0 18.2062 0 16V14V12V7.5ZM16 7.5C16 3.35625 19.3563 0 23.5 0H24C25.1063 0 26 0.89375 26 2C26 3.10625 25.1063 4 24 4H23.5C21.5688 4 20 5.56875 20 7.5V8H24C26.2062 8 28 9.79375 28 12V16C28 18.2062 26.2062 20 24 20H20C17.7938 20 16 18.2062 16 16V14V12V7.5Z" fill="#ffff"/>
                                 </svg>                
                             <p class="mt-3">Estou completamente impressionado com a expertise e dedicação desta empresa. Seu comprometimento em superar expectativas é evidente em cada interação. Recomendo sem hesitar. </p>
                         </div>
-                        <div class="flex items-center gap-4 py-3.5 px-7 bg-[#EFEFEF] rounded-xl mt-4 shadow-claymorphism">
+                        <div class="flex items-center gap-4 py-3.5 px-7 bg-[#EFEFEF] rounded-[10px] mt-4 shadow-claymorphism">
                             <img src="" alt="" height="36" width="36" class="rounded-full">
                             <hgroup>
                                 <h2 class="text-c-darker-background font-title font-bold text-lg">Default Name</h2>
-                                <h3 class="text-xs bg-c-background text-c-secondary font-title font-bold pl-2">Student of GFY</h3>
+                                <h3 class="text-xs text-black/70 font-title font-bold">Student of GFY</h3>
                             </hgroup>
                         </div>
                     </Carousel.Item>
