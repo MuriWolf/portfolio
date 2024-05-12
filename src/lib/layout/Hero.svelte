@@ -6,15 +6,13 @@
 	import Saos from 'saos';
 </script>
 
-<Saos animation={"from-left 0.5s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
-</Saos>
+<!-- <Saos animation={"slide-bottom 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000) both"} > -->
 	<section
 		id="intro"
-		class="relative col-span-2 px-4 xs:px-6 sm:px-8 md:px-16 pt-8 pb-12 xs:pb-24 bg-c-primary border-4 border-c-secondary rounded-3xl shadow-claymorphism bg-test2"
-		transition:fly={{y: -1500, duration: 300}}
+		class="relative col-span-2 px-4 xs:px-6 sm:px-8 md:px-16 pt-8 pb-12 xs:pb-24 bg-c-primary border-4 border-c-secondary rounded-3xl shadow-claymorphism "
 	>
 		<Header />
-		<hgroup class="relative z-10">
+		<hgroup class="relative z-10 ">
 			{#if $textContent}
 				<h1 class="text-4xl xs:text-5xl lg:text-7xl mt-6 xs:mt-16 text-c-body-text font-title font-bold">
 					<span class="text-c-background">{$textContent.hero.title.greeting[$languageSelected]}</span><br />
@@ -104,4 +102,6 @@
 		<img src="strokes-hero.png" alt="" draggable="false" class="absolute right-0 bottom-0 z-0 hidden lg:block select-none">
 		<img src="strokes-hero2.png" alt="" draggable="false" class="absolute left-0 bottom-0 z-0 hidden lg:block select-none">
 	</section>
+<!-- </Saos> -->
+
 

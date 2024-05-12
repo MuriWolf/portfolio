@@ -22,10 +22,16 @@
 {/if}
 
 <main class="max-w-[1340px] w-full mx-auto my-4 xs:my-8">
-	<div class="grid grid-cols-2 gap-4 xs:gap-8 mx-4 xs:mx-8">
+	<div class="flex flex-col gap-4 xs:gap-8 mx-4 xs:mx-8" style="-webkit-perspective: 1000;">
 		<Hero />
-		<About />
-		<Technologies />
+		<div class="flex max-[956px]:flex-col gap-4 xs:gap-8 ">
+			<div class="flex-1">
+				<About />
+			</div>
+			<div class="flex-1">
+				<Technologies />
+			</div>
+		</div>
 		<Projects projects={ data.projects ?? {} } />
 		<Testimonials />
 		<Contact />

@@ -6,6 +6,7 @@
     import { languageSelected } from '$lib/store';
     import { AspectRatio } from "$lib/components/ui/aspect-ratio";
 	import Button from "$lib/components/ui/button/button.svelte";
+	import Saos from 'saos';
 
     export let projects: Array<projectType>;
         
@@ -21,10 +22,16 @@
             current = api.selectedScrollSnap() + 1;
         });
     }
+    let showingSection = false;
+    function handleUpdateSectionView(x: {detail: {observing: boolean} }) {
+        showingSection = x.detail.observing 
+    }
 </script>
 
-<section id="projects" class="col-span-2 bg-c-primary border-4 border-c-secondary py-12 pb-10 xs:px-6 sm:px-8 rounded-3xl shadow-claymorphism bg-test2" >
-    <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6 max-xs:px-4 uppercase">4. {$languageSelected == "en" ? 'PROJECTS' : 'Projetos'}</h2>
+<!-- <div class="perspective-400 transition-all duration-[400] ease-[cubic-bezier(0.645,0.045,0.355,1.000)] {showingSection ? 'translate-z-0' : '-translate-z-12'}">
+    <Saos on:update={handleUpdate} top={150} bottom={0}> -->
+<section id="projects" class="bg-c-primary border-4 border-c-secondary py-12 pb-10 xs:px-6 sm:px-8 rounded-3xl shadow-claymorphism bg-test2" >
+    <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6 max-xs:px-4 uppercase ">4. {$languageSelected == "en" ? 'PROJECTS' : 'Projetos'}</h2>
     <Carousel.Root 
         bind:api
         opts={{
@@ -46,11 +53,11 @@
             {#if projects}
                 {#each projects as project (project.id)}
                     <Carousel.Item class="basis-[92%] lg:basis-1/2 flex flex-col gap-5">
-                        <AspectRatio ratio={16 / 9} class="z-10 sm:p-4 glass-border bg-gray-300 bg-opacity-0 relative rounded-3xl overflow-hidden gradient-form glass-border">
+                        <AspectRatio ratio={16 / 9} class="z-10 sm:p-1 glass-border bg-gray-300 bg-opacity-0 relative rounded-xl overflow-hidden gradient-form glass-border">
                             <img
                                 src={`${project.images[0]}`}
                                 alt={`${project.title[$languageSelected]} project screenshot`}
-                                class="rounded-3xl object-cover h-full w-full"
+                                class="rounded-xl object-cover h-full w-full"
                             />
                         </AspectRatio>
                         <div class="flex flex-wrap justify-between gap-y-6 px-6 py-4 rounded-xl bg-c-background border-[1px] border-gray-400 shadow-claymorphism-noshadow ">
@@ -94,5 +101,5 @@
                 </button>
             </Carousel.Next>
         </footer>
-      </Carousel.Root>
+        </Carousel.Root>
 </section>
