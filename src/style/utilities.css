@@ -30,9 +30,12 @@
 .gradient-blue-ish {
   background: linear-gradient(-45deg, #090C9B 0%, #737CFF 53%, #07BEB8 100%); /*  url("https://www.transparenttextures.com/patterns/grid-me.png") */
 }
- 
 .gradient-white {
-    background:  linear-gradient(135deg, #fff, #ffffffec 86%), url("https://www.transparenttextures.com/patterns/grid-me.png");
+  background:  linear-gradient(135deg, #fff, #ffffffec 86%), url("https://www.transparenttextures.com/patterns/grid-me.png");
+}
+
+.gradient-white {
+    background:  linear-gradient(to bottom, #fff, #ccc), url("https://www.transparenttextures.com/patterns/grid-me.png");
 }
 
 .gradient-dark-two {

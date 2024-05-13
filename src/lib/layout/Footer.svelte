@@ -15,7 +15,7 @@
             <p class="text-c-body-text font-semibold">{$textContent.footer.authorship[$languageSelected]}</p>
             <Tooltip.Root openDelay={300} >
                 <Tooltip.Trigger >
-                    <p class="text-c-secondary font-bold text-lg">@ Murillo Pinheiro de Oliveira</p>
+                    <p class="text-c-body-text-light font-bold text-lg">@ Murillo Pinheiro de Oliveira</p>
                 </Tooltip.Trigger>
                 <Tooltip.Content>
                   <p class="font-semibold bg-opacity-0 shadow-none">{$textContent.footer.love[$languageSelected]}</p>

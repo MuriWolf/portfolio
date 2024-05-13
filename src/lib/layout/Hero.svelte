@@ -14,7 +14,7 @@
 		<Header />
 		<hgroup class="relative z-10 ">
 			{#if $textContent}
-				<h1 class="text-4xl xs:text-5xl lg:text-7xl mt-6 xs:mt-16 text-c-body-text font-title font-bold">
+				<h1 class="text-4xl xs:text-5xl lg:text-7xl mt-6 xs:mt-16 text-c-body-text-light font-title font-bold">
 					<span class="text-black">{$textContent.hero.title.greeting[$languageSelected]}</span><br />
 					Murillo Pinheiro de Oliveira,<br />
 					<span class="text-black/40">Web Dev.</span>

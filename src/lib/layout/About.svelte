@@ -9,7 +9,7 @@
         <div class="sm:w-1/2 w-full flex flex-col gap-y-4 md:gap-y-6" >
             <h2 class="font-title font-bold text-2xl xs:text-3xl text-black mb-2 lowercase">2. {$textContent.about.title[$languageSelected] ?? "about"}</h2>
             {#each $textContent.about.paragraphs as paragraph}
-                <p class=" text-black font-medium">{paragraph[$languageSelected]}</p>
+                <p class=" text-black">{paragraph[$languageSelected]}</p>
             {/each}
     
         </div>

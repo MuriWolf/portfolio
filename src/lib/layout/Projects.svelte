@@ -31,7 +31,7 @@
 <!-- <div class="perspective-400 transition-all duration-[400] ease-[cubic-bezier(0.645,0.045,0.355,1.000)] {showingSection ? 'translate-z-0' : '-translate-z-12'}">
     <Saos on:update={handleUpdate} top={150} bottom={0}> -->
 <section id="projects" class="gradient-blue-ish border-2 border-white/70 py-12 pb-10 xs:px-6 sm:px-8 rounded-2xl shadow-xl shadow-stone-900" >
-    <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6 max-xs:px-4 lowercase ">4. {$languageSelected == "en" ? 'PROJECTS' : 'Projetos'}</h2>
+    <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text-light mb-6 max-xs:px-4 lowercase ">4. {$languageSelected == "en" ? 'PROJECTS' : 'Projetos'}</h2>
     <Carousel.Root 
         bind:api
         opts={{
@@ -62,7 +62,7 @@
                         </AspectRatio>
                         <div class="flex flex-wrap justify-between gap-y-6 p-4 rounded-xl gradient-form border-[1px] border-gray-400 ">
                             <hgroup class="">
-                                <h3 class="font-title text-c-body-text font-bold text-xl xs:text-2xl">{project.title.pt}</h3>
+                                <h3 class="font-title text-c-body-text-light font-bold text-xl xs:text-2xl">{project.title.pt}</h3>
                                 <p class="text-black text-xs font-semibold">website</p>
                             </hgroup>
                             <div class="flex gap-2 md:gap-4">
