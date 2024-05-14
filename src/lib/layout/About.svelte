@@ -5,7 +5,7 @@
 
 <Saos animation={"from-left 0.3s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"} once={true}>
 </Saos>
-    <section id="about" class="max-[956px]:col-span-2 relative flex justify-between shadow-xl shadow-stone-900 py-12 px-4 xs:px-6 sm:px-8 rounded-2xl gap-4 gradient-white">
+    <section id="about" class="max-[956px]:col-span-2 relative flex justify-between shadow-xl py-12 px-4 xs:px-6 sm:px-8 rounded-2xl gap-4 gradient-white">
         <div class="sm:w-1/2 w-full flex flex-col gap-y-4 md:gap-y-6" >
             <h2 class="font-title font-bold text-2xl xs:text-3xl text-black mb-2 lowercase">2. {$textContent.about.title[$languageSelected] ?? "about"}</h2>
             {#each $textContent.about.paragraphs as paragraph}

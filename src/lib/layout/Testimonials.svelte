@@ -19,8 +19,8 @@
     }
 </script>
 
-<Saos animation={"from-right 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000) both"} once={true}>
-</Saos>
+<!-- <Saos animation={"from-right 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000) both"} once={true}>
+</Saos> -->
     <section id="testimonials" class="relative bg-black py-12 xs:px-6 sm:px-8 rounded-2xl z-0 shadow-xl shadow-stone-900"> <!-- bg-test -->
         <hgroup class="mb-8 sm:mb-16 max-xs:px-4">
             <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text-light mb-6 lowercase">5. {$textContent.testimonials.title[$languageSelected] ?? "TESTIMONIALS"}</h2>

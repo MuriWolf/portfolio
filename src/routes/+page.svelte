@@ -21,10 +21,10 @@
 	<HeaderMobile />
 {/if}
 
-<main class="max-w-[1340px] w-full mx-auto my-4 xs:my-8">
-	<div class="flex flex-col gap-4 xs:gap-8 mx-4 xs:mx-8" style="-webkit-perspective: 1000;">
+<main class="max-w-[1340px] w-full mx-auto my-2 sm:my-8">
+	<div class="flex flex-col gap-x-2 gap-y-2 sm:gap-x-8 sm:gap-y-8 mx-2 sm:mx-8" style="-webkit-perspective: 1000;">
 		<Hero />
-		<div class="flex max-[956px]:flex-col gap-4 xs:gap-8 ">
+		<div class="flex max-[956px]:flex-col gap-x-2 gap-y-2 sm:gap-x-8 sm:gap-y-8 ">
 			<div class="flex-1">
 				<About />
 			</div>

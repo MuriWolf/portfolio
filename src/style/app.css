@@ -164,12 +164,12 @@ body {
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: #AAAAAA;
+    background-color: #ccc;
     border-radius: 10px;
   }
   
   ::-webkit-scrollbar-track {
-    background-color: #080A0C;
+    background-color: #222222;
   }
 
   .techs-grid {

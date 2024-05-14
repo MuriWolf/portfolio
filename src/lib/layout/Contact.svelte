@@ -18,7 +18,7 @@
 </script>
 
 <Saos on:update={handleUpdateSectionView} > <!-- top={200} bottom={0} -->
-    <section id="contact" class="col-span-2 bg-black rounded-3xl py-12 px-4 xs:px-6 sm:px-8  gradient-dark-one overflow-x-hidden overflow-y-hidden" >
+    <section id="contact" class="col-span-2 bg-black rounded-2xl py-12 px-4 xs:px-6 sm:px-8  gradient-dark-one overflow-x-hidden overflow-y-hidden" >
         <h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text-light mb-6 lowercase">5. {$textContent.contact.title[$languageSelected] ?? "CONTACT"}</h2>
         <div class="relative max-w-4xl mx-auto mt-8 md:mt-24 flex max-md:flex-col-reverse gap-8 ">
             <div class="md:hidden relative z-10 bg-white gradient-white rounded-xl p-6">
