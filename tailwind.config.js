@@ -19,7 +19,9 @@ const config = {
 				'claymorphism-noshadow': 'inset -12px -8px 16px rgba(0, 0, 0, 0.225), inset 12px 8px 16px rgba(255, 255, 255, 0.1)',
 				'claymorphism-2': 'inset -10px -10px 14px rgba(0, 0, 0, 0.3), inset 10px 10px 12px rgba(255, 255, 255, 0.35), 0px 10px 48px rgba(173, 173, 173, 0.15)',
 				'neon': '0px 0px 15px var(--tw-shadow)',
-				'inner-md' : 'inset 0px 4px 12px var(--tw-shadow)'
+				'inner-sm' : 'inset 0px 0px 2px var(--tw-shadow)',
+				'inner-md' : 'inset 0px 4px 12px var(--tw-shadow)',
+				'custom-lg': '0 2px 16px var(--tw-shadow-color)'
 			},
 			colors: {
 				'c-primary': '#5B5F97',
