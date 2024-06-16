@@ -1,89 +1,109 @@
 @property --form-bg-c1 {
-  syntax: '<color>';
-  initial-value: #a5a5a53d;
-  inherits: false;
+	syntax: '<color>';
+	initial-value: #a5a5a53d;
+	inherits: false;
 }
 
 @property --form-bg-c2 {
-  syntax: '<color>';
-  initial-value: #e8aeb71e;
-  inherits: false;
+	syntax: '<color>';
+	initial-value: #aecee81e;
+	inherits: false;
 }
 
 @property --form-bg-c3 {
-  syntax: '<color>';
-  initial-value: #A5A5A51e;
-  inherits: false;
+	syntax: '<color>';
+	initial-value: #a5a5a51e;
+	inherits: false;
 }
 
 .gradient-form {
-  background:  linear-gradient(22deg, var(--form-bg-c1), var(--form-bg-c2), var(--form-bg-c3));
-  transition: --form-bg-c1 500ms, --form-bg-c2 500ms, --form-bg-c3 500ms;
+	background: linear-gradient(22deg, var(--form-bg-c1), var(--form-bg-c2), var(--form-bg-c3));
+	transition:
+		--form-bg-c1 500ms,
+		--form-bg-c2 500ms,
+		--form-bg-c3 500ms;
 }
 
 .gradient-form:hover {
-  --form-bg-c1: #e8aeb70e ;
-  --form-bg-c2:#e8aeb71e;
-  --form-bg-c3:#e8aeb70c ;
+	--form-bg-c1: #aec0e84f;
+	--form-bg-c2: #aed3e81e;
+	--form-bg-c3: #aecee82a;
 }
 
 .gradient-blue-ish {
-  background: linear-gradient(-45deg, #090C9B 0%, #737CFF 53%, #07BEB8 100%); /*  url("https://www.transparenttextures.com/patterns/grid-me.png") */
+	/* background-image: url("/mesh-496.png"); */
+	background: linear-gradient(
+		-45deg,
+		#090c9b 0%,
+		#737cff 53%,
+		#07beb8 100%
+	); 
 }
 .gradient-white {
-  background:  linear-gradient(135deg, #fff, #ffffffec 86%), url("https://www.transparenttextures.com/patterns/grid-me.png");
+	background: linear-gradient(135deg, #fff, #ffffffec 86%),
+		url('https://www.transparenttextures.com/patterns/grid-me.png');
 }
 
 .gradient-white {
-    background:  linear-gradient(to bottom, #fff, #ccc), url("https://www.transparenttextures.com/patterns/grid-me.png");
+	background: linear-gradient(to bottom, #fff, #ccc),
+		url('https://www.transparenttextures.com/patterns/grid-me.png');
 }
 
 .gradient-dark-two {
-    background:  linear-gradient(158deg, #221627 25.77%, #110A14 52.8%, #221627f5 74.3%), url("https://www.transparenttextures.com/patterns/grid-me.png");
+	background: linear-gradient(158deg, #221627 25.77%, #110a14 52.8%, #221627f5 74.3%),
+		url('https://www.transparenttextures.com/patterns/grid-me.png');
 }
 
 .glass-border {
-    position: relative;
-    z-index: 1;
+	position: relative;
+	z-index: 1;
 }
 
 .glass-border::before {
-  content: '';
-  position: absolute;
-  top: -6px;
-  right: -6px;
-  bottom: -6px;
-  left: -6px;
-  z-index: -1;
-  background: linear-gradient(135deg, #f7f7f759 0%, #f7f7f734 10%, #f7f7f71e 20%, #f7f7f70c 90%, #f7f7f759);
-  border-radius: inherit;
+	content: '';
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	bottom: -6px;
+	left: -6px;
+	z-index: -1;
+	background: linear-gradient(
+		135deg,
+		#f7f7f759 0%,
+		#f7f7f734 10%,
+		#f7f7f71e 20%,
+		#f7f7f70c 90%,
+		#f7f7f759
+	);
+	border-radius: inherit;
 }
 
 .bg-test2 {
-  background-color: #5b5f97;
-  background: linear-gradient(180deg, #5b5f97 50%, #5b5f97de), url("https://www.transparenttextures.com/patterns/groovepaper.png");
+	background-color: #5b5f97;
+	background: linear-gradient(180deg, #5b5f97 50%, #5b5f97de),
+		url('https://www.transparenttextures.com/patterns/groovepaper.png');
 }
 
 @-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
-  
+
 @keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

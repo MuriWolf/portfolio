@@ -262,6 +262,15 @@
                 {"id": 4, "en": "Testimonials", "pt": "Depoimentos"},
                 {"id": 5, "en": "Contact", "pt": "Contato"}
             ],
+            "qualities": {
+                "verb": { "pt": "Eleve", "en": "Enhance" },
+                "subs": [
+                  { "pt": "Excelência", "en": "Excellence" },
+                  { "pt": "Performance", "en": "Performace" },
+                  { "pt": "Responsividade", "en": "Responsiveness" },
+                  { "pt": "Funcionalidade", "en": "Functionality" }
+                ]
+              },
             "hero": {
                 "title": {
                     "greeting": {"pt": "Olá, sou", "en": "Hello, I'am"},
