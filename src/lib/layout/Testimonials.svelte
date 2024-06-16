@@ -23,7 +23,7 @@
 </Saos> -->
 <section
 	id="testimonials"
-	class="relative bg-black py-12 xs:px-6 sm:px-8 rounded-2xl z-0"
+	class="relative bg-black py-12 px-4 xs:px-6 sm:px-8 rounded-2xl z-0"
 >
 	<!-- bg-test -->
 	<hgroup class="mb-8 sm:mb-16 md:mb-32 max-xs:px-4">
