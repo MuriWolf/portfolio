@@ -1,4 +1,4 @@
-import { SECRET_API_KEY, AIRTABLE_API_KEY, AIRTABLE_BASE_ID } from '$env/static/private';
+import { SECRET_API_KEY } from '$env/static/private';
 import { json, redirect } from '@sveltejs/kit';
 import nodemailer from 'nodemailer';
 
