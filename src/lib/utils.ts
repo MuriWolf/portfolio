@@ -66,6 +66,10 @@ export const techIcons = [
 		title: 'Vue',
 		url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
 	},
+	{
+		title: 'Vercel',
+		url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg',
+	},
 ];
 
 export function cn(...inputs: ClassValue[]) {
