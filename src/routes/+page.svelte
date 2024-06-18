@@ -49,8 +49,8 @@
 				<Technologies />
 			</div>
 		</div>
-		<div class="hidden lg:block col-span-2 bg-black rounded-2xl py-12 px-4 xs:px-6 sm:px-8 gradient-dark-one overflow-x-hidden overflow-y-hidden ">
-			<h1 class="text-8xl font-semibold text-center text-c-body-text-light font-title">{$textContent.qualities.verb[$languageSelected]}...</h1>
+		<div class="bg-strokes hidden lg:block col-span-2 bg-black rounded-2xl py-12 px-4 xs:px-6 sm:px-8 gradient-dark-one overflow-x-hidden overflow-y-hidden ">
+			<h1 class="text-8xl font-semibold text-center text-c-body-text-light font-title relative z-10">{$textContent.qualities.verb[$languageSelected]}...</h1>
 		</div>
 		<Projects projects={data.projects ?? {}} />
 		<Testimonials />

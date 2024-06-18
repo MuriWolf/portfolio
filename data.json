@@ -21,7 +21,7 @@
                 "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/billy-mentoria.png?updatedAt=1709863198646"
             ]
         },
-        {
+        { 
             "id": 1,
             "title": {"pt": "Porocode Sistema de Admin", "en": "Porocode Admin System"},
             "slug": "porocode-admin-system",
@@ -306,8 +306,15 @@
                     "en": "Some feedback from people I worked with. I hope yours is next.",
                     "pt": "Alguns feedbacks de pessoas que tive o prazer de trabalhar. Espero que o seu seja o próximo."
                 },
-                "testimonials": [
-                    {"id": 0, "name": "", "occupation": "", "img": ""}
+                "content": [
+                    {"id": 0, "name": "Abilio Rafael", "occupation": "Designer", "originalLanguage": "ptBr", "quote": {
+                        "pt": "Cara, fiquei extremamente impressionado! Você é um verdadeiro expert em programação, trabalho impecável.",
+                        "en": "Dude, I was extremely impressed! You are a true programming expert, impeccable work."
+                    }},
+                    {"id": 1, "name": "Jay Bates", "occupation": "Co-Founder of Swapee.me", "originalLanguage": "enUk", "quote": {
+                        "pt": "Murillo é um desenvolvedor front end muito talentoso e devo dizer que é um excelente profissional. Ele me ajudou a entender o processo de desenvolvimento front-end da empresa e começou a trabalhar comigo e foi muito prestativo. Estou impressionado com sua ética de trabalho e habilidades de comunicação.",
+                        "en": "Murillo is a very talented front end developer and I must say he is an excellent professional. He helped me understand the company's front end development process and started working with me and was very helpful. I am impressed by his work ethic and communication skills."
+                    }}
                 ] 
             },
             "contact": {

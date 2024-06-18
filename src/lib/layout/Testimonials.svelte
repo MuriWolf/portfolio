@@ -5,6 +5,7 @@
 	import { textContent, languageSelected } from '$lib/store';
 	import * as Carousel from '$lib/components/ui/carousel/index';
 	import Saos from 'saos';
+	import { flags } from '$lib/components/ui/flags';
 
 	let api: CarouselAPI;
 	let count = 0;
@@ -23,15 +24,14 @@
 </Saos> -->
 <section
 	id="testimonials"
-	class="relative bg-black py-12 px-4 xs:px-6 sm:px-8 rounded-2xl z-0"
->
+	class="bg-strokes relative bg-black py-12 px-4 xs:px-6 sm:px-8 rounded-2xl">
 	<!-- bg-test -->
 	<hgroup class="mb-8 sm:mb-16 md:mb-32 max-xs:px-4">
-		<h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text-light mb-6 lowercase">
+		<h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text-light mb-6 lowercase z-10 relative">
 			5. {$textContent.testimonials.title[$languageSelected] ?? 'TESTIMONIALS'}
 		</h2>
 		{#if $textContent}
-			<p class="xs:text-lg text-c-body-text-light/80 font-medium max-w-2xl">
+			<p class="xs:text-lg text-c-body-text-light/80 font-medium max-w-2xl z-10 relative">
 				{$textContent.testimonials.subtitle[$languageSelected]}
 			</p>
 		{/if}
@@ -53,12 +53,12 @@
 			class="w-full rounded-xl overflow-hidden"
 		>
 			<Carousel.Content>
-				{#each Array(4) as _, i (i)}
+				{#each $textContent.testimonials.content as testimonial, i (i)}
 					<Carousel.Item
 						class="basis-[100%] xs:mx-2 sm:basis-[70%] min-[960px]:basis-1/3 relative z-10"
 					>
 						<div
-							class="py-6 px-7 rounded-[10px] backdrop-blur-md text-c-body-text-light/85 caroucel-testimonial-item"
+							class="py-6 px-7 rounded-[10px] backdrop-blur-[8px] hover:backdrop-blur-md text-c-body-text-light/85 caroucel-testimonial-item"
 						>
 							<svg
 								width="28"
@@ -73,61 +73,62 @@
 								/>
 							</svg>
 							<p class="mt-3 font-semibold">
-								Estou completamente impressionado com a expertise e dedicação desta empresa. Seu
-								comprometimento em superar expectativas é evidente em cada interação. Recomendo sem
-								hesitar.
+								{testimonial.quote[$languageSelected]}"
 							</p>
 						</div>
 						<div
-							class="flex items-center gap-4 py-3.5 px-7 bg-[#EFEFEF] rounded-[10px] mt-4 shadow-claymorphism"
+							class="flex items-center justify-between gap-4 py-3.5 px-7 bg-[#EFEFEF] rounded-[10px] mt-4 shadow-claymorphism"
 						>
 							<!-- <img src="" alt="" height="36" width="36" class="rounded-full" /> -->
 							<hgroup>
-								<h2 class="text-c-darker-background font-title font-bold text-lg">Default Name</h2>
-								<h3 class="text-xs text-black/70 font-title font-bold">Student of GFY</h3>
+								<h2 class="text-c-darker-background font-title font-bold text-lg">{testimonial.name}</h2>
+								<h3 class="text-xs text-black/70 font-title font-bold">{testimonial.occupation}</h3>
 							</hgroup>
+							<img src={flags[testimonial.originalLanguage]} width="32" class="rounded-[2px] self-end" alt="country flag">
 						</div>
 					</Carousel.Item>
 				{/each}
 			</Carousel.Content>
-			<footer class="hidden md:flex items-center justify-center gap-4 p-2 mt-6 max-xs:px-4">
-				<Carousel.Previous style="all: unset;">
-					<button class="text-white active:scale-90 transition-all ease-in-out duration-150 flex">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="20"
-							fill="currentColor"
-							viewBox="0 0 256 512"
-							><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
-								d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"
-							/></svg
-						>
-					</button>
-				</Carousel.Previous>
-				{#each Array(4) as _, i (i)}
-					<button
-						on:click={() => api.scrollTo(i)}
-						class="w-4 h-4 rounded-full border-2 border-green-50 transition-all duration-300 {current ==
-						i + 1
-							? 'bg-white'
-							: ''}"
-					></button>
-				{/each}
-				<!-- <Progress value={current} max={count} progressColor="bg-c-secondary" class=" transition-all duration-500 max-w-96 shadow-md" /> -->
-				<Carousel.Next style="all: unset;">
-					<button class="text-white active:scale-90 transition-all ease-in-out duration-150">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="20"
-							fill="currentColor"
-							viewBox="0 0 256 512"
-							><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
-								d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
-							/></svg
-						>
-					</button>
-				</Carousel.Next>
-			</footer>
+			{#if $textContent.testimonials.content.length > 1}
+				<footer class="hidden md:flex items-center justify-center gap-4 p-2 mt-6 max-xs:px-4">
+					<Carousel.Previous style="all: unset;">
+						<button class="text-white active:scale-90 transition-all ease-in-out duration-150 flex">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								fill="currentColor"
+								viewBox="0 0 256 512"
+								><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
+									d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"
+								/></svg
+							>
+						</button>
+					</Carousel.Previous>
+					{#each $textContent.testimonials.content as _, i (i)}
+						<button
+							on:click={() => api.scrollTo(i)}
+							class="w-4 h-4 rounded-full border-2 border-green-50 transition-all duration-300 {current ==
+							i + 1
+								? 'bg-white'
+								: ''}"
+						></button>
+					{/each}
+					<!-- <Progress value={current} max={count} progressColor="bg-c-secondary" class=" transition-all duration-500 max-w-96 shadow-md" /> -->
+					<Carousel.Next style="all: unset;">
+						<button class="text-white active:scale-90 transition-all ease-in-out duration-150">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								fill="currentColor"
+								viewBox="0 0 256 512"
+								><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
+									d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+								/></svg
+							>
+						</button>
+					</Carousel.Next>
+				</footer>
+			{/if}
 		</Carousel.Root>
 	</div>
 	<!-- <img
@@ -159,7 +160,7 @@
 	}
 
 	.caroucel-testimonial-item:hover {
-		--testimonial-bg-c1: #f7f7f744;
-		--testimonial-bg-c2: #aed6e82c;
+		--testimonial-bg-c1: #07beb831;
+		--testimonial-bg-c2: #737cff18;
 	}
 </style>

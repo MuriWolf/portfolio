@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 	import { enhance } from '$app/forms';
 	import logo from '$lib/assets/logo.svg';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
@@ -26,7 +27,7 @@
 					<li
 						class="hover:text-black text-c-body-text-light transition-all duration-200 ease-in font-semibold"
 					>
-						<a href={`#${item.en.toLowerCase()}`}>{item[$languageSelected]}</a>
+						<a href={`#${item.en.toLowerCase()}`} in:fade={{ duration: 75 }}>{item[$languageSelected]}</a>
 					</li>
 				{/each}
 			{/if}

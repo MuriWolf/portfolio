@@ -12,6 +12,7 @@
 	import colorExplosion3 from '$lib/assets/colorExplosion3.png';
 
 	let showingSection: boolean;
+	let hoveringForm = false;
 	function handleUpdateSectionView(x: { detail: { observing: boolean } }) {
 		showingSection = x.detail.observing;
 	}
@@ -19,11 +20,12 @@
 
 <Saos on:update={handleUpdateSectionView}>
 	<!-- top={200} bottom={0} -->
+	<!-- hover:before:!opacity-60 -->
 	<section
 		id="contact"
-		class="section col-span-2 bg-black rounded-2xl py-12 px-4 xs:px-6 sm:px-8 gradient-dark-one overflow-x-hidden overflow-y-hidden "
+		class="bg-strokes {hoveringForm ? `before:!bg-[url('/strokes.png')]` : ''} section col-span-2 bg-black rounded-2xl py-12 px-4 xs:px-6 sm:px-8 gradient-dark-one overflow-x-hidden overflow-y-hidden"
 	>
-		<h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text-light mb-6 lowercase">
+		<h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text-light mb-6 lowercase z-10 relative">
 			5. {$textContent.contact.title[$languageSelected] ?? 'CONTACT'}
 		</h2>
 		<div class="relative max-w-4xl mx-auto mt-8 md:mt-24 flex max-md:flex-col-reverse gap-8">
@@ -49,12 +51,14 @@
 			<form
 				method="POST"
 				action="?/submitForm"
-				class="relative z-10 flex flex-col gap-y-6 py-6 px-4 xs:px-6 bg-gray-300 bg-opacity-0 rounded-xl flex-[7] gradient-form backdrop-blur-3xl border-2 border-c-body-text-light/50"
-			>
+				class="relative z-10 flex flex-col gap-y-6 py-6 px-4 xs:px-6 bg-gray-300 bg-opacity-0 rounded-xl flex-[7] gradient-form backdrop-blur-[10px] border-2 border-c-body-text-light/50 "
+				on:mouseenter={() => hoveringForm = true} on:mouseleave={() => hoveringForm = false}
+				>
 				{#if $textContent}
 					<label class="text-c-body-text-light font-semibold">
 						<h3 class="text-lg">{$textContent.contact.form.name.title[$languageSelected]}</h3>
 						<input
+							autocomplete="off"
 							required
 							name="name"
 							type="text"
@@ -65,6 +69,7 @@
 					<label class="text-c-body-text-light font-semibold">
 						<h3 class="text-lg">{$textContent.contact.form.email.title[$languageSelected]}</h3>
 						<input
+							autocomplete="off"
 							required
 							name="email"
 							type="email"
@@ -75,6 +80,7 @@
 					<label class="text-c-body-text-light font-semibold h-full">
 						<h3 class="text-lg">{$textContent.contact.form.message.title[$languageSelected]}</h3>
 						<textarea
+							autocomplete="off"
 							required
 							name="message"
 							placeholder={$textContent.contact.form.message.placeholder[$languageSelected]}
@@ -160,6 +166,11 @@
 </Saos>
 
 <style>
+
+	* { 
+		perspective: 1000;
+		-webkit-perspective: 1000;
+	}
 	form *::-webkit-scrollbar-track {
 		background-color: #f9f9f9 !important;
 	}
@@ -171,3 +182,4 @@
 		background-size: 100% 50%;
 	} */
 </style>
+

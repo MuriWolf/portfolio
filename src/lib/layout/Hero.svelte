@@ -1,9 +1,8 @@
 <script lang="ts">
-	import { fly, slide } from 'svelte/transition';
+	import { fade, fly, slide, blur } from 'svelte/transition';
 	import { textContent, languageSelected } from '$lib/store';
 	import Header from './Header.svelte';
 	import { onMount } from 'svelte';
-	import Saos from 'saos';
 </script>
 
 <!-- <Saos animation={"slide-bottom 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000) both"} > -->
@@ -16,16 +15,17 @@
 		{#if $textContent}
 			<h1
 				class="text-4xl xs:text-5xl lg:text-7xl mt-6 xs:mt-16 text-c-body-text-light font-title font-bold"
-			>
-				<span class="text-black">{$textContent.hero.title.greeting[$languageSelected]}</span><br />
+			>	
+			<span class="text-black" in:fade={{ duration: 100, delay: 250 }} out:fade={{ duration: 100 }} >{$textContent.hero.title.greeting[$languageSelected]}</span>	
+				<br />
 				Murillo Pinheiro de Oliveira,<br />
 				<span class="text-black/40">Web Dev.</span>
 			</h1>
-			<p
-				class="max-w-lg mt-3 xs:mt-6 text-sm xs:text-base sm:text-lg text-gray-200 leading-6 font-semibold"
-			>
-				{$textContent.hero.subtitle[$languageSelected]}
-			</p>
+				<p
+					class="max-w-lg mt-3 xs:mt-6 text-sm xs:text-base sm:text-lg text-gray-200 leading-6 font-semibold h-[70px]"
+				>
+					{$textContent.hero.subtitle[$languageSelected]}
+				</p>
 		{/if}
 	</hgroup>
 	<nav class="max-w-lg mr-auto text-gray-200 relative z-10">
