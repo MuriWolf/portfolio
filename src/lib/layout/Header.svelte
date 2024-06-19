@@ -63,7 +63,7 @@
 						<img src="images/flags/br.svg" width="32" alt="brazil flag" />
 						<p>Português</p>
 					</button>
-					<DropdownMenu.Separator class="my-0" />
+					<DropdownMenu.Separator class="my-0 mx-0 w-full" />
 					<button
 						formaction="/?/setLanguage&language=en"
 						class="flex gap-x-2 items-center hover:bg-gray-100 p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full"

@@ -58,7 +58,7 @@
 						class="basis-[100%] xs:mx-2 sm:basis-[70%] min-[960px]:basis-1/3 relative z-10"
 					>
 						<div
-							class="py-6 px-7 rounded-[10px] backdrop-blur-[8px] hover:backdrop-blur-md text-c-body-text-light/85 caroucel-testimonial-item"
+							class="py-6 px-7 rounded-[10px] backdrop-blur-[8px] bg-c-body-text-light/30 hover:backdrop-blur-md text-c-body-text-light/85 caroucel-testimonial-item"
 						>
 							<svg
 								width="28"
@@ -155,12 +155,23 @@
 	.caroucel-testimonial-item {
 		background: linear-gradient(135deg, var(--testimonial-bg-c1), var(--testimonial-bg-c2));
 		transition:
-			--testimonial-bg-c1 500ms,
-			--testimonial-bg-c2 500ms;
+		--testimonial-bg-c1 500ms,
+		--testimonial-bg-c2 500ms;			
 	}
 
 	.caroucel-testimonial-item:hover {
 		--testimonial-bg-c1: #07beb831;
 		--testimonial-bg-c2: #737cff18;
+	}
+
+	@supports(-moz-appearance:none) {
+		.caroucel-testimonial-item {
+			transition: all 0.5s;
+			background: linear-gradient(135deg, #f7f7f75d, #f7f7f717);
+		}
+
+		.caroucel-testimonial-item:hover {
+			background: linear-gradient(135deg, #273a44, #020444b2);
+		}
 	}
 </style>

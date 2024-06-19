@@ -23,7 +23,7 @@
 	<!-- hover:before:!opacity-60 -->
 	<section
 		id="contact"
-		class="bg-strokes {hoveringForm ? `before:!bg-[url('/strokes.png')]` : ''} section col-span-2 bg-black rounded-2xl py-12 px-4 xs:px-6 sm:px-8 gradient-dark-one overflow-x-hidden overflow-y-hidden"
+		class="bg-strokes {hoveringForm ? `apply-other-bg-img` : ''} section col-span-2 bg-black rounded-2xl py-12 px-4 xs:px-6 sm:px-8 gradient-dark-one overflow-x-hidden overflow-y-hidden"
 	>
 		<h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text-light mb-6 lowercase z-10 relative">
 			5. {$textContent.contact.title[$languageSelected] ?? 'CONTACT'}
@@ -95,16 +95,6 @@
 					>
 				{/if}
 			</form>
-			<!-- <img src="ellipse-blue.png" alt="" class="absolute z-0 top-[264px] md:-top-20 -left-[86px] md:-left-24">
-            <img src="ellipse-green.png" alt="" class="absolute z-0 bottom-24 md:-bottom-10 right-16 md:right-1/2 translate-x-2/3"> -->
-			<!-- <img
-				src={colorExplosion}
-				alt=""
-				class="absolute z-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 scale-[1.2]"
-			/> -->
-			<!-- <img src={colorExplosion2} alt="" class="absolute z-0 left-1/2 -translate-x-1/2 -top-1/2"> -->
-			<!-- <img src={colorExplosion3} alt="" class="absolute z-0 left-1/2 -translate-x-1/2 -top-1/2"> -->
-
 			<div class="relative z-10 flex flex-col gap-y-7 flex-[5]">
 				<div
 					class="bg-white gradient-white rounded-xl p-6 mt-auto relative transition-all perspective-400 ease-[cubic-bezier(0.645,0.045,0.355,1.000)] duration-2000"
@@ -153,7 +143,7 @@
 								>
 							</li>
 							<li class="hover:text-black text-stone-600 transition-all duration-200 ease-in">
-								<a href="https://www.reddit.com/user/MuriWolf/" target="_blank" rel="author"
+								<a href="https://web.telegram.org/k/#@MuriWolfhttps://web.telegram.org/k/#@MuriWolf" target="_blank" rel="author"
 									><RedditIcon /></a
 								>
 							</li>
@@ -166,7 +156,6 @@
 </Saos>
 
 <style>
-
 	* { 
 		perspective: 1000;
 		-webkit-perspective: 1000;
@@ -174,12 +163,15 @@
 	form *::-webkit-scrollbar-track {
 		background-color: #f9f9f9 !important;
 	}
-
-	/* .section {
-		background-image: url("/bottom-pattern.png");
-		background-repeat: no-repeat;
-		background-position: bottom;
-		background-size: 100% 50%;
-	} */
+	.apply-other-bg-img::before {
+		content: '';
+		background-image: url('/strokes.png') !important;
+	}
+	@supports(-moz-appearance:none) {
+		.apply-other-bg-img::before {
+			content: '';
+			background-image: url('/strokes2.png') !important;
+		}
+	}
 </style>
 

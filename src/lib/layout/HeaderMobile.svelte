@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-	import { scale, slide } from 'svelte/transition';
-	import { languageSelected, openAsideMobile } from '$lib/store';
+	import { scale, slide, fade } from 'svelte/transition';
+	import { languageSelected, openAsideMobile, textContent } from '$lib/store';
 	import { Separator } from '$lib/components/ui/separator';
 	import { bounceIn } from 'svelte/easing';
 	import GithubIcon from '$lib/assets/githubIcon.svelte';
@@ -12,20 +12,11 @@
 
 	let openAnimation = false;
 
-	const internalLinks = [
-		{ id: 1, name: 'Intro', link: 'hero' },
-		{ id: 2, name: 'About', link: 'about' },
-		{ id: 3, name: 'Techs', link: 'technologies' },
-		{ id: 4, name: 'Projects', link: 'projects' },
-		{ id: 5, name: 'Testimonials', link: 'testimonials' },
-		{ id: 6, name: 'Contact', link: 'contact' },
-	];
-
 	const socialMedias = [
-		{ id: 1, name: 'GitHub', icon: GithubIcon, link: '' },
-		{ id: 2, name: 'Linkedin', icon: LinkedinIcon, link: '' },
-		{ id: 3, name: 'Telegram', icon: TelegramIcon, link: '' },
-		{ id: 4, name: 'Reddit', icon: RedditIcon, link: '' },
+		{ id: 1, name: 'GitHub', icon: GithubIcon, link: 'https://github.com/muriWolf' },
+		{ id: 2, name: 'Linkedin', icon: LinkedinIcon, link: 'https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/' },
+		{ id: 3, name: 'Telegram', icon: TelegramIcon, link: 'https://web.telegram.org/k/#@MuriWolf' },
+		{ id: 4, name: 'Reddit', icon: RedditIcon, link: 'https://web.telegram.org/k/#@MuriWolf' },
 	];
 
 	onMount(() => {
@@ -55,14 +46,14 @@
 		<div class="flex-2">
 			<nav class="text-c-body-text text-2xl font-medium">
 				<ol class="ml-0 flex flex-col gap-4 w-full">
-					{#each internalLinks as internalLink (internalLink.id)}
+					{#each $textContent.nav as item (item.id)}
 						{#if openAnimation}
 							<a
-								href={`#${internalLink.link}`}
+								href={`#${item.en.toLowerCase()}`}
 								class="block hover:opacity-65 text-c-body-text-light hover:text-shadow-sm shadow-gray-600 transition-all duration-150 ease-in"
-								transition:scale={{ delay: internalLink.id * 50 }}
+								transition:scale={{ delay: item.id * 50 }}
 							>
-								<li>{internalLink.id}. {internalLink.name}</li>
+								<li>{item.id +1}. {item[$languageSelected]}</li>
 							</a>
 						{/if}
 					{/each}
@@ -98,15 +89,15 @@
 				</form>
 				<Separator class="mb-3 w-8 border-2 rounded" />
 				{#each socialMedias as socialMedia (socialMedia.id)}
-					<li
-						class="hover:opacity-65 text-c-body-text-light hover:scale-110 transition-all ease-in"
-					>
-						{#if openAnimation}
-							<a href={socialMedia.link} transition:scale={{ delay: socialMedia.id * 100 }}>
+					{#if openAnimation}
+						<li
+							class="hover:opacity-65 text-c-body-text-light hover:scale-110 transition-all ease-in" transition:fade={{ duration: 300, delay: socialMedia.id * 100 }}
+						>
+							<a href={socialMedia.link} target="_blank" rel="author" >
 								<svelte:component this={socialMedia.icon} />
 							</a>
-						{/if}
-					</li>
+						</li>
+					{/if}
 				{/each}
 			</ul>
 		</div>
