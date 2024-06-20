@@ -8,7 +8,7 @@
 <!-- <Saos animation={"slide-bottom 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000) both"} > -->
 <section
 	id="intro"
-	class="relative col-span-2 px-4 xs:px-6 sm:px-8 md:px-16 pt-8 pb-12 xs:pb-24 gradient-blue-ish border-2 border-gray-300 rounded-2xl shadow-xl shadow-stone-900"
+	class="relative col-span-2 section-default-style pt-8 pb-12 xs:pb-24 gradient-blue-ish border-2 border-gray-300 shadow-xl shadow-stone-900"
 >
 	<Header />
 	<hgroup class="relative z-10">

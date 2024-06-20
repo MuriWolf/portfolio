@@ -93,7 +93,7 @@
 
 .bg-strokes:before {
 	content: '';
-	display: block;
+	display: none;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -110,6 +110,12 @@
 
 .bg-strokes:hover:before {
 	opacity: 0.35;
+}
+
+@media (min-width: 768px) {
+	.bg-strokes::before {
+		display: block;
+	}
 }
 
 @-webkit-keyframes AnimateBG {

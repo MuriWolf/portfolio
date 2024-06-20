@@ -34,14 +34,14 @@
 	<HeaderMobile />
 {/if}
 
-<main class="max-w-[1340px] w-full mx-auto my-2 sm:my-4 md:my-8">
+<main class="max-w-[1340px] w-full mx-auto my-0 sm:my-4 md:my-8">
 	<div
 		id="container"
-		class="flex flex-col gap-x-2 gap-y-2 sm:gap-x-4 sm:gap-y-4 md:gap-x-8 md:gap-y-8 mx-2 sm:mx-4 md:mx-8"
+		class="flex flex-col gap-x-2 gap-y-0 sm:gap-x-4 sm:gap-y-4 md:gap-x-8 md:gap-y-8 mx-0 sm:mx-4 md:mx-8"
 		style="-webkit-perspective: 1000;"
 	>
 		<Hero />
-		<div class="flex max-[956px]:flex-col gap-x-2 gap-y-2 sm:gap-x-4 sm:gap-y-4 md:gap-x-8 md:gap-y-8">
+		<div class="flex max-[956px]:flex-col gap-x-2 gap-y-0 sm:gap-x-4 sm:gap-y-4 md:gap-x-8 md:gap-y-8">
 			<div class="flex-1">
 				<About />
 			</div>

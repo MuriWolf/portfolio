@@ -10,7 +10,7 @@
 
 <section
 	id="techs"
-	class="col-span-1 max-[956px]:col-span-2 gradient-white py-12 h-full px-4 xs:px-6 sm:px-8 rounded-2xl bg-test"
+	class="col-span-1 max-[956px]:col-span-2 max-md:!bg-gradient-to-t max-md:!from-stone-200 max-md:!to-stone-200 gradient-white h-full section-default-style max-sm:pt-0 bg-test"
 >
 	<h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text mb-6 lowercase">
 		3. {$textContent.techs.title[$languageSelected] ?? 'TECHNOLOGIES'}

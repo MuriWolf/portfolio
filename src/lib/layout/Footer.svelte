@@ -11,7 +11,7 @@
 <!-- <Saos animation={"slide-top 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000) both"} top={50} bottom={50} > -->
 <footer class="max-w-[1340px] mx-auto">
 	<div
-		class="flex-col relative text-center gradient-blue-ish border-2 border-gray-300 mx-2 sm:mx-4 md:mx-8 py-10 px-8 lg:px-16 rounded-2xl flex justify-center mb-2 sm:mb-4 md:mb-8"
+		class="flex-col relative text-center gradient-blue-ish border-2 border-gray-300 sm:mx-4 md:mx-8 py-10 px-8 lg:px-16 sm:rounded-2xl flex justify-center sm:mb-4 md:mb-8"
 	>
 		<img
 			src={logo}

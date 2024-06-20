@@ -30,12 +30,12 @@
 	}
 </script>
 
-<main class="max-w-[1340px] mx-auto flex flex-col gap-2 sm:gap-4 md:gap-8 my-2 sm:my-4 md:my-8">
+<main class="max-w-[1340px] mx-auto flex flex-col sm:gap-4 md:gap-8 sm:my-4 md:my-8">
 	<section
-		class="mx-2 sm:mx-4 md:mx-8 rounded-2xl py-12 px-4 xs:px-6 sm:px-8 lg:px-16 shadow-xl shadow-stone-900 gradient-blue-ish"
+		class="sm:mx-4 md:mx-8 sm:rounded-2xl py-12 sm:px-8 lg:px-16 shadow-xl shadow-stone-900 gradient-blue-ish"
 	>
 		<div
-			class="relative z-10 max-w-[800px] bg-gradient-to-t from-[#f7f7f715] to-[#f7f7f75b] backdrop-blur-sm bg-clip-padding border-0 p-0 sm:px-3 rounded-2xl flex flex-col mx-auto shadow-md shadow-black/20 {project
+			class="relative z-10 max-w-[800px] sm:bg-gradient-to-t from-[#f7f7f715] to-[#f7f7f75b] sm:backdrop-blur-sm bg-clip-padding border-0 p-0 sm:px-3 rounded-2xl flex flex-col mx-auto sm:shadow-md shadow-black/20 {project
 				.images.length == 1
 				? 'sm:py-3'
 				: 'sm:pt-7 sm:pb-4'}"
@@ -57,14 +57,14 @@
 					>
 				</a>
 				<h1
-					class="flex-1 text-white text-center font-title font-semibold text-shadow-sm text-lg max-xs:uppercase xs:text-xl sm:text-2xl md:text-3xl bg-opacity-75 p-2 rounded-lg mr-12"
+					class="flex-1 text-white text-center font-title font-semibold text-shadow-sm text-lg max-xs:uppercase xs:text-xl sm:text-2xl md:text-3xl bg-opacity-75 p-2 rounded-lg md:mr-12"
 				>
 					{project.title[$languageSelected]}
 				</h1>
 			</div>
 			{#if project.images.length == 1}
 				<div
-					class="mx-auto rounded-2xl overflow-hidden inline-block shadow-custom-lg shadow-black/30"
+					class="mx-auto sm:rounded-2xl overflow-hidden inline-block shadow-custom-lg shadow-black/30"
 				>
 					<img
 						src={project.images[0]}
@@ -89,7 +89,7 @@
 						//     stopOnInteraction: false
 						// }),
 					]}
-					class="w-full rounded-2xl overflow-hidden bg-opacity-0 bg-black"
+					class="w-full sm:rounded-2xl overflow-hidden bg-opacity-0 bg-black"
 				>
 					<Carousel.Content class="">
 						{#each project.images as image}
@@ -99,7 +99,7 @@
 									alt={`${project.title[$languageSelected]} project screenshot`}
 									height="636"
 									width="736"
-									class="rounded-2xl object-cover h-full w-full"
+									class="sm:rounded-2xl object-cover h-full w-full"
 								/>
 							</Carousel.Item>
 						{/each}
@@ -150,26 +150,26 @@
 		</div>
 	</section>
 	<section
-		class="relative bg-black py-12 px-8 lg:px-16 rounded-2xl mx-2 sm:mx-4 md:mx-8 text-center shadow-xl shadow-stone-900"
+		class="relative gradient-white py-12 px-4 lg:px-16 sm:rounded-2xl sm:mx-4 md:mx-8 text-center shadow-xl shadow-stone-900"
 	>
 		{#if project.description[$languageSelected]}
-			<h2 class="text-gray-50 font-title font-semibold text-3xl mb-4">
+			<h2 class="text-black font-title font-semibold text-3xl mb-4">
 				{$textContent.projectPage.description[$languageSelected]}
 			</h2>
 			<div class="flex flex-col gap-4 max-w-lg mx-auto mb-12">
 				{#each project.description[$languageSelected] as paragraph}
-					<p class="text-white/80 font-medium leading-7 tracking-wide text-start">{paragraph}</p>
+					<p class="text-black/80 font-medium leading-7 tracking-wide text-start">{paragraph}</p>
 				{/each}
 			</div>
 		{/if}
-		<h2 class="text-gray-50 font-title font-semibold text-3xl mb-4">
+		<h2 class="text-black font-title font-semibold text-3xl mb-4">
 			{$textContent.projectPage.techs[$languageSelected]}
 		</h2>
 		<div class="max-w-lg flex flex-wrap flex-row justify-center gap-4 mx-auto mb-12">
 			{#each techIcons.filter( (techIcon) => project.technologies.includes(techIcon.title.toLowerCase()), ) as item}
 				<Tooltip.Root openDelay={0}>
 					<Tooltip.Trigger
-						class="min-w-16 sm:min-w-24 hover:backdrop-brightness-200 shadow-md rounded-xl overflow-hidden transition-all duration-300 ease-in-outhover:shadow-none"
+						class="min-w-12 sm:min-w-20 hover:backdrop-brightness-200 shadow-md rounded-xl overflow-hidden transition-all duration-300 ease-in-outhover:shadow-none"
 					>
 						<img src={item.url} alt="" class="rounded-xl p-1" />
 					</Tooltip.Trigger>
@@ -180,7 +180,7 @@
 			{/each}
 		</div>
 
-		<h2 class="text-gray-50 font-title font-semibold text-3xl mb-4">
+		<h2 class="text-black font-title font-semibold text-3xl mb-4">
 			{$textContent.projectPage.depth[$languageSelected]}
 		</h2>
 		<div class="flex max-sm:flex-col justify-center gap-6 items-center max-w-lg mx-auto mb-12">
@@ -192,7 +192,7 @@
 				target="_blank"
 			>
 				<Button
-					class="bg-white w-full block text-black font-title font-bold text-lg xs:text-xl rounded-[5px]  active:bg-white hover:bg-white hover:brightness-90 active:scale-95 transition-all h-10 shadow-inner-sm shadow-black"
+					class="bg-black w-full block text-white font-title font-bold text-lg xs:text-xl rounded-[5px]  active:bg-black hover:bg-black hover:brightness-90 active:scale-95 transition-all h-10 shadow-inner-sm shadow-black"
 					>Live View</Button
 				>
 			</a>
@@ -203,7 +203,7 @@
 					target="_blank"
 				>
 					<Button
-						class="flex items-center h-10 pb-1 bg-transparent mx-auto hover:w-full text-white border-2 border-white font-title font-medium text-lg rounded-[5px]  shadow-[#00000066] active:bg-transparent hover:bg-transparent hover:brightness-90 active:scale-95 transition-all duration-300 w-full"
+						class="flex items-center h-10 pb-1 bg-transparent mx-auto hover:w-full text-black border-2 border-black font-title font-medium text-lg rounded-[5px]  shadow-[#00000066] active:bg-transparent hover:bg-transparent hover:brightness-90 active:scale-95 transition-all duration-300 w-full"
 						>Discover More</Button
 					>
 				</a>
@@ -214,7 +214,7 @@
 		<div class="flex justify-center gap-6 items-center max-w-lg mx-auto">
 			<a href="/#projects" class="flex-1 w-full -mt-5">
 				<Button
-					class="flex items-center h-10 pb-1 bg-transparent mx-auto hover:w-full text-white font-title font-medium text-lg rounded-[5px]  shadow-[#00000066] active:bg-transparent hover:bg-transparent hover:brightness-90 active:scale-95 transition-all duration-300 w-full sm:w-3/5"
+					class="flex items-center h-10 pb-1 bg-transparent mx-auto hover:w-full text-black font-title font-medium text-lg rounded-[5px]  shadow-[#00000066] active:bg-transparent hover:bg-transparent hover:brightness-90 active:scale-95 transition-all duration-300 w-full sm:w-3/5"
 					>See Other Projects
 				</Button>
 			</a>

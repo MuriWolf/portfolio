@@ -23,7 +23,7 @@
 	<!-- hover:before:!opacity-60 -->
 	<section
 		id="contact"
-		class="bg-strokes {hoveringForm ? `apply-other-bg-img` : ''} section col-span-2 bg-black rounded-2xl py-12 px-4 xs:px-6 sm:px-8 gradient-dark-one overflow-x-hidden overflow-y-hidden"
+		class="bg-strokes {hoveringForm ? `apply-other-bg-img` : ''} section col-span-2 bg-black section-default-style max-sm:pt-0 gradient-dark-one overflow-x-hidden overflow-y-hidden"
 	>
 		<h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text-light mb-6 lowercase z-10 relative">
 			5. {$textContent.contact.title[$languageSelected] ?? 'CONTACT'}

@@ -24,7 +24,7 @@
 </Saos> -->
 <section
 	id="testimonials"
-	class="bg-strokes relative bg-black py-12 px-4 xs:px-6 sm:px-8 rounded-2xl">
+	class="bg-strokes relative bg-black section-default-style">
 	<!-- bg-test -->
 	<hgroup class="mb-8 sm:mb-16 md:mb-32 max-xs:px-4">
 		<h2 class="font-title font-bold text-2xl xs:text-3xl text-c-body-text-light mb-6 lowercase z-10 relative">
@@ -55,7 +55,7 @@
 			<Carousel.Content>
 				{#each $textContent.testimonials.content as testimonial, i (i)}
 					<Carousel.Item
-						class="basis-[100%] xs:mx-2 sm:basis-[70%] min-[960px]:basis-1/3 relative z-10"
+						class="basis-[100%] xs:mx-2 sm:basis-[70%] min-[960px]:basis-[40%] relative z-10"
 					>
 						<div
 							class="py-6 px-7 rounded-[10px] backdrop-blur-[8px] bg-c-body-text-light/30 hover:backdrop-blur-md text-c-body-text-light/85 caroucel-testimonial-item"

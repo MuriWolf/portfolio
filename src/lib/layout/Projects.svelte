@@ -32,7 +32,7 @@
     <Saos on:update={handleUpdate} top={150} bottom={0}> -->
 <section
 	id="projects"
-	class="gradient-blue-ish border-2 border-gray-300 py-12 pb-10 px-4 xs:px-6 sm:px-8 shadow-xl shadow-stone-900 rounded-2xl"
+	class="gradient-blue-ish border-2 border-gray-300 pb-10 shadow-xl shadow-stone-900 section-default-style"
 >
 	<h2
 		class="font-title font-bold text-2xl xs:text-3xl text-c-body-text-light mb-6 max-xs:px-4 lowercase "
