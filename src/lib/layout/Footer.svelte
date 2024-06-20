@@ -2,7 +2,6 @@
 	import logo from '$lib/assets/logo.svg';
 	import * as Tooltip from '$lib/components/ui/tooltip';
 	import { languageSelected, textContent } from '$lib/store';
-	import Saos from 'saos';
 
 	const date = new Date();
 	const currentYear = date.getFullYear();

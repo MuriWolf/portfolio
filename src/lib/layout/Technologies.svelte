@@ -2,7 +2,6 @@
 	import * as Tooltip from '$lib/components/ui/tooltip';
 	import { techIcons } from '$lib/utils';
 	import { textContent, languageSelected } from '$lib/store';
-	import Saos from 'saos';
 </script>
 
 <!-- <Saos animation={"from-right 0.4s cubic-bezier(0.645, 0.045, 0.355, 1.000) both"} once={true}>

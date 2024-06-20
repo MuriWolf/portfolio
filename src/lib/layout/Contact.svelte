@@ -6,11 +6,7 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 	import { textContent, languageSelected } from '$lib/store';
 	import Saos from 'saos';
-	import colorExplosion from '$lib/assets/colorExplosion.png';
-
-	import colorExplosion2 from '$lib/assets/colorExplosion2.png';
-	import colorExplosion3 from '$lib/assets/colorExplosion3.png';
-
+	
 	let showingSection: boolean;
 	let hoveringForm = false;
 	function handleUpdateSectionView(x: { detail: { observing: boolean } }) {
