@@ -31,7 +31,7 @@
 	id="projects"
 >
 	<h2
-        class="text-c-text-darker text-3xl font-bold mb-8"
+        class="text-c-text-darker text-3xl font-bold mb-4"
 	>
 		4. {$languageSelected == 'en' ? 'PROJECTS' : 'Projetos'}
 	</h2>
@@ -49,7 +49,7 @@
 				{#each projects as project (project.id)}
 					<Carousel.Item class="basis-[100%] flex">	
 						<div
-							class="flex flex-1 flex-wrap justify-between gap-y-6 p-4 lg:p-8 rounded-l-xl border-2 border-c-primary-darker bg-c-primary" 
+							class="flex flex-1 flex-wrap justify-between gap-y-6 p-4 lg:p-8 rounded-xl md:rounded-r-none border-2 border-c-primary-darker bg-c-primary" 
 						>
 							<hgroup class="">
 								<h3 class="text-c-text-darker text-c-body-text-light font-bold text-xl xs:text-2xl">
@@ -92,11 +92,11 @@
 								>
 							</a>
 						</div>
-							<img
-								src={`${project.images[0]}`}
-								alt={`${project.title[$languageSelected]} project screenshot`}
-								class="rounded-r-xl h-[400px] aspect-video"
-							/>
+						<img
+							src={`${project.images[0]}`}
+							alt={`${project.title[$languageSelected]} project screenshot`}
+							class="rounded-r-xl h-[400px] aspect-video hidden md:block"
+						/>
 					</Carousel.Item>
 				{/each}
 			{/if}

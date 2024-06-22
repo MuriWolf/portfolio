@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { textContent, languageSelected, projectName } from '$lib/store';
 	import '../style/app.css';
-	import { afterNavigate, onNavigate } from '$app/navigation';
-	import { browser } from '$app/environment';
-
+	import { onNavigate } from '$app/navigation';
+	import Footer from '$lib/layouts/Footer.svelte';
+	import logo from '$lib/assets/images/logo-big.png';
 
 	onNavigate((navigation) => {
 		// this class is applied to the body on the main page, when filter or the map is open. This prevents the overflow-hidden to stay on page.
@@ -40,7 +40,7 @@
 		name="keywords"
 		content="web development front-end brazil programming freelance developer"
 	/>
-	<meta name="og:image" content={`/images/logo.png`} />
+	<meta name="og:image" content={logo} />
 </svelte:head>
 
 <slot />

@@ -18,6 +18,7 @@ const config = {
 				"c-text": "#7D7C7A",
 				"c-text-darker": "#505050",
 				"c-primary": "#F2E8D6",
+				"c-primary-light": "#FCF7EE",
 				"c-primary-darker": "#E7D4B1",
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
