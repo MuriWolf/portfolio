@@ -36,7 +36,7 @@
 
 <div class="fixed z-50 top-0 w-screen h-screen bg-black bg-opacity-10 backdrop-blur-xl">
 	<section
-		class="h-[90%] border-b-4 border-c-primary-darker w-full rounded-b-2xl flex bg-c-primary transition-all p-6 shadow-inner-md {openAnimation
+		class="h-[80%] min-h-[414px] max-h-[800px] border-b-4 border-c-primary-darker w-full rounded-b-2xl flex bg-c-primary transition-all p-6 shadow-inner-md {openAnimation
 			? ''
 			: ''}"
 		in:slide={{ duration: 200 }}
@@ -62,7 +62,7 @@
 		<div class="flex-1 h-full flex flex-col">
 			<button
 				on:click={closeAsideMobile}
-				class="w-8 h-8 ml-auto block hover:opacity-65 text-c-body-text-light transition-all duration-100 ease-in"
+				class="w-8 h-8 ml-auto block hover:opacity-65 text-c-text-darker transition-all duration-100 ease-in"
 			>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
 					><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path

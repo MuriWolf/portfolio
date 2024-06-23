@@ -1,4 +1,7 @@
 <script lang="ts">
+	import usaFlag from '$lib/assets/icons/flags/us.svg';
+	import brazilFlag from '$lib/assets/icons/flags/br.svg';
+	import { enhance } from '$app/forms';
 	import ArrowRight from '$lib/assets/icons/ArrowRight.svelte';
 	import ArrowLeft from '$lib/assets/icons/ArrowLeft.svelte';
 	import Header from '$lib/layouts/Header.svelte';
@@ -11,11 +14,19 @@
 	import * as Carousel from '$lib/components/ui/carousel/index';
 	import { textContent, languageSelected, projectName } from '$lib/store';
 	import { onMount } from 'svelte';
+	import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
 	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import * as Tooltip from "$lib/components/ui/tooltip";
+	import Translate from '$lib/assets/icons/Translate.svelte';
 
 	export let data;
 	const project: Project = data.project;
+
+	let languageSwitcherForm;
+	function submitNewLanguage({ action }) {
+		const newLanguage = action.searchParams.get('language');
+		languageSelected.set(newLanguage);
+	}
 
 	let api: CarouselAPI;
 	let count = 0;
@@ -56,7 +67,7 @@
 
 <div class="mx-auto max-w-7xl my-2 sm:my-6">
 	<Header>
-		<nav>
+		<nav slot="header-center">
 			<ul class="flex items-center gap-8">
 				<li class="text-c-text-darker font-semibold cursor-pointer">
 					<a href="" class="flex gap-x-2 items-center"> <ArrowLeft /> <p class="hidden sm:block">Previous project</p></a>
@@ -66,6 +77,36 @@
 				</li>
 			</ul>
 		</nav>
+		<div slot="header-left">
+			<DropdownMenu.Root >
+				<DropdownMenu.Trigger>
+					<button class="flex items-center justify-end text-c-text-darker hover:text-primary transition-all duration-100 ease-in-out w-12 sm:w-16">
+						<Translate />
+				   </button>
+				</DropdownMenu.Trigger>
+				<DropdownMenu.Content class="p-0 bg-c-primary-light/75 backdrop-blur-sm border-c-primary-darker ">
+					<DropdownMenu.Group>
+						<form method="POST" bind:this={languageSwitcherForm} use:enhance={submitNewLanguage}>
+							<button
+								formaction="/?/setLanguage&language=pt"
+								class="flex gap-x-2 items-center hover:bg-c-primary p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full"
+							>
+								<img src={brazilFlag} width="32" alt="brazil flag" />
+								<p>Português</p>
+							</button>
+							<DropdownMenu.Separator class="my-0 mx-0 w-full bg-c-primary-darker" />
+							<button
+								formaction="/?/setLanguage&language=en"
+								class="flex gap-x-2 items-center hover:bg-c-primary p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full "
+							>
+								<img src={usaFlag} width="32" alt="United States of America flag" />
+								<p>English</p>
+							</button>
+						</form>
+					</DropdownMenu.Group>
+				</DropdownMenu.Content>
+			</DropdownMenu.Root>
+		</div>
 	</Header>
 	<main class="flex flex-col gap-6 mt-2 sm:mt-6 mx-2 sm:mx-4">
 		<section class="bg-c-primary p-4 md:p-8 border-[1px] border-c-primary-darker rounded-2xl">

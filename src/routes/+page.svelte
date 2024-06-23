@@ -30,7 +30,7 @@
 
 <div class="mx-auto max-w-7xl my-2 sm:my-6">
 	<Header on:openNavMobile={() => openNavMobile = true}>
-		<nav class="hidden min-[880px]:block">
+		<nav slot="header-center" class="hidden min-[880px]:block">
 			<ul class="flex gap-4 font-semibold text-lg">
 				<li class="text-c-text-darker hover:text-primary">
 					<a href="#me" class="flex items-center gap-2">
