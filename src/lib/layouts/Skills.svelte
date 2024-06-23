@@ -83,7 +83,7 @@
 ];
 </script>
 
-<section class="" id="skills">
+<section class="mt-8 sm:mt-16" id="skills">
     <h2 class="text-c-text-darker text-3xl font-bold mb-4">What I use</h2>
     <div class="flex flex-wrap gap-x-3 gap-3 mx-auto transition-all" >
         {#each skills as skill, id}

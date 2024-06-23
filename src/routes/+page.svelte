@@ -1,4 +1,5 @@
 <script lang="ts">
+	import NavMobile from './../lib/layouts/NavMobile.svelte';
 	import TestimonialsIcon from '$lib/assets/icons/Testimonials.svelte';
 	import Projects from '$lib/layouts/Projects.svelte';
 	import Me from './../lib/layouts/Me.svelte';
@@ -15,6 +16,7 @@
 	import SkillsIcon from '$lib/assets/icons/Skills.svelte';
 
 	export let data;
+	let openNavMobile = false;
 
 	onMount(() => {
 		$projectName = '';
@@ -22,9 +24,13 @@
 
 </script>
 
-<div class="mx-auto max-w-7xl my-6">
-	<Header>
-		<nav>
+{#if openNavMobile}
+	<NavMobile on:closeNavMoble={() => openNavMobile = false} />
+{/if}
+
+<div class="mx-auto max-w-7xl my-2 sm:my-6">
+	<Header on:openNavMobile={() => openNavMobile = true}>
+		<nav class="hidden min-[880px]:block">
 			<ul class="flex gap-4 font-semibold text-lg">
 				<li class="text-c-text-darker hover:text-primary">
 					<a href="#me" class="flex items-center gap-2">
@@ -59,7 +65,7 @@
 			</ul>
 		</nav>
 	</Header>
-	<main class="flex flex-col gap-6 mt-6 mx-4">
+	<main class="flex flex-col gap-6 mt-2 sm:mt-6 mx-2 sm:mx-4">
 		<Hero />
 		<Me />
 		<Projects projects={data.projects ?? {}} />

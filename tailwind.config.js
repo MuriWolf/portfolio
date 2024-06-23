@@ -14,6 +14,12 @@ const config = {
 			}
 		},
 		extend: {
+			screens: {
+				xs: "412px"
+			},
+			listStyleType: {
+				roman: "upper-roman"
+			},
 			colors: {
 				"c-text": "#7D7C7A",
 				"c-text-darker": "#505050",

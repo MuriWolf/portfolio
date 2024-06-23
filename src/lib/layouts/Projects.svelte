@@ -29,11 +29,12 @@
 
 <section
 	id="projects"
+	class="mt-8 sm:mt-16"
 >
 	<h2
         class="text-c-text-darker text-3xl font-bold mb-4"
 	>
-		4. {$languageSelected == 'en' ? 'PROJECTS' : 'Projetos'}
+		{$languageSelected == 'en' ? 'Projects' : 'Projetos'}
 	</h2>
 	<Carousel.Root
 		bind:api
@@ -47,17 +48,17 @@
 		<Carousel.Content>
 			{#if projects}
 				{#each projects as project (project.id)}
-					<Carousel.Item class="basis-[100%] flex">	
+					<Carousel.Item class="basis-[100%] flex flex-col-reverse lg:flex-row gap-4 w-full">	
 						<div
-							class="flex flex-1 flex-wrap justify-between gap-y-6 p-4 lg:p-8 rounded-xl md:rounded-r-none border-2 border-c-primary-darker bg-c-primary" 
+							class="xs:flex flex-1 min-w-[320px] flex-wrap justify-between gap-y-2 sm:gap-y-6 gap-x-2 p-4 lg:p-8 rounded-xl border-2 border-c-primary-darker bg-c-primary" 
 						>
-							<hgroup class="">
+							<hgroup class="h-min">
 								<h3 class="text-c-text-darker text-c-body-text-light font-bold text-xl xs:text-2xl">
 									{project.title.pt}
 								</h3>
 								<p class="text-c-text text-xs font-semibold">website</p>
 							</hgroup>
-							<div class="flex gap-2 md:gap-4">
+							<div class="flex gap-2 md:gap-4 h-8 sm:h-12 justify-self-start my-2 xs:my-0">
 								<a
 									href={project.liveUrl}
 									target="_blank"
@@ -84,19 +85,21 @@
 									</a>
 								{/if}
 							</div>
-							<p class="text-c-text font-medium">{project.description[$languageSelected][0]}</p>
-							<a href={`/projects/${project.slug}`} class="block w-full">
+							<p class="text-c-text font-medium mb-2 mt-8 xs:mt-0 xs:mb-0">{project.description[$languageSelected][0]}</p>
+							<a href={`/projects/${project.slug}`} class="block w-full ">
 								<Button
 									class="bg-c-text-darker flex-1 w-full min-w-full block text-white font-title font-semibold text-xl rounded-[5px] active:scale-95 transition-all "
 									>Discover More</Button
 								>
 							</a>
 						</div>
-						<img
-							src={`${project.images[0]}`}
-							alt={`${project.title[$languageSelected]} project screenshot`}
-							class="rounded-r-xl h-[400px] aspect-video hidden md:block"
-						/>
+						<div>
+							<img
+								src={`${project.images[0]}`}
+								alt={`${project.title[$languageSelected]} project screenshot`}
+								class="rounded-xl h-[380px] w-full lg:rounded-l-0 border hidden md:block object-cover"
+							/>
+						</div>
 					</Carousel.Item>
 				{/each}
 			{/if}

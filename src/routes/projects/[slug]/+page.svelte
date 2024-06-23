@@ -12,6 +12,7 @@
 	import { textContent, languageSelected, projectName } from '$lib/store';
 	import { onMount } from 'svelte';
 	import Badge from '$lib/components/ui/badge/badge.svelte';
+	import * as Tooltip from "$lib/components/ui/tooltip";
 
 	export let data;
 	const project: Project = data.project;
@@ -53,26 +54,26 @@
 ];
 </script>
 
-<div class="mx-auto max-w-7xl my-6">
+<div class="mx-auto max-w-7xl my-2 sm:my-6">
 	<Header>
 		<nav>
 			<ul class="flex items-center gap-8">
 				<li class="text-c-text-darker font-semibold cursor-pointer">
-					<a href="" class="flex gap-x-2 items-center"> <ArrowLeft /> Previous project</a>
+					<a href="" class="flex gap-x-2 items-center"> <ArrowLeft /> <p class="hidden sm:block">Previous project</p></a>
 				</li>
 				<li class=" text-c-text-darker font-semibold cursor-pointer">
-					<a href="" class="flex gap-x-2 items-center"> Next project <ArrowRight /> </a>
+					<a href="" class="flex gap-x-2 items-center"> <p class="hidden sm:block">Next project</p> <ArrowRight /> </a>
 				</li>
 			</ul>
 		</nav>
 	</Header>
-	<main class="flex flex-col gap-6 mt-6 mx-4">
+	<main class="flex flex-col gap-6 mt-2 sm:mt-6 mx-2 sm:mx-4">
 		<section class="bg-c-primary p-4 md:p-8 border-[1px] border-c-primary-darker rounded-2xl">
 			<div class="flex flex-col md:flex-row justify-between mb-4 md:mb-8">
 				<hgroup>
 					<h1 class="text-c-text-darker text-3xl font-bold">asda das das </h1>
-					<h2 class="font-semibold text-c-text"><strong class="font-semibold text-c-text-darker">Type: </strong> website</h2>
-					<h2 class="font-semibold text-c-text"><strong class="font-semibold text-c-text-darker">My role: </strong> Frontend, backend and design</h2>
+					<h2 class="font-semibold text-c-text text-lg"><strong class="font-semibold text-c-text-darker">Type: </strong> website</h2>
+					<h2 class="font-semibold text-c-text text-lg"><strong class="font-semibold text-c-text-darker">My role: </strong> Frontend, backend and design</h2>
 				</hgroup>
 				<div class="flex flex-wrap gap-2 md:gap-4 items-start md:justify-end mt-4 md:mt-0 max-w-md">
 					{#each skills as skill, id}
@@ -82,7 +83,7 @@
 					{/each}
 				</div>
 			</div>
-			<p class="text-c-text font-medium max-w-xl mb-4">This project was done in partnership with a fellow designer. Developed at the end of 2022. The purpose of the website is simple.</p>
+			<p class="text-c-text font-medium max-w-xl text-lg mb-4">This project was done in partnership with a fellow designer. Developed at the end of 2022. The purpose of the website is simple.</p>
 			<nav>
 				<ul class="flex items-center flex-col-reverse sm:flex-row gap-4 w-full">
 					<li class="w-full max-w-xs"><a href="" class="text-c-text-darker bg-c-primary-darker rounded-md p-2 text-xl font-bold w-full block text-center">Explore the code</a></li>
@@ -93,11 +94,11 @@
 				<ChevronDown />
 			</div> -->
 		</section>
-		<section>
+		<section class="-mt-4 sm:mt-0">
 			<div>
 				{#if project.images.length == 1}
 					<div
-						class="mx-auto sm:rounded-2xl overflow-hidden inline-block shadow-custom-lg shadow-black/30"
+						class="mx-auto rounded-2xl overflow-hidden inline-block shadow-custom-lg shadow-black/30"
 					>
 						<img
 							src={project.images[0]}
@@ -116,7 +117,7 @@
 							loop: true,
 							breakpoints: {},
 						}}
-						class="w-full sm:rounded-2xl overflow-hidden bg-opacity-0 bg-black"
+						class="w-full rounded-2xl overflow-hidden bg-opacity-0 bg-black"
 					>
 						<Carousel.Content class="">
 							{#each project.images as image}
@@ -126,7 +127,7 @@
 										alt={`${project.title[$languageSelected]} project screenshot`}
 										height="636"
 										width="736"
-										class="sm:rounded-2xl object-cover h-full w-full border"
+										class="rounded-2xl object-cover h-full w-full border"
 									/>
 									<p class="text-end text-c-text-darker text-sm font-bold">Alt da imagem</p>
 								</Carousel.Item>
@@ -177,7 +178,7 @@
 				{/if}
 			</div>
 		</section>
-		<section class="mb-7">
+		<section class="mt-8 sm:mt-16">
 			<h2 class="text-c-text-darker text-3xl font-bold">Overview</h2>
 			<p class="text-c-text font-medium text-lg max-w-2xl mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis debitis dolore similique? Omnis vero minus ipsam rerum molestias molestiae nemo eveniet, iusto dicta fugit, sequi perferendis quae nisi labore laborum!</p>
 			<h2 class="text-c-text-darker text-3xl font-bold">Features</h2>

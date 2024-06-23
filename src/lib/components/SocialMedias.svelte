@@ -1,5 +1,9 @@
+<script lang="ts">
+    export let orientation: 'vertical' | 'horizontal';
+</script>
+
 <nav class="max-w-lg text-c-text-darker relative z-10 {$$restProps.class ?? ''}">
-    <ul class="flex gap-x-4 items-center justify-center ">
+    <ul class="flex gap-4 items-center justify-center {orientation == 'vertical' ? '!flex-col' : ''}">
         <li class="hover:text-primary transition-all duration-200 ease-in">
             <a href="https://github.com/muriWolf" target="_blank" rel="author"
                 ><svg

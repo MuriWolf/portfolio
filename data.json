@@ -255,9 +255,8 @@
     "content": 
         {   
             "nav": [
-                {"id": 0, "en": "Intro", "pt": "Intro"},
-                {"id": 1, "en": "About", "pt": "Sobre"},
-                {"id": 2, "en": "Techs", "pt": "Techs"},
+                {"id": 1, "en": "Me", "pt": "Sobre"},
+                {"id": 2, "en": "Skills", "pt": "Habilidades"},
                 {"id": 3, "en": "Projects", "pt": "Projetos"},
                 {"id": 4, "en": "Testimonials", "pt": "Depoimentos"},
                 {"id": 5, "en": "Contact", "pt": "Contato"}

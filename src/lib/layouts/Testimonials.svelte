@@ -19,9 +19,9 @@
 
 <section
 	id="testimonials"
-	class="relative mt-16">
+	class="relative mt-8 sm:mt-16">
 	<h2 class="text-c-text-darker text-3xl font-bold">What people say</h2>
-    <p class="text-c-text text-lg mb-8">Some feedback from people I worked with. I hope yours is next.</p>
+    <p class="text-c-text text-lg mb-8 font-medium">Some feedback from people I worked with. I hope yours is next.</p>
 	<div class="flex gap-16 relative z-10 w-full ">
 		<Carousel.Root
 			bind:api
