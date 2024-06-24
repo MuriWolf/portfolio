@@ -2,9 +2,7 @@
 	import { type Project } from '$lib/interfaces/Project';
 	import type { CarouselAPI } from '$lib/components/ui/carousel/context';
 	import * as Carousel from '$lib/components/ui/carousel/index';
-	// import Autoplay from "embla-carousel-autoplay";
 	import { languageSelected } from '$lib/store';
-	import { AspectRatio } from '$lib/components/ui/aspect-ratio';
 	import Button from '$lib/components/ui/button/button.svelte';
 
 	export let projects: Array<Project>;
@@ -20,6 +18,9 @@
 		api.on('select', () => {
 			current = api.selectedScrollSnap() + 1;
 		});
+
+		console.log(projects);
+		
 	}
 	let showingSection = false;
 	function handleUpdateSectionView(x: { detail: { observing: boolean } }) {
@@ -85,7 +86,7 @@
 									</a>
 								{/if}
 							</div>
-							<p class="text-c-text font-medium mb-2 mt-8 xs:mt-0 xs:mb-0">{project.description[$languageSelected][0]}</p>
+							<p class="text-c-text font-medium mb-2 mt-8 xs:mt-0 xs:mb-0">{project.abstract[$languageSelected]}</p>
 							<a href={`/projects/${project.slug}`} class="block w-full ">
 								<Button
 									class="bg-c-text-darker flex-1 w-full min-w-full block text-white font-title font-semibold text-xl rounded-[5px] active:scale-95 transition-all "

@@ -37,7 +37,7 @@
         <div class="hidden min-[880px]:block">
             <DropdownMenu.Root >
                  <DropdownMenu.Trigger>
-                     <button class="flex items-center justify-end text-c-text-darker hover:text-primary transition-all duration-100 ease-in-out w-12 sm:w-16">
+                     <button class="flex items-center justify-end text-c-text-darker hover:text-primary transition-all ease-out w-12 sm:w-16">
                          <Translate />
                     </button>
                  </DropdownMenu.Trigger>

@@ -3,15 +3,12 @@
         {
             "id": 0,
             "title": {"pt": "Billy Mentoria", "en": "Billy Mentory"},
+            "abstract": { "pt": "Site de divulgação de mentoria relacionada a design.", "en": "Design-related mentoring website" },
+            "type": { "pt": "Website", "en": "Website" },
+            "myRole": { "pt": "front-end", "en": "front-end" },
             "description": {
-                "pt": [
-                    "Esse projeto foi feito em parceria com um colega designer. Desenvolvido no final de 2022. O intuito do website é simples: divulgar sua mentoria. As tecnologias usadas são poucas, entretanto o foco foi a estilização, e não complexidade de código. O protótipo do website foi feito pelo Abílio (dono do site).",
-                    "Esse projeto é a segunda versão de um anterior, essa versão foi feita por volta do começo de 2023. Totalmente sucinto em propósito: Divulgar links essenciais com relação a pessoa em questão (Abílio - designer). Simples no geral mas atende o propósito de sua existência."
-                ],
-                "en": [
-                    "This project was done in partnership with a fellow designer. Developed at the end of 2022. The purpose of the website is simple: to share his mentoring. The technologies used are few, however the focus was on styling, not code complexity. The website prototype was made by Abílio (site owner).",
-                    "This project is the second version of a previous one, this version was made around the beginning of 2023. Totally succinct in purpose: Show essential links associated with the person of Abílio (designer). In general: Simple, but it serves the purpose of its existence."
-                ]
+                "overview": { "pt": "Esse projeto foi feito em parceria com um colega designer. Desenvolvido no final de 2022. O intuito do website é simples: divulgar sua mentoria. As tecnologias usadas são poucas, entretanto o foco foi a estilização, e não complexidade de código. O protótipo do website foi feito pelo Abílio (dono do site).", "en": "This project was done in partnership with a fellow designer. Developed at the end of 2022. The purpose of the website is simple: to share his mentoring. The technologies used are few, however the focus was on styling, not code complexity. The website prototype was made by Abílio (site owner)." }, 
+                "challenges": { "pt": "Deixá-lo perfeitamente ajustado em todas as telas, seguindo os mínimos detalhes impostos pelo cliente.", "en": "Make it perfectly adjusted on all screens, following the smallest details imposed by the client." }
             },
             "slug": "billy-mentoria",
             "technologies": ["tailwind", "sass", "javascript"],
@@ -24,15 +21,14 @@
         { 
             "id": 1,
             "title": {"pt": "Porocode Sistema de Admin", "en": "Porocode Admin System"},
-            "slug": "porocode-admin-system",
+            "abstract": { "pt": "Site do sistema administrativo sendo criado para outro site.", "en": "Admin system webiste being made for another website." },
+            "type": { "pt": "Website", "en": "Website" },
+            "myRole": { "pt": "front-end", "en": "front-end" },
             "description": {
-                "pt": [
-                    "Projeto dependente de outro, ambos estão em processo de produção, esse mais avançado. Sendo feito desde 2023. Neste projeto, tecnologias como Svelte e Tailwind são usadas de maneira intensiva, extraindo o que ambos possuem de melhor a oferecer."
-                ],
-                "en": [
-                    "Project dependent on another, both are in the production process, this one more advanced. Being made since 2023. In this project, technologies such as Svelte and Tailwind are used intensively, extracting the best that both have to offer."
-                ]
+                "overview": { "pt": "Projeto dependente de outro, ambos estão em processo de produção, esse mais avançado. Sendo feito desde 2023. Neste projeto, tecnologias como Svelte e Tailwind são usadas de maneira intensiva, extraindo o que ambos possuem de melhor a oferecer.", "en": "Project dependent on another, both are in the production process, this one more advanced. Being made since 2023. In this project, technologies such as Svelte and Tailwind are used intensively, extracting the best that both have to offer." }, 
+                "challenges": { "pt": "Construindo este projeto, aprendi e melhorei muito minhas habilidades em Svelte/kit, consumo de API, cookies, autenticação, local storage e outros conceitos da web.", "en": "Building this project, I learned and improved a lot my Svelte/kit skills, API consuming, cookies, auth, local storage and other web concepts." }
             },
+            "slug": "porocode-admin-system",
             "technologies": ["svelte", "tailwind", "css", "figma"],
             "codeUrl": "private",
             "liveUrl": "https://porocode.vercel.app",
@@ -47,15 +43,13 @@
         {
             "id": 2,
             "title": {"pt": "South Tech", "en": "South Tech"},
+            "abstract": { "pt": "Site para uma apresentação de TCC (Teme: Escola focada em tecnologia).", "en": "Website for a final couse apresentation (theme: Technology focused school)." },
+            "type": { "pt": "Website", "en": "Website" },
+            "myRole": { "pt": "Design, backend, front-end and host", "en": "Design, backend, front-end e hospedagem" },
             "description": {
-                "pt": [
-                    "O website surgiu a partir do trabalho de conclusão de curso (TCC) feito por um grupo do curso de Administração (ETEC Antônio Devisate), cuja ideia era uma escola com foco em tecnologia. Produzido no primeiro semestre de 2023.",
-                    "O resultado foi um sucesso, com a proposta e necessidades atendidas."
-                ],
-                "en": [
-                    "The website arose from the “course completion work” made by a group from the Administration course (ETEC Antônio Devisate - SP/Brazil), the idea was a school focused on technology. Produced in the first half of 2023, design and development done by me.", 
-                    "The result was a success, with the proposal and needs satisfied."
-                ]
+                "overview": { "pt": "O website surgiu a partir do trabalho de conclusão de curso (TCC) feito por um grupo do curso de Administração (ETEC Antônio Devisate), cuja ideia era uma escola com foco em tecnologia. Produzido no primeiro semestre de 2023. O resultado foi um sucesso, com a proposta e necessidades atendidas.", "en": "The website arose from the “course completion work” made by a group from the Administration course (ETEC Antônio Devisate - SP/Brazil), the idea was a school focused on technology. Produced in the first half of 2023, design and development done by me. The result was a success, with the proposal and needs satisfied."  }, 
+                "features": { "pt": "Por ser um site feito para apresentação, apenas algumas funcionalidades foram adicionadas. A principal delas é o formulário de comunicação, os dados foram colocados no banco de dados e depois foram utilizados.", "en": "Since is a website made for a presentation, just a few features were added. The main one is the communication form, the data was placed in the database and then were used." },
+                "challenges": { "pt": "Entender o projeto e entender as necessidades foi o principal desafio. Aprendi muito sobre hospedagem.", "en": "Understand the project and understand the needs was the main challenge. Learned a lot about hosting." }
             },
             "slug": "south-tech",
             "technologies": ["php", "mysql", "tailwind", "sass"],
@@ -70,15 +64,11 @@
         {
             "id": 3,
             "title": {"pt": "Isaque Designer", "en": "Isaque Designer"},
+            "abstract": { "pt": "Site feito para compartilhar links relacionados ao cliente.", "en": "Website made for sharing links related to the client." },
+            "type": { "pt": "Website", "en": "Website" },
+            "myRole": { "pt": "front-end", "en": "front-end" },
             "description": {
-                "pt": [
-                    "Semelhante ao projeto (link do projeto Billy design), segue a mesma premissa, mas agora se tratando de outra pessoa (Isaque - Designer) e com distinta identidade visual.",
-                    "Feito em 2023. Atualmente a pessoa em questão não trabalha com a área de design (28/03/2024)"
-                ],
-                "en": [
-                    "Similar to the project (Billy design project link), it follows the same premise, but now dealing with another person (Isaque - Designer) and with a distinct visual identity.", 
-                    "Done in 2023. Currently the person in question does not work with design (03/28/2024)"
-                ]
+            	"overview": { "pt": "Semelhante ao projeto (link do projeto Billy design), segue a mesma premissa, mas agora se tratando de outra pessoa (Isaque - Designer) e com distinta identidade visual. Feito em 2023. Atualmente a pessoa em questão não trabalha com a área de design (28/03/2024)", "en": "Similar to the project (Billy design project link), it follows the same premise, but now dealing with another person (Isaque - Designer) and with a distinct visual identity. Done in 2023. Currently the person in question does not work with design (03/28/2024)" }
             },
             "slug": "isaque-designer",
             "technologies": ["sass", "javascript", "css"],
@@ -91,13 +81,11 @@
         {
             "id": 4,
             "title": {"pt": "Interactive Card Details Form", "en": "Interactive Card Details Form"},
+            "abstract": { "pt": "Site que simula formulário de um cartão de crédito.", "en": "Website that simulates a credit card form." },
+            "type": { "pt": "Website", "en": "Website" },
+            "myRole": { "pt": "front-end", "en": "front-end" },
             "description": {
-                "pt": [
-                    "Website que simula o cadastro de um cartão de crédito. Feito com o intuito de treinar minha habilidades de front-end.", "Desafio proposto pelo Frontend Mentor ([Frontend Mentor](https://www.frontendmentor.io)). Desenvolvido por volta do final de 2022."
-                ],
-                "en": [
-                    "Website that simulates registering a credit card. Made with the purpose of training my front-end skills.", "Challenge proposed by Frontend Mentor. Developed next to the end of 2022."
-                ]
+                "overview": { "pt": "Website que simula o cadastro de um cartão de crédito. Feito com o intuito de treinar minha habilidades de front-end. Desafio proposto pelo front-end Mentor. Desenvolvido por volta do final de 2022.", "en": "Website that simulates registering a credit card. Made with the purpose of training my front-end skills.Challenge proposed by front-end Mentor. Developed next to the end of 2022." }
             },
             "slug": "interactive-card-details-form",
             "technologies": ["javascript", "sass"],
@@ -110,15 +98,11 @@
         {
             "id": 5,
             "title": {"pt": "Billy Design", "en": "Billy Design"},
+            "abstract": { "pt": "Site feito para compartilhar links relacionados ao cliente (Abilio).", "en": "Website made for sharing links related to the client (Abilio)." },
+            "type": { "pt": "Website", "en": "Website" },
+            "myRole": { "pt": "front-end", "en": "front-end" },
             "description": {
-                "pt": [
-                    "Esse projeto é a segunda versão de um anterior, essa versão foi feita por volta do começo de 2023. Totalmente sucinto em propósito: Divulgar links essenciais com relação a pessoa em questão (Abílio - designer).", 
-                    "Simples no geral mas atende o propósito de sua existência."
-                ],
-                "en": [
-                    "This project is the second version of a previous one, this version was made around the beginning of 2023. Totally succinct in purpose: Show essential links associated with the person of Abílio (designer).", 
-                    "In general: Simple, but it serves the purpose of its existence."
-                ]
+                "overview": { "pt": "Esse projeto é a segunda versão de um anterior, essa versão foi feita por volta do começo de 2023. Totalmente sucinto em propósito: Divulgar links essenciais com relação a pessoa em questão (Abílio - designer). Simples no geral mas atende o propósito de sua existência.", "en": "This project is the second version of a previous one, this version was made around the beginning of 2023. Totally succinct in purpose: Show essential links associated with the person of Abílio (designer). In general: Simple, but it serves the purpose of its existence." }
             },
             "slug": "billy-design",
             "technologies": ["javascript", "sass"],
@@ -131,13 +115,12 @@
         {
             "id": 6,
             "title": {"pt": "história de tudo (clone da interface)", "en": "Historía de tudo (Simple UI clone)"},
+            "abstract": { "pt": "Título autoexplicativo, apenas uma cópia simples de algumas partes do site.", "en": "Self-explanatory title, just a simple copy of some parts of the site." },
+            "type": { "pt": "Website", "en": "Website" },
+            "myRole": { "pt": "front-end", "en": "front-end" },
             "description": {
-                "pt": [
-                    "Uma simples cópia do site “História de tudo”, onde aborda curiosidades e assuntos interessantes do mundo. Meu objetivo com ele foi tentar clonar em partes um site já existente, dessa forma visando aprender no processo. Feito no começo de 2022."
-                ],
-                "en": [
-                    "A simple copy of the “História de tudo” website, which covers curiosities and interesting subjects in the world. My objective with it was to try to clone an existing website in parts, aiming to learn in the process. Done at the beginning of 2022."
-                ]
+                "overview": { "pt": "Uma simples cópia do site “História de tudo”, onde aborda curiosidades e assuntos interessantes do mundo. Meu objetivo com ele foi tentar clonar em partes um site já existente, dessa forma visando aprender no processo. Feito no começo de 2022.", "en": "A simple copy of the “História de tudo” website, which covers curiosities and interesting subjects in the world. My objective with it was to try to clone an existing website in parts, aiming to learn in the process. Done at the beginning of 2022." }, 
+                "challenges": { "pt": "Aprendi mais sobre como funciona a interface do usuário de um site (neste caso, do tipo blog) e seu comportamento em telas diferentes.", "en": "I learned more about how a website (in this case a blog-type) UI works, and it's behavior on different screens." }
             },
             "slug": "historia-de-tudo",
             "technologies": ["javascript", "css"],
@@ -150,13 +133,11 @@
         {
             "id": 7,
             "title": {"pt": "Calculador de Gorjeta", "en": "Tip Calculator"},
+            "abstract": { "pt": "", "en": "" },
+            "type": { "pt": "Website", "en": "Website" },
+            "myRole": { "pt": "front-end", "en": "front-end" },
             "description": {
-                "pt": [
-                    "Website que tem o propósito de ser uma calculadora de gorjeta (nome sugestivo). Feito com o intuito de treinar minhas habilidades de SCSS e Javascript.", "Desafio proposto pelo Frontend Mentor ([Frontend Mentor](https://www.frontendmentor.io)). Desenvolvido em 2022."
-                ],
-                "en": [
-                    "Website that aims to be a tip calculator (suggestive name). Made with the intention of training my SCSS and Javascript skills.", "Challenge proposed by Frontend Mentor (https://www.frontendmentor.io). Developed in 2022."
-                ]
+                "overview": { "pt": "Website que tem o propósito de ser uma calculadora de gorjeta (nome sugestivo). Feito com o intuito de treinar minhas habilidades de SCSS e Javascript. Desafio proposto pelo front-end Mentor. Desenvolvido em 2022.", "en": "Website that aims to be a tip calculator (suggestive name). Made with the intention of training my SCSS and Javascript skills. Challenge proposed by front-end Mentor . Developed in 2022." }
             },
             "slug": "tip-calculator",
             "technologies": ["javascript", "css", "sass"],
@@ -168,16 +149,13 @@
         },
         {
             "id": 8,
-            "title": {"pt": "Blogr (Landing Page)", "en": "Blogr (Landing Page)"},
+            "title": {"pt": "Blogr", "en": "Blogr"},
+            "abstract": { "pt": "Uma simples e elegante landing page.", "en": "A simple and elegant landing page." },
+            "type": { "pt": "Website", "en": "Website" },
+            "myRole": { "pt": "front-end", "en": "front-end" },
             "description": {
-                "pt": [
-                    "Uma landing page. Com esse projeto aprendi muito sobre como lidar com imagens numa página web, assim como organização de projeto e outras habilidades relativas ao front-end web.", 
-                    "Desafio proposto pelo Frontend Mentor ([Frontend Mentor](https://www.frontendmentor.io)). Desenvolvido no meio de 2022."
-                ],
-                "en": [
-                    "A landing page. I was able to train and learn skills related to the front-end web world, such as aligning items and menus.", 
-                    "Challenge proposed by Frontend Mentor (https://www.frontendmentor.io). Developed in mid-2022."
-                ]
+                "overview": { "pt": "Desafio proposto pelo front-end Mentor. Desenvolvido no meio de 2022.", "en": "Challenge proposed by front-end Mentor. Developed in mid-2022." }, 
+                "challenges": { "pt": "Com esse projeto aprendi muito sobre como lidar com imagens numa página web, assim como organização de projeto e outras habilidades relativas ao front-end web.", "en": "I was able to train and learn skills related to the front-end web world, such as aligning items and menus." }
             },
             "slug": "blogr-landing-page",
             "technologies": ["javascript", "css", "sass"],
@@ -189,15 +167,13 @@
         },
         {
             "id": 9,
-            "title": {"pt": "Snap (Landing Page)", "en": "Snap (Landing Page)"},
+            "title": {"pt": "Snap", "en": "Snap"},
+            "abstract": { "pt": "Uma landing page muito simples.", "en": "A very simple landing page." },
+            "type": { "pt": "Website", "en": "Website" },
+            "myRole": { "pt": "front-end", "en": "front-end" },
             "description": {
-                "pt": [
-                    "Uma landing page. Nela pude treinar e aprender habilidades referentes ao mundo front-end web, como alinhamento de itens e menus.", "Desafio proposto pelo Frontend Mentor ([Frontend Mentor](https://www.frontendmentor.io)). Desenvolvido no começo de 2022."
-                ],
-                "en": [
-                    "A landing page. I was able to train and learn skills related to the front-end web world, such as aligning items and menus.", 
-                    "Challenge proposed by Frontend Mentor (https://www.frontendmentor.io). Developed in 2022."
-                ]
+                "overview": { "pt": "Desafio proposto pelo front-end Mentor. Desenvolvido no começo de 2022.", "en": "Challenge proposed by front-end Mentor. Developed in 2022." }, 
+                "challenges": { "pt": "Neste projeto pude treinar e aprender habilidades referentes ao mundo front-end web, como alinhamento de itens e menus.", "en": "In this project I was able to train and learn skills related to the front-end web world, such as aligning items and menus." }
             },
             "slug": "snap-landing-page",
             "technologies": ["javascript", "css"],
@@ -209,16 +185,13 @@
         },
         {
             "id": 10,
-            "title": {"pt": "Clipboard (Landing Page)", "en": "Clipboard (Landing Page)"},
+            "title": {"pt": "Clipboard", "en": "Clipboard"},
+            "abstract": { "pt": "Uma simples e elegante landing page.", "en": "A simple but totally responsive landing page." },
+            "type": { "pt": "Website", "en": "Website" },
+            "myRole": { "pt": "front-end", "en": "front-end" },
             "description": {
-                "pt": [
-                    "Uma landing page. Com esse website pude melhorar aprimorar minhas habilidades com front-end web, como alinhamento correto de texto em conjunto com imagens.", 
-                    "Desafio proposto pelo Frontend Mentor ([Frontend Mentor](https://www.frontendmentor.io)). Desenvolvido em 2022."
-                ],
-                "en": [
-                    "A landing page. With this website I was able to improve my web front-end skills, such as correctly aligning text with images.", 
-                    "Challenge proposed by Frontend Mentor (https://www.frontendmentor.io). Developed in 2022."
-                ]
+                "overview": { "pt": "Desafio proposto pelo front-end Mentor. Desenvolvido no começo de 2022.", "en": "Challenge proposed by front-end Mentor. Developed in 2022." }, 
+                "challenges": { "pt": "Com esse website pude melhorar aprimorar minhas habilidades com front-end web, como alinhamento correto de texto em conjunto com imagens.", "en": " With this website I was able to improve my web front-end skills, such as correctly aligning text with images." }
             },
             "slug": "clipboard-landing-page",
             "technologies": ["javascript", "css"],
@@ -233,15 +206,12 @@
         {
             "id": 11,
             "title": {"pt": "Swapee.me", "en": "Swapee.me"},
+            "abstract": { "pt": "Site focado em moedas digitais", "en": "Digital coins related website" },
+            "type": { "pt": "Website", "en": "Website" },
+            "myRole": { "pt": "front-end", "en": "front-end" },
             "description": {
-                "pt": [
-                    "Projeto fundado com o intuito de facilitar o uso de moedas digitais, com foco na descentralização do dinheiro e anonimidade. Neste site, trabalho fazendo alterações e updates no que tange a parte visual.", 
-                    "Também há minha participação em outros projetos embrionários do grupo, trabalhando tanto com front-end quanto back-end. Trabalhando nele desde 2023, com uma breve participação em 2022."
-                ],
-                "en": [
-                    "Project founded with the aim of facilitating the use of digital currencies, focusing on the decentralization of money and anonymity. On this website, I work making changes and updates focusing on the visual part.", 
-                    "I also participate in other embryonic projects of the group, both front-end and back-end. Working on it since 2023, with a brief participation in 2022."
-                ]
+                "overview": { "pt": "Projeto fundado com o intuito de facilitar o uso de moedas digitais, com foco na descentralização do dinheiro e anonimidade. Neste site, trabalho fazendo alterações e updates no que tange a parte visual. Também há minha participação em outros projetos embrionários do grupo, trabalhando tanto com front-end quanto back-end. Trabalhando nele desde 2023, com uma breve participação em 2022.", "en": "Project founded with the aim of facilitating the use of digital currencies, focusing on the decentralization of money and anonymity. On this website, I work making changes and updates focusing on the visual part. I also participate in other embryonic projects of the group, both front-end and back-end. Working on it since 2023, with a brief participation in 2022." }, 
+                "challenges": { "pt": "Meu principal desafio foi entender as necessidades, no processo ganhei muita experiência no uso de minhas ferramentas e na comunicação em outro idioma", "en": "My main challenge was understand the needs, in the process I gain much experience using my tools and communicating in another language." }
             },
             "slug": "swapeeme",
             "technologies": ["svelte", "css", "tailwind", "bootstrap", "javascript"],
@@ -300,7 +270,7 @@
                 }
             },
             "testimonials": {
-                "title": {"en": "TESTIMONIALS", "pt": "DEPOIMENTOS"},
+                "title": {"en": "What people say", "pt": "Depoimentos de clientes"},
                 "subtitle": {
                     "en": "Some feedback from people I worked with. I hope yours is next.",
                     "pt": "Alguns feedbacks de pessoas que tive o prazer de trabalhar. Espero que o seu seja o próximo."

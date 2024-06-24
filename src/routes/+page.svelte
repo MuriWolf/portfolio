@@ -1,5 +1,5 @@
 <script lang="ts">
-	import NavMobile from './../lib/layouts/NavMobile.svelte';
+	import NavMobile from '$lib/layouts/NavMobile.svelte';
 	import TestimonialsIcon from '$lib/assets/icons/Testimonials.svelte';
 	import Projects from '$lib/layouts/Projects.svelte';
 	import Me from './../lib/layouts/Me.svelte';
