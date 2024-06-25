@@ -8,6 +8,6 @@
     <h1 class="font-bold text-c-text-darker text-2xl sm:text-4xl md:text-5xl max-w-[1000px]">{$textContent.hero.subtitle[$languageSelected]}</h1>
     <div class="flex gap-x-6 gap-y-4  flex-wrap items-center mt-4 md:mb-24">
         <SocialMedias orientation="horizontal" />
-        <Button class="bg-c-text-darker text-xl font-bold">{$languageSelected == "pt" ? 'Entre em contato' : 'Text me'}</Button>
+        <a href={`mailto: murillopo.dev@gmail.com?subject=${$languageSelected == 'pt' ? 'Contato através do portfolio' : 'Contact from portfolio'}`} class="bg-c-text-darker text-xl font-bold block max-w-xs w-full active:scale-95 transition-all ease-out text-center text-stone-50 py-2 px-4 rounded-lg hover:bg-primary focus:bg-primary">{$languageSelected == "pt" ? 'Entre em contato' : 'Text me'}</a>
     </div>
 </section>

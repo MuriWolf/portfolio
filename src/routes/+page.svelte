@@ -35,31 +35,31 @@
 				<li class="text-c-text-darker hover:text-primary">
 					<a href="#me" class="flex items-center gap-2">
 						<Person />
-						Me
+						{$textContent.nav[0][$languageSelected]}
 					</a>
 				</li>
 				<li class="text-c-text-darker hover:text-primary">
 					<a href="#projects" class="flex items-center gap-2">
-						<Folder />
-						Projects
+						<SkillsIcon />
+						{$textContent.nav[1][$languageSelected]}
 					</a>
 				</li>
 				<li class="text-c-text-darker hover:text-primary">
 					<a href="#testimonials" class="flex items-center gap-2">
-						<TestimonialsIcon />
-						Testimonials
+						<Folder />
+						{$textContent.nav[2][$languageSelected]}
 					</a>
 				</li>
 				<li class="text-c-text-darker hover:text-primary">
 					<a href="#skills" class="flex items-center gap-2">
-						<SkillsIcon />
-						Skills
+						<TestimonialsIcon />
+						{$textContent.nav[3][$languageSelected]}
 					</a>
 				</li>
 				<li class="text-c-text-darker hover:text-primary">
 					<a href="#contact" class="flex items-center gap-2">
 						<Contact />
-						Contact
+						{$textContent.nav[4][$languageSelected]}
 					</a>
 				</li>
 			</ul>

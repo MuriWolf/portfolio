@@ -225,7 +225,7 @@
     "content": 
         {   
             "nav": [
-                {"id": 1, "en": "Me", "pt": "Sobre"},
+                {"id": 1, "en": "Story", "pt": "História"},
                 {"id": 2, "en": "Skills", "pt": "Habilidades"},
                 {"id": 3, "en": "Projects", "pt": "Projetos"},
                 {"id": 4, "en": "Testimonials", "pt": "Depoimentos"},

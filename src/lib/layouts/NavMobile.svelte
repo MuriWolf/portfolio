@@ -28,7 +28,7 @@
 		dispatchEvent("closeNavMoble");
 	}
 
-	function submitNewLanguage({ action }) {
+	function submitNewLanguage({ action }: any) {
 		const newLanguage = action.searchParams.get('language');
 		languageSelected.set(newLanguage);
 	}
@@ -44,12 +44,12 @@
 	>
 		<div class="flex-2">
 			<nav class="text-c-body-text text-2xl font-medium" >
-				<ol class="ml-0 flex flex-col gap-4 w-full list-roman">
+				<ol class="ml-0 flex flex-col gap-6 w-full ">
 					{#each $textContent.nav as item (item.id)}
 						{#if openAnimation}
 							<a
 								href={`#${item.en.toLowerCase()}`}
-								class="block hover:opacity-65 text-c-text-darker font-semibold hover:text-shadow-sm transition-all duration-150 ease-in ml-7"
+								class="block hover:text-primary text-c-text-darker font-semibold hover:text-shadow-sm transition-all duration-150 ease-in"
 								transition:scale={{ delay: item.id * 50 }}
 							>
 								<li>{item[$languageSelected]}</li>
@@ -62,7 +62,7 @@
 		<div class="flex-1 h-full flex flex-col">
 			<button
 				on:click={closeAsideMobile}
-				class="w-8 h-8 ml-auto block hover:opacity-65 text-c-text-darker transition-all duration-100 ease-in"
+				class="w-8 h-8 ml-auto block hover:text-primary text-c-text-darker transition-all duration-100 ease-in"
 			>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
 					><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
@@ -71,7 +71,7 @@
 					/></svg
 				>
 			</button>
-			<ul class="flex flex-col gap-y-4 mt-auto ml-auto items-end justify-center text-c-body-text">
+			<ul class="flex flex-col gap-y-4 mt-auto ml-auto items-end justify-center text-c-body-text" in:slide={{ duration: 150 }} out:slide={{ duration: 100 }} >
 				<form method="POST" bind:this={languageSwitcherForm} use:enhance={submitNewLanguage}>
 					<button
 						formaction="/?/setLanguage&language=pt"

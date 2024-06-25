@@ -2,6 +2,7 @@
 	import { slide } from 'svelte/transition';
     import { Badge } from "$lib/components/ui/badge";
 	import { increaseSkillSizeBasedOnRelevance } from '$lib/utilities/increaseSkillSizeBasedOnRelevance';
+    import { textContent, languageSelected } from '$lib/store';
 
     const skills = [
     {
@@ -84,7 +85,7 @@
 </script>
 
 <section class="mt-8 sm:mt-16" id="skills">
-    <h2 class="text-c-text-darker text-3xl font-bold mb-4">What I use</h2>
+    <h2 class="text-c-text-darker text-3xl font-bold mb-4">{$languageSelected == 'pt' ? 'O que uso' : 'What I use'}</h2>
     <div class="flex flex-wrap gap-x-3 gap-3 mx-auto transition-all" >
         {#each skills as skill, id}
             {#key id}

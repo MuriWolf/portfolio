@@ -133,9 +133,9 @@
 			<nav>
 				<ul class="flex items-center flex-col-reverse sm:flex-row gap-4 w-full">
 					{#if data.project.codeUrl != "private"}
-						<li class="w-full max-w-xs"><a href={data.project.codeUrl} class="text-c-text-darker bg-c-primary-darker hover:brightness-90 focus:brightness-90 transition-all ease-out rounded-md p-2 text-xl font-bold w-full block text-center active:scale-95">{$languageSelected == "pt" ? 'Explorar o código' : 'Explore the code'}</a></li>
+						<li class="w-full max-w-xs"><a href={data.project.codeUrl} target="_blank" class="text-c-text-darker bg-c-primary-darker hover:brightness-90 focus:brightness-90 transition-all ease-out rounded-md p-2 text-xl font-bold w-full block text-center active:scale-95">{$languageSelected == "pt" ? 'Explorar o código' : 'Explore the code'}</a></li>
 					{/if}
-					<li class="w-full max-w-xs" ><a href={data.project.liveUrl} class="text-stone-50 bg-c-text-darker hover:bg-primary focus:bg-primary transition-all ease-out rounded-md p-2 text-xl font-bold w-full block text-center active:scale-95">{$languageSelected == "pt" ? 'Ver a aplicação' : 'View live'}</a></li>
+					<li class="w-full max-w-xs" ><a href={data.project.liveUrl} target="_blank" class="text-stone-50 bg-c-text-darker hover:bg-primary focus:bg-primary transition-all ease-out rounded-md p-2 text-xl font-bold w-full block text-center active:scale-95">{$languageSelected == "pt" ? 'Ver a aplicação' : 'View live'}</a></li>
 				</ul>
 			</nav>
 			<!-- <div class="flex justify-center mt-24 text-c-text transition-all hover:animate-pulse">

@@ -16,9 +16,3 @@ export interface Project {
 	liveUrl: string;
 	images: string[]; 
 }
-
-// "description": {
-// 	"overview": { "pt": "", "en": "" }, 
-// 	"features": { "pt": "", "en": "" },
-// 	"challenges": { "pt": "", "en": "" }
-// },
