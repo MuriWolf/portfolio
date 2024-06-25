@@ -48,7 +48,7 @@
 				{#each projects as project (project.id)}
 					<Carousel.Item class="flex flex-col-reverse lg:flex-row gap-4 w-full">	
 						<div
-							class="flex flex-col justify-between min-w-[300px] lg:min-w-[400px] p-4 lg:p-8 rounded-xl border-2 border-c-primary-darker bg-c-primary" 
+							class="flex flex-col justify-between min-w-[300px] h-full lg:min-w-[400px] p-4 lg:p-8 rounded-xl border-2 border-c-primary-darker bg-c-primary" 
 						>
 							<div class="flex justify-between gap-2 gap-x-4 flex-wrap mb-2">
 								<hgroup class="h-min">

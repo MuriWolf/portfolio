@@ -144,99 +144,101 @@
 		</section>
 		<section class="-mt-4 sm:mt-0">
 			<div>
-				{#if project.images.length == 1}
-					<div
-						class="mx-auto rounded-2xl overflow-hidden inline-block shadow-custom-lg shadow-black/30 w-full"
-					>
-						<img
-							src={project.images[0]}
-							alt={`${project.title[$languageSelected]} project screenshot`}
-							height="636"
-							width="736"
-							class="block mx-auto w-full border overflow-hidden"
-						/>
-					</div>
-					<!-- <p class="text-end text-c-text-darker text-sm font-bold">Alt da imagem</p> -->
-				{:else}
-					<Carousel.Root
-						bind:api
-						opts={{
-							skipSnaps: true,
-							loop: true,
-							breakpoints: {},
-						}}
-						class="w-full rounded-2xl overflow-hidden bg-opacity-0 bg-black"
-					>
-						<Carousel.Content class="">
-							{#each project.images as image (project.images.indexOf(image))}
-								<Carousel.Item class="flex flex-col gap-x-5 gap-y-2">
-									<img
-										src={image}
-										alt={`${project.title[$languageSelected]} project screenshot`}
-										height="636"
-										width="736"
-										class="rounded-2xl object-cover h-full w-full border"
-									/>
-									<!-- <p class="text-end text-c-text-darker text-sm font-bold">Alt da imagem</p> -->
-								</Carousel.Item>
-							{/each}
-						</Carousel.Content>
-						<footer class="p-2 mt-2 flex items-center justify-center gap-4 max-xs:px-4 pb-0">
-							<Carousel.Previous style="all: unset;" class="!cursor-pointer">
-								<button
-									class="text-white active:scale-90 transition-all ease-in-out duration-150 flex"
-								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="20"
-										fill="currentColor"
-										viewBox="0 0 256 512"
-										><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
-											d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"
-										/></svg
-									>
-								</button>
-							</Carousel.Previous >
-							<div class="flex gap-4 items-center justify-center">
+				{#if project.images}
+					{#if project.images.length == 1}
+						<div
+							class="mx-auto rounded-2xl overflow-hidden inline-block shadow-custom-lg shadow-black/30 w-full"
+						>
+							<img
+								src={project.images[0]}
+								alt={`${project.title[$languageSelected]} project screenshot`}
+								height="636"
+								width="736"
+								class="block mx-auto w-full border overflow-hidden"
+							/>
+						</div>
+						<!-- <p class="text-end text-c-text-darker text-sm font-bold">Alt da imagem</p> -->
+					{:else}
+						<Carousel.Root
+							bind:api
+							opts={{
+								skipSnaps: true,
+								loop: true,
+								breakpoints: {},
+							}}
+							class="w-full rounded-2xl overflow-hidden bg-opacity-0 bg-black"
+						>
+							<Carousel.Content class="">
 								{#each project.images as image (project.images.indexOf(image))}
-									<button
-										on:click={() => api.scrollTo(project.images.indexOf(image))}
-										class="w-4 h-4 transition-all duration-100 ease-in-out rounded-full {current ==
-										project.images.indexOf(image) + 1
-											? ' bg-black'
-											: 'bg-c-text/50 border-2'}"
-									></button>
+									<Carousel.Item class="flex flex-col gap-x-5 gap-y-2">
+										<img
+											src={image}
+											alt={`${project.title[$languageSelected]} project screenshot`}
+											height="636"
+											width="736"
+											class="rounded-2xl object-cover h-full w-full border"
+										/>
+										<!-- <p class="text-end text-c-text-darker text-sm font-bold">Alt da imagem</p> -->
+									</Carousel.Item>
 								{/each}
-							</div>
-							<Carousel.Next style="all: unset;" class="!cursor-pointer">
-								<button class="text-white active:scale-90 transition-all ease-in-out duration-150">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="20"
-										fill="currentColor"
-										viewBox="0 0 256 512"
-										><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
-											d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
-										/></svg
+							</Carousel.Content>
+							<footer class="p-2 mt-2 flex items-center justify-center gap-4 max-xs:px-4 pb-0">
+								<Carousel.Previous style="all: unset;" class="!cursor-pointer">
+									<button
+										class="text-white active:scale-90 transition-all ease-in-out duration-150 flex"
 									>
-								</button>
-							</Carousel.Next>
-						</footer>
-					</Carousel.Root>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											fill="currentColor"
+											viewBox="0 0 256 512"
+											><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
+												d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z"
+											/></svg
+										>
+									</button>
+								</Carousel.Previous >
+								<div class="flex gap-4 items-center justify-center">
+									{#each project.images as image (project.images.indexOf(image))}
+										<button
+											on:click={() => api.scrollTo(project.images.indexOf(image))}
+											class="w-4 h-4 transition-all duration-100 ease-in-out rounded-full {current ==
+											project.images.indexOf(image) + 1
+												? ' bg-black'
+												: 'bg-c-text/50 border-2'}"
+										></button>
+									{/each}
+								</div>
+								<Carousel.Next style="all: unset;" class="!cursor-pointer">
+									<button class="text-white active:scale-90 transition-all ease-in-out duration-150">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											fill="currentColor"
+											viewBox="0 0 256 512"
+											><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
+												d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"
+											/></svg
+										>
+									</button>
+								</Carousel.Next>
+							</footer>
+						</Carousel.Root>
+					{/if}
 				{/if}
 			</div>
 		</section>
-		<section class="mt-8 sm:mt-16">
+		<section class="mt-4 sm:mt-16">
 			{#if data.project.description.overview }
-				<h2 class="text-c-text-darker text-3xl font-bold">{$languageSelected == "pt" ? 'Visão geral' : 'Overview'}</h2>
+				<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold">{$languageSelected == "pt" ? 'Visão geral' : 'Overview'}</h2>
 				<p class="text-c-text font-medium text-lg max-w-2xl mb-4">{data.project.description.overview[$languageSelected]}</p>
 			{/if}
 			{#if data.project.description.features }
-				<h2 class="text-c-text-darker text-3xl font-bold">{$languageSelected == "pt" ? 'Funcionalidades' : 'Features'}</h2>
+				<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold">{$languageSelected == "pt" ? 'Funcionalidades' : 'Features'}</h2>
 				<p class="text-c-text font-medium text-lg max-w-2xl mb-4">{data.project.description.features[$languageSelected]}</p>
 			{/if}
 			{#if data.project.description.challenges }
-				<h2 class="text-c-text-darker text-3xl font-bold">{$languageSelected == "pt" ? 'Desafios e aprendizados' : 'Challenges and learning'}</h2>
+				<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold">{$languageSelected == "pt" ? 'Desafios e aprendizados' : 'Challenges and learning'}</h2>
 				<p class="text-c-text font-medium text-lg max-w-2xl">{data.project.description.challenges[$languageSelected]}</p>
 			{/if}
 		</section>

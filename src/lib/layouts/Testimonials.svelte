@@ -28,24 +28,16 @@
 			opts={{
 				skipSnaps: true,
 				loop: true,
-			}}
-			plugins={[
-				// Autoplay({
-				//     delay: 2750,
-				//     stopOnMouseEnter: true,
-				//     stopOnInteraction: false
-				// }),
-			]}
+			}}			
 			class="w-full rounded-xl overflow-hidden"
 		>
-			<!-- xs:mx-2 -->
 			<Carousel.Content>
 				{#each $textContent.testimonials.content as testimonial, i (i)}
 					<Carousel.Item
-						class="basis-[100%] sm:basis-[70%] min-[960px]:basis-[40%] relative z-10 text-c-text" 
+						class="flex flex-col basis-[100%] sm:basis-[70%] min-[960px]:basis-[40%] relative z-10 text-c-text" 
 					>
 						<div
-							class="py-6 px-7 rounded-[10px] bg-c-primary border-[1px] border-c-primary-darker"
+							class="py-6 px-7 rounded-[10px] flex-1 bg-c-primary border-[1px] border-c-primary-darker"
 						>
 							<svg
 								width="28"
