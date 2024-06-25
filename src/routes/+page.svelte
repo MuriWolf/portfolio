@@ -41,19 +41,19 @@
 				<li class="text-c-text-darker hover:text-primary">
 					<a href="#projects" class="flex items-center gap-2">
 						<Folder />
-						{$textContent.nav[2][$languageSelected]}
+						{$textContent.nav[1][$languageSelected]}
 					</a>
 				</li>
 				<li class="text-c-text-darker hover:text-primary">
 					<a href="#testimonials" class="flex items-center gap-2">
 						<TestimonialsIcon />
-						{$textContent.nav[3][$languageSelected]}
+						{$textContent.nav[2][$languageSelected]}
 					</a>
 				</li>
 				<li class="text-c-text-darker hover:text-primary">
 					<a href="#skills" class="flex items-center gap-2">
 						<SkillsIcon />
-						{$textContent.nav[1][$languageSelected]}
+						{$textContent.nav[3][$languageSelected]}
 					</a>
 				</li>
 				<li class="text-c-text-darker hover:text-primary">
