@@ -85,11 +85,11 @@
 </script>
 
 <section class="mt-8 sm:mt-16" id="skills">
-    <h2 class="text-c-text-darker text-3xl font-bold mb-4">{$languageSelected == 'pt' ? 'O que uso' : 'What I use'}</h2>
+    <h2 class="text-c-text-darker text-3xl font-title font-bold mb-4">{$languageSelected == 'pt' ? 'O que uso' : 'What I use'}</h2>
     <div class="flex flex-wrap gap-x-3 gap-3 mx-auto transition-all" >
         {#each skills as skill, id}
             {#key id}
-                <Badge class="bg-c-primary rounded-[10px] max-sm:!px-2 !py-1 hover:bg-c-primary/50 border-[1px] border-c-primary-darker text-c-text-darker text-lg hover:text-primary transition-all" style={`padding: 0px ${increaseSkillSizeBasedOnRelevance(skill.relevance)}px;`}>{skill.name}</Badge>
+                <Badge class="bg-c-primary rounded-[2px] max-sm:!px-2 !py-1 hover:bg-c-primary-darker border-[1px] border-c-primary-darker text-c-text-darker text-lg hover:text-primary transition-all" style={`padding: 0px ${increaseSkillSizeBasedOnRelevance(skill.relevance)}px;`}>{skill.name}</Badge>
             {/key}
         {/each}
     </div>

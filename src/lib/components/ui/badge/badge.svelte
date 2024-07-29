@@ -14,7 +14,6 @@
 	{href}
 	class={cn(badgeVariants({ variant, className }))}
 	{...$$restProps}
-	transition:slide
 >
 	<slot />
 </svelte:element>

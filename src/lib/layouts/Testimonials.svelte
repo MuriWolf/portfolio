@@ -20,7 +20,7 @@
 <section
 	id="testimonials"
 	class="relative mt-8 sm:mt-16">
-	<h2 class="text-c-text-darker text-3xl font-bold">{$textContent.testimonials.title[$languageSelected]}</h2>
+	<h2 class="text-c-text-darker text-3xl font-bold font-title">{$textContent.testimonials.title[$languageSelected]}</h2>
     <p class="text-c-text text-lg mb-8 font-medium">{$textContent.testimonials.subtitle[$languageSelected]}</p>
 	<div class="flex gap-16 relative z-10 w-full ">
 		<Carousel.Root
@@ -29,7 +29,7 @@
 				skipSnaps: true,
 				loop: true,
 			}}			
-			class="w-full rounded-xl overflow-hidden"
+			class="w-full overflow-hidden"
 		>
 			<Carousel.Content>
 				{#each $textContent.testimonials.content as testimonial, i (i)}
@@ -37,7 +37,7 @@
 						class="flex flex-col basis-[100%] sm:basis-[70%] min-[960px]:basis-[40%] relative z-10 text-c-text" 
 					>
 						<div
-							class="py-6 px-7 rounded-[10px] flex-1 bg-c-primary border-[1px] border-c-primary-darker"
+							class="py-6 px-7 rounded-xl flex-1 bg-c-primary border-[1px] border-c-primary-darker text-c-secondary"
 						>
 							<svg
 								width="28"
@@ -48,20 +48,20 @@
 							>
 								<path
 									d="M0 7.5C0 3.35625 3.35625 0 7.5 0H8C9.10625 0 10 0.89375 10 2C10 3.10625 9.10625 4 8 4H7.5C5.56875 4 4 5.56875 4 7.5V8H8C10.2063 8 12 9.79375 12 12V16C12 18.2062 10.2063 20 8 20H4C1.79375 20 0 18.2062 0 16V14V12V7.5ZM16 7.5C16 3.35625 19.3563 0 23.5 0H24C25.1063 0 26 0.89375 26 2C26 3.10625 25.1063 4 24 4H23.5C21.5688 4 20 5.56875 20 7.5V8H24C26.2062 8 28 9.79375 28 12V16C28 18.2062 26.2062 20 24 20H20C17.7938 20 16 18.2062 16 16V14V12V7.5Z"
-									fill="#505050"
+									fill="currentColor"
 								/>
 							</svg>
-							<p class="mt-3 font-semibold">
+							<p class="mt-3 font-semibold text-c-text">
 								{testimonial.quote[$languageSelected]}"
 							</p>
 						</div>
 						<div
-							class="flex items-center justify-between gap-4 py-3.5 px-7 bg-c-text-darker rounded-[10px] mt-4 shadow-claymorphism"
+							class="flex items-center justify-between gap-4 py-3.5 px-7 bg-c-secondary rounded-[2px] mt-4 shadow-claymorphism"
 						>
 							<!-- <img src="" alt="" height="36" width="36" class="rounded-full" /> -->
 							<hgroup>
 								<h2 class="text-c-darker-background font-title font-bold text-lg text-stone-50">{testimonial.name}</h2>
-								<h3 class="text-xs text-white/70 font-title font-bold">{testimonial.occupation}</h3>
+								<h3 class="text-xs text-white/70 font-bold">{testimonial.occupation}</h3>
 							</hgroup>
 						</div>
 					</Carousel.Item>
@@ -87,7 +87,7 @@
 							on:click={() => api.scrollTo(i)}
 							class="w-4 h-4 rounded-full transition-all duration-100 ease-in-out {current ==
 							i + 1
-								? 'bg-black'
+								? 'bg-c-secondary'
 								: 'bg-c-text/50 border-2'}"
 						></button>
 					{/each}

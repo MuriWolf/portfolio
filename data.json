@@ -1,341 +1,461 @@
 {
-    "projects": [
-        {
-            "id": 0,
-            "title": {"pt": "Billy Mentoria", "en": "Billy Mentory"},
-            "abstract": { "pt": "Site de divulgação de mentoria relacionada a design.", "en": "Design-related mentoring website" },
-            "type": { "pt": "Website", "en": "Website" },
-            "myRole": { "pt": "front-end", "en": "front-end" },
-            "description": {
-                "overview": { "pt": "Esse projeto foi feito em parceria com um colega designer. Desenvolvido no final de 2022. O intuito do website é simples: divulgar sua mentoria. As tecnologias usadas são poucas, entretanto o foco foi a estilização, e não complexidade de código. O protótipo do website foi feito pelo Abílio (dono do site).", "en": "This project was done in partnership with a fellow designer. Developed at the end of 2022. The purpose of the website is simple: to share his mentoring. The technologies used are few, however the focus was on styling, not code complexity. The website prototype was made by Abílio (site owner)." }, 
-                "challenges": { "pt": "Deixá-lo perfeitamente ajustado em todas as telas, seguindo os mínimos detalhes impostos pelo cliente.", "en": "Make it perfectly adjusted on all screens, following the smallest details imposed by the client." }
-            },
-            "slug": "billy-mentoria",
-            "technologies": ["tailwind", "sass", "javascript"],
-            "codeUrl": "private",
-            "liveUrl": "https://billy-mentoria.netlify.app",
-            "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/billy-mentoria.png?updatedAt=1709863198646"
-            ]
-        },
-        { 
-            "id": 1,
-            "title": {"pt": "Porocode Sistema de Admin", "en": "Porocode Admin System"},
-            "abstract": { "pt": "Site do sistema administrativo sendo criado para outro site.", "en": "Admin system webiste being made for another website." },
-            "type": { "pt": "Website", "en": "Website" },
-            "myRole": { "pt": "front-end", "en": "front-end" },
-            "description": {
-                "overview": { "pt": "Projeto dependente de outro, ambos estão em processo de produção, esse mais avançado. Sendo feito desde 2023. Neste projeto, tecnologias como Svelte e Tailwind são usadas de maneira intensiva, extraindo o que ambos possuem de melhor a oferecer.", "en": "Project dependent on another, both are in the production process, this one more advanced. Being made since 2023. In this project, technologies such as Svelte and Tailwind are used intensively, extracting the best that both have to offer." }, 
-                "challenges": { "pt": "Construindo este projeto, aprendi e melhorei muito minhas habilidades em Svelte/kit, consumo de API, cookies, autenticação, local storage e outros conceitos da web.", "en": "Building this project, I learned and improved a lot my Svelte/kit skills, API consuming, cookies, auth, local storage and other web concepts." }
-            },
-            "slug": "porocode-admin-system",
-            "technologies": ["svelte", "tailwind", "css", "figma"],
-            "codeUrl": "private",
-            "liveUrl": "https://porocode.vercel.app",
-            "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-1.png?updatedAt=1709863200237",
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-2.png",
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-3.png",
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-4.png",
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-5.png"
-            ]
-        },
-        {
-            "id": 2,
-            "title": {"pt": "South Tech", "en": "South Tech"},
-            "abstract": { "pt": "Site para uma apresentação de TCC (Teme: Escola focada em tecnologia).", "en": "Website for a final couse apresentation (theme: Technology focused school)." },
-            "type": { "pt": "Website", "en": "Website" },
-            "myRole": { "pt": "Design, backend, front-end and host", "en": "Design, backend, front-end e hospedagem" },
-            "description": {
-                "overview": { "pt": "O website surgiu a partir do trabalho de conclusão de curso (TCC) feito por um grupo do curso de Administração (ETEC Antônio Devisate), cuja ideia era uma escola com foco em tecnologia. Produzido no primeiro semestre de 2023. O resultado foi um sucesso, com a proposta e necessidades atendidas.", "en": "The website arose from the “course completion work” made by a group from the Administration course (ETEC Antônio Devisate - SP/Brazil), the idea was a school focused on technology. Produced in the first half of 2023, design and development done by me. The result was a success, with the proposal and needs satisfied."  }, 
-                "features": { "pt": "Por ser um site feito para apresentação, apenas algumas funcionalidades foram adicionadas. A principal delas é o formulário de comunicação, os dados foram colocados no banco de dados e depois foram utilizados.", "en": "Since is a website made for a presentation, just a few features were added. The main one is the communication form, the data was placed in the database and then were used." },
-                "challenges": { "pt": "Entender o projeto e entender as necessidades foi o principal desafio. Aprendi muito sobre hospedagem.", "en": "Understand the project and understand the needs was the main challenge. Learned a lot about hosting." }
-            },
-            "slug": "south-tech",
-            "technologies": ["php", "mysql", "tailwind", "sass"],
-            "codeUrl": "https://github.com/MuriWolf/tcc-adm",
-            "liveUrl": "https://south-tech-education.netlify.app",
-            "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/south-tech-1.png?updatedAt=1709863199151",
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/south-tech-2.png",
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/south-tech-3.png"
-            ]
-        },
-        {
-            "id": 3,
-            "title": {"pt": "Isaque Designer", "en": "Isaque Designer"},
-            "abstract": { "pt": "Site feito para compartilhar links relacionados ao cliente.", "en": "Website made for sharing links related to the client." },
-            "type": { "pt": "Website", "en": "Website" },
-            "myRole": { "pt": "front-end", "en": "front-end" },
-            "description": {
-            	"overview": { "pt": "Semelhante ao projeto (link do projeto Billy design), segue a mesma premissa, mas agora se tratando de outra pessoa (Isaque - Designer) e com distinta identidade visual. Feito em 2023. Atualmente a pessoa em questão não trabalha com a área de design (28/03/2024)", "en": "Similar to the project (Billy design project link), it follows the same premise, but now dealing with another person (Isaque - Designer) and with a distinct visual identity. Done in 2023. Currently the person in question does not work with design (03/28/2024)" }
-            },
-            "slug": "isaque-designer",
-            "technologies": ["sass", "javascript", "css"],
-            "codeUrl": "private",
-            "liveUrl": "https://isaque-designer.netlify.app",
-            "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/isaque-designer.png?updatedAt=1709863198242"
-            ]
-        },
-        {
-            "id": 4,
-            "title": {"pt": "Interactive Card Details Form", "en": "Interactive Card Details Form"},
-            "abstract": { "pt": "Site que simula formulário de um cartão de crédito.", "en": "Website that simulates a credit card form." },
-            "type": { "pt": "Website", "en": "Website" },
-            "myRole": { "pt": "front-end", "en": "front-end" },
-            "description": {
-                "overview": { "pt": "Website que simula o cadastro de um cartão de crédito. Feito com o intuito de treinar minha habilidades de front-end. Desafio proposto pelo front-end Mentor. Desenvolvido por volta do final de 2022.", "en": "Website that simulates registering a credit card. Made with the purpose of training my front-end skills.Challenge proposed by front-end Mentor. Developed next to the end of 2022." }
-            },
-            "slug": "interactive-card-details-form",
-            "technologies": ["javascript", "sass"],
-            "codeUrl": "https://github.com/MuriWolf/interactive-card-details-form/tree/master",
-            "liveUrl": "https://interactive-card-details-form-muri.netlify.app",
-            "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/interactive-card-details-form.png?updatedAt=1709863198296"
-            ]
-        },
-        {
-            "id": 5,
-            "title": {"pt": "Billy Design", "en": "Billy Design"},
-            "abstract": { "pt": "Site feito para compartilhar links relacionados ao cliente (Abilio).", "en": "Website made for sharing links related to the client (Abilio)." },
-            "type": { "pt": "Website", "en": "Website" },
-            "myRole": { "pt": "front-end", "en": "front-end" },
-            "description": {
-                "overview": { "pt": "Esse projeto é a segunda versão de um anterior, essa versão foi feita por volta do começo de 2023. Totalmente sucinto em propósito: Divulgar links essenciais com relação a pessoa em questão (Abílio - designer). Simples no geral mas atende o propósito de sua existência.", "en": "This project is the second version of a previous one, this version was made around the beginning of 2023. Totally succinct in purpose: Show essential links associated with the person of Abílio (designer). In general: Simple, but it serves the purpose of its existence." }
-            },
-            "slug": "billy-design",
-            "technologies": ["javascript", "sass"],
-            "codeUrl": "https://github.com/MuriWolf/abilho-site2.0",
-            "liveUrl": "https://billy-design.netlify.app",
-            "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/billy-design.png?updatedAt=1709863198332"
-            ]
-        },
-        {
-            "id": 6,
-            "title": {"pt": "história de tudo (clone da interface)", "en": "Historía de tudo (Simple UI clone)"},
-            "abstract": { "pt": "Título autoexplicativo, apenas uma cópia simples de algumas partes do site.", "en": "Self-explanatory title, just a simple copy of some parts of the site." },
-            "type": { "pt": "Website", "en": "Website" },
-            "myRole": { "pt": "front-end", "en": "front-end" },
-            "description": {
-                "overview": { "pt": "Uma simples cópia do site “História de tudo”, onde aborda curiosidades e assuntos interessantes do mundo. Meu objetivo com ele foi tentar clonar em partes um site já existente, dessa forma visando aprender no processo. Feito no começo de 2022.", "en": "A simple copy of the “História de tudo” website, which covers curiosities and interesting subjects in the world. My objective with it was to try to clone an existing website in parts, aiming to learn in the process. Done at the beginning of 2022." }, 
-                "challenges": { "pt": "Aprendi mais sobre como funciona a interface do usuário de um site (neste caso, do tipo blog) e seu comportamento em telas diferentes.", "en": "I learned more about how a website (in this case a blog-type) UI works, and it's behavior on different screens." }
-            },
-            "slug": "historia-de-tudo",
-            "technologies": ["javascript", "css"],
-            "codeUrl": "https://github.com/MuriWolf/historia_de_tudo",
-            "liveUrl": "https://muriwolf.github.io/historia_de_tudo/",
-            "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/historia-de-tudo-copy.png?updatedAt=1709863198438"
-            ]
-        },
-        {
-            "id": 7,
-            "title": {"pt": "Calculador de Gorjeta", "en": "Tip Calculator"},
-            "abstract": { "pt": "", "en": "" },
-            "type": { "pt": "Website", "en": "Website" },
-            "myRole": { "pt": "front-end", "en": "front-end" },
-            "description": {
-                "overview": { "pt": "Website que tem o propósito de ser uma calculadora de gorjeta (nome sugestivo). Feito com o intuito de treinar minhas habilidades de SCSS e Javascript. Desafio proposto pelo front-end Mentor. Desenvolvido em 2022.", "en": "Website that aims to be a tip calculator (suggestive name). Made with the intention of training my SCSS and Javascript skills. Challenge proposed by front-end Mentor . Developed in 2022." }
-            },
-            "slug": "tip-calculator",
-            "technologies": ["javascript", "css", "sass"],
-            "codeUrl": "http://github.com/MuriWolf/calculator-app-main",
-            "liveUrl": "https://muriwolf.github.io/calculator-app-main/",
-            "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/tip-calculator.png?updatedAt=1709863199633"
-            ]
-        },
-        {
-            "id": 8,
-            "title": {"pt": "Blogr", "en": "Blogr"},
-            "abstract": { "pt": "Uma simples e elegante landing page.", "en": "A simple and elegant landing page." },
-            "type": { "pt": "Website", "en": "Website" },
-            "myRole": { "pt": "front-end", "en": "front-end" },
-            "description": {
-                "overview": { "pt": "Desafio proposto pelo front-end Mentor. Desenvolvido no meio de 2022.", "en": "Challenge proposed by front-end Mentor. Developed in mid-2022." }, 
-                "challenges": { "pt": "Com esse projeto aprendi muito sobre como lidar com imagens numa página web, assim como organização de projeto e outras habilidades relativas ao front-end web.", "en": "I was able to train and learn skills related to the front-end web world, such as aligning items and menus." }
-            },
-            "slug": "blogr-landing-page",
-            "technologies": ["javascript", "css", "sass"],
-            "codeUrl": "https://github.com/MuriWolf/Blogr",
-            "liveUrl": "https://muriwolf.github.io/Blogr/",
-            "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/blogr-landing-page-3-1.png"
-            ]
-        },
-        {
-            "id": 9,
-            "title": {"pt": "Snap", "en": "Snap"},
-            "abstract": { "pt": "Uma landing page muito simples.", "en": "A very simple landing page." },
-            "type": { "pt": "Website", "en": "Website" },
-            "myRole": { "pt": "front-end", "en": "front-end" },
-            "description": {
-                "overview": { "pt": "Desafio proposto pelo front-end Mentor. Desenvolvido no começo de 2022.", "en": "Challenge proposed by front-end Mentor. Developed in 2022." }, 
-                "challenges": { "pt": "Neste projeto pude treinar e aprender habilidades referentes ao mundo front-end web, como alinhamento de itens e menus.", "en": "In this project I was able to train and learn skills related to the front-end web world, such as aligning items and menus." }
-            },
-            "slug": "snap-landing-page",
-            "technologies": ["javascript", "css"],
-            "codeUrl": "https://github.com/MuriWolf/Intro-section-with-dropdown-navigation",
-            "liveUrl": "https://muriwolf.github.io/Intro-section-with-dropdown-navigation/",
-            "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page-2.png?updatedAt=1709863200212"
-            ]
-        },
-        {
-            "id": 10,
-            "title": {"pt": "Clipboard", "en": "Clipboard"},
-            "abstract": { "pt": "Uma simples e elegante landing page.", "en": "A simple but totally responsive landing page." },
-            "type": { "pt": "Website", "en": "Website" },
-            "myRole": { "pt": "front-end", "en": "front-end" },
-            "description": {
-                "overview": { "pt": "Desafio proposto pelo front-end Mentor. Desenvolvido no começo de 2022.", "en": "Challenge proposed by front-end Mentor. Developed in 2022." }, 
-                "challenges": { "pt": "Com esse website pude melhorar aprimorar minhas habilidades com front-end web, como alinhamento correto de texto em conjunto com imagens.", "en": " With this website I was able to improve my web front-end skills, such as correctly aligning text with images." }
-            },
-            "slug": "clipboard-landing-page",
-            "technologies": ["javascript", "css"],
-            "codeUrl": "https://github.com/MuriWolf/clipboard-landing-page-master",
-            "liveUrl": "https://clipboard-landing-page-muri.netlify.app",
-            "images": [
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-1.png?updatedAt=1709863198229",
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-2.png",
-                "https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-3.png"
-            ]
-        },
-        {
-            "id": 11,
-            "title": {"pt": "Swapee.me", "en": "Swapee.me"},
-            "abstract": { "pt": "Site focado em moedas digitais", "en": "Digital coins related website" },
-            "type": { "pt": "Website", "en": "Website" },
-            "myRole": { "pt": "front-end", "en": "front-end" },
-            "description": {
-                "overview": { "pt": "Projeto fundado com o intuito de facilitar o uso de moedas digitais, com foco na descentralização do dinheiro e anonimidade. Neste site, trabalho fazendo alterações e updates no que tange a parte visual. Também há minha participação em outros projetos embrionários do grupo, trabalhando tanto com front-end quanto back-end. Trabalhando nele desde 2023, com uma breve participação em 2022.", "en": "Project founded with the aim of facilitating the use of digital currencies, focusing on the decentralization of money and anonymity. On this website, I work making changes and updates focusing on the visual part. I also participate in other embryonic projects of the group, both front-end and back-end. Working on it since 2023, with a brief participation in 2022." }, 
-                "challenges": { "pt": "Meu principal desafio foi entender as necessidades, no processo ganhei muita experiência no uso de minhas ferramentas e na comunicação em outro idioma", "en": "My main challenge was understand the needs, in the process I gain much experience using my tools and communicating in another language." }
-            },
-            "slug": "swapeeme",
-            "technologies": ["svelte", "css", "tailwind", "bootstrap", "javascript"],
-            "codeUrl": "private",
-            "liveUrl": "https://swapee.me",
-            "images": [
-                "https://ucarecdn.com/b49e10fc-e93d-4b5f-8523-33b31d24dbae/-/preview/1000x655/"
-            ]
-        }
-    ],
-    "content": 
-        {   
-            "nav": [
-                {"id": 1, "en": "Story", "pt": "História"},
-                {"id": 2, "en": "Projects", "pt": "Projetos"},
-                {"id": 3, "en": "Testimonials", "pt": "Depoimentos"},
-                {"id": 4, "en": "Skills", "pt": "Habilidades"},
-                {"id": 5, "en": "Contact", "pt": "Contato"}
-            ],
-            "qualities": {
-                "verb": { "pt": "Eleve", "en": "Enhance" },
-                "subs": [
-                  { "pt": "Excelência", "en": "Excellence" },
-                  { "pt": "Performance", "en": "Performace" },
-                  { "pt": "Responsividade", "en": "Responsiveness" },
-                  { "pt": "Funcionalidade", "en": "Functionality" }
-                ]
-              },
-            "hero": {
-                "title": {
-                    "greeting": {"pt": "Olá, sou", "en": "Hello, I'am"},
-                    "name": "Murillo Pinheiro de Oliveira",
-                    "area": "Web Dev"
-                },
-                "subtitle": {
-                    "en": "Building websites with responsiveness, accessibility and user experience in mind.",
-                    "pt": "Construindo websites com responsividade, acessibilidade e experiência do usuário em mente."
-                }
-            },
-            "about": {
-                "title": {"en": "ABOUT ME", "pt": "SOBRE MIM"},
-                "paragraphs": [
-                    {"en": "Hi, there! I've been a web programmer for a few years. I know the basics of back-end but my focus is the front-end part of applications. Much of what I learned was from forums, online courses and the experience of getting my hands dirty.",
-                    "pt": "Opa, tudo jóia? Sou programador web há alguns anos. Sei o básico de back-end mas meu foco é o front-end das aplicações. Boa parte do que aprendi foi em fóruns, cursos online e a experiência de colocar a mão na massa."},
-                    {"en": "However, I have already studied 'Systems Development' at ETEC Devisate (2022-2023), and am currently studying 'Computer Science' at Unimar (both brazilian institutions).",
-                     "pt": "Entretanto já cursei Desenvolvimento de Sistemas na ETEC Devisate (2022-2023), e no momento curso Ciência da Computação na Unimar."},
-                    {"en": "This is an area that I genuinely like, I don't do it because it's 'trend', this reason contributes to the fact that I wanna deliver the best work, so people like you have a good experience in transforming ideas into reality.",
-                    "pt": "Essa é uma área que eu genuinamente gosto, não faço por ser 'modinha', esse motivo contribue para que eu queria entregar o melhor trabalho, para que pessoas como você, tenham uma boa experiência em transformar ideias em realidade."}
-                ]
-            },
-            "techs": {
-                "title": {"en": "TECHNOLOGIES", "pt": "TECNOLOGIAS"},
-                "subtitle": {
-                    "en": "These are some technologies that I master, use in my daily life or have certain knowledge and experience. I emphasize Svelte and Tailwind, which are the ones I'm most productive with.",
-                    "pt": "Essas são algumas tecnologias que domino, uso no meu dia-a-dia ou tenho certo conhecimento e experiência. Dou ênfase ao Svelte e Tailwind, que são as que mais sou produtivo."
-                }
-            },
-            "testimonials": {
-                "title": {"en": "What people say", "pt": "Depoimentos de clientes"},
-                "subtitle": {
-                    "en": "Some feedback from people I worked with. I hope yours is next.",
-                    "pt": "Alguns feedbacks de pessoas que tive o prazer de trabalhar. Espero que o seu seja o próximo."
-                },
-                "content": [
-                    {"id": 0, "name": "Jay Bates", "occupation": "Co-Founder of Swapee.me", "originalLanguage": "enUk", "quote": {
-                        "pt": "Murillo é um desenvolvedor front end muito talentoso e devo dizer que é um excelente profissional. Ele me ajudou a entender o processo de desenvolvimento front-end da empresa e começou a trabalhar comigo e foi muito prestativo. Estou impressionado com sua ética de trabalho e habilidades de comunicação.",
-                        "en": "Murillo is a very talented front end developer and I must say he is an excellent professional. He helped me understand the company's front end development process and started working with me and was very helpful. I am impressed by his work ethic and communication skills."
-                    }},
-                    {"id": 1, "name": "Abilio Rafael", "occupation": "Designer", "originalLanguage": "ptBr", "quote": {
-                        "pt": "Cara, fiquei extremamente impressionado! Você é um verdadeiro expert em programação, trabalho impecável.",
-                        "en": "Dude, I was extremely impressed! You are a true programming expert, impeccable work."
-                    }}
-                ] 
-            },
-            "contact": {
-                "title": {"en": "CONTACT", "pt": "CONTATO"},
-                "form": {
-                    "name": {
-                        "title": {
-                            "en": "Name", "pt": "Nome"
-                        },
-                        "placeholder": {
-                            "en": "Enter your name", "pt": "Escreva seu nome"
-                        }
-                    },
-                    "email": {
-                        "title": {
-                            "en": "Email", "pt": "Email"
-                        },
-                        "placeholder": {
-                            "en": "Enter your email address", "pt": "Escreva seu email"
-                        }
-                    },
-                    "message": {
-                        "title": {
-                            "en": "Message", "pt": "Mensagem"
-                        },
-                        "placeholder": {
-                            "en": "Write your message, anything you want.", "pt": "Escreva sua mensagem, o que quiser."
-                        }
-                    },
-                    "submitButton": {
-                        "en": "Start Conversation", "pt": "Iniciar Conversa"
-                    }
-                },
-                "description": {
-                    "en": "A proposal, questions or just say hello. Let's engage professionally.",
-                    "pt": "Uma proposta, perguntas ou apenas um olá. Vamos entrar em contato."
-                }
-            },
-            "projectPage": {
-                "description": {
-                    "en": "Description", "pt": "Descrição"
-                },
-                "techs": {
-                    "en": "Technologies used", "pt": "Tecnologias usadas"
-                },
-                "depth": {
-                    "en": "In Depth | More", "pt": "Em detalhes | Mais"
-                }
-            },
-            "footer": {
-                "authorship": {"en": "Designed & Developed by", "pt": "Projetado & Desenvolvido por"},
-                "love": {"en": "Made with the help of my love, Ana Laura ❤️", "pt": "Feito com a ajuda do meu amor, Ana Laura ❤️"}
-            }
-        }
+	"projects": [
+		{
+			"id": 0,
+			"title": { "pt": "Billy Mentoria", "en": "Billy Mentory" },
+			"abstract": {
+				"pt": "Site de divulgação de mentoria relacionada a design.",
+				"en": "Design-related mentoring website"
+			},
+			"type": { "pt": "Website", "en": "Website" },
+			"myRole": { "pt": "front-end", "en": "front-end" },
+			"description": {
+				"overview": {
+					"pt": "Esse projeto foi feito em parceria com um colega designer. Desenvolvido no final de 2022. O intuito do website é simples: divulgar sua mentoria. As tecnologias usadas são poucas, entretanto o foco foi a estilização, e não complexidade de código. O protótipo do website foi feito pelo Abílio (dono do site).",
+					"en": "This project was done in partnership with a fellow designer. Developed at the end of 2022. The purpose of the website is simple: to share his mentoring. The technologies used are few, however the focus was on styling, not code complexity. The website prototype was made by Abílio (site owner)."
+				},
+				"challenges": {
+					"pt": "Deixá-lo perfeitamente ajustado em todas as telas, seguindo os mínimos detalhes impostos pelo cliente.",
+					"en": "Make it perfectly adjusted on all screens, following the smallest details imposed by the client."
+				}
+			},
+			"slug": "billy-mentoria",
+			"technologies": ["tailwind", "sass", "javascript"],
+			"codeUrl": "private",
+			"liveUrl": "https://billy-mentoria.netlify.app",
+			"images": [
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/billy-mentoria.png?updatedAt=1709863198646"
+			]
+		},
+		{
+			"id": 1,
+			"title": { "pt": "Porocode Sistema de Admin", "en": "Porocode Admin System" },
+			"abstract": {
+				"pt": "Site do sistema administrativo sendo criado para outro site.",
+				"en": "Admin system webiste being made for another website."
+			},
+			"type": { "pt": "Website", "en": "Website" },
+			"myRole": { "pt": "front-end", "en": "front-end" },
+			"description": {
+				"overview": {
+					"pt": "Projeto dependente de outro, ambos estão em processo de produção, esse mais avançado. Sendo feito desde 2023. Neste projeto, tecnologias como Svelte e Tailwind são usadas de maneira intensiva, extraindo o que ambos possuem de melhor a oferecer.",
+					"en": "Project dependent on another, both are in the production process, this one more advanced. Being made since 2023. In this project, technologies such as Svelte and Tailwind are used intensively, extracting the best that both have to offer."
+				},
+				"challenges": {
+					"pt": "Construindo este projeto, aprendi e melhorei muito minhas habilidades em Svelte/kit, consumo de API, cookies, autenticação, local storage e outros conceitos da web.",
+					"en": "Building this project, I learned and improved a lot my Svelte/kit skills, API consuming, cookies, auth, local storage and other web concepts."
+				}
+			},
+			"slug": "porocode-admin-system",
+			"technologies": ["svelte", "tailwind", "css", "figma"],
+			"codeUrl": "private",
+			"liveUrl": "https://porocode.vercel.app",
+			"images": [
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-1.png?updatedAt=1709863200237",
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-2.png",
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-3.png",
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-4.png",
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-5.png"
+			]
+		},
+		{
+			"id": 2,
+			"title": { "pt": "South Tech", "en": "South Tech" },
+			"abstract": {
+				"pt": "Site para uma apresentação de TCC (Teme: Escola focada em tecnologia).",
+				"en": "Website for a final couse apresentation (theme: Technology focused school)."
+			},
+			"type": { "pt": "Website", "en": "Website" },
+			"myRole": {
+				"pt": "design, backend, front-end and host",
+				"en": "design, backend, front-end e hospedagem"
+			},
+			"description": {
+				"overview": {
+					"pt": "O website surgiu a partir do trabalho de conclusão de curso (TCC) feito por um grupo do curso de Administração (ETEC Antônio Devisate), cuja ideia era uma escola com foco em tecnologia. Produzido no primeiro semestre de 2023. O resultado foi um sucesso, com a proposta e necessidades atendidas.",
+					"en": "The website arose from the “course completion work” made by a group from the Administration course (ETEC Antônio Devisate - SP/Brazil), the idea was a school focused on technology. Produced in the first half of 2023, design and development done by me. The result was a success, with the proposal and needs satisfied."
+				},
+				"features": {
+					"pt": "Por ser um site feito para apresentação, apenas algumas funcionalidades foram adicionadas. A principal delas é o formulário de comunicação, os dados foram colocados no banco de dados e depois foram utilizados.",
+					"en": "Since is a website made for a presentation, just a few features were added. The main one is the communication form, the data was placed in the database and then were used."
+				},
+				"challenges": {
+					"pt": "Entender o projeto e entender as necessidades foi o principal desafio. Aprendi muito sobre hospedagem.",
+					"en": "Understand the project and understand the needs was the main challenge. Learned a lot about hosting."
+				}
+			},
+			"slug": "south-tech",
+			"technologies": ["php", "mysql", "tailwind", "sass"],
+			"codeUrl": "https://github.com/MuriWolf/tcc-adm",
+			"liveUrl": "https://south-tech-education.netlify.app",
+			"images": [
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/south-tech-1.png?updatedAt=1709863199151",
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/south-tech-2.png",
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/south-tech-3.png"
+			]
+		},
+		{
+			"id": 3,
+			"title": { "pt": "Isaque Designer", "en": "Isaque Designer" },
+			"abstract": {
+				"pt": "Site feito para compartilhar links relacionados ao cliente.",
+				"en": "Website made for sharing links related to the client."
+			},
+			"type": { "pt": "Website", "en": "Website" },
+			"myRole": { "pt": "front-end", "en": "front-end" },
+			"description": {
+				"overview": {
+					"pt": "Semelhante ao projeto (link do projeto Billy design), segue a mesma premissa, mas agora se tratando de outra pessoa (Isaque - Designer) e com distinta identidade visual. Feito em 2023. Atualmente a pessoa em questão não trabalha com a área de design (28/03/2024)",
+					"en": "Similar to the project (Billy design project link), it follows the same premise, but now dealing with another person (Isaque - Designer) and with a distinct visual identity. Done in 2023. Currently the person in question does not work with design (03/28/2024)"
+				}
+			},
+			"slug": "isaque-designer",
+			"technologies": ["sass", "javascript", "css"],
+			"codeUrl": "private",
+			"liveUrl": "https://isaque-designer.netlify.app",
+			"images": [
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/isaque-designer.png?updatedAt=1709863198242"
+			]
+		},
+		{
+			"id": 4,
+			"title": { "pt": "Interactive Card Details Form", "en": "Interactive Card Details Form" },
+			"abstract": {
+				"pt": "Site que simula formulário de um cartão de crédito.",
+				"en": "Website that simulates a credit card form."
+			},
+			"type": { "pt": "Website", "en": "Website" },
+			"myRole": { "pt": "front-end", "en": "front-end" },
+			"description": {
+				"overview": {
+					"pt": "Website que simula o cadastro de um cartão de crédito. Feito com o intuito de treinar minha habilidades de front-end. Desafio proposto pelo front-end Mentor. Desenvolvido por volta do final de 2022.",
+					"en": "Website that simulates registering a credit card. Made with the purpose of training my front-end skills.Challenge proposed by front-end Mentor. Developed next to the end of 2022."
+				}
+			},
+			"slug": "interactive-card-details-form",
+			"technologies": ["javascript", "sass"],
+			"codeUrl": "https://github.com/MuriWolf/interactive-card-details-form/tree/master",
+			"liveUrl": "https://interactive-card-details-form-muri.netlify.app",
+			"images": [
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/interactive-card-details-form.png?updatedAt=1709863198296"
+			]
+		},
+		{
+			"id": 5,
+			"title": { "pt": "Billy Design", "en": "Billy Design" },
+			"abstract": {
+				"pt": "Site feito para compartilhar links relacionados ao cliente (Abilio).",
+				"en": "Website made for sharing links related to the client (Abilio)."
+			},
+			"type": { "pt": "Website", "en": "Website" },
+			"myRole": { "pt": "front-end", "en": "front-end" },
+			"description": {
+				"overview": {
+					"pt": "Esse projeto é a segunda versão de um anterior, essa versão foi feita por volta do começo de 2023. Totalmente sucinto em propósito: Divulgar links essenciais com relação a pessoa em questão (Abílio - designer). Simples no geral mas atende o propósito de sua existência.",
+					"en": "This project is the second version of a previous one, this version was made around the beginning of 2023. Totally succinct in purpose: Show essential links associated with the person of Abílio (designer). In general: Simple, but it serves the purpose of its existence."
+				}
+			},
+			"slug": "billy-design",
+			"technologies": ["javascript", "sass"],
+			"codeUrl": "https://github.com/MuriWolf/abilho-site2.0",
+			"liveUrl": "https://billy-design.netlify.app",
+			"images": [
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/billy-design.png?updatedAt=1709863198332"
+			]
+		},
+		{
+			"id": 6,
+			"title": {
+				"pt": "história de tudo (clone da interface)",
+				"en": "Historía de tudo (Simple UI clone)"
+			},
+			"abstract": {
+				"pt": "Título autoexplicativo, apenas uma cópia simples de algumas partes do site.",
+				"en": "Self-explanatory title, just a simple copy of some parts of the site."
+			},
+			"type": { "pt": "Website", "en": "Website" },
+			"myRole": { "pt": "front-end", "en": "front-end" },
+			"description": {
+				"overview": {
+					"pt": "Uma simples cópia do site “História de tudo”, onde aborda curiosidades e assuntos interessantes do mundo. Meu objetivo com ele foi tentar clonar em partes um site já existente, dessa forma visando aprender no processo. Feito no começo de 2022.",
+					"en": "A simple copy of the “História de tudo” website, which covers curiosities and interesting subjects in the world. My objective with it was to try to clone an existing website in parts, aiming to learn in the process. Done at the beginning of 2022."
+				},
+				"challenges": {
+					"pt": "Aprendi mais sobre como funciona a interface do usuário de um site (neste caso, do tipo blog) e seu comportamento em telas diferentes.",
+					"en": "I learned more about how a website (in this case a blog-type) UI works, and it's behavior on different screens."
+				}
+			},
+			"slug": "historia-de-tudo",
+			"technologies": ["javascript", "css"],
+			"codeUrl": "https://github.com/MuriWolf/historia_de_tudo",
+			"liveUrl": "https://muriwolf.github.io/historia_de_tudo/",
+			"images": [
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/historia-de-tudo-copy.png?updatedAt=1709863198438"
+			]
+		},
+		{
+			"id": 7,
+			"title": { "pt": "Calculador de Gorjeta", "en": "Tip Calculator" },
+			"abstract": { "pt": "", "en": "" },
+			"type": { "pt": "Website", "en": "Website" },
+			"myRole": { "pt": "front-end", "en": "front-end" },
+			"description": {
+				"overview": {
+					"pt": "Website que tem o propósito de ser uma calculadora de gorjeta (nome sugestivo). Feito com o intuito de treinar minhas habilidades de SCSS e Javascript. Desafio proposto pelo front-end Mentor. Desenvolvido em 2022.",
+					"en": "Website that aims to be a tip calculator (suggestive name). Made with the intention of training my SCSS and Javascript skills. Challenge proposed by front-end Mentor . Developed in 2022."
+				}
+			},
+			"slug": "tip-calculator",
+			"technologies": ["javascript", "css", "sass"],
+			"codeUrl": "http://github.com/MuriWolf/calculator-app-main",
+			"liveUrl": "https://muriwolf.github.io/calculator-app-main/",
+			"images": [
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/tip-calculator.png?updatedAt=1709863199633"
+			]
+		},
+		{
+			"id": 8,
+			"title": { "pt": "Blogr", "en": "Blogr" },
+			"abstract": {
+				"pt": "Uma simples e elegante landing page.",
+				"en": "A simple and elegant landing page."
+			},
+			"type": { "pt": "Website", "en": "Website" },
+			"myRole": { "pt": "front-end", "en": "front-end" },
+			"description": {
+				"overview": {
+					"pt": "Desafio proposto pelo front-end Mentor. Desenvolvido no meio de 2022.",
+					"en": "Challenge proposed by front-end Mentor. Developed in mid-2022."
+				},
+				"challenges": {
+					"pt": "Com esse projeto aprendi muito sobre como lidar com imagens numa página web, assim como organização de projeto e outras habilidades relativas ao front-end web.",
+					"en": "I was able to train and learn skills related to the front-end web world, such as aligning items and menus."
+				}
+			},
+			"slug": "blogr-landing-page",
+			"technologies": ["javascript", "css", "sass"],
+			"codeUrl": "https://github.com/MuriWolf/Blogr",
+			"liveUrl": "https://muriwolf.github.io/Blogr/",
+			"images": [
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/blogr-landing-page-3-1.png"
+			]
+		},
+		{
+			"id": 9,
+			"title": { "pt": "Snap", "en": "Snap" },
+			"abstract": { "pt": "Uma landing page muito simples.", "en": "A very simple landing page." },
+			"type": { "pt": "Website", "en": "Website" },
+			"myRole": { "pt": "front-end", "en": "front-end" },
+			"description": {
+				"overview": {
+					"pt": "Desafio proposto pelo front-end Mentor. Desenvolvido no começo de 2022.",
+					"en": "Challenge proposed by front-end Mentor. Developed in 2022."
+				},
+				"challenges": {
+					"pt": "Neste projeto pude treinar e aprender habilidades referentes ao mundo front-end web, como alinhamento de itens e menus.",
+					"en": "In this project I was able to train and learn skills related to the front-end web world, such as aligning items and menus."
+				}
+			},
+			"slug": "snap-landing-page",
+			"technologies": ["javascript", "css"],
+			"codeUrl": "https://github.com/MuriWolf/Intro-section-with-dropdown-navigation",
+			"liveUrl": "https://muriwolf.github.io/Intro-section-with-dropdown-navigation/",
+			"images": [
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page-2.png?updatedAt=1709863200212"
+			]
+		},
+		{
+			"id": 10,
+			"title": { "pt": "Clipboard", "en": "Clipboard" },
+			"abstract": {
+				"pt": "Uma simples e elegante landing page.",
+				"en": "A simple but totally responsive landing page."
+			},
+			"type": { "pt": "Website", "en": "Website" },
+			"myRole": { "pt": "front-end", "en": "front-end" },
+			"description": {
+				"overview": {
+					"pt": "Desafio proposto pelo front-end Mentor. Desenvolvido no começo de 2022.",
+					"en": "Challenge proposed by front-end Mentor. Developed in 2022."
+				},
+				"challenges": {
+					"pt": "Com esse website pude melhorar aprimorar minhas habilidades com front-end web, como alinhamento correto de texto em conjunto com imagens.",
+					"en": " With this website I was able to improve my web front-end skills, such as correctly aligning text with images."
+				}
+			},
+			"slug": "clipboard-landing-page",
+			"technologies": ["javascript", "css"],
+			"codeUrl": "https://github.com/MuriWolf/clipboard-landing-page-master",
+			"liveUrl": "https://clipboard-landing-page-muri.netlify.app",
+			"images": [
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-1.png?updatedAt=1709863198229",
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-2.png",
+				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-3.png"
+			]
+		},
+		{
+			"id": 11,
+			"title": { "pt": "Swapee.me", "en": "Swapee.me" },
+			"abstract": { "pt": "Site focado em moedas digitais", "en": "Digital coins related website" },
+			"type": { "pt": "Website", "en": "Website" },
+			"myRole": { "pt": "front-end", "en": "front-end" },
+			"description": {
+				"overview": {
+					"pt": "Projeto fundado com o intuito de facilitar o uso de moedas digitais, com foco na descentralização do dinheiro e anonimidade. Neste site, trabalho fazendo alterações e updates no que tange a parte visual. Também há minha participação em outros projetos embrionários do grupo, trabalhando tanto com front-end quanto back-end. Trabalhando nele desde 2023, com uma breve participação em 2022.",
+					"en": "Project founded with the aim of facilitating the use of digital currencies, focusing on the decentralization of money and anonymity. On this website, I work making changes and updates focusing on the visual part. I also participate in other embryonic projects of the group, both front-end and back-end. Working on it since 2023, with a brief participation in 2022."
+				},
+				"challenges": {
+					"pt": "Meu principal desafio foi entender as necessidades, no processo ganhei muita experiência no uso de minhas ferramentas e na comunicação em outro idioma",
+					"en": "My main challenge was understand the needs, in the process I gain much experience using my tools and communicating in another language."
+				}
+			},
+			"slug": "swapeeme",
+			"technologies": ["svelte", "css", "tailwind", "bootstrap", "javascript"],
+			"codeUrl": "private",
+			"liveUrl": "https://swapee.me",
+			"images": ["https://ucarecdn.com/b49e10fc-e93d-4b5f-8523-33b31d24dbae/-/preview/1000x655/"]
+		}
+	],
+	"content": {
+		"nav": [
+			{ "id": 1, "en": "Story", "pt": "História", "href": "me" },
+			{ "id": 2, "en": "Projects", "pt": "Projetos", "href": "projects" },
+			{ "id": 3, "en": "Testimonials", "pt": "Depoimentos", "href": "testimonials" },
+			{ "id": 4, "en": "Skills", "pt": "Habilidades", "href": "skills" },
+			{ "id": 5, "en": "Contact", "pt": "Contato", "href" : "contact"}
+		],
+		"qualities": {
+			"verb": { "pt": "Eleve", "en": "Enhance" },
+			"subs": [
+				{ "pt": "Excelência", "en": "Excellence" },
+				{ "pt": "Performance", "en": "Performace" },
+				{ "pt": "Responsividade", "en": "Responsiveness" },
+				{ "pt": "Funcionalidade", "en": "Functionality" }
+			]
+		},
+		"hero": {
+			"title": {
+				"greeting": { "pt": "Olá, sou", "en": "Hello, I'am" },
+				"name": "Murillo Pinheiro de Oliveira",
+				"area": "Web Dev"
+			},
+			"subtitle": {
+				"en": "Building websites with responsiveness, accessibility and user experience in mind.",
+				"pt": "Construindo websites com responsividade, acessibilidade e experiência do usuário em mente."
+			}
+		},
+		"about": {
+			"title": { "en": "ABOUT ME", "pt": "SOBRE MIM" },
+			"paragraphs": [
+				{
+					"en": "Hi, there! I've been a web programmer for a few years. I know back-end but my focus is the front-end part of applications. Much of what I learned was from forums, online courses and the experience of getting my hands dirty.",
+					"pt": "Opa, tudo jóia? Sou programador web há alguns anos. Sei back-end mas meu foco é o front-end das aplicações. Boa parte do que aprendi foi em fóruns, cursos online e a experiência de colocar a mão na massa."
+				},
+				{
+					"en": "However, I have already studied 'Systems Development' at ETEC Devisate (2022-2023), and am currently studying 'Computer Science' at Unimar (both brazilian institutions).",
+					"pt": "Entretanto já cursei Desenvolvimento de Sistemas na ETEC Devisate (2022-2023), e no momento curso Ciência da Computação na Unimar."
+				}
+			]
+		},
+		"techs": {
+			"title": { "en": "TECHNOLOGIES", "pt": "TECNOLOGIAS" },
+			"subtitle": {
+				"en": "These are some technologies that I master, use in my daily life or have certain knowledge and experience. I emphasize Svelte and Tailwind, which are the ones I'm most productive with.",
+				"pt": "Essas são algumas tecnologias que domino, uso no meu dia-a-dia ou tenho certo conhecimento e experiência. Dou ênfase ao Svelte e Tailwind, que são as que mais sou produtivo."
+			}
+		},
+		"testimonials": {
+			"title": { "en": "What people say", "pt": "Depoimentos de clientes" },
+			"subtitle": {
+				"en": "Some feedback from people I worked with. I hope yours is next.",
+				"pt": "Alguns feedbacks de pessoas que tive o prazer de trabalhar. Espero que o seu seja o próximo."
+			},
+			"content": [
+				{
+					"id": 0,
+					"name": "Jay Bates",
+					"occupation": "Co-Founder of Swapee.me",
+					"originalLanguage": "enUk",
+					"quote": {
+						"pt": "Murillo é um desenvolvedor front end muito talentoso e devo dizer que é um excelente profissional. Ele me ajudou a entender o processo de desenvolvimento front-end da empresa e começou a trabalhar comigo e foi muito prestativo. Estou impressionado com sua ética de trabalho e habilidades de comunicação.",
+						"en": "Murillo is a very talented front end developer and I must say he is an excellent professional. He helped me understand the company's front end development process and started working with me and was very helpful. I am impressed by his work ethic and communication skills."
+					}
+				},
+				{
+					"id": 1,
+					"name": "Abilio Rafael",
+					"occupation": "Designer",
+					"originalLanguage": "ptBr",
+					"quote": {
+						"pt": "Cara, fiquei extremamente impressionado! Você é um verdadeiro expert em programação, trabalho impecável.",
+						"en": "Dude, I was extremely impressed! You are a true programming expert, impeccable work."
+					}
+				}
+			]
+		},
+		"contact": {
+			"title": { "en": "CONTACT", "pt": "CONTATO" },
+			"form": {
+				"name": {
+					"title": {
+						"en": "Name",
+						"pt": "Nome"
+					},
+					"placeholder": {
+						"en": "Enter your name",
+						"pt": "Escreva seu nome"
+					}
+				},
+				"email": {
+					"title": {
+						"en": "Email",
+						"pt": "Email"
+					},
+					"placeholder": {
+						"en": "Enter your email address",
+						"pt": "Escreva seu email"
+					}
+				},
+				"message": {
+					"title": {
+						"en": "Message",
+						"pt": "Mensagem"
+					},
+					"placeholder": {
+						"en": "Write your message, anything you want.",
+						"pt": "Escreva sua mensagem, o que quiser."
+					}
+				},
+				"submitButton": {
+					"en": "Start Conversation",
+					"pt": "Iniciar Conversa"
+				}
+			},
+			"description": {
+				"en": "A proposal, questions or just say hello. Let's engage professionally.",
+				"pt": "Uma proposta, perguntas ou apenas um olá. Vamos entrar em contato."
+			}
+		},
+		"projectPage": {
+			"description": {
+				"en": "Description",
+				"pt": "Descrição"
+			},
+			"techs": {
+				"en": "Technologies used",
+				"pt": "Tecnologias usadas"
+			},
+			"depth": {
+				"en": "In Depth | More",
+				"pt": "Em detalhes | Mais"
+			}
+		},
+		"footer": {
+			"authorship": { "en": "Designed & Developed by", "pt": "Projetado & Desenvolvido por" },
+			"love": {
+				"en": "Made with the help of my love, Ana Laura ❤️",
+				"pt": "Feito com a ajuda do meu amor, Ana Laura ❤️"
+			}
+		}
+	}
 }

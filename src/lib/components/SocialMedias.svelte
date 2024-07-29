@@ -1,10 +1,11 @@
 <script lang="ts">
     export let orientation: 'vertical' | 'horizontal';
+    export let theme: 'dark' | 'light' = 'light';
 </script>
 
-<nav class="max-w-lg text-c-text-darker relative z-10 {$$restProps.class ?? ''}">
+<nav class="max-w-lg relative z-10 {theme == 'dark' ? 'text-c-primary-light' : 'text-c-text-darker'} {$$restProps.class ?? ''}">
     <ul class="flex gap-4 items-center justify-center {orientation == 'vertical' ? '!flex-col' : ''}">
-        <li class="hover:text-primary transition-all duration-200 ease-in">
+        <li class="transition-all duration-200 ease-in {theme == 'dark' ? 'hover:text-c-primary-light' : 'hover:text-primary'}">
             <a href="https://github.com/muriWolf" target="_blank" rel="author"
                 ><svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +21,7 @@
                 </svg></a
             >
         </li>
-        <li class="hover:text-primary transition-all duration-200 ease-in">
+        <li class="{theme == 'dark' ? 'hover:text-c-primary-light' : 'hover:text-primary'} transition-all duration-200 ease-in">
             <a
                 href="https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/"
                 target="_blank"
@@ -39,7 +40,7 @@
                 </svg></a
             >
         </li>
-        <li class="hover:text-primary transition-all duration-200 ease-in">
+        <li class="{theme == 'dark' ? 'hover:text-c-primary-light' : 'hover:text-primary'} transition-all duration-200 ease-in">
             <a href="https://web.telegram.org/k/#@MuriWolf" target="_blank" rel="author"
                 ><svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +63,7 @@
                 </svg></a
             >
         </li>
-        <li class="hover:text-primary transition-all duration-200 ease-in">
+        <li class="{theme == 'dark' ? 'hover:text-c-primary-light' : 'hover:text-primary'} transition-all duration-200 ease-in">
             <a href="https://www.reddit.com/user/MuriWolf/" target="_blank" rel="author"
                 ><svg
                     xmlns="http://www.w3.org/2000/svg"

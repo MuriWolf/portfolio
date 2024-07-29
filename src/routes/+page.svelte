@@ -7,7 +7,7 @@
 	import Testimonials from '$lib/layouts/Testimonials.svelte';
 	import Skills from '$lib/layouts/Skills.svelte';
 	import Footer from '$lib/layouts/Footer.svelte';
-    import { openAsideMobile, projectName, textContent, languageSelected } from '$lib/store';
+	import { openAsideMobile, projectName, textContent, languageSelected } from '$lib/store';
 	import { onMount } from 'svelte';
 	import Header from '$lib/layouts/Header.svelte';
 	import Contact from '$lib/assets/icons/Contact.svelte';
@@ -21,47 +21,23 @@
 	onMount(() => {
 		$projectName = '';
 	});
-
 </script>
 
 {#if openNavMobile}
-	<NavMobile on:closeNavMoble={() => openNavMobile = false} />
+	<NavMobile on:closeNavMoble={() => (openNavMobile = false)} />
 {/if}
 
 <div class="mx-auto max-w-7xl my-2 sm:my-6">
-	<Header on:openNavMobile={() => openNavMobile = true}>
-		<nav slot="header-center" class="hidden min-[880px]:block">
+	<Header on:openNavMobile={() => (openNavMobile = true)}>
+		<nav slot="header-center" class="hidden min-[880px]:block ml-auto">
 			<ul class="flex gap-4 font-semibold text-lg">
-				<li class="text-c-text-darker hover:text-primary">
-					<a href="#me" class="flex items-center gap-2">
-						<Person />
-						{$textContent.nav[0][$languageSelected]}
-					</a>
-				</li>
-				<li class="text-c-text-darker hover:text-primary">
-					<a href="#projects" class="flex items-center gap-2">
-						<Folder />
-						{$textContent.nav[1][$languageSelected]}
-					</a>
-				</li>
-				<li class="text-c-text-darker hover:text-primary">
-					<a href="#testimonials" class="flex items-center gap-2">
-						<TestimonialsIcon />
-						{$textContent.nav[2][$languageSelected]}
-					</a>
-				</li>
-				<li class="text-c-text-darker hover:text-primary">
-					<a href="#skills" class="flex items-center gap-2">
-						<SkillsIcon />
-						{$textContent.nav[3][$languageSelected]}
-					</a>
-				</li>
-				<li class="text-c-text-darker hover:text-primary">
-					<a href="#contact" class="flex items-center gap-2">
-						<Contact />
-						{$textContent.nav[4][$languageSelected]}
-					</a>
-				</li>
+				{#each $textContent.nav as navItem, i}
+					<li class="text-c-text hover:text-primary">
+						<a href="#{navItem.href}" class="flex items-center gap-2">
+							{i + 1}. {navItem[$languageSelected]}
+						</a>
+					</li>
+				{/each}
 			</ul>
 		</nav>
 	</Header>
@@ -74,4 +50,3 @@
 	</main>
 	<Footer />
 </div>
-
