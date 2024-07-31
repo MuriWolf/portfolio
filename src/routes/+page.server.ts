@@ -1,14 +1,14 @@
 import { SECRET_API_KEY } from '$env/static/private';
 import { redirect } from '@sveltejs/kit';
 
-export async function load({ fetch }) {
+export async function load({ fetch, cookies }) {
 	const response = await fetch('/api/projects', {
 		method: 'GET',
 		headers: {
 			'content-type': 'application/json',
 			Authorization: SECRET_API_KEY,
 		},
-	});
+	});	
 
 	const projects = await response.json();
 	return projects;
@@ -24,7 +24,5 @@ export const actions = {
 				maxAge: 60 * 60 * 24 * 365,
 			});
 		}
-
-		// throw redirect(303, url.href);
 	},
 };

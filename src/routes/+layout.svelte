@@ -4,6 +4,9 @@
 	import { onNavigate } from '$app/navigation';
 	import Footer from '$lib/layouts/Footer.svelte';
 	import logo from '$lib/assets/images/logo-big.png';
+	import { onMount } from 'svelte';
+
+	export let data: { content: any, language: any };
 
 	onNavigate((navigation) => {
 		// this class is applied to the body on the main page, when filter or the map is open. This prevents the overflow-hidden to stay on page.
@@ -18,8 +21,20 @@
 		});
 	});
 
+	onMount(() => {
+		if (data.language === undefined) {
+			let userLang = navigator.language;
+			console.log(userLang.toLowerCase().includes("pt"));
+			
+			if (userLang.toLowerCase().includes("pt")) {
+				languageSelected.set("pt");
+				// cookies.set('language', 'pt', {
+				// 	path: '/',
+				// 	maxAge: 60 * 60 * 24 * 365,
+				// });
+			} 
+	}})
 
-	export let data;
 	const linkContent = {
 		title: { en: "Murillo P. de Oliveira's Portfolio", pt: 'Portfolio de Murillo P. de Oliveira' },
 		description: { en: 'Young front-end web Developer', pt: 'Jovem desenvolvedor front-end web' },

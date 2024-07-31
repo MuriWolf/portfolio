@@ -1,19 +1,14 @@
 <script lang="ts">
 	import NavMobile from '$lib/layouts/NavMobile.svelte';
-	import TestimonialsIcon from '$lib/assets/icons/Testimonials.svelte';
 	import Projects from '$lib/layouts/Projects.svelte';
 	import Me from './../lib/layouts/Me.svelte';
 	import Hero from '$lib/layouts/Hero.svelte';
 	import Testimonials from '$lib/layouts/Testimonials.svelte';
 	import Skills from '$lib/layouts/Skills.svelte';
 	import Footer from '$lib/layouts/Footer.svelte';
-	import { openAsideMobile, projectName, textContent, languageSelected } from '$lib/store';
+	import {  projectName, textContent, languageSelected } from '$lib/store';
 	import { onMount } from 'svelte';
 	import Header from '$lib/layouts/Header.svelte';
-	import Contact from '$lib/assets/icons/Contact.svelte';
-	import Folder from '$lib/assets/icons/Folder.svelte';
-	import Person from '$lib/assets/icons/Person.svelte';
-	import SkillsIcon from '$lib/assets/icons/Skills.svelte';
 
 	export let data;
 	let openNavMobile = false;

@@ -125,7 +125,7 @@
 	</Header>
 	<main class="flex flex-col gap-6 mt-2 sm:mt-6 mx-2 sm:mx-4 ">
 		<section class="bg-c-primary p-4 md:p-8 lg:p-16 border-[1px] border-c-primary-darker rounded-xl gradient">
-			<div class="flex flex-col md:flex-row justify-between mb-4 md:mb-8">
+			<div class="flex flex-col md:flex-row justify-between mb-8">
 				<hgroup>
 					<h1 class="text-c-primary-light text-3xl font-bold font-title">{data.project.title[$languageSelected]}</h1>
 					<h2 class="font-semibold text-c-primary/90 text-lg"><strong class="font-semibold text-c-primary-light/90">{$languageSelected == "pt" ? 'Tipo: ' : 'Type: '} </strong>{data.project.type[$languageSelected]}</h2>
@@ -137,7 +137,7 @@
 					{/each}
 				</div>
 			</div>
-			<p class="text-c-primary/90 font-medium max-w-xl text-lg mb-4">{data.project.abstract[$languageSelected]}</p>
+			<p class="text-c-primary/90 font-medium max-w-xl text-lg mb-8">{data.project.abstract[$languageSelected]}</p>
 			<nav>
 				<ul class="flex items-center flex-col-reverse sm:flex-row gap-4 w-full">
 					{#if data.project.codeUrl != "private"}
