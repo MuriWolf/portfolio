@@ -29,37 +29,6 @@
 		},
 		{
 			"id": 1,
-			"title": { "pt": "Porocode Sistema de Admin", "en": "Porocode Admin System" },
-			"abstract": {
-				"pt": "Site do sistema administrativo sendo criado para outro site.",
-				"en": "Admin system webiste being made for another website."
-			},
-			"type": { "pt": "Website", "en": "Website" },
-			"myRole": { "pt": "front-end", "en": "front-end" },
-			"description": {
-				"overview": {
-					"pt": "Projeto dependente de outro, ambos estão em processo de produção, esse mais avançado. Sendo feito desde 2023. Neste projeto, tecnologias como Svelte e Tailwind são usadas de maneira intensiva, extraindo o que ambos possuem de melhor a oferecer.",
-					"en": "Project dependent on another, both are in the production process, this one more advanced. Being made since 2023. In this project, technologies such as Svelte and Tailwind are used intensively, extracting the best that both have to offer."
-				},
-				"challenges": {
-					"pt": "Construindo este projeto, aprendi e melhorei muito minhas habilidades em Svelte/kit, consumo de API, cookies, autenticação, local storage e outros conceitos da web.",
-					"en": "Building this project, I learned and improved a lot my Svelte/kit skills, API consuming, cookies, auth, local storage and other web concepts."
-				}
-			},
-			"slug": "porocode-admin-system",
-			"technologies": ["svelte", "tailwind", "css", "figma"],
-			"codeUrl": "private",
-			"liveUrl": "https://porocode.vercel.app",
-			"images": [
-				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-1.png?updatedAt=1709863200237",
-				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-2.png",
-				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-3.png",
-				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-4.png",
-				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/porocode-admin-system-5.png"
-			]
-		},
-		{
-			"id": 2,
 			"title": { "pt": "South Tech", "en": "South Tech" },
 			"abstract": {
 				"pt": "Site para uma apresentação de TCC (Teme: Escola focada em tecnologia).",
@@ -95,7 +64,7 @@
 			]
 		},
 		{
-			"id": 3,
+			"id": 2,
 			"title": { "pt": "Isaque Designer", "en": "Isaque Designer" },
 			"abstract": {
 				"pt": "Site feito para compartilhar links relacionados ao cliente.",
@@ -118,7 +87,7 @@
 			]
 		},
 		{
-			"id": 4,
+			"id": 3,
 			"title": { "pt": "Interactive Card Details Form", "en": "Interactive Card Details Form" },
 			"abstract": {
 				"pt": "Site que simula formulário de um cartão de crédito.",
@@ -141,7 +110,7 @@
 			]
 		},
 		{
-			"id": 5,
+			"id": 4,
 			"title": { "pt": "Billy Design", "en": "Billy Design" },
 			"abstract": {
 				"pt": "Site feito para compartilhar links relacionados ao cliente (Abilio).",
@@ -164,7 +133,7 @@
 			]
 		},
 		{
-			"id": 6,
+			"id": 5,
 			"title": {
 				"pt": "história de tudo (clone da interface)",
 				"en": "Historía de tudo (Simple UI clone)"
@@ -194,7 +163,7 @@
 			]
 		},
 		{
-			"id": 7,
+			"id": 6,
 			"title": { "pt": "Calculador de Gorjeta", "en": "Tip Calculator" },
 			"abstract": { "pt": "", "en": "" },
 			"type": { "pt": "Website", "en": "Website" },
@@ -214,7 +183,7 @@
 			]
 		},
 		{
-			"id": 8,
+			"id": 7,
 			"title": { "pt": "Blogr", "en": "Blogr" },
 			"abstract": {
 				"pt": "Uma simples e elegante landing page.",
@@ -241,7 +210,7 @@
 			]
 		},
 		{
-			"id": 9,
+			"id": 8,
 			"title": { "pt": "Snap", "en": "Snap" },
 			"abstract": { "pt": "Uma landing page muito simples.", "en": "A very simple landing page." },
 			"type": { "pt": "Website", "en": "Website" },
@@ -265,7 +234,7 @@
 			]
 		},
 		{
-			"id": 10,
+			"id": 9,
 			"title": { "pt": "Clipboard", "en": "Clipboard" },
 			"abstract": {
 				"pt": "Uma simples e elegante landing page.",
@@ -294,7 +263,7 @@
 			]
 		},
 		{
-			"id": 11,
+			"id": 10,
 			"title": { "pt": "Swapee.me", "en": "Swapee.me" },
 			"abstract": { "pt": "Site focado em moedas digitais", "en": "Digital coins related website" },
 			"type": { "pt": "Website", "en": "Website" },
