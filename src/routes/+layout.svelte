@@ -28,10 +28,6 @@
 			
 			if (userLang.toLowerCase().includes("pt")) {
 				languageSelected.set("pt");
-				// cookies.set('language', 'pt', {
-				// 	path: '/',
-				// 	maxAge: 60 * 60 * 24 * 365,
-				// });
 			} 
 	}})
 
