@@ -343,7 +343,7 @@
 				{
 					"id": 0,
 					"name": "Jay Bates",
-					"occupation": "Co-Founder of Swapee.me",
+					"occupation": {"en": "Co-Founder of Swapee.me", "pt": "Co-fundador da Swapee.me"},
 					"originalLanguage": "enUk",
 					"quote": {
 						"pt": "Murillo é um desenvolvedor front end muito talentoso e devo dizer que é um excelente profissional. Ele me ajudou a entender o processo de desenvolvimento front-end da empresa e começou a trabalhar comigo e foi muito prestativo. Estou impressionado com sua ética de trabalho e habilidades de comunicação.",
@@ -353,7 +353,7 @@
 				{
 					"id": 1,
 					"name": "Abilio Rafael",
-					"occupation": "Designer",
+					"occupation": {"en": "Designer", "pt": "Designer"},
 					"originalLanguage": "ptBr",
 					"quote": {
 						"pt": "Cara, fiquei extremamente impressionado! Você é um verdadeiro expert em programação, trabalho impecável.",

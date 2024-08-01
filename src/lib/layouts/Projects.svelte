@@ -89,8 +89,8 @@
 							<p class="text-c-text font-medium mb-auto mt-4">{project.abstract[$languageSelected]}</p>
 							<a href={`/projects/${project.slug}`} class="max-w-full mt-4 font-title">
 								<Button
-									class="bg-c-secondary flex-1 w-full block text-white font-title font-semibold text-xl rounded-[2px] active:scale-95 transition-all "
-									>Discover More</Button
+									class="bg-c-secondary flex-1 w-full block text-white font-title font-semibold text-xl rounded-[2px] hover:bg-primary focus:bg-primary active:scale-95 transition-all "
+									>{$languageSelected == 'pt' ? 'Descobrir mais' : 'Discover more'}</Button
 								>
 							</a>
 						</div>

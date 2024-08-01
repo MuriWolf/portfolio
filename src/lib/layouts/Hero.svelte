@@ -16,7 +16,7 @@
 		<SocialMedias orientation="horizontal" theme="dark" />
 		<a
 			href={`mailto: murillopo.dev@gmail.com?subject=${$languageSelected == 'pt' ? 'Contato através do portfolio' : 'Contact from portfolio'}`}
-			class="bg-c-primary text-xl font-bold block max-w-xs w-full active:scale-95 transition-all ease-out text-center text-c-secondary py-2 px-4 rounded-[2px] hover:bg-c-primary-light focus:bg-primary"
+			class="bg-c-primary text-xl font-bold block max-w-xs w-full active:scale-95 transition-all ease-out text-center text-c-secondary py-2 px-4 rounded-[2px] hover:bg-c-primary-light focus:bg-c-primary"
 			>{$languageSelected == 'pt' ? 'Entre em contato' : 'Text me'}</a
 		>
 	</div>

@@ -61,7 +61,7 @@
 							<!-- <img src="" alt="" height="36" width="36" class="rounded-full" /> -->
 							<hgroup>
 								<h2 class="text-c-darker-background font-title font-bold text-lg text-stone-50">{testimonial.name}</h2>
-								<h3 class="text-xs text-white/70 font-bold">{testimonial.occupation}</h3>
+								<h3 class="text-xs text-white/70 font-bold">{testimonial.occupation[$languageSelected]}</h3>
 							</hgroup>
 						</div>
 					</Carousel.Item>
