@@ -235,7 +235,7 @@
 		},
 		{
 			"id": 9,
-			"title": { "pt": "Clipboard", "en": "Clipboard" },                                    
+			"title": { "pt": "Clipboard", "en": "Clipboard" },
 			"abstract": {
 				"pt": "Uma simples e elegante landing page.",
 				"en": "A simple but totally responsive landing page."
@@ -291,7 +291,7 @@
 			{ "id": 2, "en": "Projects", "pt": "Projetos", "href": "projects" },
 			{ "id": 3, "en": "Testimonials", "pt": "Depoimentos", "href": "testimonials" },
 			{ "id": 4, "en": "Skills", "pt": "Habilidades", "href": "skills" },
-			{ "id": 5, "en": "Contact", "pt": "Contato", "href" : "contact"}
+			{ "id": 5, "en": "Contact", "pt": "Contato", "href": "contact" }
 		],
 		"qualities": {
 			"verb": { "pt": "Eleve", "en": "Enhance" },
@@ -343,8 +343,9 @@
 				{
 					"id": 0,
 					"name": "Jay Bates",
-					"occupation": {"en": "Co-Founder of Swapee.me", "pt": "Co-fundador da Swapee.me"},
+					"occupation": { "en": "Co-Founder of Swapee.me", "pt": "Co-fundador da Swapee.me" },
 					"originalLanguage": "enUk",
+					"country": "england",
 					"quote": {
 						"pt": "Murillo é um desenvolvedor front end muito talentoso e devo dizer que é um excelente profissional. Ele me ajudou a entender o processo de desenvolvimento front-end da empresa e começou a trabalhar comigo e foi muito prestativo. Estou impressionado com sua ética de trabalho e habilidades de comunicação.",
 						"en": "Murillo is a very talented front end developer and I must say he is an excellent professional. He helped me understand the company's front end development process and started working with me and was very helpful. I am impressed by his work ethic and communication skills."
@@ -353,8 +354,9 @@
 				{
 					"id": 1,
 					"name": "Abilio Rafael",
-					"occupation": {"en": "Designer", "pt": "Designer"},
+					"occupation": { "en": "Designer", "pt": "Designer" },
 					"originalLanguage": "ptBr",
+					"country": "brazil",
 					"quote": {
 						"pt": "Cara, fiquei extremamente impressionado! Você é um verdadeiro expert em programação, trabalho impecável.",
 						"en": "Dude, I was extremely impressed! You are a true programming expert, impeccable work."

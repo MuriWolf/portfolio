@@ -1,40 +1,43 @@
 <script lang="ts">
-    import type { CarouselAPI } from './../components/ui/carousel/context';
-    import * as Carousel from '$lib/components/ui/carousel/index'
-    import { textContent, languageSelected } from '$lib/store';
+	import type { CarouselAPI } from './../components/ui/carousel/context';
+	import * as Carousel from '$lib/components/ui/carousel/index';
+	import { textContent, languageSelected } from '$lib/store';
+	import GbFlag from '$lib/assets/icons/flags/gb.svg';
+	import BrFlag from '$lib/assets/icons/flags/br.svg';
 
+	let api: CarouselAPI;
+	let count = 0;
+	let current = 0;
 
-    let api: CarouselAPI;
-    let count = 0;
-    let current = 0;
-
-    $: if (api) {
-        count = api.scrollSnapList().length;
-        current = api.selectedScrollSnap() + 1;
-        api.on('select', () => {
-            current = api.selectedScrollSnap() + 1;
-        });
-    }
+	$: if (api) {
+		count = api.scrollSnapList().length;
+		current = api.selectedScrollSnap() + 1;
+		api.on('select', () => {
+			current = api.selectedScrollSnap() + 1;
+		});
+	}
 </script>
 
-<section
-	id="testimonials"
-	class="relative mt-8 sm:mt-16">
-	<h2 class="text-c-text-darker text-3xl font-bold font-title">{$textContent.testimonials.title[$languageSelected]}</h2>
-    <p class="text-c-text text-lg mb-8 font-medium">{$textContent.testimonials.subtitle[$languageSelected]}</p>
-	<div class="flex gap-16 relative z-10 w-full ">
+<section id="testimonials" class="relative mt-8 sm:mt-16">
+	<h2 class="text-c-text-darker text-3xl font-bold font-title">
+		{$textContent.testimonials.title[$languageSelected]}
+	</h2>
+	<p class="text-c-text text-lg mb-8 font-medium">
+		{$textContent.testimonials.subtitle[$languageSelected]}
+	</p>
+	<div class="flex gap-16 relative z-10 w-full">
 		<Carousel.Root
 			bind:api
 			opts={{
 				skipSnaps: true,
-				loop: true,
-			}}			
+				loop: true
+			}}
 			class="w-full overflow-hidden"
 		>
 			<Carousel.Content>
 				{#each $textContent.testimonials.content as testimonial, i (i)}
 					<Carousel.Item
-						class="flex flex-col basis-[100%] sm:basis-[70%] min-[960px]:basis-[40%] relative z-10 text-c-text" 
+						class="flex flex-col basis-[100%] sm:basis-[70%] min-[960px]:basis-[40%] relative z-10 text-c-text"
 					>
 						<div
 							class="py-6 px-7 rounded-xl flex-1 bg-c-primary border-[1px] border-c-primary-darker text-c-secondary"
@@ -60,9 +63,18 @@
 						>
 							<!-- <img src="" alt="" height="36" width="36" class="rounded-full" /> -->
 							<hgroup>
-								<h2 class="text-c-darker-background font-title font-bold text-lg text-stone-50">{testimonial.name}</h2>
-								<h3 class="text-xs text-white/70 font-bold">{testimonial.occupation[$languageSelected]}</h3>
+								<h2 class="text-c-darker-background font-title font-bold text-lg text-stone-50">
+									{testimonial.name}
+								</h2>
+								<h3 class="text-xs text-white/70 font-bold">
+									{testimonial.occupation[$languageSelected]}
+								</h3>
 							</hgroup>
+							{#if testimonial.country == 'england'}
+								<img src={GbFlag} alt="GB flag" class="h-8 rounded-[2px]" height="32">
+							{:else if testimonial.country == 'brazil'}
+								<img src={BrFlag} alt="BR flag" class="h-8 rounded-[2px]" height="32">
+							{/if}
 						</div>
 					</Carousel.Item>
 				{/each}
@@ -85,8 +97,7 @@
 					{#each $textContent.testimonials.content as _, i (i)}
 						<button
 							on:click={() => api.scrollTo(i)}
-							class="w-4 h-4 rounded-full transition-all duration-100 ease-in-out {current ==
-							i + 1
+							class="w-4 h-4 rounded-full transition-all duration-100 ease-in-out {current == i + 1
 								? 'bg-c-secondary'
 								: 'bg-c-text/50 border-2'}"
 						></button>
@@ -130,19 +141,7 @@
 		inherits: false;
 	}
 
-	.caroucel-testimonial-item {
-		background: linear-gradient(135deg, var(--testimonial-bg-c1), var(--testimonial-bg-c2));
-		transition:
-		--testimonial-bg-c1 500ms,
-		--testimonial-bg-c2 500ms;			
-	}
-
-	.caroucel-testimonial-item:hover {
-		--testimonial-bg-c1: #07beb831;
-		--testimonial-bg-c2: #737cff18;
-	}
-
-	@supports(-moz-appearance:none) {
+	@supports (-moz-appearance: none) {
 		.caroucel-testimonial-item {
 			transition: all 0.5s;
 			background: linear-gradient(135deg, #f7f7f75d, #f7f7f717);
