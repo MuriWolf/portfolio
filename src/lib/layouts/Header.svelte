@@ -26,13 +26,14 @@
 		title={$languageSelected == 'pt' ? 'Ir para a página inicial' : 'Go to the main page'}
 		class="flex items-center justify-center text-4xl font-bold text-c-primary-light w-16 h-16 gradient rounded-full"
 	>
-	M<span class="text-black">W</span>
+		M<span class="text-black">W</span>
 	</a>
 	<slot name="header-center" />
 	<slot name="header-left">
 		<button
 			class="min-[880px]:hidden text-c-text-darker bg-c-primary-darker p-2 rounded-xl"
 			on:click={toggleNavMobile}
+			aria-label="toggle nav mobile"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" fill="currentColor"
 				><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path

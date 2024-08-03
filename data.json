@@ -235,7 +235,7 @@
 		},
 		{
 			"id": 9,
-			"title": { "pt": "Clipboard", "en": "Clipboard" },
+			"title": { "pt": "Clipboard", "en": "Clipboard" },                                    
 			"abstract": {
 				"pt": "Uma simples e elegante landing page.",
 				"en": "A simple but totally responsive landing page."

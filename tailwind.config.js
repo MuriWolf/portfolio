@@ -20,9 +20,9 @@ const config = {
 			listStyleType: {
 				roman: 'upper-roman'
 			},
-			
+
 			colors: {
-				'c-text': '#7D7C7A',
+				'c-text': '#555555',
 				'c-text-darker': '#505050',
 				'c-primary': '#EEEEEE',
 				'c-primary-light': '#fefefe',
