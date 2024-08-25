@@ -1,4 +1,4 @@
-import data from '../../data.json';
+import data from '../../../data.json';
 
 export function load({ cookies }) {
 	let languageSelected = cookies.get('language');

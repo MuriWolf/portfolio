@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { textContent, languageSelected, projectName } from '$lib/store';
-	import '../style/app.css';
+	import '../../style/app.css';
 	import { onNavigate } from '$app/navigation';
 	import Footer from '$lib/layouts/Footer.svelte';
 	import logo from '$lib/assets/images/logo-big.png';

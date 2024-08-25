@@ -1,7 +1,7 @@
 <script lang="ts">
 	import NavMobile from '$lib/layouts/NavMobile.svelte';
 	import Projects from '$lib/layouts/Projects.svelte';
-	import Me from './../lib/layouts/Me.svelte';
+	import Me from '$lib/layouts/Me.svelte';
 	import Hero from '$lib/layouts/Hero.svelte';
 	import Testimonials from '$lib/layouts/Testimonials.svelte';
 	import Skills from '$lib/layouts/Skills.svelte';
