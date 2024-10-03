@@ -14,21 +14,21 @@
 	import { onMount } from 'svelte';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
 	import Badge from '$lib/components/ui/badge/badge.svelte';
-	import * as Tooltip from "$lib/components/ui/tooltip";
+	import * as Tooltip from '$lib/components/ui/tooltip';
 	import Translate from '$lib/assets/icons/Translate.svelte';
 	import Projects from '$lib/layouts/Projects.svelte';
 	import { invalidateAll } from '$app/navigation';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
 
 	export let data: {
-		project: Project,
-		nextProject: string,
-		previousProject: string
+		project: Project;
+		nextProject: string;
+		previousProject: string;
 	};
 	$: project = data.project;
 
 	let languageSwitcherForm;
-	function submitNewLanguage( { action }: any ) {
+	function submitNewLanguage({ action }: any) {
 		const newLanguage = action.searchParams.get('language');
 		languageSelected.set(newLanguage);
 	}
@@ -52,54 +52,76 @@
 	}
 
 	const skills = [
-    {
-        name: 'Docker',
-        relevance: 1
-    },
-    {
-        name: 'Typescript',
-        relevance: 2
-    },
-    {
-        name: 'Flutter',
-        relevance: 0
-    },
-    {
-        name: 'JQuery',
-        relevance: 0
-    },
-];
+		{
+			name: 'Docker',
+			relevance: 1
+		},
+		{
+			name: 'Typescript',
+			relevance: 2
+		},
+		{
+			name: 'Flutter',
+			relevance: 0
+		},
+		{
+			name: 'JQuery',
+			relevance: 0
+		}
+	];
 </script>
 
 <div class="mx-auto max-w-7xl my-2 sm:my-6">
 	<Header>
 		<nav slot="header-center">
 			<ul class="flex items-center gap-4">
-				<li class="text-c-text-darker hover:text-primary transition-all ease-out font-semibold cursor-pointer">
-					<a href={`/projects/${data.previousProject}`} title={data.previousProject} class="flex gap-x-4 items-center">
+				<li
+					class="text-c-text-darker hover:text-primary transition-all ease-out font-semibold cursor-pointer"
+				>
+					<a
+						href={`/projects/${data.previousProject}`}
+						title={data.previousProject}
+						class="flex gap-x-4 items-center"
+					>
 						<div class="bg-c-primary-darker p-2 rounded-full w-[44px] h-[44px] flex justify-center">
-							<ArrowLeft /> 
+							<ArrowLeft />
 						</div>
-						<p class="hidden sm:block">{$languageSelected == "pt" ? 'Projeto anterior' : 'Previous project'}</p></a>
+						<p class="hidden sm:block">
+							{$languageSelected == 'pt' ? 'Projeto anterior' : 'Previous project'}
+						</p></a
+					>
 				</li>
 				<Separator orientation="vertical" class="bg-c-primary-darker h-[44px] w-[2px]" />
-				<li class=" text-c-text-darker hover:text-primary transition-all ease-out font-semibold cursor-pointer">
-					<a href={`/projects/${data.nextProject}`} title={data.nextProject} class="flex gap-x-4 items-center"> <p class="hidden sm:block">{$languageSelected == "pt" ? 'Próximo projeto' : 'Next project'}</p> 
+				<li
+					class=" text-c-text-darker hover:text-primary transition-all ease-out font-semibold cursor-pointer"
+				>
+					<a
+						href={`/projects/${data.nextProject}`}
+						title={data.nextProject}
+						class="flex gap-x-4 items-center"
+					>
+						<p class="hidden sm:block">
+							{$languageSelected == 'pt' ? 'Próximo projeto' : 'Next project'}
+						</p>
 						<div class="bg-c-primary-darker p-2 rounded-full w-[44px] h-[44px] flex justify-center">
-							<ArrowRight /> 
+							<ArrowRight />
 						</div>
 					</a>
 				</li>
 			</ul>
 		</nav>
 		<div slot="header-left">
-			<DropdownMenu.Root >
+			<DropdownMenu.Root>
 				<DropdownMenu.Trigger>
-					<button class="flex items-center justify-end text-c-text-darker hover:text-primary transition-all duration-100 ease-in-out w-12 sm:w-16">
+					<button
+						class="flex items-center justify-end text-c-text-darker hover:text-primary transition-all duration-100 ease-in-out w-12 sm:w-16"
+					>
 						<Translate />
-				   </button>
+					</button>
 				</DropdownMenu.Trigger>
-				<DropdownMenu.Content class="p-0 bg-c-primary-light backdrop-blur-sm border-c-primary-darker ">
+				<DropdownMenu.Content
+					class="p-0 bg-c-primary-light backdrop-blur-sm border-c-primary-darker "
+				>
 					<DropdownMenu.Group>
 						<form method="POST" bind:this={languageSwitcherForm} use:enhance={submitNewLanguage}>
 							<button
@@ -112,7 +134,7 @@
 							<DropdownMenu.Separator class="my-0 mx-0 w-full bg-c-primary-darker" />
 							<button
 								formaction="/?/setLanguage&language=en"
-								class="flex gap-x-2 items-center hover:bg-c-primary p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full "
+								class="flex gap-x-2 items-center hover:bg-c-primary p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full"
 							>
 								<img src={usaFlag} width="32" alt="United States of America flag" />
 								<p>English</p>
@@ -123,36 +145,71 @@
 			</DropdownMenu.Root>
 		</div>
 	</Header>
-	<main class="flex flex-col gap-6 mt-2 sm:mt-6 mx-2 sm:mx-4 ">
-		<section class="bg-c-primary p-4 md:p-8 lg:p-16 border-[1px] border-c-primary-darker rounded-xl gradient">
-			<div class="flex flex-col md:flex-row justify-between mb-8">
+	<main class="flex flex-col gap-24 md:gap-32 mt-2 sm:mt-6 mx-2 sm:mx-4">
+		<section
+			class="bg-c-primary p-4 md:p-8 lg:p-16 border-[1px] border-c-primary-darker rounded-xl gradient"
+		>
+			<div class="flex flex-col md:flex-row justify-between mb-8 mt-1">
 				<hgroup>
-					<h1 class="text-c-primary-light text-3xl font-bold font-title">{data.project.title[$languageSelected]}</h1>
-					<h2 class="font-semibold text-c-primary/90 text-lg"><strong class="font-semibold text-c-primary-light/90">{$languageSelected == "pt" ? 'Tipo: ' : 'Type: '} </strong>{data.project.type[$languageSelected]}</h2>
-					<h2 class="font-semibold text-c-primary/90 text-lg"><strong class="font-semibold text-c-primary-light/90">{$languageSelected == "pt" ? 'Minha função: ' : 'My role: '} </strong> {data.project.myRole[$languageSelected]}</h2>
+					<h1 class="text-c-primary-light text-3xl mb-4 font-bold font-title">
+						{data.project.title[$languageSelected]}
+					</h1>
+					<h2 class="font-semibold text-black/75 text-lg">
+						<strong class="font-semibold text-c-primary-light/90"
+							>{$languageSelected == 'pt' ? 'Tipo: ' : 'Type: '}
+						</strong>{data.project.type[$languageSelected]}
+					</h2>
+					<h2 class="font-semibold text-black/75 text-lg">
+						<strong class="font-semibold text-c-primary-light/90"
+							>{$languageSelected == 'pt' ? 'Minha função: ' : 'My role: '}
+						</strong>
+						{data.project.myRole[$languageSelected]}
+					</h2>
 				</hgroup>
 				<div class="flex flex-wrap gap-2 md:gap-4 items-start md:justify-end mt-4 md:mt-0 max-w-md">
 					{#each data.project.technologies as tech}
-						<Badge class="bg-c-primary rounded-[2px] px-2 sm:px-4 !py-1 hover:bg-stone-50 border-[1px] border-c-primary-darker text-c-text-darker text-lg hover:text-primary">{tech}</Badge>
+						<Badge
+							class="bg-c-primary rounded-[2px] px-2 sm:px-4 !py-1 hover:bg-stone-50 border-[1px] border-c-primary-darker text-c-text-darker text-lg hover:text-primary"
+							>{tech}</Badge
+						>
 					{/each}
 				</div>
 			</div>
-			<p class="text-c-primary/90 font-medium max-w-xl text-lg mb-8">{data.project.abstract[$languageSelected]}</p>
+			<p class="text-white/90 font-medium max-w-xl text-lg mb-8">
+				{data.project.abstract[$languageSelected]}
+			</p>
 			<nav>
-				<ul class="flex items-center flex-col-reverse sm:flex-row gap-4 w-full">
-					{#if data.project.codeUrl != "private"}
-						<li class="w-full max-w-xs"><a href={data.project.codeUrl} target="_blank" class="text-c-secondary font-title bg-c-primary-darker hover:brightness-90 focus:brightness-90 transition-all ease-out rounded-[2px] p-2 text-xl font-bold w-full block text-center active:scale-95">{$languageSelected == "pt" ? 'Explorar o código' : 'Explore the code'}</a></li>
+				<ul class="flex items-center flex-col-reverse sm:flex-row gap-4 mb-4 w-full">
+					{#if data.project.codeUrl != 'private'}
+						<li class="w-full max-w-xs">
+							<a
+								href={data.project.codeUrl}
+								target="_blank"
+								class="text-c-secondary font-title bg-c-primary-darker hover:brightness-90 focus:brightness-90 transition-all ease-out rounded-[2px] p-2 text-xl font-bold w-full block text-center active:scale-95"
+								>{$languageSelected == 'pt' ? 'Explorar o código' : 'Explore the code'}</a
+							>
+						</li>
 					{/if}
-					<li class="w-full max-w-xs" ><a href={data.project.liveUrl} target="_blank" class="text-c-primary-light font-title bg-c-secondary hover:bg-primary focus:bg-primary transition-all ease-out rounded-[2px] p-2 text-xl font-bold w-full block text-center active:scale-95">{$languageSelected == "pt" ? 'Ver a aplicação' : 'View live'}</a></li>
+					<li class="w-full max-w-xs">
+						<a
+							href={data.project.liveUrl}
+							target="_blank"
+							class="text-c-primary-light font-title bg-c-secondary hover:bg-primary focus:bg-primary transition-all ease-out rounded-[2px] p-2 text-xl font-bold w-full block text-center active:scale-95"
+							>{$languageSelected == 'pt' ? 'Ver a aplicação' : 'View live'}</a
+						>
+					</li>
 				</ul>
 			</nav>
 			<!-- <div class="flex justify-center mt-24 text-c-text transition-all hover:animate-pulse">
 				<ChevronDown />
 			</div> -->
 		</section>
-		<section class="-mt-4 sm:mt-0">
+		<section class="">
 			<div>
 				{#if project.images}
+					<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold font-title">
+						{$languageSelected == 'pt' ? 'Imagens do projeto' : 'Images of the project'}
+					</h2>
 					{#if project.images.length == 1}
 						<div
 							class="mx-auto rounded-xl overflow-hidden inline-block shadow-custom-lg shadow-black/30 w-full"
@@ -172,7 +229,7 @@
 							opts={{
 								skipSnaps: true,
 								loop: true,
-								breakpoints: {},
+								breakpoints: {}
 							}}
 							class="w-full rounded-xl overflow-hidden bg-opacity-0 bg-black"
 						>
@@ -205,7 +262,7 @@
 											/></svg
 										>
 									</button>
-								</Carousel.Previous >
+								</Carousel.Previous>
 								<div class="flex gap-4 items-center justify-center">
 									{#each project.images as image (project.images.indexOf(image))}
 										<button
@@ -218,7 +275,9 @@
 									{/each}
 								</div>
 								<Carousel.Next style="all: unset;" class="!cursor-pointer">
-									<button class="text-white active:scale-90 transition-all ease-in-out duration-150">
+									<button
+										class="text-white active:scale-90 transition-all ease-in-out duration-150"
+									>
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											width="20"
@@ -237,20 +296,31 @@
 			</div>
 		</section>
 		<section class="mt-4 sm:mt-16">
-			{#if data.project.description.overview }
-				<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold font-title">{$languageSelected == "pt" ? 'Visão geral' : 'Overview'}</h2>
-				<p class="text-c-text font-medium text-lg max-w-2xl mb-4">{data.project.description.overview[$languageSelected]}</p>
+			{#if data.project.description.overview}
+				<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold font-title">
+					{$languageSelected == 'pt' ? 'Visão geral' : 'Overview'}
+				</h2>
+				<p class="text-c-text font-medium text-lg max-w-2xl mb-4">
+					{data.project.description.overview[$languageSelected]}
+				</p>
 			{/if}
-			{#if data.project.description.features }
-				<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold font-title">{$languageSelected == "pt" ? 'Funcionalidades' : 'Features'}</h2>
-				<p class="text-c-text font-medium text-lg max-w-2xl mb-4">{data.project.description.features[$languageSelected]}</p>
+			{#if data.project.description.features}
+				<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold font-title">
+					{$languageSelected == 'pt' ? 'Funcionalidades' : 'Features'}
+				</h2>
+				<p class="text-c-text font-medium text-lg max-w-2xl mb-4">
+					{data.project.description.features[$languageSelected]}
+				</p>
 			{/if}
-			{#if data.project.description.challenges }
-				<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold font-title">{$languageSelected == "pt" ? 'Desafios e aprendizados' : 'Challenges and learning'}</h2>
-				<p class="text-c-text font-medium text-lg max-w-2xl">{data.project.description.challenges[$languageSelected]}</p>
+			{#if data.project.description.challenges}
+				<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold font-title">
+					{$languageSelected == 'pt' ? 'Desafios e aprendizados' : 'Challenges and learning'}
+				</h2>
+				<p class="text-c-text font-medium text-lg max-w-2xl">
+					{data.project.description.challenges[$languageSelected]}
+				</p>
 			{/if}
 		</section>
 	</main>
 	<Footer />
 </div>
-
