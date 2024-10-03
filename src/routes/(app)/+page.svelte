@@ -6,7 +6,7 @@
 	import Testimonials from '$lib/layouts/Testimonials.svelte';
 	import Skills from '$lib/layouts/Skills.svelte';
 	import Footer from '$lib/layouts/Footer.svelte';
-	import {  projectName, textContent, languageSelected } from '$lib/store';
+	import { projectName, textContent, languageSelected } from '$lib/store';
 	import { onMount } from 'svelte';
 	import Header from '$lib/layouts/Header.svelte';
 
@@ -36,7 +36,7 @@
 			</ul>
 		</nav>
 	</Header>
-	<main class="flex flex-col gap-6 mt-2 sm:mt-6 mx-2 sm:mx-4">
+	<main class="flex flex-col gap-24 md:gap-32 mt-2 sm:mt-6 mx-1 xs:mx-2 sm:mx-4">
 		<Hero />
 		<Me />
 		<Projects projects={data.projects ?? {}} />

@@ -25,8 +25,8 @@
 	}
 </script>
 
-<section id="projects" class="mt-8 sm:mt-16">
-	<h2 class="text-c-text-darker font-title text-3xl font-bold mb-4">
+<section id="projects" class="">
+	<h2 class="text-c-text-darker font-title text-3xl font-bold lg:mb-4">
 		{$languageSelected == 'en' ? 'Projects' : 'Projetos'}
 	</h2>
 	<Carousel.Root

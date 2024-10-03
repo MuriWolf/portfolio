@@ -19,7 +19,7 @@
 </script>
 
 <section id="testimonials" class="relative mt-8 sm:mt-16">
-	<h2 class="text-c-text-darker text-3xl font-bold font-title">
+	<h2 class="text-c-text-darker text-3xl font-bold font-title mb-2">
 		{$textContent.testimonials.title[$languageSelected]}
 	</h2>
 	<p class="text-c-text text-lg mb-8 font-medium">
@@ -71,9 +71,9 @@
 								</h3>
 							</hgroup>
 							{#if testimonial.country == 'england'}
-								<img src={GbFlag} alt="GB flag" class="h-8 rounded-[2px]" height="32">
+								<img src={GbFlag} alt="GB flag" class="h-8 rounded-[2px]" height="32" />
 							{:else if testimonial.country == 'brazil'}
-								<img src={BrFlag} alt="BR flag" class="h-8 rounded-[2px]" height="32">
+								<img src={BrFlag} alt="BR flag" class="h-8 rounded-[2px]" height="32" />
 							{/if}
 						</div>
 					</Carousel.Item>
