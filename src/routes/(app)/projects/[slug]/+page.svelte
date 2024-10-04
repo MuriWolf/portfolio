@@ -145,7 +145,7 @@
 			</DropdownMenu.Root>
 		</div>
 	</Header>
-	<main class="flex flex-col gap-24 md:gap-32 mt-2 sm:mt-6 mx-2 sm:mx-4">
+	<main class="flex flex-col gap-24 md:gap-32 mt-2 sm:mt-6 mx-1.5 sm:mx-4">
 		<section
 			class="bg-c-primary p-4 md:p-8 lg:p-16 border-[1px] border-c-primary-darker rounded-xl gradient"
 		>
@@ -207,7 +207,7 @@
 		<section class="">
 			<div>
 				{#if project.images}
-					<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold font-title">
+					<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold font-title mb-2">
 						{$languageSelected == 'pt' ? 'Imagens do projeto' : 'Images of the project'}
 					</h2>
 					{#if project.images.length == 1}
@@ -295,7 +295,7 @@
 				{/if}
 			</div>
 		</section>
-		<section class="mt-4 sm:mt-16">
+		<section class="">
 			{#if data.project.description.overview}
 				<h2 class="text-c-text-darker text-2xl md:text-3xl font-bold font-title">
 					{$languageSelected == 'pt' ? 'Visão geral' : 'Overview'}

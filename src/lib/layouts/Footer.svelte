@@ -10,7 +10,7 @@
 </script>
 
 <footer
-	class="bg-c-primary border-[1px] border-c-primary-darker p-4 md:px-8 rounded-2xl mt-24 md:mt-32 sm:mt-24 mx-1 xs:mx-2 sm:mx-4"
+	class="bg-c-primary border-[1px] border-c-primary-darker p-4 md:px-8 rounded-2xl mt-24 md:mt-32 sm:mt-24 mx-1.5 xs:mx-2 sm:mx-4"
 	id="contact"
 >
 	<h1 class="font-bold text-c-text-darker text-3xl text-center font-title">

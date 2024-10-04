@@ -36,7 +36,7 @@
 			</ul>
 		</nav>
 	</Header>
-	<main class="flex flex-col gap-24 md:gap-32 mt-2 sm:mt-6 mx-1 xs:mx-2 sm:mx-4">
+	<main class="flex flex-col gap-24 md:gap-32 mt-2 sm:mt-6 mx-1.5 xs:mx-2 sm:mx-4">
 		<Hero />
 		<Me />
 		<Projects projects={data.projects ?? {}} />
