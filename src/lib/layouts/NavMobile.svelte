@@ -49,7 +49,7 @@
 						{#if openAnimation}
 							<a
 								href={`#${item.en.toLowerCase()}`}
-								class="block hover:text-primary text-c-text-darker font-semibold hover:text-shadow-sm transition-all duration-150 ease-in"
+								class="block hover:text-white text-c-text-darker font-semibold hover:text-shadow-sm transition-all duration-150 ease-in"
 								transition:scale={{ delay: item.id * 50 }}
 							>
 								<li>{item[$languageSelected]}</li>
