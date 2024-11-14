@@ -17,6 +17,15 @@ const config = {
 			screens: {
 				xs: '412px'
 			},
+			keyframes: {
+				"linear-gradient-transition": {
+					'0%': { background: 'linear-gradient(to right top, #00000000)' },
+					'100%': { background: 'linear-gradient(to right top, #13315c, #413673, #74347f, #a6287b, #d21868, #e92d55, #f94a3e, #ff6a20, #ff8e00, #ffb100, #fed400, #f0f600)' }
+				}
+			},
+			animation: {
+				'button-hover': 'linear-gradient-transition 0.001s ease-in-out forwards',
+			},
 			listStyleType: {
 				roman: 'upper-roman'
 			},

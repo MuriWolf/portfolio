@@ -317,11 +317,11 @@
 			"title": { "en": "ABOUT ME", "pt": "SOBRE MIM" },
 			"paragraphs": [
 				{
-					"en": "Hi, there! I've been a web programmer for a few years. I know back-end but my focus is the front-end part of applications. Much of what I learned was from forums, online courses and the experience of getting my hands dirty.",
-					"pt": "Possuo mais de 2 anos de experiência com desevolvimento web (frontend e backend). Minha expertise maior é com Svelte, Vue, Tailwind e estilização."
+					"en": "Over 3 years of experience with web development (frontend and backend). My main expertise is with Svelte, Tailwind, Python and styling.",
+					"pt": "Possuo mais de 3 anos de experiência com desevolvimento web (frontend e backend). Minha expertise maior é com Svelte, Tailwind, Python e estilização."
 				},
 				{
-					"en": "However, I have already studied 'Systems Development' at ETEC Devisate (2022-2023), and am currently studying 'Computer Science' at Unimar (both brazilian institutions).",
+					"en": "Committed to delivering quality, profitable solutions that solve any challenge intelligently and efficiently.",
 					"pt": "Comprometido a entregar soluções de qualidade, lucrativas e que resolvam de maneira inteligente e eficiente qualquer que seja o desafio."
 				}
 			]

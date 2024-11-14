@@ -6,20 +6,20 @@
 
     const skills = [
     {
-        name: 'Linux',
-        relevance: 2
-    },
-    {
-        name: 'Docker',
-        relevance: 1
-    },
-    {
         name: 'Typescript',
         relevance: 2
     },
     {
         name: 'Svelte/kit',
         relevance: 3
+    },
+    {
+        name: 'Angular',
+        relevance: 3
+    },
+    {
+        name: 'Java',
+        relevance: 2
     },
     {
         name: 'Git',
@@ -38,12 +38,12 @@
         relevance: 2
     },
     {
-        name: 'Flutter',
+        name: 'JQuery',
         relevance: 0
     },
     {
-        name: 'JQuery',
-        relevance: 0
+        name: 'Linux',
+        relevance: 2
     },
     {
         name: 'MySQL',
@@ -70,10 +70,6 @@
         relevance: 2
     },
     {
-        name: 'Vue',
-        relevance: 1
-    },
-    {
         name: 'Vercel',
         relevance: 3
     },
@@ -89,7 +85,7 @@
     <div class="flex flex-wrap gap-x-3 gap-3 mx-auto transition-all" >
         {#each skills as skill, id}
             {#key id}
-                <Badge class="bg-c-primary rounded-[2px] max-sm:!px-2 !py-1 hover:bg-c-primary-darker border-[1px] border-c-primary-darker text-c-text-darker text-lg hover:text-primary transition-all" style={`padding: 0px ${increaseSkillSizeBasedOnRelevance(skill.relevance)}px;`}>{skill.name}</Badge>
+                <Badge class="bg-c-primary hover:animate-button-hover hover:border-transparent  inline-block hover:text-c-primary rounded-[2px] max-sm:!px-2 !py-1 border-none border-c-primary-darker text-c-text-darker text-lg transition-all" style={`padding: 0px ${increaseSkillSizeBasedOnRelevance(skill.relevance)}px;`}>{skill.name}</Badge>
             {/key}
         {/each}
     </div>

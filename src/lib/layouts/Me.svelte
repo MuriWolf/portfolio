@@ -1,7 +1,7 @@
 <script lang="ts">
 	import me from '$lib/assets/images/me.webp';
-	import curriculumPT from '$lib/assets/pdf/murillo-pinheiro-curriculum-1-1.pdf';
-	import curriculumEN from '$lib/assets/pdf/curriculum-en.pdf';
+	import curriculumPT from '$lib/assets/pdf/murillo-pinheiro-curriculum-web.pdf';
+	import curriculumEN from '$lib/assets/pdf/murillo-pinheiro-curriculum-en.pdf';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import { textContent, languageSelected } from '$lib/store';
 </script>

@@ -16,3 +16,14 @@
 );
 background-image: linear-gradient(to right top, #13315c, #413673, #74347f, #a6287b, #d21868, #e92d55, #f94a3e, #ff6a20, #ff8e00, #ffb100, #fed400, #f0f600);
 }
+
+/* Usado em testimonials.svelte */
+svg .gradient-bg {
+  fill: url(#header-shape-gradient) #fff;
+}
+
+#header-shape-gradient {
+  --color-stop: hsl(289deg 100% 21%);
+  --color-stop2: hsl(329deg 100% 36%);
+  --color-bot: hsl(17deg 100% 59%);
+}
