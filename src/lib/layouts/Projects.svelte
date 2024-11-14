@@ -43,7 +43,7 @@
 				{#each projects as project (project.id)}
 					<Carousel.Item class="flex flex-col-reverse lg:flex-row gap-4 w-full">
 						<div
-							class="flex flex-col justify-between min-w-[300px] lg:min-w-[400px] h-[300px] md:h-[200px] lg:h-[300px] p-4 lg:p-8 rounded-xl border-2 border-c-primary-darker bg-c-primary"
+							class="flex flex-col justify-between min-w-[300px] lg:min-w-[400px] h-[300px] md:h-[200px] lg:h-[300px] p-4 lg:p-8 rounded-xl border-2 border-c-primary-light bg-c-primary"
 						>
 							<div class="flex justify-between items-center gap-2 gap-x-4 mb-2">
 								<hgroup class="h-min">
@@ -98,7 +98,7 @@
 							</p>
 							<a href={`/projects/${project.slug}`} class="max-w-full mt-4 font-title">
 								<Button
-									class="bg-c-secondary  flex-1 w-full block text-white font-title font-semibold text-xl rounded-[2px] hover:bg-primary focus:bg-primary active:scale-95 transition-all "
+									class="bg-c-secondary gradient leading-none text-xl font-bold mx-auto block mt-6 max-w-lg w-full active:scale-95 transition-all ease-out text-center font-title text-stone-50 py-2 px-4 rounded-[2px] hover:bg-primary focus:bg-primary"
 									>{$languageSelected == 'pt' ? 'Descobrir mais' : 'Discover more'}</Button
 								>
 							</a>
@@ -107,7 +107,7 @@
 							<img
 								src={`${project.images[0]}`}
 								alt={`${project.title[$languageSelected]} project screenshot`}
-								class="rounded-xl w-full lg:rounded-l-0 border hidden md:block object-cover"
+								class="rounded-xl w-full lg:rounded-l-0 hidden md:block object-cover"
 							/>
 						</div>
 					</Carousel.Item>
@@ -115,7 +115,7 @@
 			{/if}
 		</Carousel.Content>
 		<footer class="hidden md:flex items-center justify-center gap-4 max-xs:px-4 p-2 mt-6">
-			<Carousel.Previous style="all: unset;" class="!cursor-pointer">
+			<Carousel.Previous style="all: unset;" class="!cursor-pointer !text-c-text-darker !relative !scale-125 !top-2">
 				<button
 					class="text-gray-50 active:scale-90 transition-all ease-in-out duration-150 flex cursor-pointer"
 				>
@@ -135,13 +135,13 @@
 					<button
 						on:click={() => api.scrollTo(project.id)}
 						class="w-4 h-4 transition-all duration-300 rounded-full {current == project.id + 1
-							? ' relative rotate-45 bg-c-secondary scale-125'
+							? ' relative rotate-45 gradient scale-125'
 							: 'bg-c-text/50'}"
 					></button>
 				{/each}
 			</div>
 			<!-- <Progress value={current} max={count} class="transition-all duration-500 max-w-96 shadow-md" /> -->
-			<Carousel.Next style="all: unset;" class="!cursor-pointer">
+			<Carousel.Next style="all: unset;" class="!cursor-pointer !text-c-text-darker !relative !scale-125 !top-2">
 				<button
 					class="text-gray-50 active:scale-90 transition-all ease-in-out duration-150 cursor-pointer"
 				>

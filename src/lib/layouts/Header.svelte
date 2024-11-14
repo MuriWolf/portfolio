@@ -24,7 +24,7 @@
 	<a
 		href="/"
 		title={$languageSelected == 'pt' ? 'Ir para a página inicial' : 'Go to the main page'}
-		class="flex items-center justify-center text-4xl font-bold text-c-primary-light w-16 h-16 gradient rounded-full"
+		class="flex items-center justify-center text-2xl font-bold text-white w-16 h-16 gradient rounded-full"
 	>
 		M<span class="text-black">W</span>
 	</a>
@@ -46,19 +46,19 @@
 			<DropdownMenu.Root>
 				<DropdownMenu.Trigger>
 					<button
-						class="flex items-center justify-end text-c-text-darker hover:text-primary transition-all ease-out w-12 sm:w-16"
+						class="flex items-center justify-end text-c-text-darker hover:text-white transition-all ease-out w-12 sm:w-16"
 					>
 						<Translate />
 					</button>
 				</DropdownMenu.Trigger>
 				<DropdownMenu.Content
-					class="p-0 bg-c-primary-light backdrop-blur-sm border-c-primary-darker "
+					class="p-0 bg-c-primary-light backdrop-blur-sm border-c-primary-light "
 				>
 					<DropdownMenu.Group>
 						<form method="POST" bind:this={languageSwitcherForm} use:enhance={submitNewLanguage}>
 							<button
 								formaction="/?/setLanguage&language=pt"
-								class="flex gap-x-2 items-center hover:bg-c-primary p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full"
+								class="flex gap-x-2 items-center bg-c-primary-light hover:bg-c-primary text-c-text-darker p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full"
 							>
 								<img src={brazilFlag} width="32" alt="brazil flag" />
 								<p>Português</p>
@@ -66,7 +66,7 @@
 							<DropdownMenu.Separator class="my-0 mx-0 w-full bg-c-primary-darker" />
 							<button
 								formaction="/?/setLanguage&language=en"
-								class="flex gap-x-2 items-center hover:bg-c-primary p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full"
+								class="flex gap-x-2 items-center hover:bg-c-primary text-c-text-darker p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full"
 							>
 								<img src={usaFlag} width="32" alt="United States of America flag" />
 								<p>English</p>

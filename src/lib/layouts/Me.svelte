@@ -21,7 +21,7 @@
 			class="block max-w-lg !w-full flex-1 mx-auto"
 		>
 			<Button
-				class="bg-c-secondary w-full text-white font-title font-semibold text-xl rounded-[2px] hover:bg-primary focus:bg-primary active:scale-95 transition-all flex items-center"
+				class="bg-c-secondary gradient leading-none text-xl font-bold mx-auto block mt-6 max-w-lg w-full active:scale-95 transition-all ease-out text-center font-title text-stone-50 py-2 px-4 rounded-[2px] hover:bg-primary focus:bg-primary"
 				>Baixar Currículo</Button
 			>
 		</a>
@@ -33,7 +33,7 @@
 			class="block max-w-lg !w-full flex-1 mx-auto"
 		>
 			<Button
-				class="bg-c-secondary w-full text-white font-title font-semibold text-xl rounded-[2px] hover:bg-primary focus:bg-primary active:scale-95 transition-all flex items-center"
+				class="bg-c-secondary gradient text-xl font-bold mx-auto block mt-6 max-w-lg w-full active:scale-95 transition-all ease-out text-center font-title leading-none text-stone-50 py-2 px-4 rounded-[2px] hover:bg-primary focus:bg-primary"
 				>Download Resume</Button
 			>
 		</a>

@@ -31,11 +31,11 @@ const config = {
 			},
 
 			colors: {
-				'c-text': '#555555',
-				'c-text-darker': '#505050',
-				'c-primary': '#EEEEEE',
-				'c-primary-light': '#fefefe',
-				'c-primary-darker': '#DDDDDD',
+				'c-text': '#f7f7f7bb',
+				'c-text-darker': '#f7f7f7ee',
+				'c-primary': '#222426',
+				'c-primary-light': '#2E3133',
+				'c-primary-darker': '#17181a',
 				'c-secondary': '#2D2D2D',
 				border: 'hsl(var(--border) / <alpha-value>)',
 				input: 'hsl(var(--input) / <alpha-value>)',

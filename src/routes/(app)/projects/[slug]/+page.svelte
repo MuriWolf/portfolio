@@ -76,7 +76,7 @@
 		<nav slot="header-center">
 			<ul class="flex items-center gap-4">
 				<li
-					class="text-c-text-darker hover:text-primary transition-all ease-out font-semibold cursor-pointer"
+					class="text-c-text-darker hover:text-white transition-all ease-out font-semibold cursor-pointer"
 				>
 					<a
 						href={`/projects/${data.previousProject}`}
@@ -93,7 +93,7 @@
 				</li>
 				<Separator orientation="vertical" class="bg-c-primary-darker h-[44px] w-[2px]" />
 				<li
-					class=" text-c-text-darker hover:text-primary transition-all ease-out font-semibold cursor-pointer"
+					class=" text-c-text-darker hover:text-white transition-all ease-out font-semibold cursor-pointer"
 				>
 					<a
 						href={`/projects/${data.nextProject}`}
@@ -114,7 +114,7 @@
 			<DropdownMenu.Root>
 				<DropdownMenu.Trigger>
 					<button
-						class="flex items-center justify-end text-c-text-darker hover:text-primary transition-all duration-100 ease-in-out w-12 sm:w-16"
+						class="flex items-center justify-end text-c-text-darker hover:text-white transition-all duration-100 ease-in-out w-12 sm:w-16"
 					>
 						<Translate />
 					</button>
@@ -126,7 +126,7 @@
 						<form method="POST" bind:this={languageSwitcherForm} use:enhance={submitNewLanguage}>
 							<button
 								formaction="/?/setLanguage&language=pt"
-								class="flex gap-x-2 items-center hover:bg-c-primary p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full"
+								class="flex gap-x-2 items-center text-c-text-darker hover:bg-c-primary p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full"
 							>
 								<img src={brazilFlag} width="32" alt="brazil flag" />
 								<p>Português</p>
@@ -134,7 +134,7 @@
 							<DropdownMenu.Separator class="my-0 mx-0 w-full bg-c-primary-darker" />
 							<button
 								formaction="/?/setLanguage&language=en"
-								class="flex gap-x-2 items-center hover:bg-c-primary p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full"
+								class="flex gap-x-2 items-center text-c-text-darker hover:bg-c-primary p-3 transition-all duration-150 hover:cursor-pointer font-semibold w-full"
 							>
 								<img src={usaFlag} width="32" alt="United States of America flag" />
 								<p>English</p>
@@ -151,31 +151,34 @@
 		>
 			<div class="flex flex-col md:flex-row justify-between mb-8 mt-1">
 				<hgroup>
-					<h1 class="text-c-primary-light text-3xl mb-4 font-bold font-title">
+					<h1 class="text-c-text-darker text-3xl mb-4 font-bold font-title">
 						{data.project.title[$languageSelected]}
 					</h1>
-					<h2 class="font-semibold text-black/75 text-lg">
-						<strong class="font-semibold text-c-primary-light/90"
-							>{$languageSelected == 'pt' ? 'Tipo: ' : 'Type: '}
-						</strong>{data.project.type[$languageSelected]}
-					</h2>
-					<h2 class="font-semibold text-black/75 text-lg">
-						<strong class="font-semibold text-c-primary-light/90"
-							>{$languageSelected == 'pt' ? 'Minha função: ' : 'My role: '}
-						</strong>
-						{data.project.myRole[$languageSelected]}
-					</h2>
+					<div class="hidden md:block">
+						<h2 class="font-semibold text-c-text-darker/90 text-lg">
+							<strong class="font-semibold text-c-text-darker"
+								>{$languageSelected == 'pt' ? 'Tipo: ' : 'Type: '}
+							</strong>{data.project.type[$languageSelected]}
+						</h2>
+						<h2 class="font-semibold text-c-text-darker/90 text-lg">
+							<strong class="font-semibold text-c-text-darker"
+								>{$languageSelected == 'pt' ? 'Minha função: ' : 'My role: '}
+							</strong>
+							{data.project.myRole[$languageSelected]}
+						</h2>
+					</div>
+					
 				</hgroup>
 				<div class="flex flex-wrap gap-2 md:gap-4 items-start md:justify-end mt-4 md:mt-0 max-w-md">
 					{#each data.project.technologies as tech}
 						<Badge
-							class="bg-c-primary rounded-[2px] px-2 sm:px-4 !py-1 hover:bg-stone-50 border-[1px] border-c-primary-darker text-c-text-darker text-lg hover:text-primary"
+							class="bg-c-primary/80 rounded-[2px] px-2 sm:px-4 !py-1 border-[1px] border-c-primary-darker text-c-text-darker text-lg hover:bg-c-primary"
 							>{tech}</Badge
 						>
 					{/each}
 				</div>
 			</div>
-			<p class="text-white/90 font-medium max-w-xl text-lg mb-8">
+			<p class="text-c-text-darker/90 font-medium max-w-xl text-lg mb-8">
 				{data.project.abstract[$languageSelected]}
 			</p>
 			<nav>
@@ -185,7 +188,7 @@
 							<a
 								href={data.project.codeUrl}
 								target="_blank"
-								class="text-c-secondary font-title bg-c-primary-darker hover:brightness-90 focus:brightness-90 transition-all ease-out rounded-[2px] p-2 text-xl font-bold w-full block text-center active:scale-95"
+								class="text-c-primary-darker font-title bg-c-text-darker hover:brightness-90 focus:brightness-90 transition-all ease-out rounded-[2px] p-2 text-xl font-bold w-full block text-center active:scale-95"
 								>{$languageSelected == 'pt' ? 'Explorar o código' : 'Explore the code'}</a
 							>
 						</li>
@@ -194,15 +197,12 @@
 						<a
 							href={data.project.liveUrl}
 							target="_blank"
-							class="text-c-primary-light font-title bg-c-secondary hover:bg-primary focus:bg-primary transition-all ease-out rounded-[2px] p-2 text-xl font-bold w-full block text-center active:scale-95"
+							class="text-c-text-darker font-title bg-c-primary-darker hover:bg-primary focus:bg-primary transition-all ease-out rounded-[2px] p-2 text-xl font-bold w-full block text-center active:scale-95"
 							>{$languageSelected == 'pt' ? 'Ver a aplicação' : 'View live'}</a
 						>
 					</li>
 				</ul>
 			</nav>
-			<!-- <div class="flex justify-center mt-24 text-c-text transition-all hover:animate-pulse">
-				<ChevronDown />
-			</div> -->
 		</section>
 		<section class="">
 			<div>
@@ -219,7 +219,7 @@
 								alt={`${project.title[$languageSelected]} project screenshot`}
 								height="636"
 								width="736"
-								class="block mx-auto w-full border overflow-hidden"
+								class="block mx-auto w-full overflow-hidden"
 							/>
 						</div>
 						<!-- <p class="text-end text-c-text-darker text-sm font-bold">Alt da imagem</p> -->
@@ -248,7 +248,7 @@
 								{/each}
 							</Carousel.Content>
 							<footer class="p-2 mt-2 flex items-center justify-center gap-4 max-xs:px-4 pb-0">
-								<Carousel.Previous style="all: unset;" class="!cursor-pointer">
+								<Carousel.Previous style="all: unset;" class="!cursor-pointer !text-c-text-darker !relative !scale-125 !top-2">
 									<button
 										class="text-white active:scale-90 transition-all ease-in-out duration-150 flex"
 									>
@@ -269,12 +269,12 @@
 											on:click={() => api.scrollTo(project.images.indexOf(image))}
 											class="w-4 h-4 transition-all duration-100 ease-in-out rounded-full {current ==
 											project.images.indexOf(image) + 1
-												? ' bg-black'
-												: 'bg-c-text/50 border-2'}"
+												? ' gradient'
+												: 'bg-c-text/50'}"
 										></button>
 									{/each}
 								</div>
-								<Carousel.Next style="all: unset;" class="!cursor-pointer">
+								<Carousel.Next style="all: unset;" class="!cursor-pointer !text-c-text-darker !relative !scale-125 !top-2">
 									<button
 										class="text-white active:scale-90 transition-all ease-in-out duration-150"
 									>

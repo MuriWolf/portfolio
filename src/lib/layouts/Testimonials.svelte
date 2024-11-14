@@ -40,7 +40,7 @@
 						class="flex flex-col basis-[100%] sm:basis-[70%] min-[960px]:basis-[40%] relative z-10 text-c-text"
 					>
 						<div
-							class="py-6 px-7 rounded-xl flex-1 bg-c-primary border-[1px] border-c-primary-darker text-c-secondary"
+							class="py-6 px-7 rounded-xl flex-1 bg-c-text-darker text-c-secondary"
 						>
 							<svg
 								width="28"
@@ -62,12 +62,12 @@
 
 								/>
 							</svg>
-							<p class="mt-3 font-semibold text-c-text">
+							<p class="mt-3 font-semibold text-c-primary/70">
 								{testimonial.quote[$languageSelected]}"
 							</p>
 						</div>
 						<div
-							class="flex items-center justify-between gap-4 py-3.5 px-7 bg-c-secondary rounded-[2px] mt-4 shadow-claymorphism"
+							class="flex items-center justify-between gap-4 py-3.5 px-7 bg-c-primary border-[1px] border-c-primary-light rounded-[2px] mt-4"
 						>
 							<!-- <img src="" alt="" height="36" width="36" class="rounded-full" /> -->
 							<hgroup>
@@ -89,7 +89,7 @@
 			</Carousel.Content>
 			{#if $textContent.testimonials.content.length > 1}
 				<footer class="hidden md:flex items-center justify-center gap-4 p-2 mt-6 max-xs:px-4">
-					<Carousel.Previous style="all: unset;" class="!cursor-pointer">
+					<Carousel.Previous style="all: unset;" class="!cursor-pointer !text-c-text-darker !relative !scale-125 !top-2">
 						<button class="text-white active:scale-90 transition-all ease-in-out duration-150 flex">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -106,12 +106,12 @@
 						<button
 							on:click={() => api.scrollTo(i)}
 							class="w-4 h-4 rounded-full transition-all duration-100 ease-in-out {current == i + 1
-								? 'bg-c-secondary'
-								: 'bg-c-text/50 border-2'}"
+								? 'gradient'
+								: 'bg-c-text/50'}"
 						></button>
 					{/each}
 					<!-- <Progress value={current} max={count} progressColor="bg-c-secondary" class=" transition-all duration-500 max-w-96 shadow-md" /> -->
-					<Carousel.Next style="all: unset;" class="!cursor-pointer">
+					<Carousel.Next style="all: unset;" class="!cursor-pointer !text-c-text-darker !relative !scale-125 !top-2">
 						<button class="text-white active:scale-90 transition-all ease-in-out duration-150">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"

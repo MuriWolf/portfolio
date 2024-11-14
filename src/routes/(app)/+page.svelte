@@ -27,7 +27,7 @@
 		<nav slot="header-center" class="hidden min-[880px]:block ml-auto">
 			<ul class="flex gap-4 font-semibold text-lg">
 				{#each $textContent.nav as navItem, i}
-					<li class="text-c-text hover:text-primary">
+					<li class="text-c-text hover:text-white">
 						<a href="#{navItem.href}" class="flex items-center gap-2">
 							{i + 1}. {navItem[$languageSelected]}
 						</a>

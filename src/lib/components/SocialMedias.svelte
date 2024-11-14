@@ -12,7 +12,7 @@
 		<li
 			class="transition-all duration-200 ease-in {theme == 'dark'
 				? 'hover:text-c-primary-light'
-				: 'hover:text-primary'}"
+				: 'hover:text-white'}"
 		>
 			<a
 				href="https://github.com/muriWolf"
@@ -36,7 +36,7 @@
 		<li
 			class="{theme == 'dark'
 				? 'hover:text-c-primary-light'
-				: 'hover:text-primary'} transition-all duration-200 ease-in"
+				: 'hover:text-white'} transition-all duration-200 ease-in"
 		>
 			<a
 				href="https://www.linkedin.com/in/murillo-pinheiro-de-oliveira-2b931724a/"
@@ -60,7 +60,7 @@
 		<li
 			class="{theme == 'dark'
 				? 'hover:text-c-primary-light'
-				: 'hover:text-primary'} transition-all duration-200 ease-in"
+				: 'hover:text-white'} transition-all duration-200 ease-in"
 		>
 			<a
 				href="https://web.telegram.org/k/#@MuriWolf"
@@ -91,7 +91,7 @@
 		<li
 			class="{theme == 'dark'
 				? 'hover:text-c-primary-light'
-				: 'hover:text-primary'} transition-all duration-200 ease-in"
+				: 'hover:text-white'} transition-all duration-200 ease-in"
 		>
 			<a
 				href="https://www.reddit.com/user/MuriWolf/"
