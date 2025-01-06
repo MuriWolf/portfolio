@@ -135,19 +135,19 @@
 		{
 			"id": 5,
 			"title": {
-				"pt": "história de tudo (clone da interface)",
-				"en": "Historía de tudo (Simple UI clone)"
+				"pt": "história de tudo",
+				"en": "Historía de tudo"
 			},
 			"abstract": {
-				"pt": "Título autoexplicativo, apenas uma cópia simples de algumas partes do site.",
-				"en": "Self-explanatory title, just a simple copy of some parts of the site."
+				"pt": "Redesign do já existente site de mesmo nome, feito usando o framework Angular.",
+				"en": "Redesign of the existing website of the same name. Made using framework Angular."
 			},
 			"type": { "pt": "Website", "en": "Website" },
 			"myRole": { "pt": "front-end", "en": "front-end" },
 			"description": {
 				"overview": {
-					"pt": "Uma simples cópia do site “História de tudo”, onde aborda curiosidades e assuntos interessantes do mundo. Meu objetivo com ele foi tentar clonar em partes um site já existente, dessa forma visando aprender no processo. Feito no começo de 2022.",
-					"en": "A simple copy of the “História de tudo” website, which covers curiosities and interesting subjects in the world. My objective with it was to try to clone an existing website in parts, aiming to learn in the process. Done at the beginning of 2022."
+					"pt": "Uma simples cópia do site “História de tudo”, onde aborda curiosidades e assuntos interessantes do mundo. Meu objetivo com ele foi tentar clonar em partes um site já existente, dessa forma visando aprender no processo. Feito no começo de 2022, e a nova versão no final de 2024. A versão antiga: https://muriwolf.github.io/historia_de_tudo/",
+					"en": "A simple copy of the “História de tudo” website, which covers curiosities and interesting subjects in the world. My objective with it was to try to clone an existing website in parts, aiming to learn in the process. Done at the beginning of 2022 and the new version at the end of 2024. Old version: https://muriwolf.github.io/historia_de_tudo/"
 				},
 				"challenges": {
 					"pt": "Aprendi mais sobre como funciona a interface do usuário de um site (neste caso, do tipo blog) e seu comportamento em telas diferentes.",
@@ -157,7 +157,7 @@
 			"slug": "historia-de-tudo",
 			"technologies": ["javascript", "css"],
 			"codeUrl": "https://github.com/MuriWolf/historia_de_tudo",
-			"liveUrl": "https://muriwolf.github.io/historia_de_tudo/",
+			"liveUrl": "https://historia-de-tudo.vercel.app/home",
 			"images": [
 				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/historia-de-tudo-copy.png?updatedAt=1709863198438"
 			]
