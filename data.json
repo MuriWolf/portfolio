@@ -88,29 +88,6 @@
 		},
 		{
 			"id": 3,
-			"title": { "pt": "Interactive Card Details Form", "en": "Interactive Card Details Form" },
-			"abstract": {
-				"pt": "Site que simula formulário de um cartão de crédito.",
-				"en": "Website that simulates a credit card form."
-			},
-			"type": { "pt": "Website", "en": "Website" },
-			"myRole": { "pt": "front-end", "en": "front-end" },
-			"description": {
-				"overview": {
-					"pt": "Website que simula o cadastro de um cartão de crédito. Feito com o intuito de treinar minha habilidades de front-end. Desafio proposto pelo front-end Mentor. Desenvolvido por volta do final de 2022.",
-					"en": "Website that simulates registering a credit card. Made with the purpose of training my front-end skills.Challenge proposed by front-end Mentor. Developed next to the end of 2022."
-				}
-			},
-			"slug": "interactive-card-details-form",
-			"technologies": ["javascript", "sass"],
-			"codeUrl": "https://github.com/MuriWolf/interactive-card-details-form/tree/master",
-			"liveUrl": "https://interactive-card-details-form-muri.netlify.app",
-			"images": [
-				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/interactive-card-details-form.png?updatedAt=1709863198296"
-			]
-		},
-		{
-			"id": 4,
 			"title": { "pt": "Billy Design", "en": "Billy Design" },
 			"abstract": {
 				"pt": "Site feito para compartilhar links relacionados ao cliente (Abilio).",
@@ -133,7 +110,7 @@
 			]
 		},
 		{
-			"id": 5,
+			"id": 4,
 			"title": {
 				"pt": "história de tudo",
 				"en": "Historía de tudo"
@@ -163,31 +140,11 @@
 			]
 		},
 		{
-			"id": 6,
-			"title": { "pt": "Calculador de Gorjeta", "en": "Tip Calculator" },
-			"abstract": { "pt": "", "en": "" },
-			"type": { "pt": "Website", "en": "Website" },
-			"myRole": { "pt": "front-end", "en": "front-end" },
-			"description": {
-				"overview": {
-					"pt": "Website que tem o propósito de ser uma calculadora de gorjeta (nome sugestivo). Feito com o intuito de treinar minhas habilidades de SCSS e Javascript. Desafio proposto pelo front-end Mentor. Desenvolvido em 2022.",
-					"en": "Website that aims to be a tip calculator (suggestive name). Made with the intention of training my SCSS and Javascript skills. Challenge proposed by front-end Mentor . Developed in 2022."
-				}
-			},
-			"slug": "tip-calculator",
-			"technologies": ["javascript", "css", "sass"],
-			"codeUrl": "http://github.com/MuriWolf/calculator-app-main",
-			"liveUrl": "https://muriwolf.github.io/calculator-app-main/",
-			"images": [
-				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/tip-calculator.png?updatedAt=1709863199633"
-			]
-		},
-		{
-			"id": 7,
+			"id": 5,
 			"title": { "pt": "Blogr", "en": "Blogr" },
 			"abstract": {
-				"pt": "Uma simples e elegante landing page.",
-				"en": "A simple and elegant landing page."
+				"pt": "Uma simples e elegante landing page feito com propósito de estudo e demonstração.",
+				"en": "A simple and elegant landing page made with demonstration and study porpuses."
 			},
 			"type": { "pt": "Website", "en": "Website" },
 			"myRole": { "pt": "front-end", "en": "front-end" },
@@ -210,60 +167,7 @@
 			]
 		},
 		{
-			"id": 8,
-			"title": { "pt": "Snap", "en": "Snap" },
-			"abstract": { "pt": "Uma landing page muito simples.", "en": "A very simple landing page." },
-			"type": { "pt": "Website", "en": "Website" },
-			"myRole": { "pt": "front-end", "en": "front-end" },
-			"description": {
-				"overview": {
-					"pt": "Desafio proposto pelo front-end Mentor. Desenvolvido no começo de 2022.",
-					"en": "Challenge proposed by front-end Mentor. Developed in 2022."
-				},
-				"challenges": {
-					"pt": "Neste projeto pude treinar e aprender habilidades referentes ao mundo front-end web, como alinhamento de itens e menus.",
-					"en": "In this project I was able to train and learn skills related to the front-end web world, such as aligning items and menus."
-				}
-			},
-			"slug": "snap-landing-page",
-			"technologies": ["javascript", "css"],
-			"codeUrl": "https://github.com/MuriWolf/Intro-section-with-dropdown-navigation",
-			"liveUrl": "https://muriwolf.github.io/Intro-section-with-dropdown-navigation/",
-			"images": [
-				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page-2.png?updatedAt=1709863200212"
-			]
-		},
-		{
-			"id": 9,
-			"title": { "pt": "Clipboard", "en": "Clipboard" },
-			"abstract": {
-				"pt": "Uma simples e elegante landing page.",
-				"en": "A simple but totally responsive landing page."
-			},
-			"type": { "pt": "Website", "en": "Website" },
-			"myRole": { "pt": "front-end", "en": "front-end" },
-			"description": {
-				"overview": {
-					"pt": "Desafio proposto pelo front-end Mentor. Desenvolvido no começo de 2022.",
-					"en": "Challenge proposed by front-end Mentor. Developed in 2022."
-				},
-				"challenges": {
-					"pt": "Com esse website pude melhorar aprimorar minhas habilidades com front-end web, como alinhamento correto de texto em conjunto com imagens.",
-					"en": " With this website I was able to improve my web front-end skills, such as correctly aligning text with images."
-				}
-			},
-			"slug": "clipboard-landing-page",
-			"technologies": ["javascript", "css"],
-			"codeUrl": "https://github.com/MuriWolf/clipboard-landing-page-master",
-			"liveUrl": "https://clipboard-landing-page-muri.netlify.app",
-			"images": [
-				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-1.png?updatedAt=1709863198229",
-				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-2.png",
-				"https://ik.imagekit.io/ncfh58vi7c/Vivaldi%20Captures/tr:q-80/landing-page1-3.png"
-			]
-		},
-		{
-			"id": 10,
+			"id": 6,
 			"title": { "pt": "Swapee.me", "en": "Swapee.me" },
 			"abstract": { "pt": "Site focado em moedas digitais", "en": "Digital coins related website" },
 			"type": { "pt": "Website", "en": "Website" },
